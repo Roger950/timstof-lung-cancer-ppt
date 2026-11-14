@@ -43,7 +43,7 @@ for i, (slide, paragraphs) in enumerate(zip(slides,speech)):
         doc.add_page_break()
     else:
         doc.add_paragraph('timsTOF培训组会演讲稿（肺癌奥希替尼耐药版）','Title')
-        p=doc.add_paragraph('每页对应一张PPT（共28页），按“概念总览→前处理→进样与仪器→结果解读与何勇教授团队肺癌奥希替尼耐药课题衔接”顺序逐页排练。')
+        p=doc.add_paragraph('每页对应一张PPT（共28页），按“概念总览→前处理→进样与仪器→结果解读与肺癌奥希替尼耐药课题衔接”顺序逐页排练。')
         p.paragraph_format.space_after=Pt(18)
         for run in p.runs:
             run.font.size=Pt(10.5)

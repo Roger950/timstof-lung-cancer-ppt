@@ -1,7 +1,7 @@
 ---
 theme: default
 title: timsTOF 蛋白质组学实验入门汇报（肺癌奥希替尼耐药版）
-info: 28页肺癌奥希替尼耐药版｜蛋白质前处理、样品上机、质谱原理与何勇教授团队肺癌耐药应用
+info: 28页肺癌奥希替尼耐药版｜蛋白质前处理、样品上机、质谱原理与肺癌奥希替尼耐药研究应用
 canvasWidth: 1280
 aspectRatio: 16/9
 routerMode: hash
@@ -14,18 +14,18 @@ drawings:
   enabled: false
 ---
 
-<section class="deck-page cover-page" data-slide="1"><header><div class="section-label">培训学习汇报</div><h1>timsTOF 蛋白质组学实验</h1><p>蛋白质样品前处理、液相质谱上机检测、结果表解读与非小细胞肺癌奥希替尼耐药研究应用</p></header><main><div class="cover"><div class="cover-name">timsTOF</div><div class="cover-rule"></div><p>一份生物样品如何变成可解释的蛋白质结果表</p><div class="cover-topics"><div class="cover-topic"><b>01 蛋白质前处理</b><span>样品采集、裂解提取、定量、酶解与除盐</span></div><div class="cover-topic"><b>02 样品上机与电离</b><span>进样序列、液相色谱分离与电喷雾电离</span></div><div class="cover-topic"><b>03 质谱分离与碎裂</b><span>TIMS 淌度分离、四极杆、碰撞池、TOF 与 PASEF</span></div><div class="cover-topic"><b>04 结果解读与应用</b><span>鉴定定量表读法、差异筛选与肺癌奥希替尼耐药案例</span></div></div><small>面向零基础听众的入门汇报，以尿素溶液酶解为前处理教学主线，以何勇教授团队肺癌奥希替尼耐药研究为应用示例</small></div></main><footer><span>培训资料 01–11；应用文献见第26–27页（何勇教授团队 Cancer Lett 2019 / JTO 2020 / Mol Oncol 2020 / iScience 2023）</span><b>01 / 28</b></footer></section>
+<section class="deck-page cover-page" data-slide="1"><header><div class="section-label">培训学习汇报</div><h1>timsTOF 蛋白质组学实验</h1><p>蛋白质样品前处理、液相质谱上机检测、结果表解读与非小细胞肺癌奥希替尼耐药研究应用</p></header><main><div class="cover"><div class="cover-name">timsTOF</div><div class="cover-rule"></div><p>一份生物样品如何变成可解释的蛋白质结果表</p><div class="cover-topics"><div class="cover-topic"><b>01 蛋白质前处理</b><span>样品采集、裂解提取、定量、酶解与除盐</span></div><div class="cover-topic"><b>02 样品上机与电离</b><span>进样序列、液相色谱分离与电喷雾电离</span></div><div class="cover-topic"><b>03 质谱分离与碎裂</b><span>TIMS 淌度分离、四极杆、碰撞池、TOF 与 PASEF</span></div><div class="cover-topic"><b>04 结果解读与应用</b><span>鉴定定量表读法、差异筛选与肺癌奥希替尼耐药案例</span></div></div><small>面向零基础听众的入门汇报，以尿素溶液酶解为前处理教学主线，以非小细胞肺癌奥希替尼耐药研究为应用示例</small></div></main><footer><span>培训资料 01–11；应用文献见第26–27页（Cancer Lett 2019 / JTO 2020 / Mol Oncol 2020 / iScience 2023）</span><b>01 / 28</b></footer></section>
 
 <!--
 逐页演讲稿：
 老师、同学们好。今天我汇报的内容是timsTOF蛋白质组学实验的完整流程，面向还没有接触过质谱和蛋白质研究的同学，把从拿到一份生物样品到读懂最终蛋白质结果表的全过程梳理清楚。
 
-整个汇报按照实验真实的先后顺序分成四块：第一块先讲基础概念和实验全景图；第二块讲实验台上的样品前处理，也就是怎么把肺癌细胞或肿瘤组织里的蛋白质提取出来并切成干净的肽段溶液；第三块讲样品放进液相色谱和timsTOF质谱仪以后，仪器内部是怎样一步步测出信号的；第四块讲拿到软件生成的蛋白质表格后怎么读表，以及怎样用到重庆大学何勇教授团队的非小细胞肺癌（NSCLC）奥希替尼耐药机制研究中。
+整个汇报按照实验真实的先后顺序分成四块：第一块先讲基础概念和实验全景图；第二块讲实验台上的样品前处理，也就是怎么把肺癌细胞或肿瘤组织里的蛋白质提取出来并切成干净的肽段溶液；第三块讲样品放进液相色谱和timsTOF质谱仪以后，仪器内部是怎样一步步测出信号的；第四块讲拿到软件生成的蛋白质表格后怎么读表，以及怎样用到非小细胞肺癌（NSCLC）奥希替尼耐药机制研究中。
 
-汇报中前处理部分以最常用的尿素溶液酶解作为教学主线，应用部分以何勇教授团队在Cancer Letters、Molecular Oncology、JTO和iScience发表的奥希替尼耐药代表性工作作为具体例子。我的讲述预计在三十五到四十分钟左右。
+汇报中前处理部分以最常用的尿素溶液酶解作为教学主线，应用部分以发表在Cancer Letters、Molecular Oncology、JTO和iScience上的非小细胞肺癌奥希替尼耐药代表性研究作为具体例子。我的讲述预计在三十五到四十分钟左右。
 
 原讲者备注：本汇报面向无质谱与蛋白研究基础的听众，按实验真实先后顺序展开：先在实验台把样本里的蛋白质变成干净的肽段溶液，再把样品放上仪器完成液相分离与质谱测量，最后解读软件输出的蛋白表格并用于非小细胞肺癌（NSCLC）奥希替尼耐药机制与逆转策略研究。预计讲述35至40分钟。
-大纲检查点：说明面向零基础听众的讲述顺序，以何勇教授团队非小细胞肺癌奥希替尼耐药研究为应用示例
+大纲检查点：说明面向零基础听众的讲述顺序，以非小细胞肺癌奥希替尼耐药研究为应用示例
 培训来源索引：research/source-index.json；页码均为PDF物理页。
 -->
 
@@ -430,7 +430,7 @@ drawings:
 
 ---
 
-<section class="deck-page " data-slide="23"><header><div class="section-label">04 / 结果解读与肺癌耐药应用</div><h1>峰面积提取与相对定量</h1><p>软件提取各肽段在每份样本中的色谱峰面积并汇总为蛋白质信号强度，用于同一蛋白跨样本横向比较</p></header><main><table class="matrix compact"><thead><tr><th>蛋白组编号</th><th>基因与蛋白质名称</th><th>特异肽段数</th><th>奥希替尼敏感株 1</th><th>奥希替尼敏感株 2</th><th>奥希替尼耐药株 1</th><th>奥希替尼耐药株 2</th><th>横向读表结论（教学示例）</th></tr></thead><tbody><tr><th>P60709</th><td>ACTB（β-肌动蛋白，内参对照）</td><td>28 条</td><td>6.4 × 10⁸</td><td>6.1 × 10⁸</td><td>6.5 × 10⁸</td><td>6.3 × 10⁸</td><td>两组水平基本一致（比值约 1.0 倍）</td></tr><tr><th>P48736</th><td>PIK3CG（PI3Kγ 催化亚基）</td><td>14 条</td><td>1.3 × 10⁶</td><td>1.5 × 10⁶</td><td>5.8 × 10⁶</td><td>6.4 × 10⁶</td><td>耐药株相对升高（均值约 4.4 倍）</td></tr><tr><th>P30305</th><td>ALDH1A1（醛脱氢酶 1A1，干性标志）</td><td>19 条</td><td>2.1 × 10⁶</td><td>2.3 × 10⁶</td><td>7.1 × 10⁶</td><td>7.5 × 10⁶</td><td>耐药株相对升高（均值约 3.3 倍）</td></tr></tbody></table><div class="two-lines"><div><b>读表规则一：同一行横向跨样本比较，直接反映相对丰度变化</b><span>同一行是同一个蛋白质（如 PIK3CG），它的肽段序列和电离效率固定不变。在各样本前处理等量蛋白投入的前提下，奥希替尼耐药株峰面积强度是敏感亲本株的 4.4 倍，说明该蛋白在耐药株中相对表达显著上调。</span></div><div><b>读表规则二：同一列纵向跨蛋白比较，信号比值不等于绝对摩尔浓度比</b><span>不同蛋白质切出的肽段长短不同、带正电的能力差别很大。表中内参 ACTB 信号比 PIK3CG 高几百倍，不能直接换算成绝对摩尔浓度比；若需绝对定量，必须额外加入已知浓度的重同位素标准肽段建立校准曲线。</span></div></div></main><footer><span>03 p12；05英文 p37–41；07 p2；11 p6、p16、p23（表格数值为教学示意，结合何勇团队耐药靶点演示读表方法，非实测数据）</span><b>23 / 28</b></footer></section>
+<section class="deck-page " data-slide="23"><header><div class="section-label">04 / 结果解读与肺癌耐药应用</div><h1>峰面积提取与相对定量</h1><p>软件提取各肽段在每份样本中的色谱峰面积并汇总为蛋白质信号强度，用于同一蛋白跨样本横向比较</p></header><main><table class="matrix compact"><thead><tr><th>蛋白组编号</th><th>基因与蛋白质名称</th><th>特异肽段数</th><th>奥希替尼敏感株 1</th><th>奥希替尼敏感株 2</th><th>奥希替尼耐药株 1</th><th>奥希替尼耐药株 2</th><th>横向读表结论（教学示例）</th></tr></thead><tbody><tr><th>P60709</th><td>ACTB（β-肌动蛋白，内参对照）</td><td>28 条</td><td>6.4 × 10⁸</td><td>6.1 × 10⁸</td><td>6.5 × 10⁸</td><td>6.3 × 10⁸</td><td>两组水平基本一致（比值约 1.0 倍）</td></tr><tr><th>P48736</th><td>PIK3CG（PI3Kγ 催化亚基）</td><td>14 条</td><td>1.3 × 10⁶</td><td>1.5 × 10⁶</td><td>5.8 × 10⁶</td><td>6.4 × 10⁶</td><td>耐药株相对升高（均值约 4.4 倍）</td></tr><tr><th>P30305</th><td>ALDH1A1（醛脱氢酶 1A1，干性标志）</td><td>19 条</td><td>2.1 × 10⁶</td><td>2.3 × 10⁶</td><td>7.1 × 10⁶</td><td>7.5 × 10⁶</td><td>耐药株相对升高（均值约 3.3 倍）</td></tr></tbody></table><div class="two-lines"><div><b>读表规则一：同一行横向跨样本比较，直接反映相对丰度变化</b><span>同一行是同一个蛋白质（如 PIK3CG），它的肽段序列和电离效率固定不变。在各样本前处理等量蛋白投入的前提下，奥希替尼耐药株峰面积强度是敏感亲本株的 4.4 倍，说明该蛋白在耐药株中相对表达显著上调。</span></div><div><b>读表规则二：同一列纵向跨蛋白比较，信号比值不等于绝对摩尔浓度比</b><span>不同蛋白质切出的肽段长短不同、带正电的能力差别很大。表中内参 ACTB 信号比 PIK3CG 高几百倍，不能直接换算成绝对摩尔浓度比；若需绝对定量，必须额外加入已知浓度的重同位素标准肽段建立校准曲线。</span></div></div></main><footer><span>03 p12；05英文 p37–41；07 p2；11 p6、p16、p23（表格数值为教学示意，结合肺癌耐药靶点演示读表方法，非实测数据）</span><b>23 / 28</b></footer></section>
 
 <!--
 逐页演讲稿：
@@ -487,45 +487,45 @@ drawings:
 
 ---
 
-<section class="deck-page " data-slide="26"><header><div class="section-label">04 / 结果解读与肺癌耐药应用</div><h1>肺癌奥希替尼耐药机制与蛋白组切入点</h1><p>围绕重庆大学何勇教授团队在非小细胞肺癌（NSCLC）奥希替尼耐药方向的研究，解析蛋白质组学的检测维度</p></header><main><div class="sample-branches"><div><b>方向一：EGFR 依赖性耐药（靶点自身三级突变）</b><span>核心问题：长期使用第三代 EGFR-TKI 奥希替尼后，EGFR 激酶域发生 cis-C797S 等三级突变（如 19del/L858R + T790M + cis-C797S 三重突变），药物共价结合受阻。</span><p>何勇团队临床转化证据：Wang 等（J Thorac Oncol 2020）证实布加替尼（Brigatinib）联合西妥昔单抗（Cetuximab）治疗三重突变肺腺癌患者，客观缓解率（ORR）达 60%、疾病控制率（DCR）达 100%。</p></div><div><b>方向二：EGFR 非依赖性耐药（旁路、自噬与干性）</b><span>核心问题：无 EGFR 新发突变，肿瘤通过激活替代存活通路（PI3K/Akt、MET 等）、诱发保护性自噬、增强肿瘤干性或抑制凋亡蛋白来逃避杀伤。</span><p>timsTOF 蛋白质组学优势：许多非依赖性耐药并无高频 DNA 突变，而是表现为通路蛋白丰度重塑、自噬与干性标志物上调及激酶磷酸化改变，正是深度蛋白质组与磷酸化组的核心检测对象。</p></div></div><div class="two-lines"><div><b>何勇团队机制研究一：保护性自噬上调 SOX2 / ALDH1A1 维持耐药干性（Li et al., Cancer Lett 2019）</b><span>研究发现奥希替尼处理会诱发 NSCLC 细胞保护性自噬（LC3B-II 与 Beclin-1 升高、p62 降解），进而上调干性标志蛋白 SOX2 与 ALDH1A1 以降低药物杀伤；联合自噬抑制剂氯喹（CQ）或敲降 Beclin-1 可显著下调 SOX2/ALDH1A1 并恢复奥希替尼敏感性。</span></div><div><b>何勇团队机制研究二：抑制 Akt / FoxO3a 通路上调促凋亡蛋白 Bim 逆转耐药（Han et al., Mol Oncol 2020）</b><span>在奥希替尼耐药肺癌细胞株（H1975-OR、HCC827-OR）及裸鼠移植瘤中，阿司匹林联合奥希替尼可抑制 Akt 与 FoxO3a 磷酸化，解除对促凋亡蛋白 Bim 的转录抑制，诱导 Bim 依赖性细胞凋亡并延长患者中位无进展生存期（PFS）。</span></div></div></main><footer><span>Wang et al. J Thorac Oncol 15:1369–1375 (2020)；Li et al. Cancer Lett 454:85–95 (2019)；Han et al. Mol Oncol 14:1156–1169 (2020)</span><b>26 / 28</b></footer></section>
+<section class="deck-page " data-slide="26"><header><div class="section-label">04 / 结果解读与肺癌耐药应用</div><h1>肺癌奥希替尼耐药机制与蛋白组切入点</h1><p>围绕非小细胞肺癌（NSCLC）奥希替尼耐药机制与逆转策略相关研究，解析蛋白质组学的检测维度</p></header><main><div class="sample-branches"><div><b>方向一：EGFR 依赖性耐药（靶点自身三级突变）</b><span>核心问题：长期使用第三代 EGFR-TKI 奥希替尼后，EGFR 激酶域发生 cis-C797S 等三级突变（如 19del/L858R + T790M + cis-C797S 三重突变），药物共价结合受阻。</span><p>临床转化研究证据：既往研究（J Thorac Oncol 2020）证实布加替尼（Brigatinib）联合西妥昔单抗（Cetuximab）治疗三重突变肺腺癌患者，客观缓解率（ORR）达 60%、疾病控制率（DCR）达 100%。</p></div><div><b>方向二：EGFR 非依赖性耐药（旁路、自噬与干性）</b><span>核心问题：无 EGFR 新发突变，肿瘤通过激活替代存活通路（PI3K/Akt、MET 等）、诱发保护性自噬、增强肿瘤干性或抑制凋亡蛋白来逃避杀伤。</span><p>timsTOF 蛋白质组学优势：许多非依赖性耐药并无高频 DNA 突变，而是表现为通路蛋白丰度重塑、自噬与干性标志物上调及激酶磷酸化改变，正是深度蛋白质组与磷酸化组的核心检测对象。</p></div></div><div class="two-lines"><div><b>代表性机制研究一：保护性自噬上调 SOX2 / ALDH1A1 维持耐药干性（Cancer Lett 2019）</b><span>研究发现奥希替尼处理会诱发 NSCLC 细胞保护性自噬（LC3B-II 与 Beclin-1 升高、p62 降解），进而上调干性标志蛋白 SOX2 与 ALDH1A1 以降低药物杀伤；联合自噬抑制剂氯喹（CQ）或敲降 Beclin-1 可显著下调 SOX2/ALDH1A1 并恢复奥希替尼敏感性。</span></div><div><b>代表性机制研究二：抑制 Akt / FoxO3a 通路上调促凋亡蛋白 Bim 逆转耐药（Mol Oncol 2020）</b><span>在奥希替尼耐药肺癌细胞株（H1975-OR、HCC827-OR）及裸鼠移植瘤中，阿司匹林联合奥希替尼可抑制 Akt 与 FoxO3a 磷酸化，解除对促凋亡蛋白 Bim 的转录抑制，诱导 Bim 依赖性细胞凋亡并延长患者中位无进展生存期（PFS）。</span></div></div></main><footer><span>J Thorac Oncol 15:1369–1375 (2020)；Cancer Lett 454:85–95 (2019)；Mol Oncol 14:1156–1169 (2020)</span><b>26 / 28</b></footer></section>
 
 <!--
 逐页演讲稿：
-弄懂了通用的读表和验证逻辑，第26页和第27页我们围绕重庆大学医学院博导何勇教授团队在非小细胞肺癌（NSCLC）奥希替尼耐药方向的代表性研究，看看蛋白质组学怎样切入靶向药耐药课题。
+弄懂了通用的读表和验证逻辑，第26页和第27页我们围绕非小细胞肺癌（NSCLC）奥希替尼耐药方向的代表性研究，看看蛋白质组学怎样切入靶向药耐药课题。
 
-第三代EGFR-TKI奥希替尼是EGFR突变晚期NSCLC的一线标准用药，但常在一年左右出现获得性耐药。如页面上方所示，临床上耐药分为两大方向：左边第一类是“EGFR依赖性耐药”，即EGFR靶点发生19del/L858R合并T790M及顺式C797S（cis-C797S）三重突变，使奥希替尼无法共价结合。何勇教授团队在2020年发表于《Journal of Thoracic Oncology》（JTO）的研究中，证实布加替尼（Brigatinib）联合西妥昔单抗（Cetuximab）双重阻断方案在三重突变肺腺癌患者中取得60%的客观缓解率（ORR）和100%的疾病控制率（DCR）。
+第三代EGFR-TKI奥希替尼是EGFR突变晚期NSCLC的一线标准用药，但常在一年左右出现获得性耐药。如页面上方所示，临床上耐药分为两大方向：左边第一类是“EGFR依赖性耐药”，即EGFR靶点发生19del/L858R合并T790M及顺式C797S（cis-C797S）三重突变，使奥希替尼无法共价结合。发表于《Journal of Thoracic Oncology》（JTO 2020）的临床研究证实，布加替尼（Brigatinib）联合西妥昔单抗（Cetuximab）双重阻断方案在三重突变肺腺癌患者中取得60%的客观缓解率（ORR）和100%的疾病控制率（DCR）。
 
 右边第二类是无EGFR新发突变的“EGFR非依赖性耐药”，包括旁路激酶激活、保护性自噬、肿瘤干性增强与凋亡受抑。这类耐药常表现为通路蛋白丰度重塑与激酶磷酸化改变，正是timsTOF深度蛋白质组与磷酸化组的核心检测对象。
 
-页面下方总结了何勇教授团队在非依赖性耐药上的两项机制成果：一是2019年《Cancer Letters》研究发现，奥希替尼诱导保护性自噬（LC3B-II与Beclin-1升高、p62降解），进而上调干性标志物SOX2和ALDH1A1维持耐药；联合氯喹（CQ）或敲降Beclin-1可显著下调SOX2/ALDH1A1并恢复敏感性。二是2020年《Molecular Oncology》研究发现，在耐药细胞株（H1975-OR、HCC827-OR）及移植瘤中，阿司匹林联合奥希替尼能抑制Akt/FoxO3a磷酸化，解除对促凋亡蛋白Bim的压制，诱导细胞凋亡并延长患者中位无进展生存期（PFS）。
+页面下方总结了非依赖性耐药方向的两项机制成果：一是2019年《Cancer Letters》研究发现，奥希替尼诱导保护性自噬（LC3B-II与Beclin-1升高、p62降解），进而上调干性标志物SOX2和ALDH1A1维持耐药；联合氯喹（CQ）或敲降Beclin-1可显著下调SOX2/ALDH1A1并恢复敏感性。二是2020年《Molecular Oncology》研究发现，在耐药细胞株（H1975-OR、HCC827-OR）及移植瘤中，阿司匹林联合奥希替尼能抑制Akt/FoxO3a磷酸化，解除对促凋亡蛋白Bim的压制，诱导细胞凋亡并延长患者中位无进展生存期（PFS）。
 
-原讲者备注：把前面学的整套蛋白质组学流程放到何勇教授团队长期深耕的非小细胞肺癌（NSCLC）奥希替尼耐药研究里，临床上奥希替尼耐药主要分成两大阵营：第一类是EGFR基因自己又突变了，最典型的是cis-C797S三重突变，何勇老师团队2020年在JTO上发表研究，用布加替尼联合西妥昔单抗取得了60%的客观缓解率和100%的疾病控制率；第二类则是基因测序常常找不到EGFR新突变的“非依赖性耐药”，比如旁路信号激活、保护性自噬和干性增强。何勇老师团队在Cancer Letters和Molecular Oncology上的两项研究分别揭示了“自噬通过SOX2和ALDH1A1维持干性耐药”以及“阿司匹林通过抑制Akt/FoxO3a磷酸化重新上调促凋亡蛋白Bim逆转耐药”，这些蛋白丰度与磷酸化水平的动态变化正是timsTOF质谱最擅长批量捕捉的对象。
-大纲检查点：梳理何勇教授团队在EGFR cis-C797S靶向联合及保护性自噬调控SOX2/ALDH1A1干性的研究脉络
+原讲者备注：把前面学的整套蛋白质组学流程放到非小细胞肺癌（NSCLC）奥希替尼耐药研究里，临床上奥希替尼耐药主要分成两大阵营：第一类是EGFR基因自己又突变了，最典型的是cis-C797S三重突变，发表于JTO的临床研究证实布加替尼联合西妥昔单抗取得了60%的客观缓解率和100%的疾病控制率；第二类则是基因测序常常找不到EGFR新突变的“非依赖性耐药”，比如旁路信号激活、保护性自噬和干性增强。发表在Cancer Letters和Molecular Oncology上的两项研究分别揭示了“自噬通过SOX2和ALDH1A1维持干性耐药”以及“阿司匹林通过抑制Akt/FoxO3a磷酸化重新上调促凋亡蛋白Bim逆转耐药”，这些蛋白丰度与磷酸化水平的动态变化正是timsTOF质谱最擅长批量捕捉的对象。
+大纲检查点：梳理EGFR cis-C797S靶向联合及保护性自噬调控SOX2/ALDH1A1干性的研究脉络
 培训来源索引：research/source-index.json；页码均为PDF物理页。
 -->
 
 ---
 
-<section class="deck-page " data-slide="27"><header><div class="section-label">04 / 结果解读与肺癌耐药应用</div><h1>奥希替尼旁路耐药与联合逆转文献案例</h1><p>何勇教授团队（Mol Oncol 2020 & iScience 2023）：解析 PIK3CG / Akt / Bim 旁路耐药轴与阿司匹林逆转策略</p></header><main><div class="split case-split"><figure class=""><img src="/figures/full/he-osimertinib-case.png" alt="何勇教授团队NSCLC奥希替尼耐药三大分子机制与逆转靶点图"/><figcaption>何勇教授团队 NSCLC 奥希替尼耐药三大分子机制、联合逆转方案及 timsTOF 蛋白组学检测靶点映射</figcaption></figure><div><ul class="explain"><li><b>研究问题与临床痛点（Han, ..., He et al., iScience 2023）</b><span>部分 NSCLC 患者在奥希替尼耐药后未检出 C797S 等常见靶点突变，而是出现 PIK3CG 或 PIK3CA 等罕见旁路改变，临床缺乏安全有效的逆转方案。</span></li><li><b>核心分子机制：PI3Kγ / PI3Kα 上调激活 Akt 并抑制 Bim 凋亡</b><span>耐药肿瘤中 PIK3CG / PIK3CA 改变导致 PI3Kγ / PI3Kα 蛋白表达显著升高，绕开被阻断的 EGFR 持续激活下游 p-Akt 与 p-FoxO3a，压制促凋亡蛋白 Bim 表达。</span></li><li><b>体内外逆转验证：阿司匹林增敏奥希替尼（CDX 与 PDX 模型）</b><span>团队在细胞系移植瘤（CDX）与患者来源移植瘤（PDX）动物模型中证实：联合阿司匹林可下调 PI3Kγ/PI3Kα 及 p-Akt 水平、恢复 Bim 表达，成功逆转奥希替尼耐药。</span></li><li><b>与 timsTOF 4D 蛋白质组学的课题衔接设计</b><span>利用 dia-PASEF 全面比较敏感与耐药细胞/PDX 组织的全蛋白组与磷酸化组（同步覆盖 PI3K/Akt、自噬 LC3B/p62、干性 SOX2/ALDH1A1 及凋亡蛋白），再用 prm-PASEF 在临床活检与配对血液样本中靶向验证耐药标志物。</span></li></ul></div></div></main><footer><span>Han, ..., He et al. iScience 26(7):107105 (2023) doi:10.1016/j.isci.2023.107105；Mol Oncol 14:1156–1169 (2020) doi:10.1002/1878-0261.12682</span><b>27 / 28</b></footer></section>
+<section class="deck-page " data-slide="27"><header><div class="section-label">04 / 结果解读与肺癌耐药应用</div><h1>奥希替尼旁路耐药与联合逆转文献案例</h1><p>肺癌奥希替尼耐药研究案例（Mol Oncol 2020 & iScience 2023）：解析 PIK3CG / Akt / Bim 旁路耐药轴与阿司匹林逆转策略</p></header><main><div class="split case-split"><figure class=""><img src="/figures/full/he-osimertinib-case.png" alt="NSCLC奥希替尼耐药三大分子机制与逆转靶点图"/><figcaption>NSCLC 奥希替尼耐药三大分子机制、联合逆转方案及 timsTOF 蛋白组学检测靶点映射</figcaption></figure><div><ul class="explain"><li><b>研究问题与临床痛点（iScience 2023）</b><span>部分 NSCLC 患者在奥希替尼耐药后未检出 C797S 等常见靶点突变，而是出现 PIK3CG 或 PIK3CA 等罕见旁路改变，临床缺乏安全有效的逆转方案。</span></li><li><b>核心分子机制：PI3Kγ / PI3Kα 上调激活 Akt 并抑制 Bim 凋亡</b><span>耐药肿瘤中 PIK3CG / PIK3CA 改变导致 PI3Kγ / PI3Kα 蛋白表达显著升高，绕开被阻断的 EGFR 持续激活下游 p-Akt 与 p-FoxO3a，压制促凋亡蛋白 Bim 表达。</span></li><li><b>体内外逆转验证：阿司匹林增敏奥希替尼（CDX 与 PDX 模型）</b><span>研究在细胞系移植瘤（CDX）与患者来源移植瘤（PDX）动物模型中证实：联合阿司匹林可下调 PI3Kγ/PI3Kα 及 p-Akt 水平、恢复 Bim 表达，成功逆转奥希替尼耐药。</span></li><li><b>与 timsTOF 4D 蛋白质组学的课题衔接设计</b><span>利用 dia-PASEF 全面比较敏感与耐药细胞/PDX 组织的全蛋白组与磷酸化组（同步覆盖 PI3K/Akt、自噬 LC3B/p62、干性 SOX2/ALDH1A1 及凋亡蛋白），再用 prm-PASEF 在临床活检与配对血液样本中靶向验证耐药标志物。</span></li></ul></div></div></main><footer><span>iScience 26(7):107105 (2023) doi:10.1016/j.isci.2023.107105；Mol Oncol 14:1156–1169 (2020) doi:10.1002/1878-0261.12682</span><b>27 / 28</b></footer></section>
 
 <!--
 逐页演讲稿：
-第27页我们进一步结合何勇教授团队2023年发表在《iScience》上的研究（Han, ..., He et al., iScience 2023），把团队揭示的三大奥希替尼耐药分子轴与timsTOF蛋白质组学的实验设计完整串起来。
+第27页我们进一步结合发表在《iScience》（2023）与《Molecular Oncology》（2020）上的耐药机制研究，把三大奥希替尼耐药分子轴与timsTOF蛋白质组学的实验设计完整串起来。
 
-先看这项研究解决的临床痛点：一部分非小细胞肺癌患者在奥希替尼耐药后再次活检做NGS测序，既没有C797S突变，也没有常见的MET扩增，而是检出了PIK3CG或PIK3CA等罕见突变。在蛋白质功能层面上，团队发现在这些耐药细胞和肿瘤组织中，PIK3CG或PIK3CA改变直接导致PI3Kγ和PI3Kα蛋白表达水平大幅上升；升高的PI3K绕开已经被奥希替尼锁死的EGFR，直接在下游把Akt磷酸化激活（p-Akt升高），进而维持肿瘤生长并压制促凋亡蛋白Bim，导致奥希替尼失效。
+先看这项研究解决的临床痛点：一部分非小细胞肺癌患者在奥希替尼耐药后再次活检做NGS测序，既没有C797S突变，也没有常见的MET扩增，而是检出了PIK3CG或PIK3CA等罕见突变。在蛋白质功能层面上，研究发现在这些耐药细胞和肿瘤组织中，PIK3CG或PIK3CA改变直接导致PI3Kγ和PI3Kα蛋白表达水平大幅上升；升高的PI3K绕开已经被奥希替尼锁死的EGFR，直接在下游把Akt磷酸化激活（p-Akt升高），进而维持肿瘤生长并压制促凋亡蛋白Bim，导致奥希替尼失效。
 
-找到这条“PIK3CG/PIK3CA→PI3Kγ/α→p-Akt→Bim受抑”的旁路耐药轴后，怎么逆转它呢？何勇教授团队利用细胞系移植瘤（CDX）和患者来源移植瘤（PDX）动物模型证实：将阿司匹林与奥希替尼联用，可以在蛋白水平上显著压低PI3Kγ和PI3Kα表达、阻断Akt活化并重新拉高促凋亡蛋白Bim，在体内外成功恢复了肿瘤对奥希替尼的敏感性。
+找到这条“PIK3CG/PIK3CA→PI3Kγ/α→p-Akt→Bim受抑”的旁路耐药轴后，怎么逆转它呢？研究利用细胞系移植瘤（CDX）和患者来源移植瘤（PDX）动物模型证实：将阿司匹林与奥希替尼联用，可以在蛋白水平上显著压低PI3Kγ和PI3Kα表达、阻断Akt活化并重新拉高促凋亡蛋白Bim，在体内外成功恢复了肿瘤对奥希替尼的敏感性。
 
 看左边的机制汇总图：无论是第一列的EGFR三重突变下游信号、第二列的PI3K/Akt/Bim旁路抗凋亡轴，还是第三列的Beclin-1/LC3B自噬与SOX2/ALDH1A1干性轴，最终真正执行耐药功能的全都是蛋白质丰度变化和磷酸化修饰变化。因此，把今天学的timsTOF技术用到这一方向非常清晰：第一步，对奥希替尼敏感株与耐药株（或PDX模型、临床活检组织）开展dia-PASEF全蛋白组与磷酸化组全景扫描，一次性摸清PI3K/Akt、自噬流蛋白（LC3B、Beclin-1、p62）、干性标志（SOX2、ALDH1A1）及凋亡蛋白（Bim）的全局变化；第二步，对筛选出的关键耐药标志物建立prm-PASEF靶向定量方法，在临床队列组织或外周血样本中做高通量精准验证，为个体化联合逆转耐药提供直接的蛋白质组学证据。
 
-原讲者备注：第27页我们具体拆解何勇教授团队2023年发表在iScience以及2020年发表在Molecular Oncology上的代表性研究，看看怎么把质谱蛋白组学和肺癌奥希替尼耐药课题紧密结合起来。研究针对的是临床上一个棘手问题：病人在奥希替尼耐药后做基因测序，发现引发耐药的是PIK3CG或PIK3CA改变。在蛋白质层面上，这会导致PI3Kγ和PI3Kα亚基表达大量上升，绕开EGFR直接把下游的Akt和FoxO3a磷酸化激活，进而把负责杀死肿瘤细胞的促凋亡蛋白Bim死死按住。何勇老师团队通过耐药细胞株、CDX模型和临床患者来源的PDX小鼠模型证明，老药阿司匹林能够有效压制PI3Kγ/PI3Kα和p-Akt，把Bim重新拉高，从而逆转奥希替尼耐药。左图把团队在JTO、Cancer Letters、Molecular Oncology和iScience上的三大耐药轴汇总在了一起：未来我们用timsTOF做课题时，就可以先用dia-PASEF一次性全景扫描这几条通路上的全蛋白和磷酸化位点变化，再用prm-PASEF对关键耐药标志物做精准靶向验证。
+原讲者备注：第27页我们具体拆解发表在iScience以及Molecular Oncology上的肺癌耐药研究案例，看看怎么把质谱蛋白组学和肺癌奥希替尼耐药课题紧密结合起来。研究针对的是临床上一个棘手问题：病人在奥希替尼耐药后做基因测序，发现引发耐药的是PIK3CG或PIK3CA改变。在蛋白质层面上，这会导致PI3Kγ和PI3Kα亚基表达大量上升，绕开EGFR直接把下游的Akt和FoxO3a磷酸化激活，进而把负责杀死肿瘤细胞的促凋亡蛋白Bim死死按住。研究通过耐药细胞株、CDX模型和临床患者来源的PDX小鼠模型证明，老药阿司匹林能够有效压制PI3Kγ/PI3Kα和p-Akt，把Bim重新拉高，从而逆转奥希替尼耐药。左图把JTO、Cancer Letters、Molecular Oncology和iScience上的三大耐药轴汇总在了一起：未来我们用timsTOF做课题时，就可以先用dia-PASEF一次性全景扫描这几条通路上的全蛋白和磷酸化位点变化，再用prm-PASEF对关键耐药标志物做精准靶向验证。
 大纲检查点：详解PIK3CG/PIK3CA激活PI3Kγ/Akt抑制Bim凋亡的机制，说明CDX/PDX模型验证及与timsTOF结合的思路
 培训来源索引：research/source-index.json；页码均为PDF物理页。
 -->
 
 ---
 
-<section class="deck-page " data-slide="28"><header><div class="section-label">总结与回顾</div><h1>实验全流程与证据链总结</h1><p>串联从肺癌细胞/组织样品采集、前处理酶解、液相质谱采集到耐药机制解析与验证的六个关键环节</p></header><main><div class="closing-grid"><div class="closing-card"><em>01</em><div><b>从原始样品到蛋白提取液</b><span>亲本敏感株、奥希替尼耐药株或 PDX/活检组织统一编号速冻；按样本屏障超声/匀浆裂解，离心澄清后用 BCA 测浓度并按等量蛋白投料。</span></div></div><div class="closing-card"><em>02</em><div><b>从蛋白提取液到纯净肽段液</b><span>尿素变性展开蛋白，DTT 还原剪断二硫键，IAA 烷基化封闭巯基；稀释后用胰蛋白酶在 K/R 位点切成短肽，再酸化过 C18 柱除盐并复溶澄清。</span></div></div><div class="closing-card"><em>03</em><div><b>从肽段溶液到气相带电离子</b><span>上机前核对澄清度与序列孔位，先跑 Blank 与 QC；反相液相色谱按疏水性分批洗脱记录保留时间（RT），电喷雾（ESI）使肽段脱溶剂带上正电。</span></div></div><div class="closing-card"><em>04</em><div><b>从气相离子到原始谱图（.d）</b><span>双 TIMS 按离子空间形状分离测淌度（1/K₀），PASEF 驱动四极杆按出场时序快速挑母离子进碰撞池打碎，TOF 测飞行时间换算质荷比（m/z）。</span></div></div><div class="closing-card"><em>05</em><div><b>从原始谱图到蛋白质定量表</b><span>软件比对人类 FASTA 库识别特异肽段与蛋白组（控制 FDR ＜ 1%），提取色谱峰面积生成支持敏感组与耐药组横向比较的相对定量表。</span></div></div><div class="closing-card"><em>06</em><div><b>从蛋白定量表到肺癌奥希替尼耐药研究</b><span>结合变化倍数与统计检验筛出耐药差异蛋白并做通路归类；围绕 PI3K/Akt/Bim、保护性自噬与干性通路，结合 CDX/PDX 模型与 PRM 靶向复测落实课题。</span></div></div></div><div class="band">课题启动前需与实验室逐一确认：目标样本类型（敏感/耐药细胞株、CDX/PDX 组织或临床活检）、磷酸化富集需求、本机配置与质控基线</div></main><footer><span>培训资料 01–11 全流程汇总；肺癌奥希替尼耐药研究应用参考何勇教授团队文献（2019–2023）</span><b>28 / 28</b></footer></section>
+<section class="deck-page " data-slide="28"><header><div class="section-label">总结与回顾</div><h1>实验全流程与证据链总结</h1><p>串联从肺癌细胞/组织样品采集、前处理酶解、液相质谱采集到耐药机制解析与验证的六个关键环节</p></header><main><div class="closing-grid"><div class="closing-card"><em>01</em><div><b>从原始样品到蛋白提取液</b><span>亲本敏感株、奥希替尼耐药株或 PDX/活检组织统一编号速冻；按样本屏障超声/匀浆裂解，离心澄清后用 BCA 测浓度并按等量蛋白投料。</span></div></div><div class="closing-card"><em>02</em><div><b>从蛋白提取液到纯净肽段液</b><span>尿素变性展开蛋白，DTT 还原剪断二硫键，IAA 烷基化封闭巯基；稀释后用胰蛋白酶在 K/R 位点切成短肽，再酸化过 C18 柱除盐并复溶澄清。</span></div></div><div class="closing-card"><em>03</em><div><b>从肽段溶液到气相带电离子</b><span>上机前核对澄清度与序列孔位，先跑 Blank 与 QC；反相液相色谱按疏水性分批洗脱记录保留时间（RT），电喷雾（ESI）使肽段脱溶剂带上正电。</span></div></div><div class="closing-card"><em>04</em><div><b>从气相离子到原始谱图（.d）</b><span>双 TIMS 按离子空间形状分离测淌度（1/K₀），PASEF 驱动四极杆按出场时序快速挑母离子进碰撞池打碎，TOF 测飞行时间换算质荷比（m/z）。</span></div></div><div class="closing-card"><em>05</em><div><b>从原始谱图到蛋白质定量表</b><span>软件比对人类 FASTA 库识别特异肽段与蛋白组（控制 FDR ＜ 1%），提取色谱峰面积生成支持敏感组与耐药组横向比较的相对定量表。</span></div></div><div class="closing-card"><em>06</em><div><b>从蛋白定量表到肺癌奥希替尼耐药研究</b><span>结合变化倍数与统计检验筛出耐药差异蛋白并做通路归类；围绕 PI3K/Akt/Bim、保护性自噬与干性通路，结合 CDX/PDX 模型与 PRM 靶向复测落实课题。</span></div></div></div><div class="band">课题启动前需与实验室逐一确认：目标样本类型（敏感/耐药细胞株、CDX/PDX 组织或临床活检）、磷酸化富集需求、本机配置与质控基线</div></main><footer><span>培训资料 01–11 全流程汇总；肺癌奥希替尼耐药研究应用参考文献（2019–2023）</span><b>28 / 28</b></footer></section>
 
 <!--
 逐页演讲稿：
@@ -533,7 +533,7 @@ drawings:
 
 前三个步骤完成了“从样品到气相离子”的转化：第一步，采集敏感株、耐药株或PDX/活检肿瘤样本后贴码速冻、避免反复冻融，按样本屏障用超声或低温匀浆配合尿素裂解液提取蛋白，离心澄清后测BCA浓度，算出等量蛋白投料体积；第二步，用尿素把蛋白展开，用DTT剪断二硫键，用IAA封住巯基，稀释尿素后加胰蛋白酶在K和R位点把蛋白切成短肽段，再加酸过C18柱除掉盐和尿素，旋干复溶成无颗粒的澄清肽段液；第三步，五项检查放行后放进样品盘，先跑Blank和QC，进样针吸样进入反相液相色谱柱，按疏水性强弱分批洗脱并记录保留时间RT，流出的液体经高压电喷雾（ESI）吹干溶剂，变成带2到3个正电荷的气相肽段离子。
 
-后三个步骤完成了“从气相离子到肺癌耐药机制结论”的转化：第四步，离子进入timsTOF质谱仪，双TIMS先按离子胖瘦形状排队分离测出淌度1/K0，PASEF技术让四极杆配合离子出场时间表在100毫秒内连续跳变挑出十几个母离子送进碰撞池打碎，TOF按飞行时间快慢测出母离子（MS1）和碎片（MS2）的质荷比m/z，存成.d原始文件；第五步，软件拿实测谱图比对人类FASTA数据库认出特异肽段与蛋白组（卡住1% FDR），提取色谱峰面积算出相对定量表，横向比较同一蛋白在耐药组与敏感组之间的高低；第六步，结合倍数变化和统计检验从火山图筛出耐药差异蛋白，围绕何勇教授团队揭示的PI3K/Akt/Bim旁路激活、保护性自噬及SOX2/ALDH1A1干性维持等核心机制做通路解析，并通过CDX/PDX模型与prm-PASEF靶向验证把课题扎实落地。
+后三个步骤完成了“从气相离子到肺癌耐药机制结论”的转化：第四步，离子进入timsTOF质谱仪，双TIMS先按离子胖瘦形状排队分离测出淌度1/K0，PASEF技术让四极杆配合离子出场时间表在100毫秒内连续跳变挑出十几个母离子送进碰撞池打碎，TOF按飞行时间快慢测出母离子（MS1）和碎片（MS2）的质荷比m/z，存成.d原始文件；第五步，软件拿实测谱图比对人类FASTA数据库认出特异肽段与蛋白组（卡住1% FDR），提取色谱峰面积算出相对定量表，横向比较同一蛋白在耐药组与敏感组之间的高低；第六步，结合倍数变化和统计检验从火山图筛出耐药差异蛋白，围绕PI3K/Akt/Bim旁路激活、保护性自噬及SOX2/ALDH1A1干性维持等核心耐药机制做通路解析，并通过CDX/PDX模型与prm-PASEF靶向验证把课题扎实落地。
 
 以上就是我今天汇报的全部内容，恳请老师和同学们批评指正，谢谢大家！
 
