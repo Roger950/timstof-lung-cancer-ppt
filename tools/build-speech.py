@@ -9,7 +9,7 @@ import json, re, shutil
 root = Path(__file__).resolve().parents[1]
 slides = json.loads((root/'research/full-web-content.json').read_text(encoding='utf-8-sig'))
 speech = json.loads((root/'research/speech-full.json').read_text(encoding='utf-8-sig'))
-assert len(slides) == len(speech) == 28
+assert len(slides) == len(speech) == 26
 
 shutil.copyfile(root/'research/speech-full.json', root/'research/speech-revised.json')
 shutil.copyfile(root/'research/speech-full.json', root/'research/speech-intro.json')
@@ -42,8 +42,8 @@ for i, (slide, paragraphs) in enumerate(zip(slides,speech)):
     if i:
         doc.add_page_break()
     else:
-        doc.add_paragraph('timsTOF培训组会演讲稿（肺癌奥希替尼耐药版）','Title')
-        p=doc.add_paragraph('每页对应一张PPT（共28页），按“概念总览→前处理→进样与仪器→结果解读与肺癌奥希替尼耐药课题衔接”顺序逐页排练。')
+        doc.add_paragraph('timsTOF 蛋白质组学实验学习汇报讲稿（26页通用流程版）','Title')
+        p=doc.add_paragraph('每页对应一张PPT（共26页），按“概念总览→前处理→进样与仪器→结果解读与验证设计”顺序逐页梳理。')
         p.paragraph_format.space_after=Pt(18)
         for run in p.runs:
             run.font.size=Pt(10.5)
@@ -59,12 +59,12 @@ p.alignment=WD_ALIGN_PARAGRAPH.CENTER
 r=p.add_run('第 ');r.font.size=Pt(10)
 field=OxmlElement('w:fldSimple');field.set(qn('w:instr'),'PAGE');p._p.append(field)
 p.add_run(' 页').font.size=Pt(10)
-doc.core_properties.title='timsTOF培训组会演讲稿（肺癌奥希替尼耐药版）'
-doc.core_properties.subject='按28页肺癌奥希替尼耐药版汇报逐页对应的口语演讲稿'
+doc.core_properties.title='timsTOF 蛋白质组学实验学习汇报讲稿（26页通用流程版）'
+doc.core_properties.subject='按26页通用流程版学习汇报逐页对应的口语讲稿'
 doc.core_properties.author=''
-out=root/'output/timsTOF组会演讲稿-肺癌耐药版.docx'
+out=root/'output/timsTOF学习演讲稿-通用流程版.docx'
 doc.save(out)
 count=sum(len(re.findall(r'[\u4e00-\u9fff]',p)) for ps in speech for p in ps)
 report={'slides':len(slides),'sections':len(speech),'chinese_characters':count,'paragraphs':sum(map(len,speech)),'output':str(out)}
-(root/'.build/speech-lung-check.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+(root/'.build/speech-general-check.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
 print('DOCX generated; Chinese characters:',count)

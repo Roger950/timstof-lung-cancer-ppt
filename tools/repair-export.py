@@ -7,10 +7,10 @@ from io import BytesIO
 import posixpath
 
 root=Path(__file__).resolve().parents[1]
-src=root/'.build/timstof-lung-editable.pptx'
-out=root/'.build/timstof-lung-repaired.pptx'
+src=root/'.build/timstof-general-editable.pptx'
+out=root/'.build/timstof-general-repaired.pptx'
 speech=json.loads((root/'research/speech-full.json').read_text(encoding='utf-8-sig'))
-assert len(speech) == 28
+assert len(speech) == 26
 ns={'p':'http://schemas.openxmlformats.org/presentationml/2006/main','a':'http://schemas.openxmlformats.org/drawingml/2006/main'}
 with ZipFile(src) as zi:
     parts={n:zi.read(n) for n in zi.namelist()}
@@ -23,7 +23,7 @@ with ZipFile(src) as zi:
     assert all(re.fullmatch(r'ppt/slideMasters/slideMaster\d+\.xml',p) for p in removed)
     parts['[Content_Types].xml']=E.tostring(ct,encoding='UTF-8',xml_declaration=True,standalone=True)
     image_fixes=[]
-    for i in range(1,29):
+    for i in range(1,27):
         slide_name=f'ppt/slides/slide{i}.xml'
         slide=E.fromstring(parts[slide_name])
         counter_number=0
@@ -63,5 +63,5 @@ with ZipFile(src) as zi:
         parts[name]=E.tostring(note,encoding='UTF-8',xml_declaration=True,standalone=True)
     with ZipFile(out,'w',ZIP_DEFLATED) as zo:
         for n,data in parts.items():zo.writestr(n,data)
-(root/'.build/export-intro-repair.json').write_text(json.dumps({'removed_unused_master_content_types':removed,'speech_notes_slides':28,'contained_original_image_slides':image_fixes},indent=2),encoding='utf-8')
-print('Removed unused declarations:',len(removed),'Added speech to 28 notes pages')
+(root/'.build/export-general-repair.json').write_text(json.dumps({'removed_unused_master_content_types':removed,'speech_notes_slides':26,'contained_original_image_slides':image_fixes},indent=2),encoding='utf-8')
+print('Removed unused declarations:',len(removed),'Added speech to 26 notes pages')

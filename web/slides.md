@@ -1,7 +1,7 @@
 ---
 theme: default
-title: timsTOF 蛋白质组学实验入门汇报（肺癌奥希替尼耐药版）
-info: 28页肺癌奥希替尼耐药版｜蛋白质前处理、样品上机、质谱原理与肺癌奥希替尼耐药研究应用
+title: timsTOF 蛋白质组学实验全流程学习汇报
+info: 26页通用流程版｜蛋白质前处理、样品上机、质谱原理与结果解读全流程
 canvasWidth: 1280
 aspectRatio: 16/9
 routerMode: hash
@@ -14,34 +14,34 @@ drawings:
   enabled: false
 ---
 
-<section class="deck-page cover-page" data-slide="1"><header><div class="section-label">培训学习汇报</div><h1>timsTOF 蛋白质组学实验</h1><p>蛋白质样品前处理、液相质谱上机检测、结果表解读与非小细胞肺癌奥希替尼耐药研究应用</p></header><main><div class="cover"><div class="cover-name">timsTOF</div><div class="cover-rule"></div><p>一份生物样品如何变成可解释的蛋白质结果表</p><div class="cover-topics"><div class="cover-topic"><b>01 蛋白质前处理</b><span>样品采集、裂解提取、定量、酶解与除盐</span></div><div class="cover-topic"><b>02 样品上机与电离</b><span>进样序列、液相色谱分离与电喷雾电离</span></div><div class="cover-topic"><b>03 质谱分离与碎裂</b><span>TIMS 淌度分离、四极杆、碰撞池、TOF 与 PASEF</span></div><div class="cover-topic"><b>04 结果解读与应用</b><span>鉴定定量表读法、差异筛选与肺癌奥希替尼耐药案例</span></div></div><small>面向零基础听众的入门汇报，以尿素溶液酶解为前处理教学主线，以非小细胞肺癌奥希替尼耐药研究为应用示例</small></div></main><footer><span>培训资料 01–11；应用文献见第26–27页（Cancer Lett 2019 / JTO 2020 / Mol Oncol 2020 / iScience 2023）</span><b>01 / 28</b></footer></section>
+<section class="deck-page cover-page" data-slide="1"><header><div class="section-label">培训学习汇报</div><h1>timsTOF 蛋白质组学实验</h1><p>蛋白质样品前处理、液相质谱上机检测、仪器分离碎裂原理与结果表解读全流程</p></header><main><div class="cover"><div class="cover-name">timsTOF</div><div class="cover-rule"></div><p>一份生物样品如何变成可解释的蛋白质结果表</p><div class="cover-topics"><div class="cover-topic"><b>01 蛋白质前处理</b><span>样品采集、裂解提取、定量、酶解与除盐</span></div><div class="cover-topic"><b>02 样品上机与电离</b><span>进样序列、液相色谱分离与电喷雾电离</span></div><div class="cover-topic"><b>03 质谱分离与碎裂</b><span>TIMS 淌度分离、四极杆、碰撞池、TOF 与 PASEF</span></div><div class="cover-topic"><b>04 结果解读与验证</b><span>鉴定定量表读法、差异蛋白筛选与靶向验证</span></div></div><small>面向零基础听众的学习汇报，以尿素溶液酶解为前处理教学主线，系统梳理从生物样品到蛋白质定量表的完整实验逻辑</small></div></main><footer><span>培训资料 01–11 全流程梳理</span><b>01 / 26</b></footer></section>
 
 <!--
 逐页演讲稿：
-老师、同学们好。今天我汇报的内容是timsTOF蛋白质组学实验的完整流程，面向还没有接触过质谱和蛋白质研究的同学，把从拿到一份生物样品到读懂最终蛋白质结果表的全过程梳理清楚。
+老师、同学们好。今天我汇报的内容是timsTOF蛋白质组学实验的完整学习流程，面向还没有接触过质谱和蛋白质研究的同学，把从拿到一份生物样品到读懂最终蛋白质结果表的全过程梳理清楚。
 
-整个汇报按照实验真实的先后顺序分成四块：第一块先讲基础概念和实验全景图；第二块讲实验台上的样品前处理，也就是怎么把肺癌细胞或肿瘤组织里的蛋白质提取出来并切成干净的肽段溶液；第三块讲样品放进液相色谱和timsTOF质谱仪以后，仪器内部是怎样一步步测出信号的；第四块讲拿到软件生成的蛋白质表格后怎么读表，以及怎样用到非小细胞肺癌（NSCLC）奥希替尼耐药机制研究中。
+整个汇报按照实验真实的先后顺序分成四块：第一块先讲基础概念和实验全景图；第二块讲实验台上的样品前处理，也就是怎么把细胞或组织里的蛋白质提取出来并切成干净的肽段溶液；第三块讲样品放进液相色谱和timsTOF质谱仪以后，仪器内部是怎样一步步测出信号的；第四块讲拿到软件生成的蛋白质表格后怎么读表、怎么筛出差异蛋白并设计后续验证实验。
 
-汇报中前处理部分以最常用的尿素溶液酶解作为教学主线，应用部分以发表在Cancer Letters、Molecular Oncology、JTO和iScience上的非小细胞肺癌奥希替尼耐药代表性研究作为具体例子。我的讲述预计在三十五到四十分钟左右。
+汇报中前处理部分以最常用的尿素溶液酶解作为教学主线，结果部分以通用的对照组与处理组比较作为教学示例。我的讲述预计在三十到三十五分钟左右。
 
-原讲者备注：本汇报面向无质谱与蛋白研究基础的听众，按实验真实先后顺序展开：先在实验台把样本里的蛋白质变成干净的肽段溶液，再把样品放上仪器完成液相分离与质谱测量，最后解读软件输出的蛋白表格并用于非小细胞肺癌（NSCLC）奥希替尼耐药机制与逆转策略研究。预计讲述35至40分钟。
-大纲检查点：说明面向零基础听众的讲述顺序，以非小细胞肺癌奥希替尼耐药研究为应用示例
+原讲者备注：本汇报面向无质谱与蛋白研究基础的听众，按实验真实先后顺序展开：先在实验台把样本里的蛋白质变成干净的肽段溶液，再把样品放上仪器完成液相分离与质谱测量，最后解读软件输出的蛋白表格并用于组间差异分析与候选验证。预计讲述30至35分钟。
+大纲检查点：说明面向零基础听众的讲述顺序，以尿素溶液酶解与通用组间比较为教学主线
 培训来源索引：research/source-index.json；页码均为PDF物理页。
 -->
 
 ---
 
-<section class="deck-page " data-slide="2"><header><div class="section-label">01 / 基础概念与总流程</div><h1>蛋白质、肽段与蛋白质组学</h1><p>实验先将完整蛋白质剪成短小的肽段再上机测量，最后由软件拼回蛋白质名单</p></header><main><div class="flow-bar"><div class="flow-step"><em>基础单元</em><b>氨基酸（Amino Acid）</b><span>组成蛋白质的基本结构单元</span></div><div class="flow-step"><em>上机测量对象</em><b>肽段（Peptide）</b><span>约 7 至 30 个氨基酸连成的短链，为质谱直接测量对象</span></div><div class="flow-step"><em>生物学解释对象</em><b>蛋白质（Protein）</b><span>成百上千个氨基酸折叠而成，在细胞与肿瘤组织中执行功能</span></div></div><div class="grid-2x2"><div class="grid-item"><b>蛋白质组学研究什么问题</b><span>基因组表示细胞拥有哪些基因蓝图，蛋白质组学直接批量测量样本中实际表达了哪些蛋白质、各蛋白在耐药组与敏感组之间相对升高还是降低。</span></div><div class="grid-item"><b>为什么完整蛋白质难以直接检测</b><span>完整蛋白质分子量大、长短和疏水性差异极宽，在液相色谱柱中难以分开，进入质谱后也很难打碎成规律可读的片段。</span></div><div class="grid-item"><b>自下而上（Bottom-up）检测策略</b><span>前处理阶段用蛋白酶在固定氨基酸位点把完整蛋白质剪成短肽段，质谱仪实测肽段的重量与碎片，再由软件比对数据库推导出原蛋白质。</span></div><div class="grid-item"><b>肽段相比完整蛋白的三个优势</b><span>短肽段在反相液相色谱中更容易按疏水性分开，在电喷雾中容易带上稳定正电荷，碰撞后能产生规律的氨基酸序列碎片。</span></div></div></main><footer><span>10 p2、p5–8（Bottom-up 原理与酶解成肽段的原因）</span><b>02 / 28</b></footer></section>
+<section class="deck-page " data-slide="2"><header><div class="section-label">01 / 基础概念与总流程</div><h1>蛋白质、肽段与蛋白质组学</h1><p>实验先将完整蛋白质剪成短小的肽段再上机测量，最后由软件拼回蛋白质名单</p></header><main><div class="flow-bar"><div class="flow-step"><em>基础单元</em><b>氨基酸（Amino Acid）</b><span>组成蛋白质的基本结构单元</span></div><div class="flow-step"><em>上机测量对象</em><b>肽段（Peptide）</b><span>约 7 至 30 个氨基酸连成的短链，为质谱直接测量对象</span></div><div class="flow-step"><em>生物学解释对象</em><b>蛋白质（Protein）</b><span>成百上千个氨基酸折叠而成，在细胞与组织中执行生物学功能</span></div></div><div class="grid-2x2"><div class="grid-item"><b>蛋白质组学研究什么问题</b><span>基因组表示细胞拥有哪些基因蓝图，蛋白质组学直接批量测量样本中实际表达了哪些蛋白质、各蛋白在处理组/疾病组与对照组之间相对升高还是降低。</span></div><div class="grid-item"><b>为什么完整蛋白质难以直接检测</b><span>完整蛋白质分子量大、长短和疏水性差异极宽，在液相色谱柱中难以分开，进入质谱后也很难打碎成规律可读的片段。</span></div><div class="grid-item"><b>自下而上（Bottom-up）检测策略</b><span>前处理阶段用蛋白酶在固定氨基酸位点把完整蛋白质剪成短肽段，质谱仪实测肽段的重量与碎片，再由软件比对数据库推导出原蛋白质。</span></div><div class="grid-item"><b>肽段相比完整蛋白的三个优势</b><span>短肽段在反相液相色谱中更容易按疏水性分开，在电喷雾中容易带上稳定正电荷，碰撞后能产生规律的氨基酸序列碎片。</span></div></div></main><footer><span>10 p2、p5–8（Bottom-up 原理与酶解成肽段的原因）</span><b>02 / 26</b></footer></section>
 
 <!--
 逐页演讲稿：
-进入实验步骤之前，我们先理清三个最基本的名词：氨基酸、肽段和蛋白质。氨基酸是组成蛋白质的最小积木；十几个到二三十个氨基酸连成的一小段短链叫做肽段；而成百上千个氨基酸长链折叠成特定空间结构、在细胞或肿瘤组织里执行具体功能的分子，就是蛋白质。
+进入实验步骤之前，我们先理清三个最基本的名词：氨基酸、肽段和蛋白质。氨基酸是组成蛋白质的最小积木；十几个到二三十个氨基酸连成的一小段短链叫做肽段；而成百上千个氨基酸长链折叠成特定空间结构、在细胞或组织里执行具体功能的分子，就是蛋白质。
 
 很多同学第一次接触质谱都会问：既然我们要研究蛋白质，为什么不把完整蛋白质直接打进质谱仪，反而要先用蛋白酶把它剪成短肽段？这是因为天然完整蛋白质的个头差别太大，有的只有几千道尔顿，有的高达几十万道尔顿，而且有的亲水、有的疏水，直接进液相色谱很难分开，进质谱后也很难打碎成规律的片段。
 
 把完整蛋白质在固定位置剪成长度相近的短肽段后，它们在色谱柱里更容易按顺序分离，在电喷雾里更容易带上稳定的正电荷，打碎后也能拼出氨基酸序列。仪器先测清每一条肽段，软件再根据肽段序列反推出原来的蛋白质，这种策略就叫做自下而上（Bottom-up）蛋白质组学。
 
-落实到肿瘤耐药研究里，蛋白质组学最核心的任务就是同时测量样本里成千上万种蛋白质的相对含量，比较奥希替尼敏感株和耐药株、或者加药前后哪些信号通路蛋白发生了显著变化，从而找到克服耐药的分子靶点。
+落实到生物医学研究里，蛋白质组学最核心的任务就是同时测量样本里成千上万种蛋白质的相对含量，比较处理组（或疾病组）与对照组之间哪些蛋白发生了显著变化，从而找到生物学功能的分子线索。
 
 原讲者备注：首次接触质谱时最常问的问题是：既然研究蛋白质，为什么要先用酶把蛋白质切碎？原因是完整蛋白质像大大小小、软硬不一的毛线团，直接进仪器既分不开也打不碎；剪成长度相近的短肽段后，液相色谱和质谱都能稳定测量。这种先切肽段再拼回蛋白的方法称为自下而上（Bottom-up）蛋白质组学。
 大纲检查点：解释Bottom-up自下而上策略，说明肽段比完整蛋白更易分离、电离与碎裂
@@ -50,7 +50,7 @@ drawings:
 
 ---
 
-<section class="deck-page " data-slide="3"><header><div class="section-label">01 / 基础概念与总流程</div><h1>蛋白质组学实验全流程</h1><p>实验台前处理把样品变成肽段液，液相质谱把肽段变成谱图，软件把谱图汇总成蛋白表</p></header><main><figure class="flow-original"><img src="/figures/prep-flow.png" alt="10 p9七阶段通用前处理流程"/><figcaption>前处理七步主线（10 p9原图）：本汇报以尿素溶液酶解为教学主线，清理、换液与定量的具体位置随方法调整</figcaption></figure><div class="stages"><div><em>阶段 01 样品提取</em><b>蛋白提取液</b><span>输入原始生物样本，经裂解破障与离心澄清释放可溶蛋白，测定浓度后按等量蛋白投料。</span></div><div><em>阶段 02 酶解清理</em><b>纯净肽段上机液</b><span>输入等量蛋白液，经变性、还原、烷基化与胰蛋白酶切割生成肽段，再经C18除盐去除尿素和无机盐。</span></div><div><em>阶段 03 上机采集</em><b>原始色谱与质谱信号</b><span>输入澄清肽段液，液相色谱按时间分批洗脱，电喷雾产生气相离子，经TIMS与TOF采集谱图（.d文件）。</span></div><div><em>阶段 04 结果读表</em><b>蛋白质鉴定与定量表</b><span>输入原始谱图，软件比对物种数据库识别肽段并组装蛋白组，提取色谱峰面积用于组间比较。</span></div></div><div class="band">前处理决定哪些蛋白能够进入仪器，质谱采集决定信号质量，数据库检索决定最终可读的蛋白表</div></main><footer><span>图：10 p9；全流程衔接：10 p4、p9、p32；01 p10–12；07 p2；11 p4–5</span><b>03 / 28</b></footer></section>
+<section class="deck-page " data-slide="3"><header><div class="section-label">01 / 基础概念与总流程</div><h1>蛋白质组学实验全流程</h1><p>实验台前处理把样品变成肽段液，液相质谱把肽段变成谱图，软件把谱图汇总成蛋白表</p></header><main><figure class="flow-original"><img src="/figures/prep-flow.png" alt="10 p9七阶段通用前处理流程"/><figcaption>前处理七步主线（10 p9原图）：本汇报以尿素溶液酶解为教学主线，清理、换液与定量的具体位置随方法调整</figcaption></figure><div class="stages"><div><em>阶段 01 样品提取</em><b>蛋白提取液</b><span>输入原始生物样本，经裂解破障与离心澄清释放可溶蛋白，测定浓度后按等量蛋白投料。</span></div><div><em>阶段 02 酶解清理</em><b>纯净肽段上机液</b><span>输入等量蛋白液，经变性、还原、烷基化与胰蛋白酶切割生成肽段，再经C18除盐去除尿素和无机盐。</span></div><div><em>阶段 03 上机采集</em><b>原始色谱与质谱信号</b><span>输入澄清肽段液，液相色谱按时间分批洗脱，电喷雾产生气相离子，经TIMS与TOF采集谱图（.d文件）。</span></div><div><em>阶段 04 结果读表</em><b>蛋白质鉴定与定量表</b><span>输入原始谱图，软件比对物种数据库识别肽段并组装蛋白组，提取色谱峰面积用于组间比较。</span></div></div><div class="band">前处理决定哪些蛋白能够进入仪器，质谱采集决定信号质量，数据库检索决定最终可读的蛋白表</div></main><footer><span>图：10 p9；全流程衔接：10 p4、p9、p32；01 p10–12；07 p2；11 p4–5</span><b>03 / 26</b></footer></section>
 
 <!--
 逐页演讲稿：
@@ -62,71 +62,71 @@ drawings:
 
 第四阶段由检索软件完成：把原始谱图与目标物种的参考数据库比对，认出肽段并汇总成蛋白质相对定量表。前面样品准备得越规范，后面仪器测到的信号和读出的表格才越可靠。
 
-原讲者备注：第3页先把28页汇报的地图铺开。第4到第10页讲实验台上的七步前处理，核心是把复杂样本变成无盐无颗粒的肽段水溶液；第11到第20页讲样品放进仪器后怎样被分离、带电、打碎并记录成信号；第21到第27页讲怎样读懂最终的蛋白表格并结合非小细胞肺癌奥希替尼耐药研究来用。
+原讲者备注：第3页先把26页汇报的地图铺开。第4到第10页讲实验台上的七步前处理，核心是把复杂样本变成无盐无颗粒的肽段水溶液；第11到第20页讲样品放进仪器后怎样被分离、带电、打碎并记录成信号；第21到第26页讲怎样读懂最终的蛋白表格、筛选差异蛋白并完成验证设计。
 大纲检查点：交代尿素溶液酶解教学主线，明确前处理、仪器与软件各自的输入和输出
 培训来源索引：research/source-index.json；页码均为PDF物理页。
 -->
 
 ---
 
-<section class="deck-page " data-slide="4"><header><div class="section-label">02 / 蛋白质前处理</div><h1>样品采集、分样与保存</h1><p>输入原始生物样品，通过快速冷存、单次分装与穿插批次防止蛋白降解和人为误差</p></header><main><div class="flow-bar"><div class="flow-step"><em>步骤 01</em><b>样品采集</b><span>记录采样方式与时间</span></div><div class="flow-step"><em>步骤 02</em><b>贴码与核对</b><span>唯一编号绑定实验与临床信息</span></div><div class="flow-step"><em>步骤 03</em><b>混匀与分装</b><span>按单次用量分装小管</span></div><div class="flow-step"><em>步骤 04</em><b>低温冻存</b><span>减少室温停留与反复冻融</span></div><div class="flow-step"><em>步骤 05</em><b>穿插批次提取</b><span>敏感组与耐药组同批处理</span></div></div><div class="grid-2x2"><div class="grid-item"><b>输入与风险：离体样本仍在发生降解与去磷酸化</b><span>细胞或肿瘤组织离开培养/生理环境后，内源蛋白酶与磷酸酶仍会继续作用。取样到低温液氮速冻的间隔如果不一致，会直接改变可检出的蛋白及修饰组成。</span></div><div class="grid-item"><b>动作一：唯一编号与关键信息记录</b><span>每管样本建立唯一编号，记录样本类型（如肺癌亲本敏感株/奥希替尼耐药株、CDX/PDX 移植瘤或穿刺活检组织）、采样时间、起始细胞量或组织湿重及靶向用药周期。</span></div><div class="grid-item"><b>动作二：混匀后一次分装，避免反复冻融</b><span>反复冻融会使冰晶破坏蛋白结构并造成不溶沉淀。多组学（如 NGS 测序、Western Blot 与蛋白质组）共用同一份样本时，需按单次实验用量提前分装冻存。</span></div><div class="grid-item"><b>输出与批次设计：组间穿插的冻存样品</b><span>输出状态明确、编号可追溯的冻存样品管。后续提取时将奥希替尼敏感株（Parental）与耐药株（Resistant）穿插在同一批次操作，避免把日期波动误判为耐药差异。</span></div></div></main><footer><span>10 p9–10、p18–20、p27、p30</span><b>04 / 28</b></footer></section>
+<section class="deck-page " data-slide="4"><header><div class="section-label">02 / 蛋白质前处理</div><h1>样品采集、分样与保存</h1><p>输入原始生物样品，通过快速冷存、单次分装与穿插批次防止蛋白降解和人为误差</p></header><main><div class="flow-bar"><div class="flow-step"><em>步骤 01</em><b>样品采集</b><span>记录采样方式与时间</span></div><div class="flow-step"><em>步骤 02</em><b>贴码与核对</b><span>唯一编号绑定实验与分组信息</span></div><div class="flow-step"><em>步骤 03</em><b>混匀与分装</b><span>按单次用量分装小管</span></div><div class="flow-step"><em>步骤 04</em><b>低温冻存</b><span>减少室温停留与反复冻融</span></div><div class="flow-step"><em>步骤 05</em><b>穿插批次提取</b><span>对照组与处理组同批处理</span></div></div><div class="grid-2x2"><div class="grid-item"><b>输入与风险：离体样本仍在发生降解与修饰改变</b><span>细胞、组织或体液离开生理环境后，内源蛋白酶仍会继续作用。取样到低温速冻的间隔如果不一致，会直接改变可检出的蛋白组成。</span></div><div class="grid-item"><b>动作一：唯一编号与关键信息记录</b><span>每管样本建立唯一编号，记录样本类型（如培养细胞、动物组织或临床样本）、采样时间、低温入库时间差、起始细胞量或湿重及实验分组条件。</span></div><div class="grid-item"><b>动作二：混匀后一次分装，避免反复冻融</b><span>反复冻融会使冰晶破坏蛋白空间结构并造成不溶沉淀。多组学或多轮实验共用同一份样本时，需按单次实验用量提前分装冻存。</span></div><div class="grid-item"><b>输出与批次设计：组间穿插的冻存样品</b><span>输出状态明确、编号可追溯的冻存样品管。后续提取时将对照组（Control）与处理组（Treatment）样本穿插在同一批次操作，避免把日期波动混入组间比较。</span></div></div></main><footer><span>10 p9–10、p18–20、p27、p30</span><b>04 / 26</b></footer></section>
 
 <!--
 逐页演讲稿：
-下面我们进入实验台前处理的第一步：样品采集、分样与保存。这一步输入的是刚从临床穿刺活检、动物移植瘤（CDX/PDX）或细胞培养皿中获得的原始生物样本，核心任务是让样本在离体后尽快固定状态，避免蛋白质和磷酸化修饰在等待处理的过程中发生降解。
+下面我们进入实验台前处理的第一步：样品采集、分样与保存。这一步输入的是刚从细胞培养、动物实验或临床采样中获得的原始生物样本，核心任务是让样本在离体后尽快固定状态，避免蛋白质在等待处理的过程中发生降解。
 
-样本离开原有的生理环境后，细胞内外自带的蛋白酶和磷酸酶并不会立刻停工，放在室温下越久，被降解的蛋白和丢失的信号修饰就越多。所以拿到样本后要先贴好唯一识别编号，把采样方式、采集时间、液氮速冻或放进超低温冰箱的时间差、起始细胞数或组织湿重，以及患者靶向药治疗线数和给药方案全部登记清楚。
+样本离开原有的生理环境后，细胞内外自带的蛋白酶并不会立刻停工，放在室温下越久，被降解的蛋白就越多。所以拿到样本后要先贴好唯一识别编号，把采样方式、采集时间、液氮速冻或放进超低温冰箱的时间差、起始细胞数或组织湿重，以及实验分组条件全部登记清楚。
 
-冻存之前要先混匀并按单次实验用量分装成小管。如果一管肿瘤组织裂解液或血浆反复拿出来化冻又冻回去，冰晶反复生长会破坏蛋白质结构，也会造成低丰度信号蛋白损失。对于需要同时做NGS基因测序、Western blot验证和质谱蛋白质组的穿刺或移植瘤样本，分装前更要先规划好各部分组织分配，保证不同检测对应同一病灶状态。
+冻存之前要先混匀并按单次实验用量分装成小管。如果一管组织裂解液或体液反复拿出来化冻又冻回去，冰晶反复生长会破坏蛋白质结构，也会造成低丰度蛋白沉淀损失。对于需要同时做多组学检测或Western blot验证的样本，分装前更要先规划好各部分用量，保证不同检测对应同一份起始样本状态。
 
-到了后续提取那天，还要注意批次平衡：把奥希替尼敏感亲本株（如H1975、HCC827）、耐药株（如H1975-OR、HCC827-OR）和联合用药组样本穿插在同一个批次里操作。如果第一天全做敏感株、第二天全做耐药株，一旦两天的室温或试剂有一点波动，就会把日期误差混进组间比较里。
+到了后续提取那天，还要注意批次平衡：把对照组（Control）和处理组（Treatment）样本穿插在同一个批次里操作。如果第一天全做对照组、第二天全做处理组，一旦两天的室温或试剂有一点波动，就会把日期误差混进组间比较里。
 
-原讲者备注：实验从拿到样品的那一刻就开始了。如果奥希替尼敏感株收样后立刻液氮速冻，而耐药株样本在桌上放了两个小时才冻存，后续测出蛋白差异就分不清是耐药机制造成的还是降解造成的。因此贴码登记、单次分装和同批次穿插提取是后续一切定量比较的前提。
-大纲检查点：说明处理延迟与冻融对蛋白组成及修饰的影响，敏感株与耐药株同批穿插处理
+原讲者备注：实验从拿到样品的那一刻就开始了。如果对照组收样后立刻低温速冻，而处理组样本在桌上放了两个小时才冻存，后续测出蛋白差异就分不清是实验处理造成的还是降解造成的。因此贴码登记、单次分装和同批次穿插提取是后续一切定量比较的前提。
+大纲检查点：说明处理延迟与冻融对蛋白组成的影响，对照组与处理组样本同批穿插处理
 培训来源索引：research/source-index.json；页码均为PDF物理页。
 -->
 
 ---
 
-<section class="deck-page " data-slide="5"><header><div class="section-label">02 / 蛋白质前处理</div><h1>细胞裂解与蛋白提取</h1><p>输入冻存生物样品，用机械破碎配合化学裂解液打破物理屏障，把蛋白质释放到溶液中</p></header><main><figure class="lysis-original"><img src="/figures/full/lysis.png" alt="10 p14不同样本屏障与机械处理强度原图"/><figcaption>样本屏障与机械处理方式（10 p14原图）：物理屏障越坚韧，所需的机械破碎强度越高</figcaption></figure><div class="stages"><div><em>输入对象</em><b>输入：带屏障的原始样本</b><span>贴壁培养的肺癌细胞（如 H1975、HCC827 亲本株与奥希替尼耐药株）仅有磷脂细胞膜；小鼠 CDX/PDX 移植瘤或临床活检组织则含致密细胞外基质与结缔组织。</span></div><div><em>操作与原因</em><b>动作：机械破碎配合化学助溶</b><span>超声、研磨或液氮粉碎负责从物理上打破屏障；高浓度尿素等化学裂解液负责把释放出来的胞内蛋白与跨膜受体（如 EGFR、MET）溶解在液体里，并抑制内源蛋白酶。</span></div><div><em>输出与质控</em><b>输出：离心澄清的蛋白提取液</b><span>低温高速离心去除细胞残渣（记录相对离心力g值、温度与时间），取澄清上清进入下一步。若溶液拉丝黏稠，提示释放出的基因组 DNA 未充分超声剪切。</span></div></div><div class="band">破碎不足会遗漏难溶的跨膜受体或核内转录因子，过度超声升温则会引起液体起泡与蛋白修饰变化</div></main><footer><span>图：10 p14；内容：10 p10–11、p14、p17、p19–20、p30</span><b>05 / 28</b></footer></section>
+<section class="deck-page " data-slide="5"><header><div class="section-label">02 / 蛋白质前处理</div><h1>细胞裂解与蛋白提取</h1><p>输入冻存生物样品，用机械破碎配合化学裂解液打破物理屏障，把蛋白质释放到溶液中</p></header><main><figure class="lysis-original"><img src="/figures/full/lysis.png" alt="10 p14不同样本屏障与机械处理强度原图"/><figcaption>样本屏障与机械处理方式（10 p14原图）：物理屏障越坚韧，所需的机械破碎强度越高</figcaption></figure><div class="stages"><div><em>输入对象</em><b>输入：带屏障的原始样本</b><span>普通培养细胞仅有磷脂细胞膜；动物软组织含细胞外基质与结缔组织；微生物或植物样本则带有坚韧的细胞壁，所需破碎强度依次递增。</span></div><div><em>操作与原因</em><b>动作：机械破碎配合化学助溶</b><span>超声、匀浆或研磨负责从物理上打破屏障；高浓度尿素等化学裂解液配合蛋白酶抑制剂负责把释放出来的蛋白质稳定溶解在液体里，并抑制内源蛋白酶降解。</span></div><div><em>输出与质控</em><b>输出：离心澄清的蛋白提取液</b><span>低温高速离心去除不溶残渣（记录相对离心力g值、温度与时间），取澄清上清进入下一步。若溶液拉丝黏稠，提示释放出的基因组 DNA 未充分超声剪切。</span></div></div><div class="band">破碎不足会遗漏难溶蛋白或特定细胞组分，过度超声升温则会引起液体起泡与蛋白修饰变化</div></main><footer><span>图：10 p14；内容：10 p10–11、p14、p17、p19–20、p30</span><b>05 / 26</b></footer></section>
 
 <!--
 逐页演讲稿：
-样品从冰箱取出后，第二步是细胞裂解与蛋白提取。这一步输入的是冻存贴壁肺癌细胞或肿瘤组织样本，动作是利用机械破碎配合化学裂解液打破样本的物理屏障，输出的是离心澄清后的可溶蛋白提取液。
+样品从冰箱取出后，第二步是细胞裂解与蛋白提取。这一步输入的是冻存细胞或组织样本，动作是利用机械破碎配合化学裂解液打破样本的物理屏障，输出的是离心澄清后的可溶蛋白提取液。
 
-不同样本外面的物理屏障硬度完全不同，所需的破碎力度也不一样。贴壁培养的肺癌细胞（如PC-9、H1975）只有一层薄薄的磷脂细胞膜，冰上刮取后加裂解液吹打并配合短时间非接触超声就能破开；而小鼠皮下移植瘤（CDX/PDX）或临床穿刺组织含有致密的细胞外基质和结缔组织，需要先做液氮冷冻研磨或低温匀浆，才能把肿瘤细胞充分破开。
+不同样本外面的物理屏障硬度完全不同，所需的破碎力度也不一样。普通培养细胞只有一层薄薄的磷脂细胞膜，冰上刮取后加裂解液吹打并配合短时间超声就能破开；动物软组织含有细胞外基质和结缔组织，需要低温匀浆或冷冻研磨；而微生物或植物样本外面包裹着坚韧的细胞壁，则需要更高强度的机械破碎才能充分破开。
 
-机械超声或研磨负责把墙推倒，化学裂解液（比如8M高浓度尿素溶液配合蛋白酶及磷酸酶抑制剂）则负责把放出来的蛋白质稳稳溶解在水里。操作时要控制超声时间和温度，避免过度发热产生大量泡沫；如果裂解后发现液体像胶水一样拉丝黏稠，通常是细胞核里的基因组DNA释放出来没被打断，需要进一步超声剪切或加核酸酶处理，否则移液器根本吸不准体积。
+机械超声或研磨负责把墙推倒，化学裂解液（比如8M高浓度尿素溶液配合蛋白酶抑制剂）则负责把放出来的蛋白质稳稳溶解在水里。操作时要控制超声时间和温度，避免过度发热产生大量泡沫；如果裂解后发现液体像胶水一样拉丝黏稠，通常是细胞核里的基因组DNA释放出来没被打断，需要进一步超声剪切或加核酸酶处理，否则移液器根本吸不准体积。
 
 裂解结束后通过低温高速离心把不溶残渣沉到管底，记录相对离心力g值、温度和时间，吸取澄清上清液进入下一步定量。评价提取好不好，要把溶液黏度、蛋白总回收量和重复性放在一起看。
 
-原讲者备注：裂解提取的目标是把关在肺癌细胞或肿瘤组织里的蛋白质完整放出来。需要注意两个关键点：第一，裂解贴壁肿瘤细胞时释放的大量核DNA会让溶液像胶水一样拉丝，导致移液器吸取体积不准，需通过冰浴超声剪切降低黏度；第二，小鼠PDX移植瘤等实体组织比培养细胞多了坚韧的细胞外基质，需先低温研磨匀浆再配合裂解液提取。
-大纲检查点：区分贴壁肺癌细胞膜、CDX/PDX移植瘤与穿刺组织屏障，高黏度提示核酸释放，记录离心g值
+原讲者备注：裂解提取的目标是把关在细胞或组织里的蛋白质完整放出来。需要注意两个关键点：第一，裂解细胞时释放的大量核DNA会让溶液像胶水一样拉丝，导致移液器吸取体积不准，需通过冰浴超声剪切或加核酸酶降低黏度；第二，不同样本外面的物理屏障硬度不同，要按样本类型匹配合适的破碎力度。
+大纲检查点：区分培养细胞膜、动物软组织与坚韧样本屏障，高黏度提示核酸释放，记录离心g值
 培训来源索引：research/source-index.json；页码均为PDF物理页。
 -->
 
 ---
 
-<section class="deck-page " data-slide="6"><header><div class="section-label">02 / 蛋白质前处理</div><h1>蛋白定量与等量投入</h1><p>输入澄清蛋白提取液，测定蛋白浓度并换算吸取体积，保证每份样本进入酶解的起始蛋白量相同</p></header><main><div class="quant-bar">基本换算关系：提取蛋白总量（μg）＝ 蛋白浓度（μg/μL）× 提取体积（μL），吸取体积（μL）＝ 计划投入量（μg）÷ 蛋白浓度（μg/μL）</div><table class="matrix compact"><thead><tr><th>样本（教学示例）</th><th>测得蛋白浓度</th><th>提取液总体积</th><th>提取蛋白总量</th><th>计划投入 50 μg 需吸取体积</th><th>用裂解缓冲液补齐至 50 μL</th></tr></thead><tbody><tr><th>样本 A（较浓）</th><td>2.5 μg/μL</td><td>100 μL</td><td>250 μg</td><td>50 ÷ 2.5 ＝ 20 μL</td><td>加入 30 μL 缓冲液（终体积 50 μL）</td></tr><tr><th>样本 B（较稀）</th><td>1.0 μg/μL</td><td>100 μL</td><td>100 μg</td><td>50 ÷ 1.0 ＝ 50 μL</td><td>加入 0 μL 缓冲液（终体积 50 μL）</td></tr></tbody></table><div class="two-lines"><div><b>为什么要做缓冲液空白与梯度稀释核对</b><span>常用 BCA 比色法容易受到高浓度还原剂、去垢剂或深色样本的干扰。测定时必须用同配方裂解液做空白对照，并检查复孔与稀释后换算浓度是否一致。</span></div><div><b>耐药细胞与肿瘤组织样本的投入量解释边界</b><span>按总蛋白等量投入（如统一取 50 μg）能消除裂解效率差异，但临床活检或移植瘤组织中肿瘤细胞与基质/免疫细胞比例不同，仍需同步记录起始细胞数与组织病理占比。</span></div></div></main><footer><span>10 p17、p21、p30、p32（定量质控与记录要求；表中数值为教学计算示例，非实测数据）</span><b>06 / 28</b></footer></section>
+<section class="deck-page " data-slide="6"><header><div class="section-label">02 / 蛋白质前处理</div><h1>蛋白定量与等量投入</h1><p>输入澄清蛋白提取液，测定蛋白浓度并换算吸取体积，保证每份样本进入酶解的起始蛋白量相同</p></header><main><div class="quant-bar">基本换算关系：提取蛋白总量（μg）＝ 蛋白浓度（μg/μL）× 提取体积（μL），吸取体积（μL）＝ 计划投入量（μg）÷ 蛋白浓度（μg/μL）</div><table class="matrix compact"><thead><tr><th>样本（教学示例）</th><th>测得蛋白浓度</th><th>提取液总体积</th><th>提取蛋白总量</th><th>计划投入 50 μg 需吸取体积</th><th>用裂解缓冲液补齐至 50 μL</th></tr></thead><tbody><tr><th>样本 A（较浓）</th><td>2.5 μg/μL</td><td>100 μL</td><td>250 μg</td><td>50 ÷ 2.5 ＝ 20 μL</td><td>加入 30 μL 缓冲液（终体积 50 μL）</td></tr><tr><th>样本 B（较稀）</th><td>1.0 μg/μL</td><td>100 μL</td><td>100 μg</td><td>50 ÷ 1.0 ＝ 50 μL</td><td>加入 0 μL 缓冲液（终体积 50 μL）</td></tr></tbody></table><div class="two-lines"><div><b>为什么要做缓冲液空白与梯度稀释核对</b><span>常用 BCA 比色法容易受到高浓度还原剂、去垢剂或深色样本的干扰。测定时必须用同配方裂解液做空白对照，并检查复孔与稀释后换算浓度是否一致。</span></div><div><b>等量蛋白投入与原始样本记录要求</b><span>按总蛋白等量投入（如统一取 50 μg）能消除样本含水量与裂解效率差异，但复合组织或体液样本中不同细胞组分占比可能不同，仍需同步保留原始样本重量或体积记录。</span></div></div></main><footer><span>10 p17、p21、p30、p32（定量质控与记录要求；表中数值为教学计算示例，非实测数据）</span><b>06 / 26</b></footer></section>
 
 <!--
 逐页演讲稿：
-拿到澄清的蛋白提取液后，第三步做蛋白定量与等量投入计算。这一步的原因非常直接：不同细胞皿汇合度或肿瘤组织块大小不同、提取效率也有差别，如果不测浓度就每管盲目吸取同样体积去酶解，后面测出的蛋白高低就全是加样量差异。
+拿到澄清的蛋白提取液后，第三步做蛋白定量与等量投入计算。这一步的原因非常直接：不同样本天生含水量不同、提取效率也有差别，如果不测浓度就每管盲目吸取同样体积去酶解，后面测出的蛋白高低就全是加样量差异。
 
 我们看页面中间的教学计算示例表：假设用BCA方法测出样本A的蛋白浓度是2.5微克每微升，样本B比较稀，只有1.0微克每微升。两边提取液总体积都是100微升，乘一下就知道样本A一共提出来250微克蛋白，样本B提出来100微克蛋白。
 
 现在我们规定每份样本统一投入50微克蛋白进入后续酶解反应：样本A浓度是2.5，用50除以2.5，只需要吸取20微升提取液，再补加30微升裂解缓冲液，凑成50微升反应体系；样本B浓度是1.0，就直接吸取50微升提取液。这样两管样品不仅蛋白质量都是50微克，连反应总体积和缓冲液浓度也完全对齐了。
 
-测BCA定量时要注意，高浓度还原剂或去垢剂会干扰显色读数，所以必须用同配方的裂解缓冲液做空白对照，并做复孔和稀释核对。另外对于小鼠移植瘤（CDX/PDX）样本，就算总蛋白都投了50微克，里面人源肿瘤蛋白和小鼠基质蛋白各自占多少比例仍然可能不同，所以原始组织重量和坏死区剔除记录一定要保留。
+测BCA定量时要注意，高浓度还原剂或去垢剂会干扰显色读数，所以必须用同配方的裂解缓冲液做空白对照，并做复孔和稀释核对。另外对于复合组织或体液样本，就算总蛋白都投了50微克，不同细胞组分的比例仍可能存在差异，所以原始样本的体积或重量记录一定要保留。
 
-原讲者备注：如果不做蛋白定量、每管都盲目吸取20微升去酶解，那么原本细胞密度高、蛋白浓的样本信号就会全面偏高，无法判断是奥希替尼耐药导致某蛋白升高还是加样量多。通过表格里的教学示例可以看到：样本A浓度2.5微克每微升，吸20微升就有50微克蛋白；样本B浓度1.0微克每微升，吸50微升才有50微克蛋白，再把两管体积补齐到一致，后续反应条件就完全对齐了。
-大纲检查点：用教学示例说明浓度与取样体积换算，提醒临床肿瘤组织含肿瘤细胞与基质细胞比例差异
+原讲者备注：如果不做蛋白定量、每管都盲目吸取20微升去酶解，那么原本蛋白浓的样本信号就会全面偏高，无法判断是生物学处理导致某蛋白升高还是加样量多。通过表格里的教学示例可以看到：样本A浓度2.5微克每微升，吸20微升就有50微克蛋白；样本B浓度1.0微克每微升，吸50微升才有50微克蛋白，再把两管体积补齐到一致，后续反应条件就完全对齐了。
+大纲检查点：用教学示例说明浓度与取样体积换算，提醒复合组织样本需同步记录原始重量或体积
 培训来源索引：research/source-index.json；页码均为PDF物理页。
 -->
 
 ---
 
-<section class="deck-page " data-slide="7"><header><div class="section-label">02 / 蛋白质前处理</div><h1>变性、还原与烷基化</h1><p>输入等量蛋白质溶液，依次解开空间折叠、剪断二硫键并封闭巯基，让内部酶切位点充分暴露</p></header><main><figure class="chemistry-original"><img src="/figures/full/reduction.png" alt="10 p15变性还原烷基化及酶解步骤"/><figcaption>进入酶解前的化学处理流程（10 p15原图）：各步骤按先后顺序衔接，不能颠倒</figcaption></figure><div class="stages"><div><em>01 打开折叠</em><b>变性（Denaturation）</b><span>利用高浓度尿素破坏氢键与疏水相互作用，把紧密折叠成球状的蛋白质长链舒展开，暴露埋在内部的氨基酸。</span></div><div><em>02 剪断二硫键</em><b>还原（Reduction）</b><span>加入还原剂 DTT 或 TCEP，剪断把不同肽链段拉拢在一起的二硫键（S-S 键），使其变成两个游离的巯基（-SH）。</span></div><div><em>03 锁住游离巯基</em><b>烷基化（Alkylation）</b><span>加入烷基化试剂 IAA 或 CAA（避光反应），给游离巯基（-SH）加上化学保护基团，防止它们被氧化重新连回二硫键。</span></div><div><em>04 适配蛋白酶</em><b>稀释或换液</b><span>高浓度尿素也会使后续加入的胰蛋白酶失活；在加酶前必须用缓冲液稀释（如降至约 1 M）或超滤换液。</span></div></div><div class="band">输出：肽链充分舒展、二硫键已被永久封闭、且变性剂浓度已降至胰蛋白酶耐受范围的反应液</div></main><footer><span>图：10 p15；内容：10 p12、p15</span><b>07 / 28</b></footer></section>
+<section class="deck-page " data-slide="7"><header><div class="section-label">02 / 蛋白质前处理</div><h1>变性、还原与烷基化</h1><p>输入等量蛋白质溶液，依次解开空间折叠、剪断二硫键并封闭巯基，让内部酶切位点充分暴露</p></header><main><figure class="chemistry-original"><img src="/figures/full/reduction.png" alt="10 p15变性还原烷基化及酶解步骤"/><figcaption>进入酶解前的化学处理流程（10 p15原图）：各步骤按先后顺序衔接，不能颠倒</figcaption></figure><div class="stages"><div><em>01 打开折叠</em><b>变性（Denaturation）</b><span>利用高浓度尿素破坏氢键与疏水相互作用，把紧密折叠成球状的蛋白质长链舒展开，暴露埋在内部的氨基酸。</span></div><div><em>02 剪断二硫键</em><b>还原（Reduction）</b><span>加入还原剂 DTT 或 TCEP，剪断把不同肽链段拉拢在一起的二硫键（S-S 键），使其变成两个游离的巯基（-SH）。</span></div><div><em>03 锁住游离巯基</em><b>烷基化（Alkylation）</b><span>加入烷基化试剂 IAA 或 CAA（避光反应），给游离巯基（-SH）加上化学保护基团，防止它们被氧化重新连回二硫键。</span></div><div><em>04 适配蛋白酶</em><b>稀释或换液</b><span>高浓度尿素也会使后续加入的胰蛋白酶失活；在加酶前必须用缓冲液稀释（如降至约 1 M）或超滤换液。</span></div></div><div class="band">输出：肽链充分舒展、二硫键已被永久封闭、且变性剂浓度已降至胰蛋白酶耐受范围的反应液</div></main><footer><span>图：10 p15；内容：10 p12、p15</span><b>07 / 26</b></footer></section>
 
 <!--
 逐页演讲稿：
@@ -145,7 +145,7 @@ drawings:
 
 ---
 
-<section class="deck-page " data-slide="8"><header><div class="section-label">02 / 蛋白质前处理</div><h1>胰蛋白酶酶解</h1><p>输入舒展的蛋白质长链，利用胰蛋白酶在赖氨酸和精氨酸羧基端特异切割，生成规则短肽段</p></header><main><div class="split large-left"><figure class=""><img src="/figures/full/trypsin.png" alt="10 p7胰蛋白酶切割规则原图"/><figcaption>胰蛋白酶（Trypsin）切割示意（10 p7原图）：在 K 和 R 羧基端切割，后接脯氨酸 P 时通常难切</figcaption></figure><div><ul class="explain"><li><b>胰蛋白酶（Trypsin）的切割规则</b><span>专门识别赖氨酸（Lys, K）和精氨酸（Arg, R），在它们的羧基端切开肽键；若紧跟着脯氨酸（Pro, P）则因空间位阻通常难切。切割规则明确，便于软件检索。</span></li><li><b>酶解反应的环境要求</b><span>通常在弱碱性缓冲液（约 pH 8）、37℃ 条件下反应。切出的肽段末端带有碱性氨基酸（K 或 R），在后续正离子电喷雾中很容易带上正电荷。</span></li><li><b>质量指标：漏切（Missed Cleavage）</b><span>本该被切开的 K/R 位点如果未切开，称为漏切。后续搜库若发现漏切肽段比例异常升高，说明尿素残留过高、pH 不对或酶活不足。</span></li></ul></div></div><div class="band">本步小结：输入展开的蛋白质溶液，经胰蛋白酶在 K/R 位点特异切割，输出数万条序列规则的肽段混合物</div></main><footer><span>图：10 p7；内容：10 p6–7、p15、p17、p29</span><b>08 / 28</b></footer></section>
+<section class="deck-page " data-slide="8"><header><div class="section-label">02 / 蛋白质前处理</div><h1>胰蛋白酶酶解</h1><p>输入舒展的蛋白质长链，利用胰蛋白酶在赖氨酸和精氨酸羧基端特异切割，生成规则短肽段</p></header><main><div class="split large-left"><figure class=""><img src="/figures/full/trypsin.png" alt="10 p7胰蛋白酶切割规则原图"/><figcaption>胰蛋白酶（Trypsin）切割示意（10 p7原图）：在 K 和 R 羧基端切割，后接脯氨酸 P 时通常难切</figcaption></figure><div><ul class="explain"><li><b>胰蛋白酶（Trypsin）的切割规则</b><span>专门识别赖氨酸（Lys, K）和精氨酸（Arg, R），在它们的羧基端切开肽键；若紧跟着脯氨酸（Pro, P）则因空间位阻通常难切。切割规则明确，便于软件检索。</span></li><li><b>酶解反应的环境要求</b><span>通常在弱碱性缓冲液（约 pH 8）、37℃ 条件下反应。切出的肽段末端带有碱性氨基酸（K 或 R），在后续正离子电喷雾中很容易带上正电荷。</span></li><li><b>质量指标：漏切（Missed Cleavage）</b><span>本该被切开的 K/R 位点如果未切开，称为漏切。后续搜库若发现漏切肽段比例异常升高，说明尿素残留过高、pH 不对或酶活不足。</span></li></ul></div></div><div class="band">本步小结：输入展开的蛋白质溶液，经胰蛋白酶在 K/R 位点特异切割，输出数万条序列规则的肽段混合物</div></main><footer><span>图：10 p7；内容：10 p6–7、p15、p17、p29</span><b>08 / 26</b></footer></section>
 
 <!--
 逐页演讲稿：
@@ -164,7 +164,7 @@ drawings:
 
 ---
 
-<section class="deck-page " data-slide="9"><header><div class="section-label">02 / 蛋白质前处理</div><h1>酸化、除盐与复溶</h1><p>输入含有尿素和无机盐的酶解反应液，去除小分子干扰物并浓缩复溶，得到澄清的上机肽段液</p></header><main><div class="split large-left"><figure class=""><img src="/figures/full/cleanup.png" alt="10 p16酸化除盐浓缩复溶原图"/><figcaption>酶解后清理四步流程（10 p16原图）：去除缓冲盐与变性剂，同时尽量减少肽段损失</figcaption></figure><div><ul class="explain"><li><b>第一步：酸化（Acidification）</b><span>向酶解液中加入甲酸或三氟乙酸使 pH 降至 3 以下，一方面立刻终止胰蛋白酶活性，另一方面让肽段质子化，便于结合到反相除盐柱上。</span></li><li><b>第二步：C18 反相柱除盐（Desalting）</b><span>疏水的肽段吸附在 C18 填料上，亲水的无机盐和尿素随水相直接流走被洗掉；随后用含乙腈的有机溶液把纯净肽段洗脱收集下来。</span></li><li><b>第三步：低温真空浓缩与复溶</b><span>真空离心挥发掉洗脱液中的有机溶剂（避免长时间彻底干硬导致难溶），再用上机兼容的稀酸水溶液复溶，转入低吸附管高速离心取上清。</span></li></ul></div></div><div class="band">普通 C18 除盐柱用于去除无机盐和尿素；若前处理使用 SDC 或 SDS 等去垢剂，需先按对应路线去除去垢剂</div></main><footer><span>图：10 p16；内容：10 p12–13、p16、p26、p32</span><b>09 / 28</b></footer></section>
+<section class="deck-page " data-slide="9"><header><div class="section-label">02 / 蛋白质前处理</div><h1>酸化、除盐与复溶</h1><p>输入含有尿素和无机盐的酶解反应液，去除小分子干扰物并浓缩复溶，得到澄清的上机肽段液</p></header><main><div class="split large-left"><figure class=""><img src="/figures/full/cleanup.png" alt="10 p16酸化除盐浓缩复溶原图"/><figcaption>酶解后清理四步流程（10 p16原图）：去除缓冲盐与变性剂，同时尽量减少肽段损失</figcaption></figure><div><ul class="explain"><li><b>第一步：酸化（Acidification）</b><span>向酶解液中加入甲酸或三氟乙酸使 pH 降至 3 以下，一方面立刻终止胰蛋白酶活性，另一方面让肽段质子化，便于结合到反相除盐柱上。</span></li><li><b>第二步：C18 反相柱除盐（Desalting）</b><span>疏水的肽段吸附在 C18 填料上，亲水的无机盐和尿素随水相直接流走被洗掉；随后用含乙腈的有机溶液把纯净肽段洗脱收集下来。</span></li><li><b>第三步：低温真空浓缩与复溶</b><span>真空离心挥发掉洗脱液中的有机溶剂（避免长时间彻底干硬导致难溶），再用上机兼容的稀酸水溶液复溶，转入低吸附管高速离心取上清。</span></li></ul></div></div><div class="band">普通 C18 除盐柱用于去除无机盐和尿素；若前处理使用 SDC 或 SDS 等去垢剂，需先按对应路线去除去垢剂</div></main><footer><span>图：10 p16；内容：10 p12–13、p16、p26、p32</span><b>09 / 26</b></footer></section>
 
 <!--
 逐页演讲稿：
@@ -183,7 +183,7 @@ drawings:
 
 ---
 
-<section class="deck-page " data-slide="10"><header><div class="section-label">02 / 蛋白质前处理</div><h1>上机前样品检查</h1><p>在把肽段管放进液相自动进样器之前，逐项核对五项放行指标，防止堵柱、污染或进样量失真</p></header><main><table class="matrix compact"><thead><tr><th>放行检查项</th><th>上机前具体核对什么</th><th>如果不合格会造成什么问题</th><th>处理动作与放行要求</th></tr></thead><tbody><tr><th>01 编号与过程空白</th><td>样本管标签、分组记录与随同处理的过程空白管（Process Blank）</td><td>样品孔位放错导致组别混淆，或无法排查试剂耗材带来的背景污染</td><td>核对样品表与管身编号一致，过程空白随序列一同上机</td></tr><tr><th>02 溶液澄清度</th><td>对着光线观察复溶后的肽段溶液是否透明，有无肉眼可见微粒、浑浊或纤维</td><td>微小颗粒进入纳升液相管路会直接堵塞色谱柱，导致柱压飙升停机</td><td>上机前必须在低吸附管中再次高速离心，仅吸取上层澄清液装入进样瓶</td></tr><tr><th>03 化学兼容性</th><td>确认已完成酸化（pH 低于 3）与 C18 除盐，无高盐或去垢剂残留</td><td>残余盐分压制电喷雾信号，残余去垢剂污染色谱柱与质谱离子源</td><td>未除盐或去垢剂清理不彻底的样品严禁进入 LC–MS 系统</td></tr><tr><th>04 肽段浓度与体积</th><td>核对复溶体积、肽段浓度以及计划进样体积（例如进样 200 ng 对应几微升）</td><td>进样量过低导致低丰度蛋白漏检，进样量过高导致色谱峰平头与残留污染</td><td>记录复溶体积与浓度，确认进样瓶内液面高度足够进样针安全吸取</td></tr><tr><th>05 前处理偏差记录</th><td>回查裂解黏度、定量稀释、酶解时长及除盐洗脱过程有无异常情况</td><td>下机后若发现单针信号极低，无法判断是仪器故障还是该管样品损失</td><td>将存在制备偏差的样品提前登记在册，读表时结合过程记录复核</td></tr></tbody></table></main><footer><span>10 p17、p29、p30、p32；02 p25–26</span><b>10 / 28</b></footer></section>
+<section class="deck-page " data-slide="10"><header><div class="section-label">02 / 蛋白质前处理</div><h1>上机前样品检查</h1><p>在把肽段管放进液相自动进样器之前，逐项核对五项放行指标，防止堵柱、污染或进样量失真</p></header><main><table class="matrix compact"><thead><tr><th>放行检查项</th><th>上机前具体核对什么</th><th>如果不合格会造成什么问题</th><th>处理动作与放行要求</th></tr></thead><tbody><tr><th>01 编号与过程空白</th><td>样本管标签、分组记录与随同处理的过程空白管（Process Blank）</td><td>样品孔位放错导致组别混淆，或无法排查试剂耗材带来的背景污染</td><td>核对样品表与管身编号一致，过程空白随序列一同上机</td></tr><tr><th>02 溶液澄清度</th><td>对着光线观察复溶后的肽段溶液是否透明，有无肉眼可见微粒、浑浊或纤维</td><td>微小颗粒进入纳升液相管路会直接堵塞色谱柱，导致柱压飙升停机</td><td>上机前必须在低吸附管中再次高速离心，仅吸取上层澄清液装入进样瓶</td></tr><tr><th>03 化学兼容性</th><td>确认已完成酸化（pH 低于 3）与 C18 除盐，无高盐或去垢剂残留</td><td>残余盐分压制电喷雾信号，残余去垢剂污染色谱柱与质谱离子源</td><td>未除盐或去垢剂清理不彻底的样品严禁进入 LC–MS 系统</td></tr><tr><th>04 肽段浓度与体积</th><td>核对复溶体积、肽段浓度以及计划进样体积（例如进样 200 ng 对应几微升）</td><td>进样量过低导致低丰度蛋白漏检，进样量过高导致色谱峰平头与残留污染</td><td>记录复溶体积与浓度，确认进样瓶内液面高度足够进样针安全吸取</td></tr><tr><th>05 前处理偏差记录</th><td>回查裂解黏度、定量稀释、酶解时长及除盐洗脱过程有无异常情况</td><td>下机后若发现单针信号极低，无法判断是仪器故障还是该管样品损失</td><td>将存在制备偏差的样品提前登记在册，读表时结合过程记录复核</td></tr></tbody></table></main><footer><span>10 p17、p29、p30、p32；02 p25–26</span><b>10 / 26</b></footer></section>
 
 <!--
 逐页演讲稿：
@@ -202,7 +202,7 @@ drawings:
 
 ---
 
-<section class="deck-page " data-slide="11"><header><div class="section-label">03 / 样品上机与仪器工作</div><h1>样品放置与进样序列</h1><p>输入澄清肽段样品瓶，完成液相清洗平衡与质谱校正后，按空白、质控样到个人样本的顺序启动序列</p></header><main><div class="split operation-split"><div class="run-steps"><div class="run-step"><em>01</em><div><b>液相准备与质谱校正</b><span>配制并超声脱气流动相 A（0.1% 甲酸水）与 B（0.1% 甲酸乙腈），执行溶剂替换、洗针与色谱柱平衡；用标准校正液校准质谱的质荷比（m/z）与离子淌度。</span></div></div><div class="run-step"><em>02</em><div><b>放入样品盘并填写序列表</b><span>把装有澄清肽段液的进样小瓶放入自动进样器指定孔位（如 Slot 1:2），在 Compass HyStar 序列表中填入样本名、孔位、进样体积（μL）、液相方法与质谱方法。</span></div></div><div class="run-step"><em>03</em><div><b>先运行空白（Blank）与质控样（QC）</b><span>正式进个人样本前，先打空白样检查管路背景是否干净，再打已知表现的标准质控样（如 HeLa 酶解标样）确认出峰时间、信号强度和柱压正常。</span></div></div><div class="run-step"><em>04</em><div><b>核对首针样本，穿插监控跑完全序列</b><span>个人样本跑完第一针后，立刻调出总离子流图与柱压曲线检查；确认无异常后继续批量运行，每 6 至 8 针样本之间穿插一针 QC 与 Blank。</span></div></div></div><figure class=""><img src="/figures/lc-prep.png" alt="02 p13 HyStar溶剂替换选项"/><figcaption>Compass HyStar 负责液相控制与样本序列调度，timsControl 负责质谱采集参数与校正（02 p13原图）</figcaption></figure></div></main><footer><span>图：02 p13；步骤：02 p5、p11–26</span><b>11 / 28</b></footer></section>
+<section class="deck-page " data-slide="11"><header><div class="section-label">03 / 样品上机与仪器工作</div><h1>样品放置与进样序列</h1><p>输入澄清肽段样品瓶，完成液相清洗平衡与质谱校正后，按空白、质控样到个人样本的顺序启动序列</p></header><main><div class="split operation-split"><div class="run-steps"><div class="run-step"><em>01</em><div><b>液相准备与质谱校正</b><span>配制并超声脱气流动相 A（0.1% 甲酸水）与 B（0.1% 甲酸乙腈），执行溶剂替换、洗针与色谱柱平衡；用标准校正液校准质谱的质荷比（m/z）与离子淌度。</span></div></div><div class="run-step"><em>02</em><div><b>放入样品盘并填写序列表</b><span>把装有澄清肽段液的进样小瓶放入自动进样器指定孔位（如 Slot 1:2），在 Compass HyStar 序列表中填入样本名、孔位、进样体积（μL）、液相方法与质谱方法。</span></div></div><div class="run-step"><em>03</em><div><b>先运行空白（Blank）与质控样（QC）</b><span>正式进个人样本前，先打空白样检查管路背景是否干净，再打已知表现的标准质控样（如 HeLa 酶解标样）确认出峰时间、信号强度和柱压正常。</span></div></div><div class="run-step"><em>04</em><div><b>核对首针样本，穿插监控跑完全序列</b><span>个人样本跑完第一针后，立刻调出总离子流图与柱压曲线检查；确认无异常后继续批量运行，每 6 至 8 针样本之间穿插一针 QC 与 Blank。</span></div></div></div><figure class=""><img src="/figures/lc-prep.png" alt="02 p13 HyStar溶剂替换选项"/><figcaption>Compass HyStar 负责液相控制与样本序列调度，timsControl 负责质谱采集参数与校正（02 p13原图）</figcaption></figure></div></main><footer><span>图：02 p13；步骤：02 p5、p11–26</span><b>11 / 26</b></footer></section>
 
 <!--
 逐页演讲稿：
@@ -221,7 +221,7 @@ drawings:
 
 ---
 
-<section class="deck-page " data-slide="12"><header><div class="section-label">03 / 样品上机与仪器工作</div><h1>液相色谱分离与保留时间</h1><p>输入混合在一起的数万种肽段，利用反相色谱柱按疏水性强弱分批洗脱，记录出峰保留时间</p></header><main><div class="flow-bar"><div class="flow-step"><em>01 样品注入</em><b>进样针注入肽段液</b><span>数万种肽段同时进入色谱柱头</span></div><div class="flow-step"><em>02 柱上保留</em><b>C18 柱疏水吸附</b><span>起始高水相下肽段挂在柱填料上</span></div><div class="flow-step"><em>03 梯度洗脱</em><b>乙腈比例逐步升高</b><span>流动相 B（0.1%甲酸乙腈）按梯度增加</span></div><div class="flow-step"><em>04 分批出柱</em><b>按疏水性先后流出</b><span>亲水肽段先流下，疏水肽段后流下</span></div><div class="flow-step"><em>05 输出液流</em><b>记录保留时间 RT</b><span>形成几秒宽的色谱峰进入质谱</span></div></div><div class="stages"><div><em>分离原因</em><b>为什么质谱前面要接液相色谱（LC）</b><span>一份酶解样本含有几万条不同肽段。如果一瞬间全部涌入质谱，强信号会掩盖弱信号，质谱也来不及逐一打碎；液相色谱把它们分散到几十分钟内排队进入。</span></div><div><em>时间坐标</em><b>保留时间（Retention Time, RT）</b><span>某一条肽段从进样针注入开始计时，到被流动相从色谱柱洗脱出来、进入质谱的那一刻所经历的时间（单位为分钟或秒），是识别该肽段的时间坐标。</span></div><div><em>定量基础</em><b>色谱峰（Chromatographic Peak）</b><span>同一种肽段的一群分子集中在数秒内（如半峰宽约 7 秒）流出，信号从基线上升到最高点再回落，形成的钟形曲线即为色谱峰，峰面积反映该肽段多少。</span></div></div><div class="band">本步小结：输入混合肽段溶液，经反相液相梯度洗脱分离，输出按保留时间（RT）先后流出的肽段液流</div></main><footer><span>01 p10–12；02 p9–11；07 p2</span><b>12 / 28</b></footer></section>
+<section class="deck-page " data-slide="12"><header><div class="section-label">03 / 样品上机与仪器工作</div><h1>液相色谱分离与保留时间</h1><p>输入混合在一起的数万种肽段，利用反相色谱柱按疏水性强弱分批洗脱，记录出峰保留时间</p></header><main><div class="flow-bar"><div class="flow-step"><em>01 样品注入</em><b>进样针注入肽段液</b><span>数万种肽段同时进入色谱柱头</span></div><div class="flow-step"><em>02 柱上保留</em><b>C18 柱疏水吸附</b><span>起始高水相下肽段挂在柱填料上</span></div><div class="flow-step"><em>03 梯度洗脱</em><b>乙腈比例逐步升高</b><span>流动相 B（0.1%甲酸乙腈）按梯度增加</span></div><div class="flow-step"><em>04 分批出柱</em><b>按疏水性先后流出</b><span>亲水肽段先流下，疏水肽段后流下</span></div><div class="flow-step"><em>05 输出液流</em><b>记录保留时间 RT</b><span>形成几秒宽的色谱峰进入质谱</span></div></div><div class="stages"><div><em>分离原因</em><b>为什么质谱前面要接液相色谱（LC）</b><span>一份酶解样本含有几万条不同肽段。如果一瞬间全部涌入质谱，强信号会掩盖弱信号，质谱也来不及逐一打碎；液相色谱把它们分散到几十分钟内排队进入。</span></div><div><em>时间坐标</em><b>保留时间（Retention Time, RT）</b><span>某一条肽段从进样针注入开始计时，到被流动相从色谱柱洗脱出来、进入质谱的那一刻所经历的时间（单位为分钟或秒），是识别该肽段的时间坐标。</span></div><div><em>定量基础</em><b>色谱峰（Chromatographic Peak）</b><span>同一种肽段的一群分子集中在数秒内（如半峰宽约 7 秒）流出，信号从基线上升到最高点再回落，形成的钟形曲线即为色谱峰，峰面积反映该肽段多少。</span></div></div><div class="band">本步小结：输入混合肽段溶液，经反相液相梯度洗脱分离，输出按保留时间（RT）先后流出的肽段液流</div></main><footer><span>01 p10–12；02 p9–11；07 p2</span><b>12 / 26</b></footer></section>
 
 <!--
 逐页演讲稿：
@@ -240,7 +240,7 @@ drawings:
 
 ---
 
-<section class="deck-page " data-slide="13"><header><div class="section-label">03 / 样品上机与仪器工作</div><h1>电喷雾电离产生气相离子</h1><p>输入从色谱柱流出的液体肽段，通过高压喷雾与加热干燥脱去溶剂，转变为气相带正电离子</p></header><main><div class="flow-bar"><div class="flow-step"><em>01 液相流出</em><b>色谱柱流出肽段溶液</b><span>含水、乙腈与 0.1% 甲酸（提供 H⁺）</span></div><div class="flow-step"><em>02 电喷雾</em><b>高压喷针形成带电雾滴</b><span>喷针尖端施加高电压产生细小液滴</span></div><div class="flow-step"><em>03 脱去溶剂</em><b>伴热干燥气吹干溶剂</b><span>水与乙腈迅速挥发，液滴缩小裂解</span></div><div class="flow-step"><em>04 进入质谱</em><b>气相多电荷肽段离子</b><span>肽段携带 2 至 3 个正电荷进入真空腔</span></div></div><div class="stages"><div><em>物理前提</em><b>为什么要把液体分子变成气相离子</b><span>质谱仪内部是高真空环境，完全依靠电场来引导、筛选和加速粒子。不带电的中性分子在电场中不受力，只有带上电荷成为离子才能被质谱测量。</span></div><div><em>电荷来源</em><b>肽段为什么常带 +2 或 +3 个正电荷</b><span>流动相中的甲酸提供大量氢离子（H⁺）。胰蛋白酶切出的肽段在氨基端以及尾部的赖氨酸（K）或精氨酸（R）侧链都能结合 H⁺，常形成二价或三价正离子。</span></div><div><em>抗污设计</em><b>正交电喷雾构型（Orthogonal ESI）的作用</b><span>喷雾方向与进样毛细管呈一定角度，利用偏转板电场只把带正电的肽段离子拉进毛细管，而未充分挥发的中性液滴和颗粒顺气流排走，保护仪器免受污染。</span></div></div><div class="band">本步小结：输入色谱柱流出的肽段溶液，经高压电喷雾与加热去溶剂，输出进入真空腔的气相带正电肽段离子</div></main><footer><span>01 p12、p14、p22；10 p6–7</span><b>13 / 28</b></footer></section>
+<section class="deck-page " data-slide="13"><header><div class="section-label">03 / 样品上机与仪器工作</div><h1>电喷雾电离产生气相离子</h1><p>输入从色谱柱流出的液体肽段，通过高压喷雾与加热干燥脱去溶剂，转变为气相带正电离子</p></header><main><div class="flow-bar"><div class="flow-step"><em>01 液相流出</em><b>色谱柱流出肽段溶液</b><span>含水、乙腈与 0.1% 甲酸（提供 H⁺）</span></div><div class="flow-step"><em>02 电喷雾</em><b>高压喷针形成带电雾滴</b><span>喷针尖端施加高电压产生细小液滴</span></div><div class="flow-step"><em>03 脱去溶剂</em><b>伴热干燥气吹干溶剂</b><span>水与乙腈迅速挥发，液滴缩小裂解</span></div><div class="flow-step"><em>04 进入质谱</em><b>气相多电荷肽段离子</b><span>肽段携带 2 至 3 个正电荷进入真空腔</span></div></div><div class="stages"><div><em>物理前提</em><b>为什么要把液体分子变成气相离子</b><span>质谱仪内部是高真空环境，完全依靠电场来引导、筛选和加速粒子。不带电的中性分子在电场中不受力，只有带上电荷成为离子才能被质谱测量。</span></div><div><em>电荷来源</em><b>肽段为什么常带 +2 或 +3 个正电荷</b><span>流动相中的甲酸提供大量氢离子（H⁺）。胰蛋白酶切出的肽段在氨基端以及尾部的赖氨酸（K）或精氨酸（R）侧链都能结合 H⁺，常形成二价或三价正离子。</span></div><div><em>抗污设计</em><b>正交电喷雾构型（Orthogonal ESI）的作用</b><span>喷雾方向与进样毛细管呈一定角度，利用偏转板电场只把带正电的肽段离子拉进毛细管，而未充分挥发的中性液滴和颗粒顺气流排走，保护仪器免受污染。</span></div></div><div class="band">本步小结：输入色谱柱流出的肽段溶液，经高压电喷雾与加热去溶剂，输出进入真空腔的气相带正电肽段离子</div></main><footer><span>01 p12、p14、p22；10 p6–7</span><b>13 / 26</b></footer></section>
 
 <!--
 逐页演讲稿：
@@ -259,7 +259,7 @@ drawings:
 
 ---
 
-<section class="deck-page " data-slide="14"><header><div class="section-label">03 / 样品上机与仪器工作</div><h1>timsTOF 内部离子通路</h1><p>气相肽段离子进入质谱后，依次经过双 TIMS、四极杆、碰撞池与飞行时间管，测出四维信息</p></header><main><figure class="wide-figure"><img src="/figures/ion-path.png" alt="01 p12离子传输通路裁图"/><figcaption>timsTOF 内部硬件通路（01 p12原图，从左向右阅读）：各部件分工协作，依次完成淌度分离、母离子挑选、碎裂与质量测定</figcaption></figure><div class="flow-bar"><div class="flow-step"><em>入口导入</em><b>① 毛细管与漏斗</b><span>Capillary / Funnel：导入离子并聚焦进入真空区</span></div><div class="flow-step"><em>淌度分离</em><b>② 双 TIMS 淌度管</b><span>Dual TIMS：按离子空间形状大小分离（测 1/K₀）</span></div><div class="flow-step"><em>挑选母离子</em><b>③ 四极杆质量过滤器</b><span>Quadrupole Filter：按质荷比挑选特定母离子</span></div><div class="flow-step"><em>碰撞打碎</em><b>④ 碰撞池</b><span>Collision Cell：母离子撞击气体打碎成碎片子离子</span></div><div class="flow-step"><em>测定质荷比</em><b>⑤ 正交加速与 TOF</b><span>Orthogonal Accelerator & TOF：测飞行时间算 m/z 与强度</span></div></div><div class="band">整套系统对每个肽段同时记录四项信息：液相保留时间（RT）、离子淌度（1/K₀）、质荷比（m/z）与信号强度（Intensity）</div></main><footer><span>图：01 p12；概念：01 p10–14</span><b>14 / 28</b></footer></section>
+<section class="deck-page " data-slide="14"><header><div class="section-label">03 / 样品上机与仪器工作</div><h1>timsTOF 内部离子通路</h1><p>气相肽段离子进入质谱后，依次经过双 TIMS、四极杆、碰撞池与飞行时间管，测出四维信息</p></header><main><figure class="wide-figure"><img src="/figures/ion-path.png" alt="01 p12离子传输通路裁图"/><figcaption>timsTOF 内部硬件通路（01 p12原图，从左向右阅读）：各部件分工协作，依次完成淌度分离、母离子挑选、碎裂与质量测定</figcaption></figure><div class="flow-bar"><div class="flow-step"><em>入口导入</em><b>① 毛细管与漏斗</b><span>Capillary / Funnel：导入离子并聚焦进入真空区</span></div><div class="flow-step"><em>淌度分离</em><b>② 双 TIMS 淌度管</b><span>Dual TIMS：按离子空间形状大小分离（测 1/K₀）</span></div><div class="flow-step"><em>挑选母离子</em><b>③ 四极杆质量过滤器</b><span>Quadrupole Filter：按质荷比挑选特定母离子</span></div><div class="flow-step"><em>碰撞打碎</em><b>④ 碰撞池</b><span>Collision Cell：母离子撞击气体打碎成碎片子离子</span></div><div class="flow-step"><em>测定质荷比</em><b>⑤ 正交加速与 TOF</b><span>Orthogonal Accelerator & TOF：测飞行时间算 m/z 与强度</span></div></div><div class="band">整套系统对每个肽段同时记录四项信息：液相保留时间（RT）、离子淌度（1/K₀）、质荷比（m/z）与信号强度（Intensity）</div></main><footer><span>图：01 p12；概念：01 p10–14</span><b>14 / 26</b></footer></section>
 
 <!--
 逐页演讲稿：
@@ -278,7 +278,7 @@ drawings:
 
 ---
 
-<section class="deck-page " data-slide="15"><header><div class="section-label">03 / 样品上机与仪器工作</div><h1>TIMS 捕集与淌度分离</h1><p>利用向右的气流推力与向左的反向电场平衡捕集离子，再逐步调低电场按离子空间形状依次释放</p></header><main><div class="split large-left"><figure class=""><img src="/figures/tims.png" alt="01 p14双TIMS结构和电场图"/><figcaption>双 TIMS 结构与电场台阶示意（01 p14原图）：前段 Analyzer 1 累积离子，后段 Analyzer 2 淌度分离（100 ms 为示例）</figcaption></figure><div><ul class="explain"><li><b>第一步：捕集（Trap），顺风推力平衡反向电场</b><span>通道内有从左向右吹的载气（Gas）推着离子往前走，同时施加从右向左的反向电场（E）把正离子往回拉。体型蓬松肥大、受风面积大的离子被推到靠右的强电场区停下，体型紧凑瘦小的离子停在靠左的弱电场区。</span></li><li><b>第二步：释放（Elute），缓慢降低电场门槛</b><span>当反向电场台阶逐步调低时，停在最右侧的大截面离子最先跨过门槛飞出通道，随后较小截面的离子按顺序依次释放，由此测出约化离子淌度倒数（1/K₀，单位 V·s/cm²）。</span></li><li><b>为什么设计成前后两段（Dual TIMS）</b><span>后段（Analyzer 2）花 100 ms 把当前一批离子按形状放出去的同时，前段（Analyzer 1）正好把源源不断新进来的下一批离子存起来，实现“边存边分”，几乎不浪费离子。</span></li></ul></div></div></main><footer><span>图：01 p14；解释：01 p10–11、p14–16</span><b>15 / 28</b></footer></section>
+<section class="deck-page " data-slide="15"><header><div class="section-label">03 / 样品上机与仪器工作</div><h1>TIMS 捕集与淌度分离</h1><p>利用向右的气流推力与向左的反向电场平衡捕集离子，再逐步调低电场按离子空间形状依次释放</p></header><main><div class="split large-left"><figure class=""><img src="/figures/tims.png" alt="01 p14双TIMS结构和电场图"/><figcaption>双 TIMS 结构与电场台阶示意（01 p14原图）：前段 Analyzer 1 累积离子，后段 Analyzer 2 淌度分离（100 ms 为示例）</figcaption></figure><div><ul class="explain"><li><b>第一步：捕集（Trap），顺风推力平衡反向电场</b><span>通道内有从左向右吹的载气（Gas）推着离子往前走，同时施加从右向左的反向电场（E）把正离子往回拉。体型蓬松肥大、受风面积大的离子被推到靠右的强电场区停下，体型紧凑瘦小的离子停在靠左的弱电场区。</span></li><li><b>第二步：释放（Elute），缓慢降低电场门槛</b><span>当反向电场台阶逐步调低时，停在最右侧的大截面离子最先跨过门槛飞出通道，随后较小截面的离子按顺序依次释放，由此测出约化离子淌度倒数（1/K₀，单位 V·s/cm²）。</span></li><li><b>为什么设计成前后两段（Dual TIMS）</b><span>后段（Analyzer 2）花 100 ms 把当前一批离子按形状放出去的同时，前段（Analyzer 1）正好把源源不断新进来的下一批离子存起来，实现“边存边分”，几乎不浪费离子。</span></li></ul></div></div></main><footer><span>图：01 p14；解释：01 p10–11、p14–16</span><b>15 / 26</b></footer></section>
 
 <!--
 逐页演讲稿：
@@ -297,7 +297,7 @@ drawings:
 
 ---
 
-<section class="deck-page " data-slide="16"><header><div class="section-label">03 / 样品上机与仪器工作</div><h1>四极杆筛选与碰撞池碎裂</h1><p>四极杆先按质荷比挑出单一母离子，再送入碰撞池打断肽键产生碎片子离子，用于推导氨基酸序列</p></header><main><div class="flow-bar"><div class="flow-step"><em>输入：完整母离子</em><b>TIMS 释放的母离子群</b><span>完整未碎裂的肽段离子（测得一级质谱 MS1）</span></div><div class="flow-step"><em>动作 01：精准挑人</em><b>四极杆（Quadrupole）</b><span>只允许指定 m/z 窗口的母离子通过，挡住其他离子</span></div><div class="flow-step"><em>动作 02：打碎肽键</em><b>碰撞池（Collision Cell）</b><span>母离子加速撞击惰性氮气分子，在肽键处断裂</span></div><div class="flow-step"><em>输出：序列碎片</em><b>碎片子离子群（Fragment）</b><span>长短不一的氨基酸序列片段（测得二级质谱 MS2）</span></div></div><div class="stages"><div><em>概念 01</em><b>母离子（Precursor）与一级质谱（MS1）</b><span>还没有被打碎的完整肽段离子称为母离子（或前体离子）。不打碎直接测量当前有哪些母离子及其强度的谱图，称为一级质谱（MS1）。</span></div><div><em>概念 02</em><b>四极杆为什么要先做“隔离筛选”</b><span>如果让几十种不同肽段同时进碰撞池打碎，几百个碎片混在一起就分不清谁是谁的碎片。四极杆像安检门一样，每次只放行特定质荷比范围的母离子进入碰撞池。</span></div><div><em>概念 03</em><b>碰撞池打碎肽段为什么能推出序列（MS2）</b><span>两条肽段如果氨基酸种类相同但排列顺序不同（例如 AGK 与 GAK），完整母离子的总重量一模一样；只有在碰撞池把氨基酸之间的肽键逐节打断，测出碎片重量组合（二级质谱 MS2），才能拼出真实序列。</span></div></div><div class="band">一级质谱（MS1）测量整条肽段的质荷比与信号强弱，二级质谱（MS2 / MS/MS）测量碎片以鉴定氨基酸序列</div></main><footer><span>01 p11–12、p17；03 p18–20；10 p6</span><b>16 / 28</b></footer></section>
+<section class="deck-page " data-slide="16"><header><div class="section-label">03 / 样品上机与仪器工作</div><h1>四极杆筛选与碰撞池碎裂</h1><p>四极杆先按质荷比挑出单一母离子，再送入碰撞池打断肽键产生碎片子离子，用于推导氨基酸序列</p></header><main><div class="flow-bar"><div class="flow-step"><em>输入：完整母离子</em><b>TIMS 释放的母离子群</b><span>完整未碎裂的肽段离子（测得一级质谱 MS1）</span></div><div class="flow-step"><em>动作 01：精准挑人</em><b>四极杆（Quadrupole）</b><span>只允许指定 m/z 窗口的母离子通过，挡住其他离子</span></div><div class="flow-step"><em>动作 02：打碎肽键</em><b>碰撞池（Collision Cell）</b><span>母离子加速撞击惰性氮气分子，在肽键处断裂</span></div><div class="flow-step"><em>输出：序列碎片</em><b>碎片子离子群（Fragment）</b><span>长短不一的氨基酸序列片段（测得二级质谱 MS2）</span></div></div><div class="stages"><div><em>概念 01</em><b>母离子（Precursor）与一级质谱（MS1）</b><span>还没有被打碎的完整肽段离子称为母离子（或前体离子）。不打碎直接测量当前有哪些母离子及其强度的谱图，称为一级质谱（MS1）。</span></div><div><em>概念 02</em><b>四极杆为什么要先做“隔离筛选”</b><span>如果让几十种不同肽段同时进碰撞池打碎，几百个碎片混在一起就分不清谁是谁的碎片。四极杆像安检门一样，每次只放行特定质荷比范围的母离子进入碰撞池。</span></div><div><em>概念 03</em><b>碰撞池打碎肽段为什么能推出序列（MS2）</b><span>两条肽段如果氨基酸种类相同但排列顺序不同（例如 AGK 与 GAK），完整母离子的总重量一模一样；只有在碰撞池把氨基酸之间的肽键逐节打断，测出碎片重量组合（二级质谱 MS2），才能拼出真实序列。</span></div></div><div class="band">一级质谱（MS1）测量整条肽段的质荷比与信号强弱，二级质谱（MS2 / MS/MS）测量碎片以鉴定氨基酸序列</div></main><footer><span>01 p11–12、p17；03 p18–20；10 p6</span><b>16 / 26</b></footer></section>
 
 <!--
 逐页演讲稿：
@@ -316,7 +316,7 @@ drawings:
 
 ---
 
-<section class="deck-page " data-slide="17"><header><div class="section-label">03 / 样品上机与仪器工作</div><h1>飞行时间分析与质谱图</h1><p>给离子施加相同加速推力，按飞抵检测器的快慢换算质荷比（m/z），画出横轴为质荷比、纵轴为强度的质谱图</p></header><main><div class="flow-bar"><div class="flow-step"><em>01 等能加速</em><b>正交加速器（OA）推射</b><span>给进入的离子施加相同的加速电压脉冲</span></div><div class="flow-step"><em>02 赛跑分离</em><b>真空无场飞行管（TOF）</b><span>轻且电荷多的离子飞得快，重离子飞得慢</span></div><div class="flow-step"><em>03 记录时间</em><b>到达检测器计时</b><span>以微秒精度记录每个离子的飞行时间</span></div><div class="flow-step"><em>04 输出谱图</em><b>换算质荷比生成谱图</b><span>飞行时间换算为 m/z，离子数量记为高度</span></div></div><div class="grid-2x2"><div class="grid-item"><b>什么是质荷比（m/z）</b><span>m 代表离子的质量（单位：道尔顿 Da），z 代表离子所带的正电荷个数。质荷比等于质量除以电荷数（m/z ＝ 质量 ÷ 电荷数）。</span></div><div class="grid-item"><b>质荷比（m/z）的具体计算示例</b><span>假设一条肽段分子加上 2 个氢离子后的总质量是 1000 Da，所带正电荷数 z ＝ 2，那么质谱仪实测显示的质荷比就是 1000 ÷ 2 ＝ 500。</span></div><div class="grid-item"><b>质谱图的横坐标（X 轴）：质荷比 m/z</b><span>质谱图上每一根竖线的位置对应一种特定 m/z 的离子。在一级质谱图（MS1）中代表不同的完整肽段母离子，在二级质谱图（MS2）中代表同一肽段打出的不同碎片。</span></div><div class="grid-item"><b>质谱图的纵坐标（Y 轴）：信号强度 Intensity</b><span>每一根竖线的高度代表这一瞬间撞击到检测器上的该种离子数量多少。TOF 完成一次全谱扫描仅需约 110 微秒（每秒约九千次），能高速记录全部碎片。</span></div></div></main><footer><span>01 p10、p12；Shimadzu 质谱分析器基础原理说明；07 p2、p7</span><b>17 / 28</b></footer></section>
+<section class="deck-page " data-slide="17"><header><div class="section-label">03 / 样品上机与仪器工作</div><h1>飞行时间分析与质谱图</h1><p>给离子施加相同加速推力，按飞抵检测器的快慢换算质荷比（m/z），画出横轴为质荷比、纵轴为强度的质谱图</p></header><main><div class="flow-bar"><div class="flow-step"><em>01 等能加速</em><b>正交加速器（OA）推射</b><span>给进入的离子施加相同的加速电压脉冲</span></div><div class="flow-step"><em>02 赛跑分离</em><b>真空无场飞行管（TOF）</b><span>轻且电荷多的离子飞得快，重离子飞得慢</span></div><div class="flow-step"><em>03 记录时间</em><b>到达检测器计时</b><span>以微秒精度记录每个离子的飞行时间</span></div><div class="flow-step"><em>04 输出谱图</em><b>换算质荷比生成谱图</b><span>飞行时间换算为 m/z，离子数量记为高度</span></div></div><div class="grid-2x2"><div class="grid-item"><b>什么是质荷比（m/z）</b><span>m 代表离子的质量（单位：道尔顿 Da），z 代表离子所带的正电荷个数。质荷比等于质量除以电荷数（m/z ＝ 质量 ÷ 电荷数）。</span></div><div class="grid-item"><b>质荷比（m/z）的具体计算示例</b><span>假设一条肽段分子加上 2 个氢离子后的总质量是 1000 Da，所带正电荷数 z ＝ 2，那么质谱仪实测显示的质荷比就是 1000 ÷ 2 ＝ 500。</span></div><div class="grid-item"><b>质谱图的横坐标（X 轴）：质荷比 m/z</b><span>质谱图上每一根竖线的位置对应一种特定 m/z 的离子。在一级质谱图（MS1）中代表不同的完整肽段母离子，在二级质谱图（MS2）中代表同一肽段打出的不同碎片。</span></div><div class="grid-item"><b>质谱图的纵坐标（Y 轴）：信号强度 Intensity</b><span>每一根竖线的高度代表这一瞬间撞击到检测器上的该种离子数量多少。TOF 完成一次全谱扫描仅需约 110 微秒（每秒约九千次），能高速记录全部碎片。</span></div></div></main><footer><span>01 p10、p12；Shimadzu 质谱分析器基础原理说明；07 p2、p7</span><b>17 / 26</b></footer></section>
 
 <!--
 逐页演讲稿：
@@ -335,7 +335,7 @@ drawings:
 
 ---
 
-<section class="deck-page " data-slide="18"><header><div class="section-label">03 / 样品上机与仪器工作</div><h1>PASEF 并行累积与连续碎裂</h1><p>前段累积与后段淌度释放同步进行，四极杆配合离子出场时间在单次扫描中连续挑选多个母离子碎裂</p></header><main><div class="split large-left"><figure class=""><img src="/figures/pasef.png" alt="03 p2 PASEF离子通路与淌度热图"/><figcaption>PASEF 时序示意（03 p2原图）：在一次 100 ms 的 TIMS 释放过程中，四极杆连续跳变抓取多个母离子送去打碎</figcaption></figure><div><ul class="explain"><li><b>传统质谱瓶颈：打碎单一离子时，同刻流出的其余母离子被漏掉</b><span>无 TIMS 时，十几种母离子同时到达四极杆；当四极杆挑出 1 号离子碎裂时，其余同时流出的母离子直接飞过损失。</span></li><li><b>PASEF 时序配合：TIMS 错峰放行 ＋ 四极杆毫秒级跳变点名</b><span>不同淌度母离子在 100 ms 内按高矮胖瘦依次走出（各集中在几毫秒内）；四极杆按出场时间快速切换 m/z 窗口，单次释放可连续抓取十几个母离子碎裂。</span></li><li><b>采集循环时间与色谱峰宽的匹配</b><span>例如 1 次一级扫描加 10 次 PASEF 扫描约 1.1 秒；面对约 7 秒宽的色谱峰可采样 6 至 8 点，兼顾碎裂深度与定量准确度。</span></li></ul></div></div><div class="band">PASEF 核心价值：前段攒离子与后段放离子并行，四极杆按离子淌度出场时间表依次点名碎裂</div></main><footer><span>图：03 p2；解释：01 p17–18、03 p10–12</span><b>18 / 28</b></footer></section>
+<section class="deck-page " data-slide="18"><header><div class="section-label">03 / 样品上机与仪器工作</div><h1>PASEF 并行累积与连续碎裂</h1><p>前段累积与后段淌度释放同步进行，四极杆配合离子出场时间在单次扫描中连续挑选多个母离子碎裂</p></header><main><div class="split large-left"><figure class=""><img src="/figures/pasef.png" alt="03 p2 PASEF离子通路与淌度热图"/><figcaption>PASEF 时序示意（03 p2原图）：在一次 100 ms 的 TIMS 释放过程中，四极杆连续跳变抓取多个母离子送去打碎</figcaption></figure><div><ul class="explain"><li><b>传统质谱瓶颈：打碎单一离子时，同刻流出的其余母离子被漏掉</b><span>无 TIMS 时，十几种母离子同时到达四极杆；当四极杆挑出 1 号离子碎裂时，其余同时流出的母离子直接飞过损失。</span></li><li><b>PASEF 时序配合：TIMS 错峰放行 ＋ 四极杆毫秒级跳变点名</b><span>不同淌度母离子在 100 ms 内按高矮胖瘦依次走出（各集中在几毫秒内）；四极杆按出场时间快速切换 m/z 窗口，单次释放可连续抓取十几个母离子碎裂。</span></li><li><b>采集循环时间与色谱峰宽的匹配</b><span>例如 1 次一级扫描加 10 次 PASEF 扫描约 1.1 秒；面对约 7 秒宽的色谱峰可采样 6 至 8 点，兼顾碎裂深度与定量准确度。</span></li></ul></div></div><div class="band">PASEF 核心价值：前段攒离子与后段放离子并行，四极杆按离子淌度出场时间表依次点名碎裂</div></main><footer><span>图：03 p2；解释：01 p17–18、03 p10–12</span><b>18 / 26</b></footer></section>
 
 <!--
 逐页演讲稿：
@@ -354,7 +354,7 @@ drawings:
 
 ---
 
-<section class="deck-page " data-slide="19"><header><div class="section-label">03 / 样品上机与仪器工作</div><h1>DDA、DIA 与 PRM 采集方式</h1><p>同一台 timsTOF 硬件，根据四极杆挑选母离子的规则不同，分为探索发现、队列比较与靶向复测三种模式</p></header><main><table class="matrix compact"><thead><tr><th>采集模式</th><th>中文名称与四极杆选离子规则（直观类比）</th><th>数据特点与局限</th><th>对应的研究任务</th></tr></thead><tbody><tr><th>dda-PASEF</th><td>数据依赖采集（像“挑高个子点名拍照”）：先看一级谱图（MS1）谁信号强，实时挑出高强度母离子逐一打碎</td><td>二级谱图来自单一母离子，谱图干净易读；但低丰度离子跨样本易出现随机漏检</td><td>前期方法探索与建库：初步查看新样本能检出哪些宿主或微生物蛋白</td></tr><tr><th>dia-PASEF</th><td>数据非依赖采集（像“按网格分区全景录像”）：按预设的质荷比和淌度窗口循环扫描，将窗口内母离子一起打碎</td><td>所有样本按相同固定窗口采集，跨样本重现性好、缺失值少；需用 Spectronaut / DIA-NN 解析混合谱图</td><td>临床队列定量比较：比较几十例患者与对照样本中数千种蛋白的相对变化</td></tr><tr><th>prm-PASEF</th><td>平行反应监测（像“拿名单定点跟踪”）：预先输入目标肽段的 m/z、保留时间（RT）与淌度（1/K₀），全程只盯目标</td><td>排除背景干扰，目标肽段灵敏度与定量重复性高；仅测名单内已知目标，不能发现新蛋白</td><td>重点候选肽段复测：从大队列筛出关键差异蛋白后，在独立新样本中靶向验证</td></tr></tbody></table><div class="band">完整课题常用组合：先用 DDA 或 DIA 做非靶向大范围筛查，再把筛出的重点候选蛋白交给 PRM 定点复测</div></main><footer><span>03 p10–17；04 p3–4、p8–12；05中文 p5–10；11 p15</span><b>19 / 28</b></footer></section>
+<section class="deck-page " data-slide="19"><header><div class="section-label">03 / 样品上机与仪器工作</div><h1>DDA、DIA 与 PRM 采集方式</h1><p>同一台 timsTOF 硬件，根据四极杆挑选母离子的规则不同，分为探索发现、队列比较与靶向复测三种模式</p></header><main><table class="matrix compact"><thead><tr><th>采集模式</th><th>中文名称与四极杆选离子规则（直观类比）</th><th>数据特点与局限</th><th>对应的研究任务</th></tr></thead><tbody><tr><th>dda-PASEF</th><td>数据依赖采集（像“挑高个子点名拍照”）：先看一级谱图（MS1）谁信号强，实时挑出高强度母离子逐一打碎</td><td>二级谱图来自单一母离子，谱图干净易读；但低丰度离子跨样本易出现随机漏检</td><td>前期方法探索与建库：初步查看新样本能检出哪些宿主或微生物蛋白</td></tr><tr><th>dia-PASEF</th><td>数据非依赖采集（像“按网格分区全景录像”）：按预设的质荷比和淌度窗口循环扫描，将窗口内母离子一起打碎</td><td>所有样本按相同固定窗口采集，跨样本重现性好、缺失值少；需用 Spectronaut / DIA-NN 解析混合谱图</td><td>临床队列定量比较：比较几十例患者与对照样本中数千种蛋白的相对变化</td></tr><tr><th>prm-PASEF</th><td>平行反应监测（像“拿名单定点跟踪”）：预先输入目标肽段的 m/z、保留时间（RT）与淌度（1/K₀），全程只盯目标</td><td>排除背景干扰，目标肽段灵敏度与定量重复性高；仅测名单内已知目标，不能发现新蛋白</td><td>重点候选肽段复测：从大队列筛出关键差异蛋白后，在独立新样本中靶向验证</td></tr></tbody></table><div class="band">完整课题常用组合：先用 DDA 或 DIA 做非靶向大范围筛查，再把筛出的重点候选蛋白交给 PRM 定点复测</div></main><footer><span>03 p10–17；04 p3–4、p8–12；05中文 p5–10；11 p15</span><b>19 / 26</b></footer></section>
 
 <!--
 逐页演讲稿：
@@ -373,7 +373,7 @@ drawings:
 
 ---
 
-<section class="deck-page " data-slide="20"><header><div class="section-label">03 / 样品上机与仪器工作</div><h1>上机空白与运行质量控制</h1><p>批量运行样本序列时，通过空白样与质控样持续监控背景残留、保留时间、柱压和信号稳定性</p></header><main><table class="matrix compact"><thead><tr><th>监控对象与常见异常</th><th>具体观察什么指标</th><th>异常提示的可能原因</th><th>排查逻辑与标准动作</th></tr></thead><tbody><tr><th>空白样（Blank）出现明显信号</th><td>只进流动相或过程空白液，查看是否有本不该出现的肽段色谱峰</td><td>前一针高浓度样品残留在进样针、定量环或色谱柱内（携带污染 Carryover），或试剂耗材受污染</td><td>加强洗针（有机相与水相冲洗）与色谱柱高有机相清洗，确认空白恢复干净后再继续</td></tr><tr><th>保留时间（RT）漂移或峰变宽</th><td>对比序列前后多针 QC 标样中同一条代表肽段的出峰时间与峰形</td><td>流动相配比变化、管路存在微小气泡、柱温箱温度波动或色谱柱柱效下降</td><td>核对流动相、排气并重新平衡色谱柱，检查柱温设置与连接头密封状态</td></tr><tr><th>液相柱压（Pressure）持续升高</th><td>重叠查看（Overlap）连续多针数据的泵压力曲线是否呈爬升趋势</td><td>样品中存在未除净的微小颗粒、脂质或沉淀，正在逐渐堵塞管路滤头或色谱柱</td><td>立即停止追加后续样品，回查样品离心澄清度，按硬件规程定位并处理堵点</td></tr><tr><th>质谱信号强度整体下降</th><td>同时对比仪器系统适用性标样（System QC）、全流程过程 QC 与个人样本的信号</td><td>若系统标样和样本一起下降，属于电喷雾或离子源污染；若系统标样正常、仅个别样本信号低，属于该样本前处理损失</td><td>先借标样分清是“仪器变弱”还是“个别样品没做好”，再决定是清洁维护仪器还是复查样品记录</td></tr></tbody></table></main><footer><span>02 p26；09 p13–19、p44–46；10 p17、p29–30；11 p27–29</span><b>20 / 28</b></footer></section>
+<section class="deck-page " data-slide="20"><header><div class="section-label">03 / 样品上机与仪器工作</div><h1>上机空白与运行质量控制</h1><p>批量运行样本序列时，通过空白样与质控样持续监控背景残留、保留时间、柱压和信号稳定性</p></header><main><table class="matrix compact"><thead><tr><th>监控对象与常见异常</th><th>具体观察什么指标</th><th>异常提示的可能原因</th><th>排查逻辑与标准动作</th></tr></thead><tbody><tr><th>空白样（Blank）出现明显信号</th><td>只进流动相或过程空白液，查看是否有本不该出现的肽段色谱峰</td><td>前一针高浓度样品残留在进样针、定量环或色谱柱内（携带污染 Carryover），或试剂耗材受污染</td><td>加强洗针（有机相与水相冲洗）与色谱柱高有机相清洗，确认空白恢复干净后再继续</td></tr><tr><th>保留时间（RT）漂移或峰变宽</th><td>对比序列前后多针 QC 标样中同一条代表肽段的出峰时间与峰形</td><td>流动相配比变化、管路存在微小气泡、柱温箱温度波动或色谱柱柱效下降</td><td>核对流动相、排气并重新平衡色谱柱，检查柱温设置与连接头密封状态</td></tr><tr><th>液相柱压（Pressure）持续升高</th><td>重叠查看（Overlap）连续多针数据的泵压力曲线是否呈爬升趋势</td><td>样品中存在未除净的微小颗粒、脂质或沉淀，正在逐渐堵塞管路滤头或色谱柱</td><td>立即停止追加后续样品，回查样品离心澄清度，按硬件规程定位并处理堵点</td></tr><tr><th>质谱信号强度整体下降</th><td>同时对比仪器系统适用性标样（System QC）、全流程过程 QC 与个人样本的信号</td><td>若系统标样和样本一起下降，属于电喷雾或离子源污染；若系统标样正常、仅个别样本信号低，属于该样本前处理损失</td><td>先借标样分清是“仪器变弱”还是“个别样品没做好”，再决定是清洁维护仪器还是复查样品记录</td></tr></tbody></table></main><footer><span>02 p26；09 p13–19、p44–46；10 p17、p29–30；11 p27–29</span><b>20 / 26</b></footer></section>
 
 <!--
 逐页演讲稿：
@@ -392,13 +392,13 @@ drawings:
 
 ---
 
-<section class="deck-page " data-slide="21"><header><div class="section-label">04 / 结果解读与肺癌耐药应用</div><h1>仪器原始输出与色谱信号</h1><p>质谱下机生成的是记录物理信号的原始数据夹（.d），可在查看软件中观察三类色谱图与一二级质谱图</p></header><main><div class="stages"><div><em>01 全局信号总和</em><b>总离子流图（TIC）</b><span>横轴是保留时间（RT），纵轴把每一秒钟检测到的所有离子信号全部加在一起。用来观察整针样品在几十分钟洗脱全过程中的总体信号强弱与出峰分布。</span></div><div><em>02 每秒最强单峰</em><b>基峰离子流图（BPC）</b><span>横轴是保留时间（RT），纵轴只画每一秒钟信号最强的那一个离子（基峰）的高度。曲线比 TIC 更平滑，适合多针重叠对比出峰时间是否对齐。</span></div><div><em>03 单个目标定量峰</em><b>提取离子流图（EIC / XIC）</b><span>人为指定某一个精确的质荷比（m/z）和淌度范围，只把这一种目标肽段随时间流出的色谱峰单独抽出来。这个单峰围成的面积就是后续算蛋白含量的依据。</span></div></div><div class="two-lines"><div><b>原始数据文件（.d 格式）里存了什么</b><span>Bruker timsTOF 采集的每一针原始数据保存为一个 .d 文件夹，里面按时间顺序存满了成千上万张一级母离子谱图（MS1）、二级碎片谱图（MS2）、淌度热图及液相压力曲线。</span></div><div><b>为什么原始文件还不能直接当成结果读</b><span>原始谱图只是一堆物理测量坐标（例如：在 24.5 分钟测到一个 m/z 为 615.32 的离子和十几个碎片峰），必须交给搜库软件比对物种序列库，才能翻译成具体的蛋白质名称。</span></div></div></main><footer><span>07 p2、p4–8；08 p5–6；11 p4–6</span><b>21 / 28</b></footer></section>
+<section class="deck-page " data-slide="21"><header><div class="section-label">04 / 结果解读与验证设计</div><h1>仪器原始输出与色谱信号</h1><p>质谱下机生成的是记录物理信号的原始数据夹（.d），可在查看软件中观察三类色谱图与一二级质谱图</p></header><main><div class="stages"><div><em>01 全局信号总和</em><b>总离子流图（TIC）</b><span>横轴是保留时间（RT），纵轴把每一秒钟检测到的所有离子信号全部加在一起。用来观察整针样品在几十分钟洗脱全过程中的总体信号强弱与出峰分布。</span></div><div><em>02 每秒最强单峰</em><b>基峰离子流图（BPC）</b><span>横轴是保留时间（RT），纵轴只画每一秒钟信号最强的那一个离子（基峰）的高度。曲线比 TIC 更平滑，适合多针重叠对比出峰时间是否对齐。</span></div><div><em>03 单个目标定量峰</em><b>提取离子流图（EIC / XIC）</b><span>人为指定某一个精确的质荷比（m/z）和淌度范围，只把这一种目标肽段随时间流出的色谱峰单独抽出来。这个单峰围成的面积就是后续算蛋白含量的依据。</span></div></div><div class="two-lines"><div><b>原始数据文件（.d 格式）里存了什么</b><span>Bruker timsTOF 采集的每一针原始数据保存为一个 .d 文件夹，里面按时间顺序存满了成千上万张一级母离子谱图（MS1）、二级碎片谱图（MS2）、淌度热图及液相压力曲线。</span></div><div><b>为什么原始文件还不能直接当成结果读</b><span>原始谱图只是一堆物理测量坐标（例如：在 24.5 分钟测到一个 m/z 为 615.32 的离子和十几个碎片峰），必须交给搜库软件比对物种序列库，才能翻译成具体的蛋白质名称。</span></div></div></main><footer><span>07 p2、p4–8；08 p5–6；11 p4–6</span><b>21 / 26</b></footer></section>
 
 <!--
 逐页演讲稿：
-从第21页开始，所有样品已经顺利跑完下机，我们进入第四大部分：结果解读与肺癌奥希替尼耐药研究应用。首先看仪器刚跑完时吐出来的原始文件到底长什么样。
+从第21页开始，所有样品已经顺利跑完下机，我们进入第四大部分：结果表解读与候选验证设计。首先看仪器刚跑完时吐出来的原始文件到底长什么样。
 
-很多初学者以为质谱仪跑完就会直接打印出一张写着“EGFR、PI3K、Bim”的Excel表格，其实不是。timsTOF跑完每一针样品，在电脑硬盘上生成的是一个后缀名为.d的原始数据文件夹。当我们用布鲁克自带的DataAnalysis软件打开这个.d文件时，看到的是上面列出的三种色谱曲线和对应的一二级质谱图。
+很多初学者以为质谱仪跑完就会直接打印出一张写好蛋白质名字的Excel表格，其实不是。timsTOF跑完每一针样品，在电脑硬盘上生成的是一个后缀名为.d的原始数据文件夹。当我们用布鲁克自带的DataAnalysis软件打开这个.d文件时，看到的是上面列出的三种色谱曲线和对应的一二级质谱图。
 
 第一种叫总离子流图（TIC）：横坐标是液相洗脱的保留时间（比如0到60分钟），纵坐标是把每一秒钟进入质谱的所有离子信号全部加起来的总和，用来看这一针整体信号强不强、出峰匀不均匀。第二种叫基峰离子流图（BPC）：纵坐标不再加总，而是只画每一秒钟信号最高的那一个离子的高度，所以曲线比TIC清爽得多，最适合把多针数据叠在一起看保留时间对不齐。
 
@@ -411,7 +411,7 @@ drawings:
 
 ---
 
-<section class="deck-page " data-slide="22"><header><div class="section-label">04 / 结果解读与肺癌耐药应用</div><h1>谱图匹配与蛋白质鉴定</h1><p>软件将实测碎片谱图与物种参考序列库比对，先识别肽段再推导蛋白质，并把假阳性率控制在 1% 以内</p></header><main><div class="flow-bar"><div class="flow-step"><em>步骤 01</em><b>导入参考蛋白库</b><span>下载目标物种（如人类或细菌）FASTA 序列文件</span></div><div class="flow-step"><em>步骤 02</em><b>理论模拟酶切与打分</b><span>软件按胰酶规则虚拟切肽段，与实测 MS1/MS2/RT/淌度 比对</span></div><div class="flow-step"><em>步骤 03</em><b>组装蛋白组（Protein Group）</b><span>按特异肽段与共享肽段规则把肽段归属回蛋白质</span></div><div class="flow-step"><em>步骤 04</em><b>控制错误发现率（FDR）</b><span>利用假序列（Decoy）估算并卡住 FDR ≤ 1%</span></div></div><div class="stages"><div><em>谱图匹配</em><b>怎样从碎片谱图认出肽段序列</b><span>软件把参考数据库里的每条蛋白质按 K/R 规则做电脑模拟剪切，算出每条理论肽段的母离子质量和碎片质量，再跟仪器实测谱图逐一比对打分，找出匹配度最高的肽段。</span></div><div><em>蛋白推断</em><b>特异肽段（Unique）与共享肽段（Shared）</b><span>如果某条肽段序列在全库里只属于唯一一个蛋白质，称为特异肽段，能直接证实该蛋白存在；如果同源蛋白或不同细菌共有一模一样的共享肽段，无法强行区分时就合并报告为一个“蛋白组（Protein Group）”。</span></div><div><em>假阳性控制</em><b>什么是错误发现率（FDR ＜ 1%）</b><span>成千上万次谱图比对中难免出现纯属巧合的错误命中。软件故意往数据库里混入一半反转的假蛋白序列（Decoy），据此估算假阳性比例并设定阈值，确保最终报告名单里错误匹配不超过 1%。</span></div></div></main><footer><span>08 p6、p8；10 p6–8；11 p5、p7、p16</span><b>22 / 28</b></footer></section>
+<section class="deck-page " data-slide="22"><header><div class="section-label">04 / 结果解读与验证设计</div><h1>谱图匹配与蛋白质鉴定</h1><p>软件将实测碎片谱图与物种参考序列库比对，先识别肽段再推导蛋白质，并把假阳性率控制在 1% 以内</p></header><main><div class="flow-bar"><div class="flow-step"><em>步骤 01</em><b>导入参考蛋白库</b><span>下载目标物种（如人类或细菌）FASTA 序列文件</span></div><div class="flow-step"><em>步骤 02</em><b>理论模拟酶切与打分</b><span>软件按胰酶规则虚拟切肽段，与实测 MS1/MS2/RT/淌度 比对</span></div><div class="flow-step"><em>步骤 03</em><b>组装蛋白组（Protein Group）</b><span>按特异肽段与共享肽段规则把肽段归属回蛋白质</span></div><div class="flow-step"><em>步骤 04</em><b>控制错误发现率（FDR）</b><span>利用假序列（Decoy）估算并卡住 FDR ≤ 1%</span></div></div><div class="stages"><div><em>谱图匹配</em><b>怎样从碎片谱图认出肽段序列</b><span>软件把参考数据库里的每条蛋白质按 K/R 规则做电脑模拟剪切，算出每条理论肽段的母离子质量和碎片质量，再跟仪器实测谱图逐一比对打分，找出匹配度最高的肽段。</span></div><div><em>蛋白推断</em><b>特异肽段（Unique）与共享肽段（Shared）</b><span>如果某条肽段序列在全库里只属于唯一一个蛋白质，称为特异肽段，能直接证实该蛋白存在；如果同源蛋白或不同细菌共有一模一样的共享肽段，无法强行区分时就合并报告为一个“蛋白组（Protein Group）”。</span></div><div><em>假阳性控制</em><b>什么是错误发现率（FDR ＜ 1%）</b><span>成千上万次谱图比对中难免出现纯属巧合的错误命中。软件故意往数据库里混入一半反转的假蛋白序列（Decoy），据此估算假阳性比例并设定阈值，确保最终报告名单里错误匹配不超过 1%。</span></div></div></main><footer><span>08 p6、p8；10 p6–8；11 p5、p7、p16</span><b>22 / 26</b></footer></section>
 
 <!--
 逐页演讲稿：
@@ -421,7 +421,7 @@ drawings:
 
 第三步，软件拿仪器实测到的每一张二级碎片谱图，去跟电脑算出来的理论碎片谱图一一比对打分：如果实测母离子m/z对上了、打出来的几根主要碎片子离子m/z也全对上了，保留时间和淌度也吻合，就成功认出了这条肽段的氨基酸序列。第四步，再把认出来的肽段归属回原来的蛋白质。
 
-把肽段归属回蛋白质时，读表一定要分清“特异肽段（Unique Peptide）”和“共享肽段（Shared Peptide）”。如果一条肽段序列在整本字典里只出现在某一个蛋白质身上，它就是特异肽段，能铁板钉钉地证明这个蛋白质存在；但如果A蛋白和B蛋白属于同一个激酶家族（比如不同亚型的PI3K或Akt），它们身上有一段氨基酸序列完全相同，那么测到这条共享肽段时，谁也没法硬说它一定来自A而不是B。软件为了严谨，会把无法靠特异肽段彻底分开的同源蛋白打包放在表格的同一行里，叫做一个“蛋白组（Protein Group）”。最后，软件还会通过混入反转假序列（Decoy）把错误发现率（FDR）卡在1%以内，保证整张表里99%以上的鉴定结果都是可靠的。
+把肽段归属回蛋白质时，读表一定要分清“特异肽段（Unique Peptide）”和“共享肽段（Shared Peptide）”。如果一条肽段序列在整本字典里只出现在某一个蛋白质身上，它就是特异肽段，能铁板钉钉地证明这个蛋白质存在；但如果A蛋白和B蛋白属于同一个蛋白质家族，它们身上有一段氨基酸序列完全相同，那么测到这条共享肽段时，谁也没法硬说它一定来自A而不是B。软件为了严谨，会把无法靠特异肽段彻底分开的同源蛋白打包放在表格的同一行里，叫做一个“蛋白组（Protein Group）”。最后，软件还会通过混入反转假序列（Decoy）把错误发现率（FDR）卡在1%以内，保证整张表里99%以上的鉴定结果都是可靠的。
 
 原讲者备注：软件是怎么认出样本里有哪些蛋白质的？这就好比“查字典对指纹”：我们先给软件一本字典（FASTA数据库，比如人类全部两万多个蛋白质的氨基酸序列）。软件先在电脑里用虚拟胰蛋白酶把这两万多个蛋白切成几百万条虚拟肽段，再拿我们实测出来的母离子重量、碎片重量、保留时间和淌度去一一核对。这里有两个读表必懂的概念：一是“蛋白组（Protein Group）”，因为质谱测的是短肽段，如果两个亲缘关系很近的蛋白共享同一条短肽，软件就会诚实地把它们合写在一行里；二是“1% FDR”，代表经过严格统计学过滤，整张表里认错的蛋白比例控制在百分之一以内。
 大纲检查点：解释特异肽段与共享肽段的区别、Protein Group概念，以及1% FDR错误发现率的含义
@@ -430,114 +430,76 @@ drawings:
 
 ---
 
-<section class="deck-page " data-slide="23"><header><div class="section-label">04 / 结果解读与肺癌耐药应用</div><h1>峰面积提取与相对定量</h1><p>软件提取各肽段在每份样本中的色谱峰面积并汇总为蛋白质信号强度，用于同一蛋白跨样本横向比较</p></header><main><table class="matrix compact"><thead><tr><th>蛋白组编号</th><th>基因与蛋白质名称</th><th>特异肽段数</th><th>奥希替尼敏感株 1</th><th>奥希替尼敏感株 2</th><th>奥希替尼耐药株 1</th><th>奥希替尼耐药株 2</th><th>横向读表结论（教学示例）</th></tr></thead><tbody><tr><th>P60709</th><td>ACTB（β-肌动蛋白，内参对照）</td><td>28 条</td><td>6.4 × 10⁸</td><td>6.1 × 10⁸</td><td>6.5 × 10⁸</td><td>6.3 × 10⁸</td><td>两组水平基本一致（比值约 1.0 倍）</td></tr><tr><th>P48736</th><td>PIK3CG（PI3Kγ 催化亚基）</td><td>14 条</td><td>1.3 × 10⁶</td><td>1.5 × 10⁶</td><td>5.8 × 10⁶</td><td>6.4 × 10⁶</td><td>耐药株相对升高（均值约 4.4 倍）</td></tr><tr><th>P30305</th><td>ALDH1A1（醛脱氢酶 1A1，干性标志）</td><td>19 条</td><td>2.1 × 10⁶</td><td>2.3 × 10⁶</td><td>7.1 × 10⁶</td><td>7.5 × 10⁶</td><td>耐药株相对升高（均值约 3.3 倍）</td></tr></tbody></table><div class="two-lines"><div><b>读表规则一：同一行横向跨样本比较，直接反映相对丰度变化</b><span>同一行是同一个蛋白质（如 PIK3CG），它的肽段序列和电离效率固定不变。在各样本前处理等量蛋白投入的前提下，奥希替尼耐药株峰面积强度是敏感亲本株的 4.4 倍，说明该蛋白在耐药株中相对表达显著上调。</span></div><div><b>读表规则二：同一列纵向跨蛋白比较，信号比值不等于绝对摩尔浓度比</b><span>不同蛋白质切出的肽段长短不同、带正电的能力差别很大。表中内参 ACTB 信号比 PIK3CG 高几百倍，不能直接换算成绝对摩尔浓度比；若需绝对定量，必须额外加入已知浓度的重同位素标准肽段建立校准曲线。</span></div></div></main><footer><span>03 p12；05英文 p37–41；07 p2；11 p6、p16、p23（表格数值为教学示意，结合肺癌耐药靶点演示读表方法，非实测数据）</span><b>23 / 28</b></footer></section>
+<section class="deck-page " data-slide="23"><header><div class="section-label">04 / 结果解读与验证设计</div><h1>峰面积提取与相对定量</h1><p>软件提取各肽段在每份样本中的色谱峰面积并汇总为蛋白质信号强度，用于同一蛋白跨样本横向比较</p></header><main><table class="matrix compact"><thead><tr><th>蛋白组编号</th><th>基因与蛋白质名称</th><th>特异肽段数</th><th>对照组样本 1</th><th>对照组样本 2</th><th>处理组样本 1</th><th>处理组样本 2</th><th>横向读表结论（教学示例）</th></tr></thead><tbody><tr><th>P60709</th><td>ACTB（β-肌动蛋白，内参对照）</td><td>28 条</td><td>6.4 × 10⁸</td><td>6.1 × 10⁸</td><td>6.5 × 10⁸</td><td>6.3 × 10⁸</td><td>两组水平基本一致（比值约 1.0 倍）</td></tr><tr><th>P00558</th><td>PGK1（磷酸甘油酸激酶 1，糖酵解酶）</td><td>16 条</td><td>1.4 × 10⁶</td><td>1.6 × 10⁶</td><td>6.1 × 10⁶</td><td>6.5 × 10⁶</td><td>处理组相对升高（均值约 4.2 倍）</td></tr><tr><th>P07900</th><td>HSP90AA1（热休克蛋白 90α，分子伴侣）</td><td>22 条</td><td>2.1 × 10⁶</td><td>2.3 × 10⁶</td><td>6.8 × 10⁶</td><td>7.2 × 10⁶</td><td>处理组相对升高（均值约 3.2 倍）</td></tr></tbody></table><div class="two-lines"><div><b>读表规则一：同一行横向跨样本比较，直接反映相对丰度变化</b><span>同一行是同一个蛋白质（如 PGK1），它的肽段序列和电离效率固定不变。在各样本前处理等量蛋白投入的前提下，处理组峰面积强度是对照组的 4.2 倍，说明该蛋白在处理组中相对表达显著上调。</span></div><div><b>读表规则二：同一列纵向跨蛋白比较，信号比值不等于绝对摩尔浓度比</b><span>不同蛋白质切出的肽段长短不同、带正电的能力差别很大。表中内参 ACTB 信号比 PGK1 高几百倍，不能直接换算成绝对摩尔浓度比；若需绝对定量，必须额外加入已知浓度的重同位素标准肽段建立校准曲线。</span></div></div></main><footer><span>03 p12；05英文 p37–41；07 p2；11 p6、p16、p23（表格数值为教学示意，仅用于演示读表方法，非实测数据）</span><b>23 / 26</b></footer></section>
 
 <!--
 逐页演讲稿：
 认出了每一行是什么蛋白，第23页讲结果解读的第二步：软件怎么算出每个蛋白在各份样本里“相对有多少”？这就是“相对定量”，也是大家拿到手最常看的Excel结果主表。
 
-软件算数字的逻辑很清晰：先找到某条肽段在每个样本里的提取离子色谱峰（XIC），算出峰面积；再把属于同一个蛋白质（或蛋白组）的特异肽段信号汇总起来，就得到了表格里每个格子的蛋白质信号强度。我们看页面上方这张结合肺癌耐药靶点设计的教学示意表：每一行是一个蛋白组，前面有编号、基因名和特异肽段条数，后面四列分别是2份奥希替尼敏感株和2份奥希替尼耐药株的蛋白信号强度。
+软件算数字的逻辑很清晰：先找到某条肽段在每个样本里的提取离子色谱峰（XIC），算出峰面积；再把属于同一个蛋白质（或蛋白组）的特异肽段信号汇总起来，就得到了表格里每个格子的蛋白质信号强度。我们看页面上方这张教学示意表：每一行是一个蛋白组，前面有编号、基因名和特异肽段条数，后面四列分别是2份对照组样本和2份处理组样本的蛋白信号强度。
 
-拿到这样一张表，零基础同学只要牢牢掌握下面两条读表规则就不会出错。第一条规则叫“同一行横向跨样本可以比”：比如第二行PI3Kγ催化亚基（PIK3CG），特异肽段有14条，鉴定很扎实；敏感株1号和2号的强度在1.3到1.5乘10的6次方左右，而奥希替尼耐药株1号和2号达到了5.8到6.4乘10的6次方，均值升高到敏感株的4.4倍。因为同一行测的是同一种蛋白，只要前面我们按第6页做了等量蛋白投料，这个4.4倍就真实反映了耐药株里PIK3CG蛋白相对表达显著上调了。第三行肿瘤干性标志物醛脱氢酶ALDH1A1同样在耐药株里升高了3.3倍。
+拿到这样一张表，零基础同学只要牢牢掌握下面两条读表规则就不会出错。第一条规则叫“同一行横向跨样本可以比”：比如第二行糖酵解代谢酶PGK1，特异肽段有16条，鉴定很扎实；对照组1号和2号的强度在1.4到1.6乘10的6次方左右，而处理组1号和2号达到了6.1到6.5乘10的6次方，均值升高到对照组的4.2倍。因为同一行测的是同一种蛋白，只要前面我们按第6页做了等量蛋白投料，这个4.2倍就真实反映了处理组里PGK1蛋白相对表达显著上调了。第三行热休克蛋白HSP90AA1同样在处理组里升高了3.2倍。
 
-第二条规则叫“同一列纵向跨蛋白不能直接当成绝对浓度比”：你看敏感株1这一列，第一行内参β-肌动蛋白（ACTB）信号是6.4乘10的8次方，第二行PIK3CG是1.3乘10的6次方，数字差了将近500倍。能不能说细胞里ACTB的真实摩尔浓度正好是PIK3CG的500倍？不能。因为不同蛋白质切出的肽段长短不同、在电喷雾里抢正电荷的能力天生不一样，信号强不完全等于分子个数多。如果课题需要测定某个蛋白的绝对拷贝数或绝对浓度，必须在样品里额外掺入已知浓度的重同位素标记标准肽段，画出标准曲线才能换算。
+第二条规则叫“同一列纵向跨蛋白不能直接当成绝对浓度比”：你看对照组1这一列，第一行内参β-肌动蛋白（ACTB）信号是6.4乘10的8次方，第二行PGK1是1.4乘10的6次方，数字差了400多倍。能不能说细胞里ACTB的真实摩尔浓度正好是PGK1的400多倍？不能。因为不同蛋白质切出的肽段长短不同、在电喷雾里抢正电荷的能力天生不一样，信号强不完全等于分子个数多。如果课题需要测定某个蛋白的绝对拷贝数或绝对浓度，必须在样品里额外掺入已知浓度的重同位素标记标准肽段，画出标准曲线才能换算。
 
-原讲者备注：软件搜完库后，交给我们最核心的结果就是上面这样一张Excel大表：每一行是一个蛋白质（或蛋白组），每一列是一份样本，格子里填的数字是由肽段色谱峰面积汇总算出来的信号强度。零基础读这张表只要记住两条铁律：第一，“横着比可以”，同一行都是PI3Kγ催化亚基（PIK3CG），奥希替尼耐药株的数字是敏感亲本株的4倍多，说明耐药株里这个旁路蛋白确实升了；第二，“竖着比要小心”，不同蛋白的肽段天生带电本领不一样，不能直接拿A蛋白的信号除以B蛋白的信号当成绝对浓度比。
-大纲检查点：用ACTB、PIK3CG、ALDH1A1教学示例演示如何读表，说明为什么不同蛋白间信号比不等于摩尔浓度比
+原讲者备注：软件搜完库后，交给我们最核心的结果就是上面这样一张Excel大表：每一行是一个蛋白质（或蛋白组），每一列是一份样本，格子里填的数字是由肽段色谱峰面积汇总算出来的信号强度。零基础读这张表只要记住两条铁律：第一，“横着比可以”，同一行都是同一个蛋白质（如PGK1），处理组的数字是对照组的4倍多，说明处理组里这个蛋白确实升高了；第二，“竖着比要小心”，不同蛋白的肽段天生带电本领不一样，不能直接拿A蛋白的信号除以B蛋白的信号当成绝对浓度比。
+大纲检查点：用ACTB、PGK1、HSP90AA1教学示例演示如何读表，说明为什么不同蛋白间信号比不等于摩尔浓度比
 培训来源索引：research/source-index.json；页码均为PDF物理页。
 -->
 
 ---
 
-<section class="deck-page " data-slide="24"><header><div class="section-label">04 / 结果解读与肺癌耐药应用</div><h1>两组比较与差异蛋白筛选</h1><p>筛选耐药组与敏感组的差异蛋白时，需同时考察变化倍数、组内生物学重复（统计检验）与样本检出率</p></header><main><div class="stages"><div><em>01 变化幅度</em><b>变化倍数（Fold Change, FC）</b><span>用耐药组平均强度除以敏感组平均强度。为使上调（如 2 倍，log2FC ＝ +1）与下调（如 0.5 倍，log2FC ＝ −1）对称显示，作图时常取以 2 为底的对数。它回答“变化幅度大不大”。</span></div><div><em>02 统计可靠性</em><b>生物学重复与统计检验（p 值 / q 值）</b><span>如果耐药组平均值升高 3 倍，但完全是由其中 1 个极端样本拉高、其余重复样本都没变，则结果不可靠。统计检验结合组内离散度计算 p 值并做多重检验校正（q 值），回答“组内变化稳不稳定”。</span></div><div><em>03 检出完整性</em><b>检出率与缺失值（Missing Values）</b><span>核对某蛋白在两组各多少例样本中实测到了信号。若某蛋白在多数样本中都是空白缺失值，仅凭个别样本算出高倍数变化时需回到原始峰形复核，不能盲目当作高可信差异蛋白。</span></div></div><div class="two-lines"><div><b>常见结果图一：火山图（Volcano Plot）怎么看</b><span>每个点代表 1 个蛋白质。横轴画变化幅度 log2(FC)（越靠右在耐药组升高越多，越靠左降低越多），纵轴画统计显著性 −log10(p)（越靠上越显著）。位于右上角和左上角的点，就是既变化大又统计显著的差异蛋白。</span></div><div><b>常见结果图二：主成分分析图（PCA）怎么看</b><span>每个点代表 1 份样本（把几千个蛋白浓缩到两个主方向）。同组样本点聚得越紧密，说明组内生物学重复越一致；耐药组与敏感组样本点分得越开，说明耐药前后整体蛋白质组重塑越明显。</span></div></div></main><footer><span>08 p16–17；11 p16、p18、p23、p27</span><b>24 / 28</b></footer></section>
+<section class="deck-page " data-slide="24"><header><div class="section-label">04 / 结果解读与验证设计</div><h1>两组比较与差异蛋白筛选</h1><p>筛选处理组与对照组的差异蛋白时，需同时考察变化倍数、组内生物学重复（统计检验）与样本检出率</p></header><main><div class="stages"><div><em>01 变化幅度</em><b>变化倍数（Fold Change, FC）</b><span>用处理组平均强度除以对照组平均强度。为使上调（如 2 倍，log2FC ＝ +1）与下调（如 0.5 倍，log2FC ＝ −1）对称显示，作图时常取以 2 为底的对数。它回答“变化幅度大不大”。</span></div><div><em>02 统计可靠性</em><b>生物学重复与统计检验（p 值 / q 值）</b><span>如果处理组平均值升高 3 倍，但完全是由其中 1 个极端样本拉高、其余重复样本都没变，则结果不可靠。统计检验结合组内离散度计算 p 值并做多重检验校正（q 值），回答“组内变化稳不稳定”。</span></div><div><em>03 检出完整性</em><b>检出率与缺失值（Missing Values）</b><span>核对某蛋白在两组各多少例样本中实测到了信号。若某蛋白在多数样本中都是空白缺失值，仅凭个别样本算出高倍数变化时需回到原始峰形复核，不能盲目当作高可信差异蛋白。</span></div></div><div class="two-lines"><div><b>常见结果图一：火山图（Volcano Plot）怎么看</b><span>每个点代表 1 个蛋白质。横轴画变化幅度 log2(FC)（越靠右在处理组升高越多，越靠左降低越多），纵轴画统计显著性 −log10(p)（越靠上越显著）。位于右上角和左上角的点，就是既变化大又统计显著的差异蛋白。</span></div><div><b>常见结果图二：主成分分析图（PCA）怎么看</b><span>每个点代表 1 份样本（把几千个蛋白浓缩到两个主方向）。同组样本点聚得越紧密，说明组内生物学重复越一致；处理组与对照组样本点分得越开，说明两组整体蛋白质组差异越明显。</span></div></div></main><footer><span>08 p16–17；11 p16、p18、p23、p27</span><b>24 / 26</b></footer></section>
 
 <!--
 逐页演讲稿：
-学会了读单行数据，第24页讲结果解读的第三步：当我们比较奥希替尼耐药组和敏感亲本组（或者多例耐药前后患者活检样本）时，怎样从几千行的表格里筛出真正可靠的“耐药差异表达蛋白”？这需要把三个指标结合起来看。
+学会了读单行数据，第24页讲结果解读的第三步：当我们比较处理组和对照组（或者疾病组与健康组）时，怎样从几千行的表格里筛出真正可靠的“差异表达蛋白”？这需要把三个指标结合起来看。
 
-第一个指标是“变化倍数（Fold Change, 简称FC）”，也就是用耐药组的平均信号强度除以敏感组的平均信号强度。为了画图时让升高2倍和降低到二分之一（0.5倍）左右对称，生信表格里通常会取以2为底的对数，写成log2(FC)：log2(FC)等于正1就代表耐药后升高到2倍，等于负1就代表降到一半，等于0就代表两组没变化。它回答的是“变化幅度够不够大”。
+第一个指标是“变化倍数（Fold Change, 简称FC）”，也就是用处理组的平均信号强度除以对照组的平均信号强度。为了画图时让升高2倍和降低到二分之一（0.5倍）左右对称，生信表格里通常会取以2为底的对数，写成log2(FC)：log2(FC)等于正1就代表升高到2倍，等于负1就代表降到一半，等于0就代表两组没变化。它回答的是“变化幅度够不够大”。
 
-但光看平均值倍数远远不够，必须同时看第二个指标——组内生物学重复与统计检验（p值或校正后的q值）。举个例子，如果耐药组有6次生物学重复或6名患者，其中5个样本跟敏感组完全一样，只有1个样本因为偶然波动高出十几倍，把平均值拉高了3倍；这种靠单一异常值拉出来的倍数是不能算数的。统计检验就是检查组内各样本是不是一致升高或降低，再经过几千个蛋白的多重假设检验校正（算出FDR校正后的q值），确保差异不是随机波动。第三个指标则是看“检出率与缺失值”，确认这个蛋白在大多数样本里都实实在在测到了峰。
+但光看平均值倍数远远不够，必须同时看第二个指标——组内生物学重复与统计检验（p值或校正后的q值）。举个例子，如果处理组有6次生物学重复，其中5个样本跟对照组完全一样，只有1个样本因为偶然波动高出十几倍，把平均值拉高了3倍；这种靠单一异常值拉出来的倍数是不能算数的。统计检验就是检查组内各样本是不是一致升高或降低，再经过几千个蛋白的多重假设检验校正（算出FDR校正后的q值），确保差异不是随机波动。第三个指标则是看“检出率与缺失值”，确认这个蛋白在大多数样本里都实实在在测到了峰。
 
-把变化倍数和统计显著性画在一张图上，就是论文里必出现的“火山图（Volcano Plot）”：横轴是log2(FC)，越往右代表在耐药组升高倍数越大，越往左代表在耐药组下调越明显；纵轴是负log10(p值)，位置越高代表统计上越显著。所以我们永远去火山图的右上角挑耐药显著上调蛋白，去左上角挑耐药显著下调蛋白。旁边的PCA图则是把每份样本的几千个蛋白浓缩成一个点，看耐药组和敏感组能不能清楚分开。
+把变化倍数和统计显著性画在一张图上，就是论文里必出现的“火山图（Volcano Plot）”：横轴是log2(FC)，越往右代表在处理组升高倍数越大，越往左代表下调越明显；纵轴是负log10(p值)，位置越高代表统计上越显著。所以我们永远去火山图的右上角挑显著上调蛋白，去左上角挑显著下调蛋白。旁边的PCA图则是把每份样本的几千个蛋白浓缩成一个点，看两组样本能不能清楚分开。
 
-原讲者备注：拿到几千个蛋白的定量表后，怎么挑出真正跟奥希替尼耐药有关的差异蛋白？不能只拿两组平均值一除就算完。我们必须同时看两个维度：一是变化倍数（Fold Change）够不够大，二是组内各次生物学重复或各个病人的变化方向一不一致（用p值或校正后的q值衡量）。把这两个指标画在同一张图上就是论文里必出现的“火山图”——横着看倍数，竖着看显著性，挑右上角（耐药显著上调）和左上角（耐药显著下调）的蛋白。而PCA图则是把每份样本画成一个点，用来看耐药组和敏感组能不能按整体蛋白特征清楚分开。
+原讲者备注：拿到几千个蛋白的定量表后，怎么挑出真正跟实验处理或疾病状态有关的差异蛋白？不能只拿两组平均值一除就算完。我们必须同时看两个维度：一是变化倍数（Fold Change）够不够大，二是组内各次生物学重复的变化方向一不一致（用p值或校正后的q值衡量）。把这两个指标画在同一张图上就是论文里最常见的“火山图”——横着看倍数，竖着看显著性，挑右上角（显著上调）和左上角（显著下调）的蛋白。而PCA图则是把每份样本画成一个点，用来看两组样本能不能按整体蛋白特征清楚分开。
 大纲检查点：解释为什么不能只看均值倍数而忽略个体波动，说明火山图与PCA散点图的直观读法
 培训来源索引：research/source-index.json；页码均为PDF物理页。
 -->
 
 ---
 
-<section class="deck-page " data-slide="25"><header><div class="section-label">04 / 结果解读与肺癌耐药应用</div><h1>功能归类与候选验证设计</h1><p>对筛出的上百个差异蛋白做生物学功能归类，从中挑选证据扎实的重点候选蛋白开展靶向与机制验证</p></header><main><div class="flow-bar"><div class="flow-step"><em>起点：差异清单</em><b>差异蛋白列表</b><span>筛出几十至几百个耐药显著上调或下调蛋白</span></div><div class="flow-step"><em>第一步：找功能线索</em><b>功能注释与通路归类</b><span>GO / KEGG 归类，看蛋白集中在哪些信号通路</span></div><div class="flow-step"><em>第二步：缩小名单</em><b>筛选核心候选蛋白</b><span>挑特异肽段多、变化稳、与耐药表型相关的目标</span></div><div class="flow-step"><em>第三步：证实结论</em><b>靶向质谱与功能逆转验证</b><span>用 prm-PASEF、WB 及联合用药体内外实验证实</span></div></div><div class="stages"><div><em>连点成线</em><b>功能与通路归类（Pathway Analysis）</b><span>单看两百个蛋白英文缩写很难把握全貌。通过公共功能数据库（如 GO 或 KEGG）归类，可以看出耐药上调蛋白是否成群集中在“PI3K-Akt 旁路信号激活”、“保护性细胞自噬”、“肿瘤干细胞样特性维持”或“抗凋亡调控”等通路上。</span></div><div><em>优中选优</em><b>按四条标准挑选重点候选蛋白</b><span>优先挑选：① 耐药组与敏感组变化倍数大且重复趋势一致；② 拥有多条高质量特异肽段（非共享肽拼凑）；③ 原始色谱峰形完整无干扰；④ 功能上与旁路激酶激活、自噬流或凋亡逃逸直接相关。</span></div><div><em>验证边界</em><b>区分“蛋白丰度变化”与“磷酸化激活或耐药因果关系”</b><span>常规蛋白组直接证明的是“某蛋白总丰度在耐药后升高或降低”。若要评估激酶活性变化（如 p-Akt、p-FoxO3a），需结合磷酸化蛋白质组学；若要证明它是导致耐药的驱动因素，需补充基因敲降（siRNA）与体内外联合给药实验。</span></div></div></main><footer><span>05中文 p5–10；08 p16–18；11 p18、p35</span><b>25 / 28</b></footer></section>
+<section class="deck-page " data-slide="25"><header><div class="section-label">04 / 结果解读与验证设计</div><h1>功能归类与候选验证设计</h1><p>对筛出的上百个差异蛋白做生物学功能归类，从中挑选证据扎实的重点候选蛋白开展靶向与实验验证</p></header><main><div class="flow-bar"><div class="flow-step"><em>起点：差异清单</em><b>差异蛋白列表</b><span>筛出几十至几百个显著上调或下调蛋白</span></div><div class="flow-step"><em>第一步：找功能线索</em><b>功能注释与通路归类</b><span>GO / KEGG 归类，看蛋白集中在哪些功能通路</span></div><div class="flow-step"><em>第二步：缩小名单</em><b>筛选核心候选蛋白</b><span>挑特异肽段多、变化稳、与研究问题相关的目标</span></div><div class="flow-step"><em>第三步：证实结论</em><b>靶向质谱与独立实验验证</b><span>用 prm-PASEF、WB 或 ELISA 在新样本中证实</span></div></div><div class="stages"><div><em>连点成线</em><b>功能与通路归类（Pathway Analysis）</b><span>单看两百个蛋白英文缩写很难把握全貌。通过公共功能数据库（如 GO 或 KEGG）归类，可以看出上调或下调蛋白是否成群集中在“能量代谢”、“氧化应激响应”、“细胞周期调控”或“信号转导”等通路上。</span></div><div><em>优中选优</em><b>按四条标准挑选重点候选蛋白</b><span>优先挑选：① 组间变化倍数大且组内重复趋势一致；② 拥有多条高质量特异肽段（非共享肽拼凑）；③ 原始色谱峰形完整无干扰；④ 生物学功能与课题研究假说直接相关。</span></div><div><em>验证边界</em><b>区分“蛋白丰度相关性”与“生物学因果机制”</b><span>发现式蛋白质组直接证明的是“某蛋白丰度随分组显著升高或降低”。若要证实它是关键标志物或致病驱动因素，需在独立批次样本中用 prm-PASEF 靶向质谱、Western Blot 及基因敲降/过表达实验完成验证。</span></div></div></main><footer><span>05中文 p5–10；08 p16–18；11 p18、p35</span><b>25 / 26</b></footer></section>
 
 <!--
 逐页演讲稿：
-从火山图里筛出一两百个显著差异蛋白后，第25页讲结果解读的第四步：怎样把这一长串蛋白名单变成有肿瘤生物学意义的研究结论，并挑出重点对象去做后续耐药逆转验证？
+从火山图里筛出一两百个显著差异蛋白后，第25页讲结果解读的第四步：怎样把这一长串蛋白名单变成有生物学意义的研究结论，并挑出重点对象去做后续验证？
 
-刚拿到两百个差异蛋白的基因名时，谁也没法一眼看出规律。第一步是做“功能注释与通路归类（比如GO功能富集或KEGG通路分析）”。它的原理就像给两百件商品按货架分类：分类后我们可能会发现，奥希替尼耐药株里显著升高的那几十个蛋白并不是杂乱无章的，而是高度集中在“PI3K-Akt旁路信号通路”、“细胞自噬（Autophagy）”、“肿瘤干细胞样干性维持”或者“细胞凋亡负向调控”这几条通路上。这样零散的蛋白名单就串成了清晰的耐药机制假说。
+刚拿到两百个差异蛋白的基因名时，谁也没法一眼看出规律。第一步是做“功能注释与通路归类（比如GO功能富集或KEGG通路分析）”。它的原理就像给两百件商品按货架分类：分类后我们可能会发现，处理组里显著升高的那几十个蛋白并不是杂乱无章的，而是高度集中在“能量代谢”、“氧化应激响应”、“细胞周期调控”或者“某条信号转导”通路上。这样零散的蛋白名单就串成了清晰的生物学假说。
 
-有了通路线索，第二步是从两百个差异蛋白里精选出5到20个最核心的“候选验证靶点”。挑选标准有四条：一是耐药组与敏感组变化倍数大且组内重复高度一致；二是表格里支撑它的特异肽段（Unique Peptides）数量多，不存在共享肽段张冠李戴的风险；三是回到原始软件里看它的提取离子色谱峰（XIC）峰形完整、没有杂峰干扰；四是生物学功能跟旁路激酶激活、保护性自噬或凋亡逃逸直接相关。
+有了通路线索，第二步是从两百个差异蛋白里精选出5到20个最核心的“候选验证蛋白”。挑选标准有四条：一是组间变化倍数大且组内重复高度一致；二是表格里支撑它的特异肽段（Unique Peptides）数量多，不存在共享肽段张冠李戴的风险；三是回到原始软件里看它的提取离子色谱峰（XIC）峰形完整、没有杂峰干扰；四是生物学功能跟我们的研究问题直接相关。
 
-第三步就是开展靶向复测与功能逆转验证。一方面，收集新批次细胞、CDX/PDX移植瘤或临床样本，用第19页讲过的prm-PASEF靶向质谱或Western Blot专门复测这几个蛋白；另一方面要明确科学边界：常规蛋白组测到某激酶总蛋白含量变化，不自动等同于它的磷酸化激酶活性变化（若测p-Akt、p-FoxO3a等需结合磷酸化富集蛋白质组）；要证明它确实导致了奥希替尼耐药，还需要用siRNA敲降该基因或加入通路抑制剂，验证能否恢复肺癌细胞对奥希替尼的敏感性。
+第三步就是开展靶向复测与功能验证。一方面，收集独立批次的新样本，用第19页讲过的prm-PASEF靶向质谱、Western Blot或ELISA专门复测这几个蛋白，确认变化真实可重复；另一方面要明确科学边界：发现式蛋白组直接证明的是“某蛋白丰度与分组显著相关”，如果要进一步证明它是引起表型变化的因果驱动因素，还需要结合基因敲降、过表达或抑制剂干预等功能实验来证实。
 
-原讲者备注：筛出一百多个耐药差异蛋白之后往下怎么做？第一步是“分门别类”，看看这一百多个蛋白是不是扎堆在某几条通路上，比如发现十几个上调蛋白全都集中在PI3K-Akt信号通路、细胞自噬或者肿瘤干性维持通路上，这就给出了非常清晰的耐药机制线索。第二步是从中挑出5到20个证据最硬的候选蛋白，用前面讲的prm-PASEF靶向质谱或Western Blot在新样本里复测。同时要记住，总蛋白变多不完全等同于磷酸化激活，要证明它确实驱动了奥希替尼耐药，还要通过敲降基因或加抑制剂看能不能把耐药逆转回来。
-大纲检查点：说明质谱差异分析提供通路线索与候选名单，磷酸化激活与耐药因果机制需后续功能实验证实
+原讲者备注：筛出一百多个差异蛋白之后往下怎么做？第一步是“分门别类”，看看这一百多个蛋白是不是扎堆在某几条通路上，比如发现十几个上调蛋白全都集中在糖酵解代谢或应激反应通路上，这就给出了非常清晰的生物学功能线索。第二步是从中挑出5到20个证据最硬的候选蛋白，用前面讲的prm-PASEF靶向质谱或Western Blot在新样本里复测。同时要记住，总蛋白变多属于相关性证据，要证明因果机制还需要后续功能实验配合。
+大纲检查点：说明质谱差异分析提供通路线索与候选名单，蛋白丰度变化与因果机制需后续功能实验证实
 培训来源索引：research/source-index.json；页码均为PDF物理页。
 -->
 
 ---
 
-<section class="deck-page " data-slide="26"><header><div class="section-label">04 / 结果解读与肺癌耐药应用</div><h1>肺癌奥希替尼耐药机制与蛋白组切入点</h1><p>围绕非小细胞肺癌（NSCLC）奥希替尼耐药机制与逆转策略相关研究，解析蛋白质组学的检测维度</p></header><main><div class="sample-branches"><div><b>方向一：EGFR 依赖性耐药（靶点自身三级突变）</b><span>核心问题：长期使用第三代 EGFR-TKI 奥希替尼后，EGFR 激酶域发生 cis-C797S 等三级突变（如 19del/L858R + T790M + cis-C797S 三重突变），药物共价结合受阻。</span><p>临床转化研究证据：既往研究（J Thorac Oncol 2020）证实布加替尼（Brigatinib）联合西妥昔单抗（Cetuximab）治疗三重突变肺腺癌患者，客观缓解率（ORR）达 60%、疾病控制率（DCR）达 100%。</p></div><div><b>方向二：EGFR 非依赖性耐药（旁路、自噬与干性）</b><span>核心问题：无 EGFR 新发突变，肿瘤通过激活替代存活通路（PI3K/Akt、MET 等）、诱发保护性自噬、增强肿瘤干性或抑制凋亡蛋白来逃避杀伤。</span><p>timsTOF 蛋白质组学优势：许多非依赖性耐药并无高频 DNA 突变，而是表现为通路蛋白丰度重塑、自噬与干性标志物上调及激酶磷酸化改变，正是深度蛋白质组与磷酸化组的核心检测对象。</p></div></div><div class="two-lines"><div><b>代表性机制研究一：保护性自噬上调 SOX2 / ALDH1A1 维持耐药干性（Cancer Lett 2019）</b><span>研究发现奥希替尼处理会诱发 NSCLC 细胞保护性自噬（LC3B-II 与 Beclin-1 升高、p62 降解），进而上调干性标志蛋白 SOX2 与 ALDH1A1 以降低药物杀伤；联合自噬抑制剂氯喹（CQ）或敲降 Beclin-1 可显著下调 SOX2/ALDH1A1 并恢复奥希替尼敏感性。</span></div><div><b>代表性机制研究二：抑制 Akt / FoxO3a 通路上调促凋亡蛋白 Bim 逆转耐药（Mol Oncol 2020）</b><span>在奥希替尼耐药肺癌细胞株（H1975-OR、HCC827-OR）及裸鼠移植瘤中，阿司匹林联合奥希替尼可抑制 Akt 与 FoxO3a 磷酸化，解除对促凋亡蛋白 Bim 的转录抑制，诱导 Bim 依赖性细胞凋亡并延长患者中位无进展生存期（PFS）。</span></div></div></main><footer><span>J Thorac Oncol 15:1369–1375 (2020)；Cancer Lett 454:85–95 (2019)；Mol Oncol 14:1156–1169 (2020)</span><b>26 / 28</b></footer></section>
+<section class="deck-page " data-slide="26"><header><div class="section-label">总结与回顾</div><h1>实验全流程与证据链总结</h1><p>串联从生物样品采集、前处理酶解、液相质谱采集到数据解读与候选验证的六个关键环节</p></header><main><div class="closing-grid"><div class="closing-card"><em>01</em><div><b>从原始样品到蛋白提取液</b><span>原始细胞、组织或体液样本统一编号速冻、避免反复冻融；按样本屏障超声/匀浆裂解，离心澄清后用 BCA 测浓度并按等量蛋白投料。</span></div></div><div class="closing-card"><em>02</em><div><b>从蛋白提取液到纯净肽段液</b><span>尿素变性展开蛋白，DTT 还原剪断二硫键，IAA 烷基化封闭巯基；稀释后用胰蛋白酶在 K/R 位点切成短肽，再酸化过 C18 柱除盐并复溶澄清。</span></div></div><div class="closing-card"><em>03</em><div><b>从肽段溶液到气相带电离子</b><span>上机前核对澄清度与序列孔位，先跑 Blank 与 QC；反相液相色谱按疏水性分批洗脱记录保留时间（RT），电喷雾（ESI）使肽段脱溶剂带上正电。</span></div></div><div class="closing-card"><em>04</em><div><b>从气相离子到原始谱图（.d）</b><span>双 TIMS 按离子空间形状分离测淌度（1/K₀），PASEF 驱动四极杆按出场时序快速挑母离子进碰撞池打碎，TOF 测飞行时间换算质荷比（m/z）。</span></div></div><div class="closing-card"><em>05</em><div><b>从原始谱图到蛋白质定量表</b><span>软件比对目标物种 FASTA 库识别特异肽段与蛋白组（控制 FDR ＜ 1%），提取色谱峰面积生成支持组间横向比较的相对定量表。</span></div></div><div class="closing-card"><em>06</em><div><b>从蛋白定量表到生物学验证</b><span>结合变化倍数与统计检验从火山图筛出差异蛋白并做 GO/KEGG 通路归类；挑选高可信候选蛋白开展 prm-PASEF 靶向质谱或独立实验验证。</span></div></div></div><div class="band">实验启动前需与实验室逐一确认：目标样本类型与分组设计、前处理路线（尿素/SDC/SP3）、本机液相质谱参数与质控基线</div></main><footer><span>培训资料 01–11 全流程汇总</span><b>26 / 26</b></footer></section>
 
 <!--
 逐页演讲稿：
-弄懂了通用的读表和验证逻辑，第26页和第27页我们围绕非小细胞肺癌（NSCLC）奥希替尼耐药方向的代表性研究，看看蛋白质组学怎样切入靶向药耐药课题。
+最后一页（第26页），我们把今天汇报的26页内容浓缩成6个环环相扣的步骤，回顾一份生物样品是怎么一步步变成蛋白质组学研究结论的。
 
-第三代EGFR-TKI奥希替尼是EGFR突变晚期NSCLC的一线标准用药，但常在一年左右出现获得性耐药。如页面上方所示，临床上耐药分为两大方向：左边第一类是“EGFR依赖性耐药”，即EGFR靶点发生19del/L858R合并T790M及顺式C797S（cis-C797S）三重突变，使奥希替尼无法共价结合。发表于《Journal of Thoracic Oncology》（JTO 2020）的临床研究证实，布加替尼（Brigatinib）联合西妥昔单抗（Cetuximab）双重阻断方案在三重突变肺腺癌患者中取得60%的客观缓解率（ORR）和100%的疾病控制率（DCR）。
+前三个步骤完成了“从样品到气相离子”的转化：第一步，采集原始生物样本后贴码速冻、避免反复冻融，按样本屏障用超声或低温匀浆配合尿素裂解液提取蛋白，离心澄清后测BCA浓度，算出等量蛋白投料体积；第二步，用尿素把蛋白展开，用DTT剪断二硫键，用IAA封住巯基，稀释尿素后加胰蛋白酶在K和R位点把蛋白切成短肽段，再加酸过C18柱除掉盐和尿素，旋干复溶成无颗粒的澄清肽段液；第三步，五项检查放行后放进样品盘，先跑Blank和QC，进样针吸样进入反相液相色谱柱，按疏水性强弱分批洗脱并记录保留时间RT，流出的液体经高压电喷雾（ESI）吹干溶剂，变成带2到3个正电荷的气相肽段离子。
 
-右边第二类是无EGFR新发突变的“EGFR非依赖性耐药”，包括旁路激酶激活、保护性自噬、肿瘤干性增强与凋亡受抑。这类耐药常表现为通路蛋白丰度重塑与激酶磷酸化改变，正是timsTOF深度蛋白质组与磷酸化组的核心检测对象。
+后三个步骤完成了“从气相离子到生物学结论”的转化：第四步，离子进入timsTOF质谱仪，双TIMS先按离子胖瘦形状排队分离测出淌度1/K0，PASEF技术让四极杆配合离子出场时间表在100毫秒内连续跳变挑出十几个母离子送进碰撞池打碎，TOF按飞行时间快慢测出母离子（MS1）和碎片（MS2）的质荷比m/z，存成.d原始文件；第五步，软件拿实测谱图比对目标物种FASTA数据库认出特异肽段与蛋白组（卡住1% FDR），提取色谱峰面积算出相对定量表，横向比较同一蛋白在不同组别之间的高低；第六步，结合倍数变化和统计检验从火山图筛出差异蛋白，完成GO/KEGG功能通路归类，并通过prm-PASEF靶向质谱与独立生物学实验完成候选验证。
 
-页面下方总结了非依赖性耐药方向的两项机制成果：一是2019年《Cancer Letters》研究发现，奥希替尼诱导保护性自噬（LC3B-II与Beclin-1升高、p62降解），进而上调干性标志物SOX2和ALDH1A1维持耐药；联合氯喹（CQ）或敲降Beclin-1可显著下调SOX2/ALDH1A1并恢复敏感性。二是2020年《Molecular Oncology》研究发现，在耐药细胞株（H1975-OR、HCC827-OR）及移植瘤中，阿司匹林联合奥希替尼能抑制Akt/FoxO3a磷酸化，解除对促凋亡蛋白Bim的压制，诱导细胞凋亡并延长患者中位无进展生存期（PFS）。
+以上就是我今天学习汇报的全部内容，恳请老师批评指正，谢谢！
 
-原讲者备注：把前面学的整套蛋白质组学流程放到非小细胞肺癌（NSCLC）奥希替尼耐药研究里，临床上奥希替尼耐药主要分成两大阵营：第一类是EGFR基因自己又突变了，最典型的是cis-C797S三重突变，发表于JTO的临床研究证实布加替尼联合西妥昔单抗取得了60%的客观缓解率和100%的疾病控制率；第二类则是基因测序常常找不到EGFR新突变的“非依赖性耐药”，比如旁路信号激活、保护性自噬和干性增强。发表在Cancer Letters和Molecular Oncology上的两项研究分别揭示了“自噬通过SOX2和ALDH1A1维持干性耐药”以及“阿司匹林通过抑制Akt/FoxO3a磷酸化重新上调促凋亡蛋白Bim逆转耐药”，这些蛋白丰度与磷酸化水平的动态变化正是timsTOF质谱最擅长批量捕捉的对象。
-大纲检查点：梳理EGFR cis-C797S靶向联合及保护性自噬调控SOX2/ALDH1A1干性的研究脉络
-培训来源索引：research/source-index.json；页码均为PDF物理页。
--->
-
----
-
-<section class="deck-page " data-slide="27"><header><div class="section-label">04 / 结果解读与肺癌耐药应用</div><h1>奥希替尼旁路耐药与联合逆转文献案例</h1><p>肺癌奥希替尼耐药研究案例（Mol Oncol 2020 & iScience 2023）：解析 PIK3CG / Akt / Bim 旁路耐药轴与阿司匹林逆转策略</p></header><main><div class="split case-split"><figure class=""><img src="/figures/full/he-osimertinib-case.png" alt="NSCLC奥希替尼耐药三大分子机制与逆转靶点图"/><figcaption>NSCLC 奥希替尼耐药三大分子机制、联合逆转方案及 timsTOF 蛋白组学检测靶点映射</figcaption></figure><div><ul class="explain"><li><b>研究问题与临床痛点（iScience 2023）</b><span>部分 NSCLC 患者在奥希替尼耐药后未检出 C797S 等常见靶点突变，而是出现 PIK3CG 或 PIK3CA 等罕见旁路改变，临床缺乏安全有效的逆转方案。</span></li><li><b>核心分子机制：PI3Kγ / PI3Kα 上调激活 Akt 并抑制 Bim 凋亡</b><span>耐药肿瘤中 PIK3CG / PIK3CA 改变导致 PI3Kγ / PI3Kα 蛋白表达显著升高，绕开被阻断的 EGFR 持续激活下游 p-Akt 与 p-FoxO3a，压制促凋亡蛋白 Bim 表达。</span></li><li><b>体内外逆转验证：阿司匹林增敏奥希替尼（CDX 与 PDX 模型）</b><span>研究在细胞系移植瘤（CDX）与患者来源移植瘤（PDX）动物模型中证实：联合阿司匹林可下调 PI3Kγ/PI3Kα 及 p-Akt 水平、恢复 Bim 表达，成功逆转奥希替尼耐药。</span></li><li><b>与 timsTOF 4D 蛋白质组学的课题衔接设计</b><span>利用 dia-PASEF 全面比较敏感与耐药细胞/PDX 组织的全蛋白组与磷酸化组（同步覆盖 PI3K/Akt、自噬 LC3B/p62、干性 SOX2/ALDH1A1 及凋亡蛋白），再用 prm-PASEF 在临床活检与配对血液样本中靶向验证耐药标志物。</span></li></ul></div></div></main><footer><span>iScience 26(7):107105 (2023) doi:10.1016/j.isci.2023.107105；Mol Oncol 14:1156–1169 (2020) doi:10.1002/1878-0261.12682</span><b>27 / 28</b></footer></section>
-
-<!--
-逐页演讲稿：
-第27页我们进一步结合发表在《iScience》（2023）与《Molecular Oncology》（2020）上的耐药机制研究，把三大奥希替尼耐药分子轴与timsTOF蛋白质组学的实验设计完整串起来。
-
-先看这项研究解决的临床痛点：一部分非小细胞肺癌患者在奥希替尼耐药后再次活检做NGS测序，既没有C797S突变，也没有常见的MET扩增，而是检出了PIK3CG或PIK3CA等罕见突变。在蛋白质功能层面上，研究发现在这些耐药细胞和肿瘤组织中，PIK3CG或PIK3CA改变直接导致PI3Kγ和PI3Kα蛋白表达水平大幅上升；升高的PI3K绕开已经被奥希替尼锁死的EGFR，直接在下游把Akt磷酸化激活（p-Akt升高），进而维持肿瘤生长并压制促凋亡蛋白Bim，导致奥希替尼失效。
-
-找到这条“PIK3CG/PIK3CA→PI3Kγ/α→p-Akt→Bim受抑”的旁路耐药轴后，怎么逆转它呢？研究利用细胞系移植瘤（CDX）和患者来源移植瘤（PDX）动物模型证实：将阿司匹林与奥希替尼联用，可以在蛋白水平上显著压低PI3Kγ和PI3Kα表达、阻断Akt活化并重新拉高促凋亡蛋白Bim，在体内外成功恢复了肿瘤对奥希替尼的敏感性。
-
-看左边的机制汇总图：无论是第一列的EGFR三重突变下游信号、第二列的PI3K/Akt/Bim旁路抗凋亡轴，还是第三列的Beclin-1/LC3B自噬与SOX2/ALDH1A1干性轴，最终真正执行耐药功能的全都是蛋白质丰度变化和磷酸化修饰变化。因此，把今天学的timsTOF技术用到这一方向非常清晰：第一步，对奥希替尼敏感株与耐药株（或PDX模型、临床活检组织）开展dia-PASEF全蛋白组与磷酸化组全景扫描，一次性摸清PI3K/Akt、自噬流蛋白（LC3B、Beclin-1、p62）、干性标志（SOX2、ALDH1A1）及凋亡蛋白（Bim）的全局变化；第二步，对筛选出的关键耐药标志物建立prm-PASEF靶向定量方法，在临床队列组织或外周血样本中做高通量精准验证，为个体化联合逆转耐药提供直接的蛋白质组学证据。
-
-原讲者备注：第27页我们具体拆解发表在iScience以及Molecular Oncology上的肺癌耐药研究案例，看看怎么把质谱蛋白组学和肺癌奥希替尼耐药课题紧密结合起来。研究针对的是临床上一个棘手问题：病人在奥希替尼耐药后做基因测序，发现引发耐药的是PIK3CG或PIK3CA改变。在蛋白质层面上，这会导致PI3Kγ和PI3Kα亚基表达大量上升，绕开EGFR直接把下游的Akt和FoxO3a磷酸化激活，进而把负责杀死肿瘤细胞的促凋亡蛋白Bim死死按住。研究通过耐药细胞株、CDX模型和临床患者来源的PDX小鼠模型证明，老药阿司匹林能够有效压制PI3Kγ/PI3Kα和p-Akt，把Bim重新拉高，从而逆转奥希替尼耐药。左图把JTO、Cancer Letters、Molecular Oncology和iScience上的三大耐药轴汇总在了一起：未来我们用timsTOF做课题时，就可以先用dia-PASEF一次性全景扫描这几条通路上的全蛋白和磷酸化位点变化，再用prm-PASEF对关键耐药标志物做精准靶向验证。
-大纲检查点：详解PIK3CG/PIK3CA激活PI3Kγ/Akt抑制Bim凋亡的机制，说明CDX/PDX模型验证及与timsTOF结合的思路
-培训来源索引：research/source-index.json；页码均为PDF物理页。
--->
-
----
-
-<section class="deck-page " data-slide="28"><header><div class="section-label">总结与回顾</div><h1>实验全流程与证据链总结</h1><p>串联从肺癌细胞/组织样品采集、前处理酶解、液相质谱采集到耐药机制解析与验证的六个关键环节</p></header><main><div class="closing-grid"><div class="closing-card"><em>01</em><div><b>从原始样品到蛋白提取液</b><span>亲本敏感株、奥希替尼耐药株或 PDX/活检组织统一编号速冻；按样本屏障超声/匀浆裂解，离心澄清后用 BCA 测浓度并按等量蛋白投料。</span></div></div><div class="closing-card"><em>02</em><div><b>从蛋白提取液到纯净肽段液</b><span>尿素变性展开蛋白，DTT 还原剪断二硫键，IAA 烷基化封闭巯基；稀释后用胰蛋白酶在 K/R 位点切成短肽，再酸化过 C18 柱除盐并复溶澄清。</span></div></div><div class="closing-card"><em>03</em><div><b>从肽段溶液到气相带电离子</b><span>上机前核对澄清度与序列孔位，先跑 Blank 与 QC；反相液相色谱按疏水性分批洗脱记录保留时间（RT），电喷雾（ESI）使肽段脱溶剂带上正电。</span></div></div><div class="closing-card"><em>04</em><div><b>从气相离子到原始谱图（.d）</b><span>双 TIMS 按离子空间形状分离测淌度（1/K₀），PASEF 驱动四极杆按出场时序快速挑母离子进碰撞池打碎，TOF 测飞行时间换算质荷比（m/z）。</span></div></div><div class="closing-card"><em>05</em><div><b>从原始谱图到蛋白质定量表</b><span>软件比对人类 FASTA 库识别特异肽段与蛋白组（控制 FDR ＜ 1%），提取色谱峰面积生成支持敏感组与耐药组横向比较的相对定量表。</span></div></div><div class="closing-card"><em>06</em><div><b>从蛋白定量表到肺癌奥希替尼耐药研究</b><span>结合变化倍数与统计检验筛出耐药差异蛋白并做通路归类；围绕 PI3K/Akt/Bim、保护性自噬与干性通路，结合 CDX/PDX 模型与 PRM 靶向复测落实课题。</span></div></div></div><div class="band">课题启动前需与实验室逐一确认：目标样本类型（敏感/耐药细胞株、CDX/PDX 组织或临床活检）、磷酸化富集需求、本机配置与质控基线</div></main><footer><span>培训资料 01–11 全流程汇总；肺癌奥希替尼耐药研究应用参考文献（2019–2023）</span><b>28 / 28</b></footer></section>
-
-<!--
-逐页演讲稿：
-最后一页（第28页），我们把今天汇报的28页内容浓缩成6个环环相扣的步骤，回顾一份肺癌细胞或组织样品是怎么一步步变成耐药研究结论的。
-
-前三个步骤完成了“从样品到气相离子”的转化：第一步，采集敏感株、耐药株或PDX/活检肿瘤样本后贴码速冻、避免反复冻融，按样本屏障用超声或低温匀浆配合尿素裂解液提取蛋白，离心澄清后测BCA浓度，算出等量蛋白投料体积；第二步，用尿素把蛋白展开，用DTT剪断二硫键，用IAA封住巯基，稀释尿素后加胰蛋白酶在K和R位点把蛋白切成短肽段，再加酸过C18柱除掉盐和尿素，旋干复溶成无颗粒的澄清肽段液；第三步，五项检查放行后放进样品盘，先跑Blank和QC，进样针吸样进入反相液相色谱柱，按疏水性强弱分批洗脱并记录保留时间RT，流出的液体经高压电喷雾（ESI）吹干溶剂，变成带2到3个正电荷的气相肽段离子。
-
-后三个步骤完成了“从气相离子到肺癌耐药机制结论”的转化：第四步，离子进入timsTOF质谱仪，双TIMS先按离子胖瘦形状排队分离测出淌度1/K0，PASEF技术让四极杆配合离子出场时间表在100毫秒内连续跳变挑出十几个母离子送进碰撞池打碎，TOF按飞行时间快慢测出母离子（MS1）和碎片（MS2）的质荷比m/z，存成.d原始文件；第五步，软件拿实测谱图比对人类FASTA数据库认出特异肽段与蛋白组（卡住1% FDR），提取色谱峰面积算出相对定量表，横向比较同一蛋白在耐药组与敏感组之间的高低；第六步，结合倍数变化和统计检验从火山图筛出耐药差异蛋白，围绕PI3K/Akt/Bim旁路激活、保护性自噬及SOX2/ALDH1A1干性维持等核心耐药机制做通路解析，并通过CDX/PDX模型与prm-PASEF靶向验证把课题扎实落地。
-
-以上就是我今天汇报的全部内容，恳请老师和同学们批评指正，谢谢大家！
-
-原讲者备注：最后一页把今天汇报的28页内容串成一条完整的逻辑链：左边三步解决“肺癌细胞或组织样品怎么变成仪器能测的信号”（提取定量、酶解除盐、液相分离与电喷雾电离），右边三步解决“仪器怎么测信号、我们怎么把信号变成奥希替尼耐药研究结论”（TIMS与PASEF采集谱图、搜库生成蛋白定量表、围绕PI3K/Akt/Bim与自噬干性通路做差异筛选和靶向验证）。只要抓住了每一环的输入、动作、原因和输出，后续无论是读肿瘤蛋白组文献，还是开展我们自己的肺癌靶向药耐药课题，都有了清晰的判断依据。
-大纲检查点：总结前处理、上机采集与结果解读的衔接关系，明确细胞/组织样本、磷酸化富集及SOP确认事项
+原讲者备注：最后一页把今天汇报的26页内容串成一条完整的逻辑链：左边三步解决“生物样品怎么变成仪器能测的信号”（提取定量、酶解除盐、液相分离与电喷雾电离），右边三步解决“仪器怎么测信号、我们怎么把信号变成生物学研究结论”（TIMS与PASEF采集谱图、搜库生成蛋白定量表、差异筛选与靶向验证）。只要抓住了每一环的输入、动作、原因和输出，后续无论是阅读蛋白质组文献，还是开展实验课题，都有了清晰的判断依据。
+大纲检查点：总结前处理、上机采集与结果解读的衔接关系，明确样本类型、方法路线及质控基线确认事项
 培训来源索引：research/source-index.json；页码均为PDF物理页。
 -->

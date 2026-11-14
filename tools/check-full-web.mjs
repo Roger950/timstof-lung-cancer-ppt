@@ -66,7 +66,7 @@ await fs.mkdir('output/previews/intro-web', { recursive: true });
 await fs.mkdir('output/previews/full', { recursive: true });
 const results = [];
 try {
-  for (let i = 1; i <= 28; i++) {
+  for (let i = 1; i <= 26; i++) {
     await page.goto(`http://127.0.0.1:${port}/#/${i}`, { waitUntil: 'networkidle' });
     const slide = page.locator(`.deck-page[data-slide="${i}"]:visible`);
     await slide.waitFor();
@@ -127,18 +127,18 @@ try {
   const fullscreen = true;
   await page.keyboard.press('Escape');
   await page.setViewportSize({ width: 960, height: 600 });
-  await page.goto(`http://127.0.0.1:${port}/#/27`, { waitUntil: 'networkidle' });
+  await page.goto(`http://127.0.0.1:${port}/#/26`, { waitUntil: 'networkidle' });
   await page.screenshot({ path: 'output/previews/intro-web/small.png' });
   const scaled = await page.locator('.deck-page:visible').evaluate((el) => {
     const r = el.getBoundingClientRect();
     return { width: r.width, height: r.height, left: r.left, top: r.top };
   });
-  await page.goto(`http://127.0.0.1:${port}/#/presenter/27`, { waitUntil: 'networkidle' });
-  await page.locator('.slidev-note').getByText('PIK3CG', { exact: false }).first().waitFor({ timeout: 15000 });
+  await page.goto(`http://127.0.0.1:${port}/#/presenter/26`, { waitUntil: 'networkidle' });
+  await page.locator('.slidev-note').getByText('PASEF', { exact: false }).first().waitFor({ timeout: 15000 });
   const presenterNotes = true;
-  await page.screenshot({ path: 'output/previews/intro-web/presenter-27.png' });
+  await page.screenshot({ path: 'output/previews/intro-web/presenter-26.png' });
   const report = {
-    totalSlides: 28,
+    totalSlides: 26,
     port,
     errors,
     failedRequests,

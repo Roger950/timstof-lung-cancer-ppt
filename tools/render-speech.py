@@ -21,5 +21,5 @@ def word_pdf(input_path,user_profile,convert_tmp_dir,stem,verbose=False):
     return str(pdf),result.stdout
 
 renderer.convert_to_pdf=word_pdf
-sys.argv=['render_docx.py',str(root/'output/timsTOF组会演讲稿-肺癌耐药版.docx'),'--output_dir',str(root/'.build/speech-lung-render'),'--dpi','120','--emit_pdf']
+sys.argv=['render_docx.py',str(root/'output/timsTOF学习演讲稿-通用流程版.docx'),'--output_dir',str(root/'.build/speech-general-render'),'--dpi','120','--emit_pdf']
 renderer.main()

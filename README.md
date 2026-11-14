@@ -1,68 +1,57 @@
-# timsTOF 组会汇报（28页入门重构版）
+# timsTOF 蛋白质组学实验全流程｜学习汇报
 
-当前主线为面向无质谱与蛋白研究基础听众的 **28 页入门重构版**，按真实实验先后顺序展开：
-1. **基础概念与总流程（第 1–3 页）**：封面、氨基酸/肽段/蛋白质与自下而上（Bottom-up）策略、实验台到蛋白表的四阶段全流程。
-2. **蛋白质样品前处理（第 4–10 页）**：样品采集与分样保存、细胞裂解与蛋白提取、BCA 蛋白定量与等量投料、尿素变性/DTT 还原/IAA 烷基化、胰蛋白酶 K/R 酶解、酸化与 C18 除盐复溶、上机前五项放行检查。
-3. **样品上机与仪器工作（第 11–20 页）**：进样盘与序列表、反相液相色谱分离与保留时间（RT）、电喷雾电离（ESI）、timsTOF 内部硬件通路总览、双 TIMS 捕集与离子淌度分离（$1/K_0$）、四极杆筛选（MS1）与碰撞池碎裂（MS2）、飞行时间（TOF）质量分析与质荷比（$m/z$）、PASEF 并行累积与连续碎裂、DDA/DIA/PRM 三种采集模式、上机空白（Blank）与运行质量控制（QC）。
-4. **结果解读与气道微生态应用（第 21–27 页）**：原始 `.d` 数据与 TIC/BPC/EIC 色谱图、FASTA 数据库匹配与蛋白质鉴定（Unique/Shared Peptide、Protein Group、1% FDR）、色谱峰面积提取与相对定量读表规则、组间比较（Fold Change、统计检验与缺失值、火山图与 PCA）、GO/通路功能归类与候选验证设计、痰液宿主蛋白与微生物宏蛋白组前处理对比（含 Graf 等 2021 CF 富集实验）、慢阻肺（COPD）痰液宿主蛋白组文献案例（Frey 等 2025 Fig.5A）。
-5. **全流程回顾（第 28 页）**：从原始生物样品到慢阻肺气道微生态验证的六环证据链总结。
+本仓库用于汇总展示本人关于 **Bruker timsTOF 4D 蛋白质组学实验全流程** 的学习成果（共 **26 页 PPT** 及配套逐页讲稿）。汇报面向零基础视角，按实验真实先后顺序，把“**一份生物样品如何经过实验台前处理、液相色谱-质谱上机采集变成原始谱图，再经软件检索转化为蛋白质定量表并开展差异筛选与验证**”的完整逻辑梳理清楚。
 
-## 核心交付文件
+---
 
-- **28 页入门重构版（最新交付）**：
-  - 可编辑 PPTX：`output/timsTOF组会汇报-入门重构版.pptx`（28 页，包含可编辑文本、表格与 10 张独立原图，每页 PPT 备注内嵌完整口语演讲稿及来源说明）。
-  - 逐页 Word 演讲稿：`output/timsTOF组会演讲稿-入门重构版.docx`（28 页，一页对应一张 PPT，共 98 段、13,342 个汉字，研一学生汇报口吻）。
-  - WebPPT 静态站：`web/slides.md` 与 `web/dist/`（讲者视图内嵌完整 28 页逐页演讲稿）。
-- **历史 22 页版本（完整保留）**：
-  - `output/timsTOF组会汇报-讲稿修订版.pptx`
-  - `output/timsTOF组会汇报-交付版.pptx`
-  - `output/timsTOF组会演讲稿-修订版.docx`
-  - `output/timsTOF组会演讲稿.docx`
+## 🔗 在线查看 PPT（推荐）
 
-## 在线访问（GitHub Pages）與本地预览
+- **在线演示版（WebPPT，打开即看）**：  
+  👉 **[https://roger950.github.io/timstof-lung-cancer-ppt/#/1](https://roger950.github.io/timstof-lung-cancer-ppt/#/1)**  
+  *（操作提示：键盘 `←` / `→` 方向键翻页，按 `F` 键进入全屏，按 `O` 键查看全页缩略图）*
+- **带逐页学习讲稿版（演讲者视图）**：  
+  👉 **[https://roger950.github.io/timstof-lung-cancer-ppt/#/presenter/1](https://roger950.github.io/timstof-lung-cancer-ppt/#/presenter/1)**
 
-- **GitHub 仓库**：https://github.com/Roger950/timstof-group-meeting
-- **在线 WebPPT 汇报链接（可直接发给导师查看）**：https://roger950.github.io/timstof-group-meeting/#/1
-- **在线讲者视图（带 28 页逐页演讲稿）**：https://roger950.github.io/timstof-group-meeting/#/presenter/1
+---
 
-在项目根目录运行本地预览：
+## 📚 本次学习汇报的核心内容（共 26 页）
 
-```powershell
-node tools/serve-web.mjs
-```
+### 一、基础概念与实验全景（第 01–03 页）
+- **核心概念（第 01–02 页）**：理清氨基酸、肽段（Peptide）与蛋白质（Protein）的关系，理解为什么质谱不直接测完整蛋白，而是采用“先酶切成短肽段、测完再拼回蛋白质”的 **自下而上（Bottom-up）策略**。
+- **全流程四阶段（第 03 页）**：串联“样品提取定量 → 酶切与 C18 除盐 → LC-ESI-TIMS-Q-TOF 质谱采集 → 数据库检索与相对定量”每一环的输入与输出。
 
-打开 `http://127.0.0.1:3032/#/1` 即可浏览 28 页汇报（左右方向键翻页，`F` 键全屏；演讲者视图地址为 `http://127.0.0.1:3032/#/presenter/1`）。
+### 二、实验台蛋白质样品前处理（第 04–10 页）
+以最常用的**尿素溶液酶解**为主线，学习每一步的操作目的、化学原理与质控要点：
+1. **取样、分装与保存（第 04 页）**：离体生物样本快速低温保存防降解、唯一编号记录、单次分装避免反复冻融、以及对照组与处理组同批次穿插原则。
+2. **细胞裂解与蛋白提取（第 05 页）**：区分培养细胞膜、动物软组织与坚韧样本屏障，用超声或匀浆配合尿素裂解液释放可溶蛋白，并控制基因组 DNA 释放引起的溶液黏度。
+3. **BCA 定量与等量投料（第 06 页）**：测定蛋白浓度并换算吸取体积，保证每份样本进入酶解反应的起始蛋白质量一致。
+4. **变性、还原与烷基化（第 07 页）**：尿素展开蛋白空间折叠、DTT/TCEP 剪断二硫键（`S-S`）、IAA/CAA 避光封闭游离巯基（`-SH`），加酶前稀释尿素浓度以保护蛋白酶活性。
+5. **胰蛋白酶（Trypsin）酶解（第 08 页）**：特异识别赖氨酸（`K`）与精氨酸（`R`）羧基端切割产生 7–30 AA 短肽段，控制反应条件并监控漏切率（Missed Cleavage）。
+6. **酸化、C18 除盐与上机前检查（第 09–10 页）**：加酸停酶，利用 C18 反相柱“留疏水肽段、洗无机盐和尿素”，浓缩复溶后完成上机前 5 项放行检查。
 
-## 构建与验证命令
+### 三、样品上机与 timsTOF 质谱工作原理（第 11–20 页）
+1. **进样序列与液相色谱分离（第 11–12 页）**：编排 Blank（空白）、QC（质控）与样本进样顺序；反相液相色谱按肽段疏水性强弱分批洗脱并记录**保留时间（RT）**。
+2. **电喷雾电离 ESI（第 13 页）**：高压喷雾配合加热干燥气使液态肽段脱溶剂并带上 2–3 个正电荷，转化为气相多电荷离子。
+3. **timsTOF 硬件通路与四大核心模块（第 14–18 页）**：
+   - **双 TIMS 隧道**：利用载气推力与反向电场平衡按离子胖瘦形状（碰撞截面积 CCS）分离，测出**离子淌度（`1/K0`）**，前段累积与后段释放并行实现接近 100% 离子利用率。
+   - **四极杆（Q）与碰撞池**：按质荷比挑出母离子（MS1），在碰撞池中打断肽键生成用于推导氨基酸序列的碎片子离子（MS2）。
+   - **飞行时间分析器（TOF）**：按飞行快慢精确测定母离子与碎片离子的**质荷比（`m/z`）**。
+   - **PASEF 技术**：四极杆配合 TIMS 淌度释放时间表快速切换，单次扫描连续打碎十几个母离子，兼顾高采集速度与高灵敏度。
+4. **采集模式与上机质控（第 19–20 页）**：对比 `dda-PASEF`（探索建库）、`dia-PASEF`（全窗口覆盖队列定量）与 `prm-PASEF`（候选蛋白靶向验证）的适用场景，学习利用 Blank 与 QC 排查残留、柱压、RT 漂移和信号衰减。
 
-内容源位于 `tools/build-full-web.mjs`，样式位于 `web/full-style.css`，逐页口语讲稿位于 `research/speech-full.json`。
+### 四、结果表解读与候选验证设计（第 21–26 页）
+1. **原始 `.d` 文件与色谱信号（第 21 页）**：理解总离子流图（TIC）、基峰离子流图（BPC）与提取离子流图（EIC/XIC）各自反映的信息。
+2. **谱图匹配与蛋白质鉴定（第 22 页）**：理解 FASTA 数据库检索、特异肽段（Unique Peptides）与共享肽段（Shared Peptides）、蛋白组（Protein Group）归并、以及 `FDR < 1%` 错误发现率控制。
+3. **峰面积提取与相对定量读表规则（第 23 页）**：掌握核心读表原则——**同一行横向跨样本可比相对丰度变化，同一列纵向跨蛋白信号比不等于绝对摩尔浓度比**。
+4. **差异筛选、通路归类与全流程总结（第 24–26 页）**：学习结合变化倍数（`log2FC`）与统计检验（`p/q` 值）绘制火山图筛选差异蛋白，开展 GO/KEGG 通路归类，挑选高可信候选蛋白进行 `prm-PASEF` 靶向复测与独立实验验证，最后串联从样品到结论的 6 环证据链。
 
-```powershell
-# 1. 生成 28 页 WebPPT 源码、备注并构建生产静态包
-node tools/build-full-web.mjs
-npm --prefix web run build
+---
 
-# 2. 启动内置临时端口并通过 Edge 自动检查 28 页溢出、图片加载、翻页与讲者视图
-node tools/check-full-web.mjs
+## 📁 仓库内配套文件下载
 
-# 3. 生成并渲染 28 页 Word 逐页演讲稿
-& "C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt\dependencies\python\python.exe" tools/build-speech.py
-& "C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt\dependencies\python\python.exe" tools/render-speech.py
-
-# 4. 导出 28 页可编辑 PPTX、修复原图比例并写入讲稿备注、执行包结构与几何验证
-Set-Location web
-npx slidev export --format pptx-editable --with-clicks false --executable-path "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe" --output "../.build/timstof-intro-editable.pptx"
-Set-Location ..
-& "C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt\dependencies\python\python.exe" tools/repair-export.py
-node tools/finalize-full-pptx.mjs
-
-# 5. 使用本机 PowerPoint 渲染 28 页 PNG 预览
-powershell -NoProfile -ExecutionPolicy Bypass -File tools/render-pptx.ps1 -InputFile "output/timsTOF组会汇报-入门重构版.pptx" -OutputDir "output/previews/pptx-intro"
-```
-
-## 验证与预览产物
-
-- `output/previews/intro-web/`：28 页 WebPPT 浏览器渲染截图（`slide-01.png`–`slide-28.png`）与拼图（`contact-1.jpg`–`contact-7.jpg`）。
-- `output/previews/pptx-intro/`：28 页可编辑 PPTX 经本机 PowerPoint 导出的 PNG（`幻灯片1.PNG`–`幻灯片28.PNG`）、拼图（`contact-1.jpg`–`contact-7.jpg`）与形状统计（`powerpoint-check.json`）。
-- `.build/speech-intro-render/`：28 页 Word 演讲稿经本机 Word 导出的逐页 PNG（`page-1.png`–`page-28.png`）与拼图（`contact-1.jpg`–`contact-4.jpg`）。
-- `.build/intro-web-validation.json`、`.build/intro-pptx-validation.json`、`.build/speech-intro-check.json`：WebPPT、PPTX 与 Word 自动化验证报告。
+- **26 页通用流程版（当前主版本）**：
+  - 可编辑 PPTX 演示文稿：`output/timsTOF学习汇报-通用流程版.pptx`
+  - 逐页配套学习讲稿（Word）：`output/timsTOF学习演讲稿-通用流程版.docx`
+  - 学习大纲与讲者笔记：`research/outline.md`、`research/speaker-notes.md`
+- **历史案例备份版（含肺癌奥希替尼耐药案例 28 页版）**：
+  - 已完整备份于本仓库分支 [`backup-osimertinib-28slides`](https://github.com/Roger950/timstof-lung-cancer-ppt/tree/backup-osimertinib-28slides) 及 `output/timsTOF组会汇报-肺癌耐药版.pptx`、`output/timsTOF组会演讲稿-肺癌耐药版.docx`。
