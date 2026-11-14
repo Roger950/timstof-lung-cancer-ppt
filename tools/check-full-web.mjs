@@ -134,7 +134,7 @@ try {
     return { width: r.width, height: r.height, left: r.left, top: r.top };
   });
   await page.goto(`http://127.0.0.1:${port}/#/presenter/27`, { waitUntil: 'networkidle' });
-  await page.getByText('SputOMICs', { exact: false }).first().waitFor({ timeout: 15000 });
+  await page.locator('.slidev-note').getByText('PIK3CG', { exact: false }).first().waitFor({ timeout: 15000 });
   const presenterNotes = true;
   await page.screenshot({ path: 'output/previews/intro-web/presenter-27.png' });
   const report = {

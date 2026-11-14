@@ -7,8 +7,8 @@ from io import BytesIO
 import posixpath
 
 root=Path(__file__).resolve().parents[1]
-src=root/'.build/timstof-intro-editable.pptx'
-out=root/'.build/timstof-intro-repaired.pptx'
+src=root/'.build/timstof-lung-editable.pptx'
+out=root/'.build/timstof-lung-repaired.pptx'
 speech=json.loads((root/'research/speech-full.json').read_text(encoding='utf-8-sig'))
 assert len(speech) == 28
 ns={'p':'http://schemas.openxmlformats.org/presentationml/2006/main','a':'http://schemas.openxmlformats.org/drawingml/2006/main'}
