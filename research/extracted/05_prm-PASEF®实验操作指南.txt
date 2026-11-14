@@ -1,0 +1,622 @@
+PDF PAGE 1
+prm-PASEF®实验操作指南
+TIMS-TOF系列培训材料
+布鲁克生命科学质谱 Innovation with Integrity
+
+PDF PAGE 2
+目录
+总览
+SpectroDive中创建谱图库
+SpectroDive 中创建面板
+添加保留时间信息
+timsControl中生成 prm-PASEF 方法
+SpectroDive 中分析prm-PASEF 数据
+布鲁克生命科学质谱 Innovation with Integrity
+
+PDF PAGE 3
+总览
+布鲁克生命科学质谱 Innovation with Integrity
+
+PDF PAGE 4
+布鲁克生命科学质谱 | Innovation with Integrity
+鸟枪法蛋白质组学定量策略
+Discovery Quantitation
+Relative quantification
+Targeted Quantitation
+Relative quantification
+data-dependent 
+acquisition –
+PASEF®
+IDbasedon MS and MS/MS 
+information.
+Quantitationbasedon peptide-
+precursor intensities.
+PEAKS
+ MaxQuant
+data-independent 
+acquisition –
+dia-PASEF®
+IDbasedon MS and MS/MS 
+information.
+Quantitationbasedon peptide-
+precursor and fragment 
+intensities.
+Spectronaut
+data-independent 
+acquisition –
+dia-PASEF®
+IDbasedon MS and MS/MS 
+information
+Quantitationbasedon peptide-
+precursor and fragment 
+intensities.
+data-dependent 
+acquisition –
+prm-PASEF®
+IDbasedon MS and MS/MS 
+information.
+Quantitationbasedon 
+fragment (and precursor) 
+intensities
+Skyline
+PEAKS
+PaSER
+ MSFragger
+ PaSER
+DIA-NN
+Spectronaut
+PEAKS
+PaSER
+DIA-NN
+prm-PASEF®实验操作指南
+SpectroDive
+
+PDF PAGE 5
+布鲁克生命科学质谱 | Innovation with Integrity
+prm-PASEF–PASEF模式下靶向测量肽段
+▪ 在TIMS中，前体离子/目标肽经过积累，按形状和电荷分离，并由四极杆按顺序传输到碰撞池，生成的碎片
+离子由高分辨率的正交TOF进行分析。
+▪ 最终，可以从单个TIMS积累监测到几个前体离子，提高了方法的多重使用能力。
+Lesur et al. (2021) The clinical potential of prm-PASEFmass spectrometry,Expert
+Reviewof Proteomics, 18:2,75-82,DOI:10.1080/14789450.2021.1908895
+prm-PASEF®实验操作指南
+
+PDF PAGE 6
+布鲁克生命科学质谱 | Innovation with Integrity
+prm-PASEF® 靶向蛋白质组学
+▪ 在单次prm-PASEF分析中选择目标肽前体离子。
+▪ 在IMS扫描中可以选择多个前体离子，然后在
+碰撞池中连续碎裂。
+▪ 通过将离子淌度 （绿色条）与四极杆隔离窗
+口（蓝色条）结合使用 ，获得了前体离子选
+择的高选择性。
+▪ 在一个TIMS ramp（100 ms）中可以监测超过
+10个目标，从而实现了大规模并行化。
+ MS1heat map
+prm-PASEF®实验操作指南
+
+PDF PAGE 7
+布鲁克生命科学质谱 | Innovation with Integrity
+prm-PASEF在timsControlv. 2.0 或更高版本中
+▪ timsControl v. 2.0 及更高版本提供用户友好的 prm-PASEF 方法创建功能，并由 SpectroDiveTM 提供全面支持
+Adaptedfrom Lesur et al.,AnalChem2021,93,3,1383–1392
+tn-52-prm-pasef-ebook-rev-01.pdf
+prm-PASEF®实验操作指南
+
+PDF PAGE 8
+布鲁克生命科学质谱 | Innovation with Integrity
+SpectroDive
+▪ SpectroDive 是 Biognosys专有的靶向蛋白质组学软件解决方案
+▪ 自SpectroDive 11以来，对prm-PASEF提供全面支持。
+▪ 欲了解更多信息和试用许可请求，请访问https://biognosys.com/software/spectrodive/
+▪ 如需技术支持，请联系support@biognosys.com订单相关请联系order@biognosys.com
+prm-PASEF®实验操作指南
+
+PDF PAGE 9
+布鲁克生命科学质谱 | Innovation with Integrity
+prm-PASEF®实验操作指南
+PRM 方法开发
+▪ 肽段应是目标蛋白质所独有的，长度为7-25 个氨
+基酸，并易于通过LC-MS 分析检测到。
+▪ 肽的两端应与酶切位点匹配。
+▪ 避免漏切的酶切位点和随机的末端（即相邻
+的两个酶切位点）。
+▪ 避免常被修饰的氨基酸和化学诱导的修饰
+▪ 检查已知的蛋白质修饰（信号肽、异构体、切割
+位点等）。
+目标肽段选择 prm -PASEF方法优化
+▪ 确定LC方法以优化通量和/或减少共洗脱
+▪ 选择具有最高强度的目标的前体（m/z和电荷）。
+▪ 根据目标m/z优化离子淌度范围。
+▪ 优化循环时间以进行定量:
+▪ 循环时间决定在色谱峰上获得的峰点数量
+▪ 目标数量和色谱峰宽将决定理想的循环时间。
+▪ 色谱峰的采样率：最好在色谱峰上获得5-8个点
+以进行定量
+
+PDF PAGE 10
+布鲁克生命科学质谱 | Innovation with Integrity
+prm-PASEF®实验操作指南
+prm-PASEF实验的一般步骤
+▪ 一般步骤:
+1. 确保您的timsTOF仪器已经校准好（m/z和1/k0），对目标肽进行dda-PASEF/dia-PASEF测量。
+2. 合成目标肽应在有基质和无基质的情况下进行测量（后者可能会影响色谱分离）。
+3. 在SpectroDive中对dda-PASEF/dia-PASEF数据进行数据库搜索，创建谱图库并提取前体信息（m/z、RT、IM）。
+4. 选择您的目标，并在SpectroDive中生成具有最佳参数的面板。导出包含前体m/z、RT和IM信息的.csv文件。
+对RT进行校准，获取校准方法或使用谱图库中包含的信息。
+5. 将目标列表导入timsControl并生成prm-PASEF方法。
+6. 开始prm-PASEF测量。检查保留时间、m/z和1/k0是否在方法的设定范围内。
+7. 在SpectroDive中分析prm-PASEF数据。
+
+
+PDF PAGE 11
+SpectroDive中创建谱图库
+布鲁克生命科学质谱 Innovation with Integrity
+
+PDF PAGE 12
+布鲁克生命科学质谱 | Innovation with Integrity
+建库： 选择原始数据文件和fasta文件
+添加你的dda-PASEF/dia-PASEF 数据
+添加对应的FASTA文件
+▪ Library中生成谱图库
+Library
+prm-PASEF®实验操作指南
+
+PDF PAGE 13
+布鲁克生命科学质谱 | Innovation with Integrity
+建库: 检索参数设置
+检查和修改检索设置.
+▪ 大多数参数可以使用 BGS工厂设置
+（默认设置）。
+▪ 如有必要，定义标记通道（例如，
+Arg10、Lys8）。
+▪ 检查修饰 （例如 ，半胱氨
+酸的羰基甲基化 ，蛋氨酸
+的氧化等）。
+▪ 如果标记的肽段与未标记的背
+景一起运行，则应选择两个通
+道；
+▪ 通道1，对于未标记的样品 /肽
+段，标签框为空。
+▪ 通道2，像左侧示例中一样为标
+记的样品/肽段定义标签。
+prm-PASEF®实验操作指南
+
+PDF PAGE 14
+布鲁克生命科学质谱 | Innovation with Integrity
+建库: Libraryenrichmentandinference
+可以添加现有的数据库搜
+索结果，以丰富库。
+必要时，选择不同的FASTA 
+文件确认蛋白信息
+prm-PASEF®实验操作指南
+
+PDF PAGE 15
+布鲁克生命科学质谱 | Innovation with Integrity
+建库: 基础设置和 iRT 校准
+▪ 大多数库生成设置可以使用BGS工厂默认
+设置。
+▪ 详细信息可以在 SpectroDive手册中找到 ，
+也可以在软件中直接使用文本悬停工具
+查看。
+▪ 经验iRT数据库（默认设置 ）：使用SpectroDive的
+内部经验iRT参考数据库，包含来自多个来源的超
+过100,000个iRT参考肽段。
+▪ 深度学习辅助iRT回归：使用深度学习算法生成iRT
+参考集 。在使用SpectroDive内部经验 iRT参考数据
+集几乎不涵盖的非模式生物时很有用。
+▪ 使用RT作为iRT：不进行iRT校准。仅在肽分离方法
+非常稳定 、均匀且非标准 （例如毛细管区带电泳
+（CZE））时才应使用
+prm-PASEF®实验操作指南
+
+PDF PAGE 16
+布鲁克生命科学质谱 | Innovation with Integrity
+建库: 缺失通道和淌度值预测
+在计算库时生成缺失通道的信息：
+▪ 对于同位素标记的样品：为缺失的标签对生成虚拟信息。
+▪ 例如，如果您只有添加了重标记肽段的样品，则将生成一
+个轻通道，该轻通道基于重通道生成，并具有一致的碎片
+离子选择。该选项与使用同位素标签的n通道搜索结果一起
+使用。工作流选项包括：
+▪ 标签：将检测实验的标签设置，并为给定的肽段添加缺失
+的通道。
+▪ 掺入：为所有未配对的重肽段创建一个轻通道。
+▪ 倒置的掺入：为所有未配对的轻肽段创建一个重通道。
+▪ 使用DNN预测的离子淌度决定是否应该基于深度神经网络
+（DNN）预测离子淌度生成库。
+▪ 自动（PASEF数据的默认设置 ）：在经验离子淌度值
+可用时使用它们 。如果对于肽段没有经验离子淌度
+值，则对其进行预测。
+▪ 始终使用预测的离子淌度：库将包含预测的离子淌度
+值，无论是否有经验信息可用。
+▪ 永不预测离子淌度：不会进行离子淌度预测。库将仅
+包含经验离子淌度值（如果有）。
+prm-PASEF®实验操作指南
+
+PDF PAGE 17
+布鲁克生命科学质谱 | Innovation with Integrity
+建库: 总结
+▪ 每个文件都应分配一个.FASTA 文件 和 搜索设置
+▪ 设置完成之后，Pulsar数据库搜索将开始
+▪ 搜索时间取决于dda-PASEF/dia-PASEF运行的大小和数量。
+▪ 生成库后，您可以在Prepare      中创建要使用prm-
+PASEF方法测量的目标肽段列表。
+prm-PASEF®实验操作指南
+
+PDF PAGE 18
+SpectroDive中创建面板
+布鲁克生命科学质谱 Innovation with Integrity
+
+PDF PAGE 19
+布鲁克生命科学质谱 | Innovation with Integrity
+SpectroDive中目标肽段选择和面板生成
+▪ Prepare视图 的谱图库中选择目标肽段
+▪ 目标肽段被收集到一个面板中，该面板包含了创建prm-PASEF方法和prm-PASEF数据分析所需的所有目
+标肽段的信息。
+现有面板清单
+RT 校准信息
+prm-PASEF 方法导出
+prm-PASEF®实验操作指南
+
+PDF PAGE 20
+布鲁克生命科学质谱 | Innovation with Integrity
+创建面板: 谱图库和目标蛋白选择
+选择应用 prm-PASEF 方法测量的目标蛋白质
+信息
+prm-PASEF®实验操作指南
+选择要用于面板生成的
+谱库(目标肽选择)。
+
+PDF PAGE 21
+布鲁克生命科学质谱 | Innovation with Integrity
+创建面板: 蛋白信息
+搜索目标蛋白.
+完整蛋白序列展示；
+Wholeprotein sequencedisplay;标记
+的肽序列可进入谱图库，并可选择
+用于生成 prm-PASEF 方法。
+在不同视图之间切换，以便更快地导航和
+选择目标蛋白质。
+选择所有目标蛋白质后，点击 "下一步"。
+prm-PASEF®实验操作指南
+
+PDF PAGE 22
+布鲁克生命科学质谱 | Innovation with Integrity
+创建面板: 肽段选择
+▪ 勾选应用于prm-PASEF 方法测量的目标蛋白质和多肽
+▪ 属于同一蛋白质的多肽将从高到低排序。
+所有蛋白和肽段选择完成之后，点击“下一步”
+▪ 可为每个蛋白质选择
+N 个最佳肽段。
+▪ 如果选中 "基于 AA 
+的附加限制"，则可
+根据序列和位置进行
+额外筛选。
+▪ 物种检查将根据其他
+物种的 FASTA 文件检
+查肽段。
+prm-PASEF®实验操作指南
+
+PDF PAGE 23
+布鲁克生命科学质谱 | Innovation with Integrity
+创建面板: 碎片离子选择
+选择肽段碎片离子后，点击 "下一步"。
+▪ 可以通过取消选中肽段前的复选框将蛋白质和肽段从面
+板中删除，例如由于MS/MS谱的质量不佳。
+▪ 在面板中选择应包含在内的肽段前的复选框 。具有最高丰
+度的片段将被预先选择 。此时未选择的片段始终可以在
+prm-PASEF数据中看到，并在面板细化步骤中再次添加。
+▪ 如果在列表中取消选择片段 ，则在谱图库显示中的 MS/MS
+谱中也会取消选择这些片段
+prm-PASEF®实验操作指南
+
+PDF PAGE 24
+布鲁克生命科学质谱 | Innovation with Integrity
+创建面板: 标签定义
+点击“下一步”继续.
+▪ 定义在谱图库中缺失但需要包含在面板中以用
+于prm-PASEF方法生成的标签。
+▪ 定义您实验的工作流程 （倒置掺入、掺入或无
+标记）。
+▪ 在计算库中生成缺失通道的信息。
+prm-PASEF®实验操作指南
+
+PDF PAGE 25
+布鲁克生命科学质谱 | Innovation with Integrity
+创建面板: 总结
+面板中选定蛋白质和肽的总览。
+点击 "完成 "继续。
+prm-PASEF®实验操作指南
+
+PDF PAGE 26
+添加保留时间信息
+布鲁克生命科学质谱 Innovation with Integrity
+
+PDF PAGE 27
+布鲁克生命科学质谱 | Innovation with Integrity
+添加保留时间信息
+▪ 添加RT信息有两种方式：
+▪ 选项1 - 使用来自谱图库的现有RT信息
+▪ 如果用于生成谱图库的dda-PASEF或dia-PASEF运行的梯度条件与您要生成的prm-PASEF方法相同，则可以使用
+光谱库中的RT信息来生成计划的prm-PASEF方法。
+▪ 选项2 - 生成RT校准
+▪ 如果谱图库中的梯度与最终的prm-PASEF方法之间的梯度条件不同，则需要运行一个具有unscheduled prm-
+PASEF方法的运行，以收集肽段的正确RT信息。 unscheduled  prm-PASEF运行的结果用于生成RT库，然后用于
+生成scheduled的prm-PASEF方法。或者，可以使用dia-PASEF运行的结果代替非计划prm-PASEF结果。
+prm-PASEF®实验操作指南
+
+PDF PAGE 28
+布鲁克生命科学质谱 | Innovation with Integrity
+选项1 – 从已有的谱图库中添加RT信息
+校准肽和选定运行的 LC 
+回归。
+点击 "完成 "继续。
+▪ 选择具有正确RT信息的光谱库，
+然后单击“下一步”。
+▪ 先决条件：与prm-PASEF实验计划
+相同的梯度被用于生成谱图库。
+prm-PASEF®实验操作指南
+
+PDF PAGE 29
+布鲁克生命科学质谱 | Innovation with Integrity
+选项1 – 优化 RT 窗口和方法导出
+▪ 在厂商下拉菜单中选择Bruker，在仪器下
+拉菜单中选择timsTOF Pro Series，在软件
+版本下拉菜单中选择timsControl3.0。
+▪ 生 成 的 带 有 目 标 肽 段 信 息 的 文 件 将 与
+timsControl3.0及更高版本兼容。
+▪ 梯度长度信息将从所选的 RT校准传递过
+来。不应手动更改此信息。
+▪ 定义前体的RT窗口。
+▪ 如果更改窗口大小 ，则每个ramp上的前
+体数量将发生变化。
+▪ 窗口越大，并发前体的数量就越多。
+▪ 显示不同大小 RT窗口的整个色谱分离中
+的并发前体。
+▪ 导出方法以生成 .timsControl prm-method
+的.csv文件。
+显示不同大小的RT 窗口在整个色谱分离过
+程中同时出现的前体离子。
+导出方法， 生成 timsControlprm-method .csv 文件。
+prm-PASEF®实验操作指南
+
+PDF PAGE 30
+布鲁克生命科学质谱 | Innovation with Integrity
+选项1 –prm-PASEF方法中的prm表视图
+▪ .csv文件的布局与 timsControl prm-PASEF
+表相同。
+▪ 在此示例中，重肽段在dda-PASEF运行中
+被 检 测 到 ， 并 且 轻 肽 段 的 信 息 在
+SpectroDive中以模拟方式添加。
+▪ 因此 ，.csv表格包含了轻重形式的 prm-
+PASEF参数。
+▪ “CE”列应保持为空 ，因为仪器会自动
+计算CE值。
+▪ 按照“在timsControl中生成prm-PASEF方
+法”的步骤在 timsControl中创建方法并
+使用timsTOF仪器运行样品。
+一对轻肽和重肽
+prm-PASEF®实验操作指南
+
+PDF PAGE 31
+布鲁克生命科学质谱 | Innovation with Integrity
+选项2 – 生成 RT 校准运行方法
+▪ 在Prepare视图中选择您要测量的
+肽段的面板。
+▪ 在导出方法窗口中，在调度下拉
+菜单中选择unscheduled 。
+▪ 设置新梯度的长度。
+▪ 选择导出方法以生成.timsControl
+prm 方法的.csv文件。
+prm-PASEF®实验操作指南
+
+PDF PAGE 32
+布鲁克生命科学质谱 | Innovation with Integrity
+选项2 – RT 校准运行方法的 prm 表视图
+▪ .csv文 件 的 布 局 与timsControl prm-
+PASEF表相同，其中包含轻和重形式
+的prm-PASEF参数。
+▪ 在此示例中 ，梯度长度设置为 20分
+钟之前进行了csv文件导出。因此，
+RT [s] 设 置 为 梯 度 长 度 的 中 间 值
+（600 s），RT范围[s]设置为整个梯
+度长度（1200 s），以便在整个梯度
+期间测量所有目标。
+▪ “CE”列应保持为空，因为仪器会自
+动计算CE值
+一对轻肽和重肽
+▪ 按照 "在 timsControl 中生成 prm-PASEF 方法 "的步骤在 timsControl 中创建方
+法，并使用 timsTOF 仪器重新运行标准。
+prm-PASEF®实验操作指南
+
+PDF PAGE 33
+布鲁克生命科学质谱 | Innovation with Integrity
+选项 2 – 从 RT 校准运行导入RT 信息
+▪ 选 择 来 自 unscheduled
+prm-PASEF 或 dia-PASEF运
+行的结果文件并加载它 。
+▪ 分配面板并单击加载和
+下一步。
+按下完成。 SpectroDive将分析数据并
+从 unscheduled prm-PASEF或 dia-PASEF
+运行中添加 RT信息到Prepare视图中的
+选择RT校准运行窗口中。
+prm-PASEF®实验操作指南
+
+PDF PAGE 34
+布鲁克生命科学质谱 | Innovation with Integrity
+选项2 – 优化RT 窗口并导出方法
+unscheduled  prm-PASEF或dia-PASEF运行的分析结果将显示在准备
+透视图中的选择RT校准运行窗口中。选择正确的结果。
+20
+▪ 在导出方法窗口中，在调度下拉菜单中选择计划。
+▪ 设置梯度长度和窗口大小。
+▪ 选择导出方法以生成.timsControl prm-method的.csv文件。
+▪ 按照“在timsControl中生成prm-PASEF方法”的步骤在timsControl中
+创建方法并使用timsTOF仪器运行样品。
+20
+2010 155
+2.5
+2.521.50.50.3
+4
+0.1
+2.5
+prm-PASEF®实验操作指南
+
+PDF PAGE 35
+timsControl生成 prm-PASEF方法
+布鲁克生命科学质谱 Innovation with Integrity
+
+PDF PAGE 36
+布鲁克生命科学质谱 | Innovation with Integrity
+如何在timsControl中设置prm-PASEF方法?
+▪ 将扫描模式更改为prm-PASEF，转到MS/MS选项卡，然后在prm-PASEF设置窗口中点击编辑。
+▪ 从SpectroDive导入目标列表
+选择 “导入 ”并定位到包含 SpectroDive 
+生成的目标列表的.csv 文件.
+prm-PASEF®实验操作指南
+
+PDF PAGE 37
+布鲁克生命科学质谱 | Innovation with Integrity
+导入 prm-targetlist
+▪ 生成Scheduler Plots将在整个色
+谱分离中绘制所有目标及其在
+迁移和RT维度上的选择窗口。
+▪ 此外，表格中将出现一个新的
+列“采样率（Hz）”，提供有
+关每个目标将被选择进行碎片
+化的频率信息。.
+▪ 以秒为单位的RT 值会自动转换为分钟。
+▪ 如果目标超出timsControl中指定的淌度范围，则会修改淌度范围。
+MS 间隔指定测量MS1 的频率。
+选择 "关闭 "完成 timsControl中目标列表的设置。
+prm-PASEF®实验操作指南
+
+PDF PAGE 38
+布鲁克生命科学质谱 | Innovation with Integrity
+自动校准
+▪ timsTOF 仪器应在 m/z 和离子淌度维度上进行正确校准。
+▪ 激活 “自动校准 ”功能，以纠正 timsControl中离子淌度校准中可能出现的漂移。
+▪ 必须在 CaptiveSpray源的进气口过滤器上添加lockmass/参考化合物（最好是3 个点），以执行离子淌度自动校准。
+▪ 为实现更强大的自动校准功能 ，请将校准列表中的条目数量限制为过滤器上存在的化合物 。同时将检测范围设置
+为 20%。
+prm-PASEF®实验操作指南
+
+PDF PAGE 39
+布鲁克生命科学质谱 | Innovation with Integrity
+调整 prm-PASEF方法
+▪ 您可以通过限制淌度范围来提高方法的选择性，使其仅限于您的目标覆盖的淌度范围内。如果这样做，请不要忘
+记在IM维度中重新校准您的采集方法。
+▪ 创建的 prm方法必须要保持碰撞能量设置前后相同 ，以生成用于处理的相同碎片强度 。目前在
+SpectroDive中没有prm-PASEF的碰撞能量优化工作流程。
+▪ Tims累积时间：请注意，增加tims累积时间可能会提高灵敏度，但会降低动态范围。当基质复杂时，我们观察
+到过长的tims累积时间（> 100 ms）可能导致信号丢失。
+prm-PASEF®实验操作指南
+
+PDF PAGE 40
+SpectroDive中分析prm-PASEF数据
+布鲁克生命科学质谱 Innovation with Integrity
+
+PDF PAGE 41
+布鲁克生命科学质谱 | Innovation with Integrity
+加载 prm-PASEF数据
+▪ 打开分析视图，并在文件夹中选择“设置定
+向分析 ”（如果使用预定的 prm-PASEF方法
+采集样品）。
+▪ 浏览到包含prm-PASEF文件的文件夹。
+▪ 您可以加载timsTOF原始文件，无需格式转换
+prm-PASEF®实验操作指南
+
+PDF PAGE 42
+布鲁克生命科学质谱 | Innovation with Integrity
+面板选择
+可以修改实验名称
+可以为绝对定量工作流程分配一个校准曲线（请参阅SpectroDive 
+YouTube教程tutorial和SpectroDive手册manual).
+选择指定实验的面板并按“加载”。有关
+目标肽段的信息将添加到实验中。
+prm-PASEF®实验操作指南
+
+PDF PAGE 43
+布鲁克生命科学质谱 | Innovation with Integrity
+检索和提取设置
+大多数参数可使用 BGS 出厂默认设置。
+使用固定PASEF离子淌度范围
+如果在prm-PASEF目标列表中定义了离子淌度窗口，
+则不需要此选项。
+▪ 如果未定义目标的离子淌度窗口，则应使用此选
+项。SpectroDive将在淌度峰顶周围的离子淌度窗
+口内提取迹线。提取窗口的大小在“固定范围”
+中指定。
+prm-PASEF®实验操作指南
+
+PDF PAGE 44
+布鲁克生命科学质谱 | Innovation with Integrity
+保留时间校准
+校准设置参照 RT 校准。
+校准参考空间指定用于iRT和质量校准的肽段。
+▪ 所有面板肽段使用面板中的所有肽段进行RT校准
+（推荐）。
+▪ 仅iRT套件肽段使用iRT肽段进行RT校准。
+prm-PASEF®实验操作指南
+
+PDF PAGE 45
+布鲁克生命科学质谱 | Innovation with Integrity
+鉴定
+▪ 如果选择基于单针 ，则为每一针单独计算 q值。如
+果未选中复选框，则为整个分析计算q值。
+▪ 对于掺入实验，必须激活“应标识参考”。 q值计
+算将针对轻和重肽段进行。
+prm-PASEF®实验操作指南
+
+PDF PAGE 46
+布鲁克生命科学质谱 | Innovation with Integrity
+流程
+后 续 分 析 设 置 描 述 了 用 于prm-
+PASEF实验的差异丰度和统计分析
+参数。计算可以在蛋白质或肽段水
+平上进行。这些设置将在后续分析
+选项卡中用于数据分析和可视化。
+▪ 多通道工作流定义了 prm-PASEF实验中使
+用的定量策略（例如，标记或无标记）
+▪ 基于参考的鉴定：
+▪ 选择：峰值检测和鉴定将在参考通道上
+执行。
+▪ 未选择：峰值检测将在参考通道上进行 ，
+鉴定将在目标通道上进行。
+▪ 请参阅 SpectroDive手册了解关于 iRT细化
+实验设置和工作流窗口中的设置。
+prm-PASEF®实验操作指南
+
+PDF PAGE 47
+布鲁克生命科学质谱 | Innovation with Integrity
+定量
+➔Quantification 设置描述了实验的定量方式。
+▪ 前体过滤指定了用于定量的前体：
+▪ 主要组数量：指定如何计算主要组数量中的次
+要组。
+▪ 主要（蛋白质）分组：指定应将什么视为蛋白
+质（蛋白质组ID或基因ID）。
+▪ 次要 （肽段 ）分组：指定应将什么视为肽段
+（剥离序列、修饰序列或前体）。
+▪ 次要组数量：指定如何计算次要组数量中的前
+体。
+▪ 默认设置对于典型的目标蛋白质实验足够了 。
+对于特殊情况 ，例如修饰肽段 ，需要进行调整 。
+选择“下一步”关闭窗口
+prm-PASEF®实验操作指南
+
+PDF PAGE 48
+布鲁克生命科学质谱 | Innovation with Integrity
+实验条件
+选择“下一步”打开下一个窗口.
+➔每个样品都有特定的实验条件.
+选择完成开始数据分析
+▪ 处理完成后，您可以使用分析视图浏览数据，或者直接在后续分
+析透视图中查看结果。
+▪ 在报告选项卡下，有多种方案可用于导出结果。
+▪ 有关结果输出的详细信息，请查阅SpectroDive和Spectronaut教程。
+prm-PASEF®实验操作指南
+
+PDF PAGE 49

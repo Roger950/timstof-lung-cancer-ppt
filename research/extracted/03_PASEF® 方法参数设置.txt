@@ -1,0 +1,267 @@
+
+===== PDF PAGE 1 =====
+布鲁克生命科学质谱
+Innovation with Integrity
+PASEF®方法参数设置
+TIMS-TOF系列培训材料
+timsControl 5.1
+
+===== PDF PAGE 2 =====
+布鲁克生命科学质谱 | Innovation with Integrity
+PASEF= ParallelAccumulationSerialFragmentation
+PASEF® 方法参数设置
+
+===== PDF PAGE 3 =====
+布鲁克生命科学质谱 | Innovation with Integrity
+PASEF= ParallelAccumulationSerialFragmentation
+“三个维度的实时 PASEF 母离子选择。 在 HeLa
+消化物的 LC-TIMS-MS 分析中，单个时间点的离
+子淌度的热图可视化。 连接线表示在接下来的
+TIMS-PASEF 扫描（颜色编码）中选择用于碎裂
+的所有母离子的 m/z 和迁移率位置。”
+摘自 : “Online Parallel Accumulation–Serial Fragmentation
+(PASEF) with a Novel Trapped Ion Mobility Mass Spectrometer“,
+2018 Meier et al.
+https://www.biorxiv.org/conten t/10.1101/336743v1.full
+文章链接：https://doi.org/10.1074/mcp.TIR118.000900
+PASEF® 方法参数设置
+
+===== PDF PAGE 4 =====
+布鲁克生命科学质谱 | Innovation with Integrity
+timsControl方法 – ApplicationMethods
+▪ 可从菜单 “Method–ApplicationMethods ”中加载针对蛋白质组学应用优化的默认采集方法
+▪ 可以从“Download Methods”从Bruker网站下载最新版本。请务必仅下载指示中硬件（A、B或C）的方法。
+▪ 本文档介绍了“ DDA PASEF-standard_1.1sec_cycletime ”方法。
+PASEF® 方法参数设置
+
+===== PDF PAGE 5 =====
+布鲁克生命科学质谱 | Innovation with Integrity
+timsControl方法 – 新版Compass安装包
+▪ 网页上，还可以找到Compass软件包的新版本发布，其中包括最新版本的timsControl。
+▪ 在下载和安装之前，建议仔细阅读和理解版本说明以及安装说明：
+PASEF® 方法参数设置
+
+===== PDF PAGE 6 =====
+布鲁克生命科学质谱 | Innovation with Integrity
+MS andTIMS 设置
+▪ 在timsControl的左侧，可以更改MS设置：
+• “ScanBegin”and “ScanEnd”定义了MS和MS/MS感兴趣的质量范围
+• 在该方法中，扫描模式是“PASEF”
+下面是TIMS 设置:
+▪ 在“模式”下可以选择imeX（离子淌度扩展）模式
+• 对于shotgun蛋白质组学实验，“Default”或“Custom”是标准模式。
+• “Default”模式下，斜坡的斜率是固定的 ，而“Custom”模式下可编辑 。
+• 注意：每当更改 TIMS斜坡的斜率 （每毫秒的 Δ1/K0）时，必须重新进行
+TIMS校准！
+▪ “1/K0 Start” and “1/K0 End”定义了淌度感兴趣的范围
+• 这里使用了shotgun蛋白质组学实验的典型值
+▪ “Ramptime”定义了第2个TIMS池中TIMS分离时间的长度
+• 如有需要，可以解锁 duty cycle，并将第一个TIMS中的“Accu. time”设置为
+比第二个TIMS中的“Ramp. time”更短。对应的dutycycle将显示出来。
+PASEF® 方法参数设置
+
+
+===== PDF PAGE 7 =====
+布鲁克生命科学质谱 | Innovation with Integrity
+系统和校准状态
+▪ 此图片显示了TIMS模式下质谱仪的运行状态。TOF和TIMS校准都无效，
+距离上次重置已经过去15分钟。
+▪ 在这种情况下，建议进行TOF和TIMS校准。可以通过校准选项卡进行校
+准。下方显示了有效的TOF校准。校准状态已更新：
+PASEF® 方法参数设置
+
+===== PDF PAGE 8 =====
+布鲁克生命科学质谱 | Innovation with Integrity
+当前校准(状态) 和真空度信息
+▪ 要查看当前校准，请单击校准状态旁边的小箭头之一：
+PASEF® 方法参数设置
+
+===== PDF PAGE 9 =====
+布鲁克生命科学质谱 | Innovation with Integrity
+timsControl方法编辑
+▪ 自版本5.0 以来，timsControl配备了“timsControl方法离线编辑器”，可在采集运行时进行编辑。
+PASEF® 方法参数设置
+
+===== PDF PAGE 10 =====
+布鲁克生命科学质谱 | Innovation with Integrity
+PASEFMS/MS 设置： 总览
+▪ PASEF是一种数据依赖型的扫描模式，利用淌度分离前体离子，并在单个MS/MS ramp内获取多
+个MS/MS谱图
+▪ 所谓的 PASEF 循 环 包 括 一 个 用 于 前 体 检 测 的MS ramp ， 随 后 是 固 定 数 量 的MS/MS ramps
+（“PASEF ramps”）。
+PASEF® 方法参数设置
+
+===== PDF PAGE 11 =====
+布鲁克生命科学质谱 | Innovation with Integrity
+PASEFMS/MS 设置 – PrecursorIons
+• 每个母离子都会被自动安排进入PASEF扫描，母离子选择以强度高者优先；
+• 需要多次扫描的低丰度离子只安排在一个Cycle中，不放入下一个PASEF循环中；
+• 只有完成系统预设扫描次数的离子会被放入动态排除列表。因此，假设某离子被预设扫描8次，但当前 PASEF
+循环中只被重复采集了5次，那么该离子还有机会在下一个循环中被选中. 然而，为了与色谱分离同步，新检
+测到的丰度更高的母离子会被优先选择。
+▪ 需要设置每个Cycle 的 Number of PASEF 
+MS/MS scans (PASEF扫描次数) .
+PASEF® 方法参数设置
+
+===== PDF PAGE 12 =====
+布鲁克生命科学质谱 | Innovation with Integrity
+PASEFMS/MS 设置 – PrecursorIons
+▪ 根据所需的PASEF循环时间，可以使用“PASEF Ramps”字段配置最大数量的MS/MS ramp。基于PASEF Ramps和
+ramptime计算的循环时间显示在下方的字段中（总循环时间）。
+▪ 您应该密切关注色谱峰宽度，并决定在色谱峰上需要多少个MS数据点，例如，如果您选择无标记定量工作流
+程，则建议在LC峰上使用8个MS数据点。
+▪ 循环总时间以秒计算
+PASEF® 方法参数设置
+
+===== PDF PAGE 13 =====
+布鲁克生命科学质谱 | Innovation with Integrity
+PASEFMS/MS 设置 – PrecursorIons
+▪ 化合物根据其电荷进行前体离子选择进行过滤。“电荷最小值”到
+“电荷最大值”定义了包含在选择过滤器中的电荷。
+▪ “0”对应于未知电荷状态的化合物
+▪ “0”用于包括弱信号，其中不能检测到同位素以进行可靠的电荷状态识别。
+前体离子检测考虑了最高5个电荷或最大电荷，以较高者为准。电荷范围定义了对于碎裂而
+言被考虑的已检测到的化合物
+注意:
+• 这是一个严格的过滤器，而不是“autoMS/MS模式”中的“首选”功能。
+• 排除特定电荷状态（以及m/z或迁移范围）的不同方法是使用热图中描述的“多边形过滤器”。
+ChargeMinimum and ChargeMaximum
+PASEF® 方法参数设置
+
+===== PDF PAGE 14 =====
+布鲁克生命科学质谱 | Innovation with Integrity
+PASEF设置 - PolygonCompoundRegions
+热图多边形过滤器(“PolygonCompoundRegions”):
+▪ 排除单电荷物种并应用额外的包括/排除区域的最佳方式
+▪ 它影响PASEF前体选择以及质谱的“实时显示”
+▪ 色谱图跟踪不受影响，完整（未经过滤）的数据将被保存
+▪ 定义的多边形是一种方法参数（意味着它将与该方法一起保存）
+▪ 多边形功能可用于在将MS 谱图传递给前体离子选择算法之前过滤它们。这样就可以例如定义一个包含双电荷、
+三电荷等的区域。只有在所定义的多边形内的前体离子才会被考虑用于后续离子选择，因此排除了单电荷离子：
+In tims view: UnderMS/MS tab:
+通过“EditFilters“可以将获取的数
+据与多边形过滤器进行叠加
+PASEF® 方法参数设置
+
+===== PDF PAGE 15 =====
+布鲁克生命科学质谱 | Innovation with Integrity
+PASEFMS/MS 设置 - Scheduling
+▪ 低丰度的前体可以在PASEF循环中被多次处理。为了提高低丰度前体
+的MS/MS谱图质量，目标强度应该增强，以允许对这些信号进行更多
+次的MS/MS重复测量。
+▪ 蛋白质组学应用的典型值为10,000 - 60,000，甚至对于HCP样品可达
+100,000。
+▪ “强度阈值 ”和“目标强度”之间的线性关系决定了前体在 MS/MS
+TIMSRamps中重复调度的频率，以增加它们的信噪比。
+▪ 这种关系也可以配置为非线性关系 。指定前体强度和其重复碎裂频
+率之间的分段线性映射。
+TargetIntensity
+PASEF® 方法参数设置
+
+===== PDF PAGE 16 =====
+布鲁克生命科学质谱 | Innovation with Integrity
+PASEFMS/MS 设置 - Scheduling
+▪ 强度阈值是一个 MS信号必须超过的信号强度 ，才能排队进行
+MS/MS。2,500是一个相对较低的值，但可以将其降低到1,000甚至
+更低以碎裂非常低丰度的前体离子。
+▪ 对于HCP样品，它甚至可以是400
+IntensityThreshold
+PASEF® 方法参数设置
+
+===== PDF PAGE 17 =====
+布鲁克生命科学质谱 | Innovation with Integrity
+PASEFMS/MS 设置 – ActiveExclusion
+▪ 当启用动态排除时，这代表前体离子碎裂后的一定时间内不再进行选择。
+这个时间通过“Release after” 设置。这是色谱中排除的前体离子在该时间
+段后可能再次被排队进行碎裂的时间。
+▪ 如果选项“重新考虑前体”被启用，并且排除的前体离子的强度突然增加
+了“当前/先前强度”的倍数，则该离子将从临时排除列表中删除，并且将
+再次被碎裂。当排除窗口宽度重叠时（图像中标记的区域），两个信号被
+视为相同。
+Exclusionwindowwidth in m/z and mobility.
+PASEF® 方法参数设置
+
+===== PDF PAGE 18 =====
+布鲁克生命科学质谱 | Innovation with Integrity
+PASEFMS/MS 设置 - CollisionEnergy
+▪ 前体离子的碰撞能量（CE）取决于它们的淌度值（1/K0）。在碰撞能量设置表中，您可以定义两个点。在这些
+点之前和之后，CE保持恒定，在它们之间呈线性关系。
+PASEF® 方法参数设置
+
+===== PDF PAGE 19 =====
+布鲁克生命科学质谱 | Innovation with Integrity
+CollisionEnergy– Advanced
+▪ 对于非线性关系，请在表的右上角勾选“高级”复选框。在高级表中，您可以定义多个点，以在1/K0和CE之间
+生成分段线性映射。
+▪ 类型列确定了在这些点之间发生的情况：CE要么线性插值
+（“Base”），要么在步骤中更改（“Fix”）。
+注意:
+▪ 该表允许定义多达30个淌度值与相应碰撞能量。根据条目类型，两个连续的1/k0值之间的值将被线性插值（“Base”）或保
+持恒定，直到下一个1/k0条目（“Fix”）。
+PASEF设置 - CollisionEnergy- Advanced
+PASEF® 方法参数设置
+
+===== PDF PAGE 20 =====
+布鲁克生命科学质谱 | Innovation with Integrity
+PASEFMS/MS 设置 - IsolationWidth
+▪ 前体离子的isolation width 取决于其m/z值
+▪ 在isolation width设置表中，可以定义两个点。在这些点之前和之后，隔离宽度保持恒定，在它们之间进
+行线性插值
+PASEF® 方法参数设置
+
+===== PDF PAGE 21 =====
+布鲁克生命科学质谱 | Innovation with Integrity
+PASEFMS/MS 设置 – MS/MS Stepping*
+▪ MS/MS Stepping可以用于基于MS/MS的定量，例如TMT或iTRAQ。当启用时，会交替测量两个具有不同参数的
+ramps，如以下设置对话框中所定义的：
+▪ TransferTime和PrePulseStorage 确定了有效检测的m/z范围。通过将具有用于检测报告离子的参数的ramp
+（“Scan#1”）与具有用于样品的设置的另一个ramp（“Scan#1”）合并，所得到的数据同时包含了两种类型
+的离子，并且具有足够的强度进行MS/MS定量。
+▪ 换句话说：两个MS/MS谱图被合并
+▪ 当启用TIMS Stepping时，碰撞能量设置将显示一个额外的列：见下一页。
+*在timscontrol之前的版本中叫做TIMS stepping
+PASEF® 方法参数设置
+
+===== PDF PAGE 22 =====
+布鲁克生命科学质谱 | Innovation with Integrity
+▪ 对于scan #1，使用与未启用TIMS Stepping时相同的碰撞能量（CE）值。
+Scan #2的CE值由额外的列CE [eV] #2确定。
+注意：
+▪ 当启用TIMS Stepping时，循环时间将加倍，因为两个ramps贡献给单
+个合并的ramp。要达到与未启用TIMS Stepping相同的循环时间，必
+须相应地调整ramp时间。
+PASEFMS/MS 设置 - MS/MS Stepping
+CollisionEnergySettings
+PASEF® 方法参数设置
+
+===== PDF PAGE 23 =====
+布鲁克生命科学质谱 | Innovation with Integrity
+PASEFMS/MS 设置 – 说明
+▪ 应该考虑样品的复杂性和LC梯度时间以及分析目标，以便在MS/MS设置上进行适当的设置。PASEF ramps的数量，目标强度
+和强度阈值可能需要特定的调整：例如，对于经典的DDA shotgun方法中的高肽混合物复杂性的细胞系消化物应该相应地处
+理：足够长的LC梯度以涵盖复杂性，结合合适的timsTOF Pro设置：高数量的PASEF ramps（10）和中等积累时间（100 ms），
+并结合低目标强度（20,000）和低强度阈值（2,500）。对照默认方法。
+▪ 将此设置更改为例如较低的目标强度（10,000）可能会增加总的肽鉴定数，但会降低MS2的谱图质量，理想情况下覆盖更多的
+肽鉴定，因为谱图可能仍足以成功注释。增加积累时间会增加对低拷贝数肽的灵敏度，但会减慢MS采样速率（总循环时间）
+在例如保持10个PASEF扫描时色谱峰期间。
+▪ 高目标强度（50,000）会导致更高的谱图质量 ，但以较少的丰度肽为代价 ，因为更多的时间花费在更高强度的肽的重复上 ，
+由于scheduling严格依赖于强度，并且始终从由多边形选择的最高强度开始。因此，只有当肽色谱出峰要么非常缓慢，要么
+复杂性较低时 ，降低强度阈值才会产生显着效果 。只有在这种情况下 ，略高于背景的最低强度的肽才有机会被选为 MSMS
+的候选者。
+PASEF® 方法参数设置
+
+===== PDF PAGE 24 =====
+布鲁克生命科学质谱 | Innovation with Integrity
+Scanmodes:
+timsControl可用于控制以下MS/MS实验类型：
+▪ 数据依赖性采集PASEF（dda-PASEF或“只是” PASEF）
+▪ 数据非依赖性采集PASEF（dia-PASEF）
+▪ 平行反应监测PASEF（prm-PASEF）
+▪ 多反应监测（MRM）
+▪ 宽带碰撞诱导解离（bbCID）
+▪ VistaScan（需要额外的许可证）
+▪ 在tims off模式下的自动MS/MS
+dia-PASEF + prm-PASEF在专门的工作流程文档/教程中详细阐述。
+PASEF® 方法参数设置
+
+===== PDF PAGE 25 =====

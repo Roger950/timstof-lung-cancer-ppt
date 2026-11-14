@@ -1,0 +1,12 @@
+web/node_modules/
+.build/
+tmp/
+20261112_Wuhan_timsTOF_Training/
+*.pdf
+时间安排.jpg
+~$*
+output/.*.validated
+output/powerpoint-preview/
+output/timstof-samples.pptx
+.DS_Store
+Thumbs.db

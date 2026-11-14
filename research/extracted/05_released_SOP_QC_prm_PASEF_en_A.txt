@@ -1,0 +1,946 @@
+PDF PAGE 1
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 1 of 42 
+ 
+ 
+1844426  
+1859743  
+1870000  
+1900000  
+1920000 
+Language. en 
+Standard Operating Procedure 
+ 
+QC for quick instrument run  
+prm-PASEF™ mode 
+ 
+Table of Contents 
+Document History ..................................................................................................................... 2 
+1 Introduction / Purpose ....................................................................................................... 3 
+2 Hardware Setup ................................................................................................................ 4 
+2.1 Option 1: Hardware setup with 25 cm Aurora Column ............................................... 4 
+2.2 Option 2: Hardware setup with Bruker Ten column ................................................... 5 
+2.3 Software Setup .......................................................................................................... 5 
+2.4 Sample preparation .................................................................................................... 5 
+3 Running the prm-PASEF acquisition and evaluating the results ....................................... 7 
+3.1 Step 1: Perform a standard PASEF acquisition ......................................................... 7 
+3.2 Step 2: Generate the prm-PASEF method .............................................................. 26 
+3.3 Step 3: Adjust the prm-PASEF method for better performance ............................... 28 
+3.4 Step 4: Check sensitivity and LOQ .......................................................................... 28 
+3.5 Step 5: Evaluate reproducibility ............................................................................... 36 
+3.6 Step 6: Evaluate accuracy ....................................................................................... 40 
+4 List of abbreviations in alphabetical order ....................................................................... 42 
+ 
+  
+
+
+PDF PAGE 2
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 2 of 42 
+ 
+Document History 
+Title: SOP-QC for quick instrument run prm-PASEF™ mode 
+Revision: Revision A (April 2021) 
+First revision: April 2021 
+The following table describes important changes from the previous revision of this document 
+Section Changes 
+- None – First revision 
+  
+ 
+  
+
+PDF PAGE 3
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 3 of 42 
+ 
+ 
+1 Introduction / Purpose 
+The purpose of this document is to describe the instrumental setup and operational workflow 
+to qualify your demo system prior to run prm-PASEF acquisitions on timsTOF Pro & timsTOF 
+Flex systems. 
+The gradients, files and procedures used for QC purposes can also serve as templates for 
+real-life prm-PASEF acquisitions.  
+ 
+Table 1  describes the typical times and numb er of injections required to QC your system, 
+depending on your hardware setup: 
+Table 1 
+Columns 25 cm ion Optiks Aurora 10 cm Bruker 
+Test Injections Acquisition* Injections Acquisition** 
+Sensitivity / Linearity / LOD 1 75 min 1 30 min 
+CV accuracy 3 225 min 3 90 min 
+ 
+* : using a 25 cm Ion Optiks columns setup and a 30 min gradient 
+** : using a Bruker Ten column with the 50 SPD method 
+Several Skyline templates are used to facilitate processing while requiring minimal knowledge 
+on how to handle Skyline, however it is strongly recommended to read Skyline’s introduction 
+tutorial to get familiar with data handling in Skyline. 
+  
+
+PDF PAGE 4
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 4 of 42 
+ 
+2 Hardware Setup 
+2.1 Option 1: Hardware setup with 25 cm Aurora Column 
+ 
+HPLC: nanoElute, single Column Setup, 25 cm IonOptiks 
+A: 97.9% H2O / 2% CH3CN / 0.1% HCOOH 
+ B: 99.8% CH3CN / 0.2% HCOOH 
+LC conditions and gradient:  
+• Oven Temperature 50°C 
+• Flow 400 nl/min 
+• Gradient: 
+ 
+ 
+  
+
+
+PDF PAGE 5
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 5 of 42 
+ 
+2.2 Option 2: Hardware setup with Bruker Ten column 
+For this setup, please refer to the “Standard Operating Procedure  - Short Gradient – 50 
+samples/day on the Bruker nanoElute” document which is part of the QC pack. 
+2.3 Software Setup  
+Acquisition Software: timsControl 2.0.18 and later versions 
+Database search (to generate Skyline library): Mascot, Peaks, MaxQuant … 
+Processing: Skyline or Skyline-daily (download from  
+https://skyline.ms/project/home/software/skyline/begin.view)  
+2.4 Sample preparation 
+Pierce™ LC-MS/MS System Suitability Standard (7 x 5 Mix) (0.5 pmol/µl) ref A40010 
+Pierce Hela Digest protein Standard, ref 88329  
+ 
+Prepare the QC standard by using the following protocol:  
+ 
+ 
+  
+
+PDF PAGE 6
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 6 of 42 
+ 
+ 
+QC sample preparation 
+   
+1 - Hela cell line Digest preparation 
+   
+ Dilution solution 1 
+  0.1% Formic acid in MilliQ water (prepared in a colorless Eppendorf tube) 
+  Add 1 µl Formic Acid (LC-MS Grade) to a 1.5 ml colorless Eppendorf tube 
+  Add 999 µl of Milli-Q grade water to the same tube and vortex for 5 seconds  
+ Digest dilution 
+  Let a 20 µg Hela cell line digest tube thaw at room temperature for 5 min 
+  Add 100 µl of dilution solution 1  
+  Vortex for 30 sec 
+  
+Optional: Aliquot 5  X 20 µl in 0.5  ml colorless Eppendorf tubes. Keep one aliq uot at 4°C, 
+store the others at -80°C 
+   
+2 - Pierce LC-MS/MS System Suitability Standard (7x5) preparation 
+   
+ Dilution solution 2  
+  1% Formic acid, 5% DMSO 
+  Add 10 µl Formic Acid (LC-MS grade) to a 1.5 ml colorless Eppendorf tube. 
+  Add 50 µl DMSO, anhydrous and 940 µl of MilliQ water 
+  Vortex for 20 seconds 
+   
+ Pure isotopolog sample preparation 
+  Thaw the vial with 7x5 stock solution (containing 25 µl) for 10 minutes at room temperature 
+  
+Combine 1 µl of 7x5 stock solution and 19 µl of dilution solution 2 in an autosampler vial and 
+mix 
+   
+ 3 -Hela + Isotopolog QC sample preparation 
+  
+Combine 1 µl of the 7 x5 stock solution with 9 µl of dilution solution 1 and 10 µl of the Hela 
+cell line digest preparation and mix 
+   
+ 
+Optionally create aliquots with the remaining 7x5 mix (in 0.5 µl colorless Eppendorf tubes) and 
+store them at -80°C. 
+ 
+
+PDF PAGE 7
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 7 of 42 
+ 
+3 Running the prm-PASEF acquisition and evaluating the results 
+This can be split into different steps. The steps highlighted in light grey can be omitted  / 
+fastened using the supporting documents which are provided. Here is an overview of the 
+workflow:  
+ 
+Step Operation Purpose Supporting document 
+1 PASEF 
+acquisition 
+Get Target RT, m/z, 1/K0 Targets.dat file already 
+containing the information (for 
+given column and gradient) 
+Associated FASTA library 
+2 Generate the 
+prm-PASEF 
+method 
+Pilot the prm -PASEF 
+Acquisition 
+Skyline template 
+3 optional Adjust the 
+prm-PASEF 
+method 
+Increase performances  
+4 Sensitivity 
+evaluation 
+ Skyline template 
+5 Reproducibility 
+evaluation 
+ Skyline template 
+6 Linearity and 
+LOQ 
+ Skyline template 
+7 Accuracy 
+evaluation 
+ Skyline template 
+3.1 Step 1: Perform a standard PASEF acquisition  
+Perform a standard PASEF acquisition, which is a data dependent acquisition approach, on 
+the Hela + isotopolog QC sample (1 µl injected) to create the Skyline library and populate the 
+prm-PASEF target list for both isotopolog targets and the background Hela targets.  
+You typically need to perform this step only once. Once this has been done, the correction for 
+a potential retention time shift can be performed in Skyline as described in 3.1.g. 
+a. Use the same  gradient as the one you intend to use (you can use the associated 
+method). 
+b. Use the appropriated PASEF method to measure your sample. Make sure that both 
+mass and ion mobility ranges are properly calibrated. 
+c. Once the acquisition is per formed, perform a database search with a database that 
+contains your target sequences. For the 7x5 isotopolog mix, you can use the 7X5 with 
+HELA.fasta file provided. 
+You need to select the following modifications to be able to detect all forms of the 7 x5 
+mix. The [13C3 15N1 (A,S)], [13C5 15N1 (P,V)], [13C6 15N1 (I,L)], [13C6 15N2 (K)], 
+[13C6 15N4 (R)], [13C2 15N1 (G)] and [13C9 15N1 (F,Y)] must be defined in the search 
+engine if not readily available. 
+
+PDF PAGE 8
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 8 of 42 
+ 
+ 
+ 
+ 
+d. If performing the QC for the first time, export the peptide results to build the Skyline 
+library (you can skip this step if the measured retention times are not different from 
+those in the 7X5_HELA library provided in the template " Create_QCMethod.skyd” 
+document). 
+• From a Mascot search, you need to export the .dat file. 
+ 
+
+
+PDF PAGE 9
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 9 of 42 
+ 
+• From MaxQuant Andromeda, you need to export the msms.txt; mqpar.xml; and 
+modifications.xml, if there are modifications besides the defaults. 
+• From Peaks you need to export the pepXML or mzXML files. 
+ 
+ 
+ 
+e. Create the Skyline library.  
+To do so, open the Create_QCMethod Skyline document. 
+
+
+PDF PAGE 10
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 10 of 42 
+ 
+  
+The document already contains the 7x5 mix of isotopologs you want to test as well as 231 Hela 
+cell line peptides (to stress the system by forcing it to acquire a high number of peptides). It  
+also contains existing 7x5 and Hela spectral libraries, but you might prefer to use the one you 
+have generated on your system to refine retention times.  
+If you want to use the embedded libraries in the Skyline document , access the m through 
+Settings > Peptide settings > Library. 
+ 
+ 
+If you wish to create your own library, please proceed as follows: 
+Library for the 7x5 mix and the 
+231 Hela target peptides 
+Complete 30 min Hela library 
+
+
+PDF PAGE 11
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 11 of 42 
+ 
+Open Peptide settings in the Settings menu. 
+ 
+The following window opens. Click the Library tab. 
+  
+ 
+  
+ 
+1.  Clear the Human_30min and 
+7X5_Hela check boxes 
+2.   Click Build… > Library  
+ 
+
+PDF PAGE 12
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 12 of 42 
+ 
+The following window opens, type the library name and click Next; 
+ 
+ 
+The following window opens: 
+  
+Click Add Files… and select the file created in 3.1.d. Then click Finish and Exit. Building a 
+spectra library can take some time depending on the search engine used, the size and number 
+of your files. One can see the progress with the green bar in the right bottom corner of the 
+Skyline window. 
+
+
+PDF PAGE 13
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 13 of 42 
+ 
+You can review the library by selecting View > Spectral library. Check that both the retention 
+time (RT) and ion mobility (IM) data are included (red ellipse in the picture). 
+ 
+ 
+f. Import your PASEF acquisition file. 
+If you are using the same gradient as the one described in section 2.1, there is no need 
+to adjust the integration borders. 
+If you have changed the gradient, make sure that the min and max time for integration 
+are set adequately: under the Settings > Transition settings > Instrument, enter the 
+correct values and press OK. 
+
+
+PDF PAGE 14
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 14 of 42 
+ 
+ 
+Once this is done, you can import your PASEF acquisition by choosing File > Import > Results 
+from the File menu. 
+  
+
+
+PDF PAGE 15
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 15 of 42 
+ 
+ 
+Select your dataset and click Import, the Importing Results…  window will open and the 
+import will start. 
+    
+ 
+g. Check the quality of your integration: 
+• Under the Edit menu, choose Expand all > precursors. All proteins  / peptides / 
+precursors details will be displayed on the left panel. 
+• For the “7X5LCMS” protein, you must check the RT and Isotopic fidelity ( idotp) for 
+all isotopologs (none, Heavy1, Heavy2, Heavy3, Heavy4). For the 
+HELA_BACKGROUND, only the light form is displayed. 
+• A green dot means that the researched peak has been integrated with a good 
+quality. When selecting the peptide , you can perform a visual check of the 
+integration. If you are not satisfied, you can modify the integration borders by 
+moving the vertical dotted lines (see red arrows). The resulting idotp shall be > 0.9 
+for the HEAVY4 isotopolog. 
+  
+• Left-click on the MS chromatographic trace to display the integration heatmap. 
+
+
+PDF PAGE 16
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 16 of 42 
+ 
+ 
+ 
+ 
+• Check that the Peak RT limits and the ion mobility integration slice are correctly set 
+for all 7x5 targets (based on the Heavy4, Heavy3 and Heavy2 isotopologs: as you 
+are just dealing with a PASEF acquisition and extracting traces at the MS levels, 
+some lighter forms (Heavy1, light) might not be visible at  this time: this is not an 
+issue as their retention time (RT) and mobility value (IM) will be similar to the heavier 
+forms). 
+• You can make a rapid check of the 231_Background peptides by checking their 
+idotp values (will be > 0.90). 
+• Sometimes, the IM value is not correctly reported in the library, and this can lead to 
+a shift of the IM integration window. This needs to be corrected, if not, the wrong 
+IM value will be used while creating the prm-PASEF method. 
+ 
+Ion mobility integration slice 
+
+PDF PAGE 17
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 17 of 42 
+ 
+ 
+To correct for this issue, an IM library must be created and activated (alternatively, you can 
+use the 7X5_Hela.imsdb provided with the document):  
+It is recommended only to create this library from targets having a sufficient signal, hence, as 
+a first step, select only the “Heavy4” forms for the 7x5 mixture.  
+ 
+ 
+ 
+ 
+Click on the Arrow on the right 
+of the sequence. 
+
+PDF PAGE 18
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 18 of 42 
+ 
+ 
+Then open the ion mobility tab in the transition settings parameters window (select Settings > 
+Transition Settings > Ion mobility). 
+ 
+In the Ion mobility library drop-down menu, select Add, the following window will pop up. 
+Clear all check 
+boxes except 
+“Heavy4” and 
+validate by clicking 
+on the green tick 
+sign. 
+
+PDF PAGE 19
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 19 of 42 
+ 
+ 
+Name the new library and click Create, then click Use results. Skyline will detect the IM values 
+for each peptide selected and insert it in the library. 
+ 
+
+
+PDF PAGE 20
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 20 of 42 
+ 
+ 
+Once this step is completed  the table will get populated. Uncheck the ‘Offset ion mobility 
+values for high energy spectra’ and click OK to close the window. 
+Make sure that the Use spectral library ion mobility when present checkbox is clear, select 
+40 as Resolving power and click OK. 
+ 
+
+
+PDF PAGE 21
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 21 of 42 
+ 
+Important: Re-check all isotopolog forms (light, HEAVY1, HEAVY2, HEAVY3, HEAVY4, and 
+Blank, as shown in 3.1.g) and re-import results (click Edit and Manage results), 
+the following dialog box will open: 
+ 
+Highlight your analysis, click Re-import and OK. 
+Once the import is completed, check that the ion mobility window has been modified. 
+
+
+PDF PAGE 22
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 22 of 42 
+ 
+ 
+Note:  The ion mobility library can also be edited manually if you want to force the use of a 
+given mobility value for the integration. 
+ 
+h. Export the PRM target list 
+Once satisfied with the target integration, you can proceed with the prm-PASEF method 
+generation. 
+To do this, you first need to export a template prmSQlite file from timsControl. Open 
+timsControl and load the PASE F method you have used for the PASEF acquisition in 
+3.1. 
+Then change the scan mode in the MS Settings  from PASEF to prm-PASEF by 
+selecting it in the drop-down menu. Set the accumulation time (Accu. Time) to 50 ms. 
+
+
+PDF PAGE 23
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 23 of 42 
+ 
+ 
+In the MS /MS tab, select Export and save the prmsqlite file. The file will be used as a 
+template to create the final method. 
+ 
+In a second step, open Skyline and load the Skyline document that you prepared in previous 
+steps or use the Create_QCMethod document that you reviewed. 
+Select File > Export > Method and select Bruker timsTOF as an instrument, and Scheduled 
+as a Method type. Load the prmsqlite you just saved as a template.  
+ 
+MS1 repetition time (in seconds) is the time between each MS acquisition. 
+ 
+Change to prm-PASEF. 
+Unless you have a low concentration 
+background, it is STRONGLY 
+recommended to restrict the tims filling 
+time to 50 ms. 
+
+PDF PAGE 24
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 24 of 42 
+ 
+ 
+ 
+Click OK to export the final prmsqlite file. Save it under QC.prmsqlite. It now contains all 
+information related to your target ’s m/z, retention time and mobility windows, as they have 
+been defined in Skyline. 
+Click the Graph button to visualize the target density. 
+Load your prmsqlite 
+template 
+
+PDF PAGE 25
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 25 of 42 
+ 
+ 
+Note: The graph delivers only the number of targets  / unit of time, instead of the number of 
+PASEF frames or the PASEF cycle time (which are the important information). This 
+feature will be available in future versions of Skyline. 
+If you want to lower the number of targets / unit of time, you can lower the RT tolerance window 
+by changing the Time Window in the Settings > Peptide settings > Prediction tab. The IM 
+window’s width is controlled by the resolution defined in the Settings > Transition settings > 
+Ion mobility tab. 
+ 
+
+
+PDF PAGE 26
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 26 of 42 
+ 
+ 
+ 
+ 
+3.2 Step 2: Generate the prm-PASEF method 
+• Open the method you have used to create your template prmsqlite file in 
+timsControl. 
+• Select the Import option in the MS/MS tab and import your QC.prmsqlite file.  
+ 
+ 
+ 
+• The method is now populated with the targets you have defined in Skyline.  
+ 
+ 
+ 
+• Activate the Auto Calibration to correct for potential drifts in the ion mobility 
+calibration in timsControl. You might need to open Hystar prior to the Auto 
+Calibration activation, especially, if the button is not active in timsControl.  
+
+
+PDF PAGE 27
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 27 of 42 
+ 
+ 
+ 
+Note:  The air inlet fil ter of the Captive Spray source must be contaminated with lock mass 
+compounds (ideally 622, 922 and 1222 m/z)  in order to perfo rm ion mobility auto 
+calibration. To proceed please refer to the Captive Spray source user manual. 
+ 
+Note:  To achieve a more robust Auto Calibration, limit the number of entries in the calibration 
+list to those compounds present on the filter. Also set the detection range to 20%. 
+ 
+ 
+
+
+PDF PAGE 28
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 28 of 42 
+ 
+3.3 Step 3: Adjust the prm-PASEF method for better performance 
+You can improve the method’s selectivity by restricting the range of mobilities to the range of 
+mobilities covered by your targets. I f you do so, do not forget to re -calibrate your acquisition 
+method in the IM dimension. 
+The mobility of targeted compounds ranges from 0.76 - 1.56 1/K0 in our example. Therefore, 
+the mobility range of the prm -PASEF method could be narrowed from standard 0.6 0 - 1.60 
+1/K0 to 0.74 - 1.60 1/K0. 
+If you decide to do so, calibrate the ion mobility first. Then repeat the export of prmsqlite 
+template (pages 22, 23), generate method in Skyline (page 24) and import new prmsqlite 
+method to timsControl (page 26). If you omit to do so, the IM selection windows will not match 
+with the modified tims cell compounds release time. 
+You can also decide to adjust collision energy settings. For our ex ample, we have adjusted it 
+to the following values.  
+ 
+With regards to the tims ac cumulation time: Please be aware that increasing the tims 
+accumulation time might increase sensitivity but at a cost for dynamic range. When the matrix 
+is complex, we have observed signal extinction for overly-long tims accumulation times 
+(> 100 ms). 
+ 
+3.4 Step 4: Check sensitivity and LOQ 
+The principle is to inject 1 µl of the Hela + isotopolog mixture. It will contain 100 µg of the Hela 
+cell line digest background and 25 fmol (Heavy4), 2.5 fmol (Heavy3), 250 amol (Heavy2), 62.5 
+amol (Heavy1) and 16.75 amol (light) of each of the 7 isotopolog peptides. 
+ 
+To proceed: 
+a. Inject blanks to reduce the crosstalk effects. If you have just injected a sample 
+containing concentrated peptides samples, inject at least 3 blanks (H 2O) while 
+activating the extensive washing option on the nanoElute before injecting one of the 
+low concentration points. 
+b. Inject 1 µl of the Hela + isotopolog sample using the method you have just created and 
+one of the gradients described at the beginning of this document. 
+c. Open the LOQ 7X5 QC.sky document in Skyline-Daily and save it under a new name 
+to avoid changing the initial file. 
+
+
+PDF PAGE 29
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 29 of 42 
+ 
+Note:  The LOQ 7X5 QC.sky template is pre-filled with some typical results, allowing 
+you to visualize some reference data. These entries can be removed. 
+  
+It must be underlined that the Library used for these samples is automatically loaded from the 
+Skyline template, it might be okay if you are using the very same chromatographic setup . If 
+not, you will need to load the library you have created for your own sample in step 1. 
+prm-PASEF results are needed to proceed beyond this point. 
+ 
+ 
+ 
+d. Optional - Select your library in the Setting > Peptide settings > Library tab. Change 
+Pick peptides matching filters drop down from Library to Filter, if you want to keep 
+other peptides  that match the settings in the filter tab . You define filter settings in 
+Setting > Peptide settings > Filter . If you decide to use Library from the Pick 
+peptides matching library drop down menu you will access only peptides defined in 
+your spectra library.  
+
+
+PDF PAGE 30
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 30 of 42 
+ 
+ 
+ 
+e. Import the prm-PASEF results that you have acquired by selecting File > Import 
+Results menu, and import it as a single-injection replicate. 
+ 
+ 
+
+
+PDF PAGE 31
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 31 of 42 
+ 
+f. Once the import is completed, select your analysis in the analysis panel, and click on 
+the peptide sequence for the Heavy / Light peptide you want to track. 
+ 
+g. When you click on the peptide sequence on the left panel, all isotopolog traces are 
+displayed. You can zoom by scrolling on the Y axis to make sure that your diluted lighter 
+form has been detected. 
+ 
+ 
+h. You can also visualize the individual MS/MS traces by selecting the heavy form on 
+the left panel.  
+
+
+PDF PAGE 32
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 32 of 42 
+ 
+ 
+i. Compare the relative abundance of isotopologs. 
+Choose View > Peak areas > Replicates comparison to compare peak areas of isotopologs. 
+ 
+ 
+Note:  The ratios are also displayed in the isotopologue sequence line. 
+ 
+ 
+Here the Heavy 1 isotopolog is defined as a pivot (as specified in Settings > Peptide settings 
+> Modification tab). The theoretical ratios are 0 .26 (Light) / 1 (HEAVY1)  / 4 (HEAVY2) / 40 
+(HEAVY3) / 400 (HEAVY4). 
+Note: The ratio accuracy will also depend on which fragment you rely. In the upper example, 
+the high intensity Y9 fragment is measured with a better accuracy. 
+
+
+PDF PAGE 33
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 33 of 42 
+ 
+ 
+ 
+ 
+j. Calibration curves can also be calculated from the different isotopolog abundances.  
+The calibration curve calculation settings are defined in the Settings > Peptide 
+settings > Quantitation table and the View > Document Grid table. 
+
+
+PDF PAGE 34
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 34 of 42 
+ 
+ 
+ 
+While selecting a peptide on the left panel, calibration curves are displayed in the bottom right 
+panel when you are using the LOS_7X5.sky template or they can be displayed from the View 
+> Calibration curve drop-down menu. The LOQ is automatically calculated using the peptide 
+settings quantitation table parameters. Using the experimental setup described in this 
+
+
+PDF PAGE 35
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 35 of 42 
+ 
+document, however, the blank standard deviation cannot be evaluated from a single injection 
+and hence the value which is displayed does not take this noise threshold into account (to do 
+so would require to make six consecutive injections for the five concentration levels and one 
+blank). 
+Example for the K.TASEFDSAIAQDK.E [20, 32] peptide:  
+ 
+k. LOD/LOQ results 
+The results in the table below are representative of what can be obtained while using the 25  
+cm Aurora column and 30 min gradient described in this document and the LOQ_7X5.skyd 
+template for processing. 
+LOD : Limit Of Detection 
+LLOQ : Lower Limit Of Quantitation 
+HLOQ : Higher Limit Of Quantitation (linear) 
+ 
+ 
+Peptide LOD LLOQ HLOQ
+-.GISNEGQNASIK.I [0, 11] 16,2 amol 16,2 amol 25 fmol
+K.IGDYAGIK.T [12, 19] 16,2aml<LOD<<62.5 amol 250 amol >25 fmol
+K.TASEFDSAIAQDK.E [20, 32] 16,2aml<LOD<62.5 amol 16,2aml<LLOQ<62.5 amol >25 fmol
+K.ELGQSGVDTYLQTK.S [33, 46] 62.5aml<LOD<250 amol 2,5 fmol >25 fmol
+K.SFANQPLEVVYSK.L [47, 59] 62.5 amol 62.5 amol >25 fmol parents have low intensity
+K.LTILEELR.E [60, 67] 250 amol 250 amol 25 fmol parents have low intensity
+R.ELASGLSFPVGFK.- [68, 80] 250 amol 250 amol >25 fmol parents have low intensity
+LOQ/LOQ : evaluation in 100ng Hela cell digest while targeting 273 targets - 30 min gradient
+
+PDF PAGE 36
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 36 of 42 
+ 
+3.5 Step 5: Evaluate reproducibility 
+The purpose is to evaluate how reproducible the system is while acquiring many targets. The 
+evaluation is done on 231 selected Hela peptides in triplicates. As the same amount of Hela 
+was used in all samples with different concentration points, one could use results from different 
+samples in the same measuring series to evaluate reproducibility. 
+If a careful inspection and integration of all chormatographic peaks for selected Hela peptides 
+were not conducted during the method creation step, some of the selection windows might not 
+have been optimally adjusted. Thus, some targets might not have been measured. We will 
+therefore add a filtering step to evaluate the CV’s only from the compounds which have been 
+correctly targeted.   
+ 
+Procedure: 
+a. Open Skyline and lo ad the Repro_7X5_Hela.skyd template. If you are using your 
+own library and not the one provided with the template, load your library as indicated 
+in step 3.4.d. 
+b. Import prm-PASEF results of at least 3 analyses (menu File > Import > Results). The 
+View > Peak areas > CV Histogram window is automatically displayed. At this points 
+the peptides which have not been detected might still be filtered out. 
+c. Filter out the pep tides which have not been detected o r for which the fragment ratio 
+does not match the library by proceeding as follows: 
+Open the Refine > Advanced > Results tab. 
+
+PDF PAGE 37
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 37 of 42 
+ 
+ 
+ 
+Here is an example outcome obtained for transition targeting. 
+Outliers are typically very low intensity peptides or peptides with a peak integration issue. 
+How to correct this is explained in 3.5.d. After correction, you shall reach a median CV 
+value well below 10% with a large majority of peptides being below the 20% CV threshold. 
+ 
+Set to 0.5 to filter out the 
+peptides for which > 50% 
+of transitions are missing 
+Select to remove empty 
+peptides 
+Set dotp (fragments) or idotp 
+(parents) to 0.9 to select for the 
+peptides having the expected 
+fragments or isotopic 
+(respectively) distribution 
+
+PDF PAGE 38
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 38 of 42 
+ 
+ 
+d. Optionally check the peak integration borders for peptides having a high CV.  
+Most of the outliers have a high CV due to an integration issue. You can manually 
+correct the integration by selecting the peptide histogram bar and correcting the 
+integration. 
+ 
+  
+
+
+PDF PAGE 39
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 39 of 42 
+ 
+ 
+After integration correction: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+PDF PAGE 40
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 40 of 42 
+ 
+ 
+3.6 Step 6: Evaluate accuracy 
+This step shares some similarities with section 3.4. Load the Accuracy_7X5 Skyline template 
+to proceed. This template is similar to section 3.4. template but is focusing on a smaller number 
+of peptides with their pre -set concentration range . You can choose to include or exclude 
+concentration points from the calibration curve by simply selecting them from Skyline’s peptide 
+description. This can be done with a left mouse click on the arrow which appears when you 
+hover the mouse cursor over the right-hand end of every peptide sequence.  
+ 
+ 
+ 
+Next, import the results files for three replicates (minimum) and define one as the standard , 
+and the others as QC’s. This can be done in the Document Grid.  
+Select View > Document grid.  A new window opens. Select Replicates from Reports drop 
+down menu, which is located in the upper left corner of the Document grid window. 
+
+
+PDF PAGE 41
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 41 of 42 
+ 
+ 
+Select the type of sample  (Standard or Quality control)  by using the drop -down menu in the 
+Sample Type column. 
+Once this is done, check that the calibration curve for each peptide is correct for your 
+“standard” injection (as described in 3.4). 
+Once complete, you can open the document grid again . Click on Reports and choose 7X5 
+Accurracy from drop -down menu.  The left part of the table will display the expected and 
+calculated concentrations for each isotopolog. When you are working in the linear part of the 
+calibration curve (and between the LLOQ and HLOQ), the observed accuracies shall be close 
+to the 80-120% range. If this is not the case, you should check the calibration curve fit quality 
+as well as the peaks integration. 
+ 
+ 
+ 
+ 
+
+
+PDF PAGE 42
+ 
+timsTOF Pro / fleX / SCP   
+ 
+Bruker  Doc. No. 5044975 Revision A (May 2021) Page 42 of 42 
+ 
+4 List of abbreviations in alphabetical order 
+ 
+CV coefficient of variation  
+DMSO dimethyl sulfoxide 
+HLOQ higher limit of quantitation 
+IM ion mobility  
+LC-MS liquid chromatography – mass spectrometry 
+LC-MS/MS liquid chromatography – tandem mass spectrometry 
+LLOQ lower limit of quantitation 
+LOD limit of detection 
+LOQ limit of quantitation 
+PASEF parallel accumulation serial fragmentation  
+prm parallel reaction monitoring 
+QC quality control 
+RT retention time 
+SPD samples per day 
+ 
+ 
+ 
+All statements and applications pertaining to the timsTOF Pro and timsTOF Flex 
+Systems are for research use only. 
+Please send comments and questions to service.bdal.de@bruker.com. 
+Descriptions and specifications supersede all previous information and are subject to change without notice. 
+© Copyright 2021 Bruker Daltonics GmbH & Co. KG  
+ 
+ 
+Manufacturer 
+Bruker Daltonics GmbH & Co. KG   
+Fahrenheitstrasse 4 
+28359 Bremen Germany 
+ 
+ 

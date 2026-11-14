@@ -1,0 +1,384 @@
+PDF PAGE 1
+A User Guide to Performing diagonal-PASEF® 
+Experiments
+TRAINING DOCUMENTS TIMS -TOF SERIES
+Using timsControl 6.0 with Bruker ProteoScape, Spectronaut or 3rd party software
+Revision A (September 2024) The information contained in this document is subject to change without notice.    © Copyright 2024 Bruker Daltonics GmbH & Co. KG 1
+
+PDF PAGE 2
+|© 2024 Bruker |
+-Bruker Confidential-© 2024 Bruker ||
+A USER GUIDE TO PERFORMING DIAGONAL -PASEF® EXPERIMENTS
+Outline
+10/30/2024Example of a footerRevision E (June 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG
+Slide
+Overview and Requirements 3
+Data Acquistion / The timsControl Method 7
+Data Acquisition / Additional Information 16
+Software Solutions 23
+Appendix 29
+Revision A (September 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG 2
+
+PDF PAGE 3
+|© 2024 Bruker |
+-Bruker Confidential-© 2024 Bruker ||
+A USER GUIDE TO PERFORMING DIAGONAL -PASEF® EXPERIMENTS
+Overview and Requirements
+10/30/2024Example of a footerRevision E (June 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG
+▪ The novel diagonal-PASEF mode allows to scan the quadrupole synchronously with the TIMS ramp during the mobility scan. 
+This technology enables midia-PASEF (Note: a license is required) and synchro-PASEF. 
+Distler et al., 2023: midiaPASEF maximizes information content in 
+data-independent acquisition proteomics | bioRxiv
+Revision A (September 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG 3
+Skrowronek et al., 2022: Synchro-PASEF Allows Precursor-Specific Fragment Ion Extraction and 
+Interference Removal in Data-Independent Acquisition - Molecular & Cellular Proteomics 
+(mcponline.org)
+
+PDF PAGE 4
+|© 2024 Bruker |
+-Bruker Confidential-© 2024 Bruker ||
+A USER GUIDE TO PERFORMING DIAGONAL -PASEF® EXPERIMENTS
+Outline
+10/30/2024Example of a footerRevision E (June 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG
+Slide
+Overview and Requirements 3
+Data Acquistion / The timsControl Method 7
+Data Acquisition / Additional Information 16
+Software Solutions 23
+Appendix 29
+Revision A (September 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG 4
+
+PDF PAGE 5
+|© 2024 Bruker |
+-Bruker Confidential-© 2024 Bruker ||
+A USER GUIDE TO PERFORMING DIAGONAL -PASEF® EXPERIMENTS
+Data Acquistion / The timsControl Method*
+10/30/2024Example of a footerRevision E (June 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG
+▪ How to set up a diagonal-PASEF method
+1. Change Scan Mode to diagonal-PASEF, go the MS/MS tab and click New Windows
+* timsControl 6.0 was used to generate the screenshots
+Revision A (September 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG 5
+
+
+PDF PAGE 6
+|© 2024 Bruker |
+-Bruker Confidential-© 2024 Bruker ||
+▪ How to set up a diagonal-PASEF method
+2. Click Open Analysis to load a representative dda/dia-PASEF run to set-up diagonal windows
+3. Wait for mobility heatmap to be rendered
+A USER GUIDE TO PERFORMING DIAGONAL -PASEF® EXPERIMENTS
+Data Acquistion / The timsControl Method
+10/30/2024Example of a footerRevision E (June 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG
+Revision A (September 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG 6
+
+PDF PAGE 7
+|© 2024 Bruker |
+-Bruker Confidential-© 2024 Bruker ||
+A USER GUIDE TO PERFORMING DIAGONAL -PASEF® EXPERIMENTS
+Data Acquistion / The timsControl Method
+10/30/2024Example of a footerRevision E (June 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG
+▪ How to set up a diagonal-PASEF method
+4. In the upper panel one can select the 
+relevant retention time range
+5. The dotted lines define the range (1/K0 and 
+m/z), that should be covered by the 
+diagonal-PASEF windows.
+Revision A (September 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG 7
+
+PDF PAGE 8
+|© 2024 Bruker |
+-Bruker Confidential-© 2024 Bruker ||
+A USER GUIDE TO PERFORMING DIAGONAL -PASEF® EXPERIMENTS
+Data Acquistion / The timsControl Method
+10/30/2024Example of a footerRevision E (June 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG
+▪ How to set up a diagonal-PASEF method
+6. Define diagonal-PASEF Window Settings and click calculate windows (explanations on next slide)
+Revision A (September 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG 8
+
+
+PDF PAGE 9
+|© 2024 Bruker |
+-Bruker Confidential-© 2024 Bruker ||
+A USER GUIDE TO PERFORMING DIAGONAL -PASEF® EXPERIMENTS
+Data Acquistion / The timsControl Method
+10/30/2024Example of a footerRevision E (June 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG
+▪ How to set up a diagonal-PASEF method
+7. Click Apply and save the diagonal-
+PASEF method
+Note: for more information, please 
+refer to the timsControl User manual: 
+chapter “6.7.6“
+Revision A (September 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG 9
+!
+MS
+
+
+PDF PAGE 10
+|© 2024 Bruker |
+-Bruker Confidential-© 2024 Bruker ||
+A USER GUIDE TO PERFORMING DIAGONAL -PASEF® EXPERIMENTS
+Data Acquistion / The timsControl Method
+10/30/2024Example of a footerRevision E (June 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG
+▪ How to set up a diagonal-PASEF method
+8. A diagonal-PASEF quadrupole calibration needs to be performed before newly generated 
+methods can be used. 
+Revision A (September 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG 10
+
+
+PDF PAGE 11
+|© 2024 Bruker |
+-Bruker Confidential-© 2024 Bruker ||
+A USER GUIDE TO PERFORMING DIAGONAL -PASEF® EXPERIMENTS
+Data Acquistion / The timsControl Method
+10/30/2024Example of a footerRevision E (June 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG
+▪ A diagonal-PASEF window isolation scheme can also be generated using “Py_diAID”
+https://github.com/MannLabs/pydiaid
+https://github.com/MannLabs/pydiaid/blob/development/pydiaid/docs/manual.pdf
+https://www.biorxiv.org/content/10.1101/2024.05.31.494163v1
+Revision E (January 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG 11
+
+
+PDF PAGE 12
+|© 2024 Bruker |
+-Bruker Confidential-© 2024 Bruker ||
+A USER GUIDE TO PERFORMING DIAGONAL -PASEF® EXPERIMENTS
+Data Acquistion / The timsControl Method
+10/30/2024Example of a footerRevision E (June 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG
+▪ How to set up a diagonal-PASEF method
+8. A diagonal-PASEF quadrupole calibration needs to be performed before newly generated 
+methods can be used.
+- timsControl performs certain checks and displays the outcome below as Preconditions. Items 
+marked in red inhibit the calibration and must be solved before the calibration can be started.
+Revision A (September 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG 12
+
+
+PDF PAGE 13
+|© 2024 Bruker |
+-Bruker Confidential-© 2024 Bruker ||
+A USER GUIDE TO PERFORMING DIAGONAL -PASEF® EXPERIMENTS
+Data Acquistion / The timsControl Method
+10/30/2024Example of a footerRevision E (June 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG
+▪ How to set up a diagonal-PASEF method
+8. A diagonal-PASEF quadrupole calibration needs to be performed before newly generated 
+methods can be used.
+- Two modes are supported for diagonal-PASEF calibration: Calibration using background ions and 
+using a reference list
+Revision A (September 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG 13
+
+
+PDF PAGE 14
+|© 2024 Bruker |
+-Bruker Confidential-© 2024 Bruker ||
+A USER GUIDE TO PERFORMING DIAGONAL -PASEF® EXPERIMENTS
+Data Acquistion / The timsControl Method
+10/30/2024Example of a footerRevision E (June 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG
+▪ How to set up a diagonal-PASEF method
+8. A diagonal-PASEF quadrupole calibration needs to be performed before newly generated 
+methods can be used.
+a) Calibration using Background Ions
+- Calibration using background ions can be done by adjusting the LC flow to 25% ACN + 0.1%FA. If it 
+fails, then please try using higher %B. If issues persist it is recommended to use the "Calibration 
+using a Reference List"
+- For the Evosep system please select “Flow to column – 20% sol B” to perform calibration
+Revision A (September 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG 14
+
+
+PDF PAGE 15
+|© 2024 Bruker |
+-Bruker Confidential-© 2024 Bruker ||
+A USER GUIDE TO PERFORMING DIAGONAL -PASEF® EXPERIMENTS
+Data Acquistion / The timsControl Method
+10/30/2024Example of a footerRevision E (June 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG
+▪ How to set up a diagonal-PASEF method
+8. A diagonal-PASEF quadrupole calibration needs to be performed before newly generated 
+methods can be used.
+a) Calibration using Background Ions
+- Calibration using background ions can be done by adjusting the LC flow to 25% ACN + 0.1%FA. If it 
+fails, then please try using higher %B. If issues persist it is recommended to use the "Calibration 
+using a Reference List"
+- For the Evosep system please select “Flow to column – 20% sol B” to perform calibration
+b) Calibration using a Reference List
+- Calibration using a reference list can be done for example by infusing tune mix using ESI source.
+Revision A (September 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG 15
+
+PDF PAGE 16
+|© 2024 Bruker |
+-Bruker Confidential-© 2024 Bruker ||
+A USER GUIDE TO PERFORMING DIAGONAL -PASEF® EXPERIMENTS
+Data Acquistion / The timsControl Method
+10/30/2024Example of a footerRevision E (June 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG
+▪ How to set up a diagonal-PASEF method
+8. A diagonal-PASEF quadrupole calibration needs to be performed before newly generated 
+methods can be used.
+→ If the calibration was successful a report can be opened to review the performed calibration
+Revision A (September 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG 16
+
+
+PDF PAGE 17
+|© 2024 Bruker |
+-Bruker Confidential-© 2024 Bruker ||
+A USER GUIDE TO PERFORMING DIAGONAL -PASEF® EXPERIMENTS
+Outline
+10/30/2024Example of a footerRevision E (June 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG
+Slide
+Overview and Requirements 3
+Data Acquistion / The timsControl Method 7
+Data Acquisition / Additional Information 16
+Software Solutions 23
+Appendix 29
+Revision A (September 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG 17
+
+PDF PAGE 18
+|© 2024 Bruker |
+-Bruker Confidential-© 2024 Bruker ||
+A USER GUIDE TO PERFORMING DIAGONAL -PASEF® EXPERIMENTS
+Data Acquisition / Additional Information
+10/30/2024Example of a footerRevision E (June 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG
+Notes:
+▪ The new scan mode "diagonal-PASEF" supports usage of non-overlapping and overlapping windows, with 
+a "MIDIA-license" being required for window overlap
+o To make full use of midia-PASEF, e.g. generation of DDA-like spectra from DIA runs, data needs to be 
+processed via the midia-pipeline (developed by the group of S. Tenzer, launched at iHUPO 2024). All other 
+software solutions are not overlap-aware
+▪ Please make sure to calibrate your instrument properly (mobility, m/z and, possibly, quadrupole) as this will 
+affect the acquisition results
+▪ diagonal-PASEF method might need to be adapted to your sample type and/or loaded sample amount to 
+ensure complete coverage of the mobility range
+▪ Please perform a sanity check of the scanning quad calibration pdf report prior to acquisition
+Revision A (September 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG 18
+
+PDF PAGE 19
+|© 2024 Bruker |
+-Bruker Confidential-© 2024 Bruker ||
+A USER GUIDE TO PERFORMING DIAGONAL -PASEF® EXPERIMENTS
+Data Acquisition / Additional Information
+10/30/2024Example of a footerRevision E (June 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG
+▪ diagonal-PASEF operating principle
+Revision A (September 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG 19
+
+
+PDF PAGE 20
+|© 2024 Bruker |
+-Bruker Confidential-© 2024 Bruker ||
+A USER GUIDE TO PERFORMING DIAGONAL -PASEF® EXPERIMENTS
+Data Acquisition / Additional Information
+10/30/2024Example of a footerRevision E (June 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG
+▪ diagonal-PASEF operating principle
+Revision A (September 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG 20
+
+PDF PAGE 21
+|© 2024 Bruker |
+-Bruker Confidential-© 2024 Bruker ||
+A USER GUIDE TO PERFORMING DIAGONAL -PASEF® EXPERIMENTS
+Data Acquisition / Additional Information
+10/30/2024Example of a footerRevision E (June 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG
+▪ diagonal-PASEF operating principle
+Revision A (September 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG 21
+
+PDF PAGE 22
+|© 2024 Bruker |
+-Bruker Confidential-© 2024 Bruker ||
+A USER GUIDE TO PERFORMING DIAGONAL -PASEF® EXPERIMENTS
+Data Acquisition / Additional Information
+10/30/2024Example of a footerRevision E (June 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG
+▪ diagonal-PASEF operating principle
+Revision A (September 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG 22
+
+PDF PAGE 23
+|© 2024 Bruker |
+-Bruker Confidential-© 2024 Bruker ||
+A USER GUIDE TO PERFORMING DIAGONAL -PASEF® EXPERIMENTS
+Data Acquisition / Additional Information
+10/30/2024Example of a footerRevision E (June 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG
+▪ diagonal-PASEF operating principle
+Revision A (September 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG 23
+
+PDF PAGE 24
+|© 2024 Bruker |
+-Bruker Confidential-© 2024 Bruker ||
+A USER GUIDE TO PERFORMING DIAGONAL -PASEF® EXPERIMENTS
+Data Acquisition / Additional Information
+10/30/2024Example of a footerRevision E (June 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG
+▪ diagonal-PASEF operating principle
+Revision A (September 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG 24
+
+PDF PAGE 25
+|© 2024 Bruker |
+-Bruker Confidential-© 2024 Bruker ||
+A USER GUIDE TO PERFORMING DIAGONAL -PASEF® EXPERIMENTS
+Outline
+10/30/2024Example of a footerRevision E (June 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG
+Slide
+Overview and Requirements 3
+Data Acquistion / The timsControl Method 7
+Data Acquisition / Additional Information 16
+Software Solutions 23
+Appendix 29
+Revision A (September 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG 25
+
+PDF PAGE 26
+|© 2024 Bruker |
+-Bruker Confidential-© 2024 Bruker ||
+A USER GUIDE TO PERFORMING DIAGONAL -PASEF® EXPERIMENTS
+Software solutions supporting diagonal-PASEF
+10/30/2024Example of a footerRevision E (June 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KGRevision A (September 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG 26
+
+
+PDF PAGE 27
+|© 2024 Bruker |
+-Bruker Confidential-© 2024 Bruker ||
+A USER GUIDE TO PERFORMING DIAGONAL -PASEF® EXPERIMENTS
+10/30/2024Example of a footerRevision E (June 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG
+▪ Real time database searches based on GPU-driven search engine
+▪ diagonal-PASEF workflows streamlined on ProteoScape with Spectronaut v19
+▪ Support mail address: support.proteomics-sw@bruker.com
+▪ Further information can be found here: https://help.proteoscape.io/#/proteoscape
+▪ For a seamless analysis and visualization of proteomics results in one place the “software as service” from 
+MassDynamics can be used: https://massdynamics.com/our-software
+Revision A (September 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG 27
+Processing in Bruker ProteoScape (BPS)
+
+PDF PAGE 28
+|© 2024 Bruker |
+-Bruker Confidential-© 2024 Bruker ||
+A USER GUIDE TO PERFORMING DIAGONAL -PASEF® EXPERIMENTS
+10/30/2024Example of a footerRevision E (June 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG
+▪ Open-source DIA search engine built with the alphaX ecosystem. Built with alpharaw and alphatims for raw 
+file acces. Spectral libraries are predicted with peptdeep and managed by alphabase. Quantification is 
+powered by directLFQ
+▪ Versions starting from v.1.8.1 support diagonal-PASEF data
+Revision A (September 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG 28
+Processing with alphaDIA
+
+PDF PAGE 29
+|© 2024 Bruker |
+-Bruker Confidential-© 2024 Bruker ||
+A USER GUIDE TO PERFORMING DIAGONAL -PASEF® EXPERIMENTS
+Processing in Spectronaut
+10/30/2024Example of a footerRevision E (June 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG
+▪ Discovery proteomics software for the targeted analysis of DIA measurements from various 
+MS platforms
+▪ Commercial software package sold by Biognosys
+▪ Support for diagonal-PASEF since version 19 launched at ASMS 2024
+▪ Support mail address: support@biognosys.com
+▪ Further information can be found here: https://biognosys.com/software/spectronaut/
+Revision A (September 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG 29
+
+
+PDF PAGE 30
+|© 2024 Bruker |
+-Bruker Confidential-© 2024 Bruker ||
+A USER GUIDE TO PERFORMING DIAGONAL -PASEF® EXPERIMENTS
+Processing with DIA-NN
+10/30/2024Example of a footerRevision E (June 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG
+▪ „DIA-NN - a universal software for data-independent acquisition (DIA) proteomics data processing by Demichev, Ralser and Lilley labs. 
+In 2018, DIA-NN opened a new chapter in proteomics, introducing a number of algorithms which enabled reliable, robust and 
+quantitatively accurate large-scale experiments using high-throughput methods.“
+taken from https://github.com/vdemichev/DiaNN
+further reading: https://www.nature.com/articles/s41592-019-0638-x
+Support for diagonal-PASEF since version 1.9 launched at ASMS 2024
+Revision A (September 2024)                   The information contained in this document is subject to change without notice.                   © Copyright 2024 Bruker Daltonics GmbH & Co. KG 30
+
+
+PDF PAGE 31
+Revision A (September 2024) The information contained in this document is subject to change without notice.    © Copyright 2024 Bruker Daltonics GmbH & Co. KG 31

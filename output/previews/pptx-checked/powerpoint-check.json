@@ -1,0 +1,137 @@
+{
+  "objects": [
+    {
+      "slide": 1,
+      "tables": 0,
+      "pictures": 0,
+      "textShapes": 16
+    },
+    {
+      "slide": 2,
+      "tables": 0,
+      "pictures": 1,
+      "textShapes": 23
+    },
+    {
+      "slide": 3,
+      "tables": 0,
+      "pictures": 1,
+      "textShapes": 20
+    },
+    {
+      "slide": 4,
+      "tables": 0,
+      "pictures": 1,
+      "textShapes": 23
+    },
+    {
+      "slide": 5,
+      "tables": 0,
+      "pictures": 0,
+      "textShapes": 36
+    },
+    {
+      "slide": 6,
+      "tables": 0,
+      "pictures": 1,
+      "textShapes": 31
+    },
+    {
+      "slide": 7,
+      "tables": 0,
+      "pictures": 0,
+      "textShapes": 37
+    },
+    {
+      "slide": 8,
+      "tables": 0,
+      "pictures": 1,
+      "textShapes": 26
+    },
+    {
+      "slide": 9,
+      "tables": 0,
+      "pictures": 0,
+      "textShapes": 34
+    },
+    {
+      "slide": 10,
+      "tables": 0,
+      "pictures": 0,
+      "textShapes": 37
+    },
+    {
+      "slide": 11,
+      "tables": 0,
+      "pictures": 1,
+      "textShapes": 19
+    },
+    {
+      "slide": 12,
+      "tables": 0,
+      "pictures": 0,
+      "textShapes": 34
+    },
+    {
+      "slide": 13,
+      "tables": 0,
+      "pictures": 0,
+      "textShapes": 30
+    },
+    {
+      "slide": 14,
+      "tables": 0,
+      "pictures": 1,
+      "textShapes": 22
+    },
+    {
+      "slide": 15,
+      "tables": 0,
+      "pictures": 1,
+      "textShapes": 23
+    },
+    {
+      "slide": 16,
+      "tables": 0,
+      "pictures": 1,
+      "textShapes": 23
+    },
+    {
+      "slide": 17,
+      "tables": 0,
+      "pictures": 0,
+      "textShapes": 25
+    },
+    {
+      "slide": 18,
+      "tables": 0,
+      "pictures": 0,
+      "textShapes": 32
+    },
+    {
+      "slide": 19,
+      "tables": 0,
+      "pictures": 1,
+      "textShapes": 18
+    },
+    {
+      "slide": 20,
+      "tables": 0,
+      "pictures": 1,
+      "textShapes": 21
+    },
+    {
+      "slide": 21,
+      "tables": 0,
+      "pictures": 0,
+      "textShapes": 33
+    },
+    {
+      "slide": 22,
+      "tables": 0,
+      "pictures": 0,
+      "textShapes": 24
+    }
+  ],
+  "slides": 22
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "file": "figures/full/reduction.png",
+    "original": "research/figures/preparation-p15.png",
+    "crop_fraction": [
+      0.045,
+      0.2,
+      0.95,
+      0.37
+    ],
+    "source": "10 p15；仅裁步骤图"
+  },
+  {
+    "file": "figures/full/trypsin.png",
+    "original": "research/figures/preparation-p07.png",
+    "crop_fraction": [
+      0.07,
+      0.14,
+      0.9,
+      0.61
+    ],
+    "source": "10 p7；保留序列、规则和切割产物"
+  },
+  {
+    "file": "figures/full/e5-pca.png",
+    "original": "research/figures/e5/fig5.jpg",
+    "crop_fraction": [
+      0,
+      0,
+      1,
+      0.605
+    ],
+    "source": "Frey et al. 2025 Fig.5A；CC BY 4.0；裁切A面板"
+  },
+  {
+    "file": "figures/full/e2-nsaf.png",
+    "original": "research/figures/e2/fig3.webp",
+    "crop_fraction": [
+      0,
+      0,
+      1,
+      0.46
+    ],
+    "source": "Graf et al. 2021 Fig.3A；CC BY；图例另以文字保留"
+  },
+  {
+    "file": "figures/full/lysis.png",
+    "original": "research/figures/preparation-p14.png",
+    "crop_fraction": [
+      0.055,
+      0.18,
+      0.94,
+      0.51
+    ],
+    "source": "10 p14；裁切样本屏障与机械处理示意"
+  },
+  {
+    "file": "figures/full/cleanup.png",
+    "original": "research/figures/preparation-p16.png",
+    "crop_fraction": [
+      0.055,
+      0.19,
+      0.95,
+      0.79
+    ],
+    "source": "10 p16；裁切酸化、除盐、浓缩与复溶"
+  }
+]

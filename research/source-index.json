@@ -1,0 +1,80 @@
+[
+  {
+    "file": "20261112_Wuhan_timsTOF_Training\\01_timsTOF原理及应用培训.pdf",
+    "pages": 39,
+    "sha256": "f4b7252565a3baaff2a78179b9e748d5ccc3e75b144410f1b08fd6b7199ff9d5",
+    "extracted": true
+  },
+  {
+    "file": "20261112_Wuhan_timsTOF_Training\\02_Compass Hystar系列软件的使用与操作.pdf",
+    "pages": 27,
+    "sha256": "23aeedd93cc2a4c2152aa709b3d919758802b855c07068ec7eb53c401fcf8ed9",
+    "extracted": true
+  },
+  {
+    "file": "20261112_Wuhan_timsTOF_Training\\03_PASEF® 方法参数设置.pdf",
+    "pages": 25,
+    "sha256": "daae6f8e4819e2b08741c3392fe38444b71d8ebe4cd5b9ffa748e2774040be79",
+    "extracted": true
+  },
+  {
+    "file": "20261112_Wuhan_timsTOF_Training\\04_dia-PASEF® 实验操作指南.pdf",
+    "pages": 30,
+    "sha256": "c59349bec7cae38c46f736023186bc3b23a5bae5ded3ab9eebbd05d67ad11a8f",
+    "extracted": true
+  },
+  {
+    "file": "20261112_Wuhan_timsTOF_Training\\05_prm-PASEF®实验操作指南.pdf",
+    "pages": 49,
+    "sha256": "43b35671740dc90424fde621e01817bcb1a15933461d3c6ee08394190da147a4",
+    "extracted": true
+  },
+  {
+    "file": "20261112_Wuhan_timsTOF_Training\\05_released_SOP_QC_prm_PASEF_en_A.pdf",
+    "pages": 42,
+    "sha256": "29fbe9a1f35f0a9fb60b73344f0c2dfbae3c66f0171ef75f96748699b4522d2f",
+    "extracted": true
+  },
+  {
+    "file": "20261112_Wuhan_timsTOF_Training\\06_diagonal-PASEF_User_Guide_timsControl_Revision_A.pdf",
+    "pages": 31,
+    "sha256": "6d6ca9d4a19e2b9fd37da3971fef5cd8fc0c49eea4d2dd70161e947e83d8f64b",
+    "extracted": true
+  },
+  {
+    "file": "20261112_Wuhan_timsTOF_Training\\07_Data Analysis 查看蛋白组学数据.pdf",
+    "pages": 15,
+    "sha256": "e2a8b6f0c9f32159b349215979a6f1a3646ed5488d32f408aa49050e76a842f4",
+    "extracted": true
+  },
+  {
+    "file": "20261112_Wuhan_timsTOF_Training\\08_BPS_Introduction.pdf",
+    "pages": 21,
+    "sha256": "960f19f0465ac58c7eda495ddb5eaf1f19e4aedac0eee46fee12ac39ca8c4ff2",
+    "extracted": true
+  },
+  {
+    "file": "20261112_Wuhan_timsTOF_Training\\09_timsTOF系列液质联用系统常见故障及排查处理.pdf",
+    "pages": 58,
+    "sha256": "8aa9570fd555e8966782d8618f419c934e343e7290cf9a190667afdb08d8d509",
+    "extracted": true
+  },
+  {
+    "file": "20261112_Wuhan_timsTOF_Training\\10_蛋白质组学样品前处理_入门培训.pdf",
+    "pages": 32,
+    "sha256": "fc7f049f464fea800813d4c08d2aafd5aad129de3db2d34088d4236f51aa5c6a",
+    "extracted": true
+  },
+  {
+    "file": "20261112_Wuhan_timsTOF_Training\\11_DIA_Spectronaut21.1介绍.pdf",
+    "pages": 38,
+    "sha256": "30f64d626687b6cfa43cab5044082bb8e2b59899301576b47be0b06b351177b9",
+    "extracted": true
+  },
+  {
+    "file": "20261112_Wuhan_timsTOF_Training\\蛋白质组学样品前处理_入门培训_bk(1).pdf",
+    "pages": 32,
+    "sha256": "fc7f049f464fea800813d4c08d2aafd5aad129de3db2d34088d4236f51aa5c6a",
+    "extracted": true
+  }
+]

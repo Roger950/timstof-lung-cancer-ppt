@@ -1,0 +1,313 @@
+PDF PAGE 1
+dia-PASEF® 实验操作指南
+TIMS-TOF系列培训材料
+timsControl5.1 与布鲁克 ProteoScape、Spectronaut或第三方软件配合使用
+布鲁克生命科学质谱 Innovation with Integrity
+
+PDF PAGE 2
+布鲁克生命科学质谱 | Innovation with Integrity
+目录
+总览
+数据采集/ timsControl 方法
+数据采集/ 补充信息
+软件解决方案
+附录
+dia-PASEF® 实验操作指南
+
+PDF PAGE 3
+布鲁克生命科学质谱 | Innovation with Integrity
+dia-PASEF® 实验操作指南
+m/z
+Intensity
+MS
+Intensity
+MS/MS
+ m/z
+MS
+MS/MS
+ m/z
+MS
+MS/MS
+▪ MS/MS采集的隔离窗口为25 Da
+▪ 随后在m/z 400-1200的质量范围内使用25 Da隔离窗口采集
+▪ 一个典型的DIA（ data independentacquisition，数据非依赖采集）工作流程
+m/z 
+425-450
+m/z 
+450-475
+m/z 
+400-425
+总览
+
+PDF PAGE 4
+布鲁克生命科学质谱 | Innovation with Integrity
+dia-PASEF® 实验操作指南
+总览
+▪ dia-PASEF结合了众所周知的PASEF方法，利用TIMS实现高占空比、有效的离子使用、提高的肽识别率和在多个样品中
+识别的再现性。
+dia-PASEF采集方法：
+a. timsTOFPro质谱仪中离子路径示意图
+b. 在HeLa细胞胰蛋白消化物中 ，肽离子淌度值和质荷比
+（m/z）的相关性
+c.在dia-PASEF中，四极隔离窗口（灰色）根据离子淌度（箭
+头）动态定位。在单个TIMS扫描中，来自选定质量范围的离
+子被碎裂以记录所有前体的离子淌度分辨率的MS2谱图。
+d. 使用stepped四极杆隔离方案实现dia-PASEF前体离子选择。
+e. 使用d中的前体选择方案的单个dia-PASEF扫描的代表性示
+例。
+Meieret al.,2019:https://www.biorxiv.org/content/10.1101/656207v2
+
+PDF PAGE 5
+布鲁克生命科学质谱 | Innovation with Integrity
+dia-PASEF® 实验操作指南
+总览
+lcms-160-diapasef-label-free-quantification-09-
+2019-ebook-rev-01.pdf
+lcms-157-diapasef-ebook-rev-01.pdf lcms-167-dia-pasef-applied-on-different-
+gradient-lengths-ebook-rev-01.pdf
+
+PDF PAGE 6
+布鲁克生命科学质谱 | Innovation with Integrity
+dia-PASEF® 实验操作指南
+目录
+总览
+数据采集/ timsControl 方法
+数据采集/ 补充信息
+软件解决方案
+附录
+
+PDF PAGE 7
+布鲁克生命科学质谱 | Innovation with Integrity
+dia-PASEF® 实验操作指南
+数据采集/ timsControl方法*
+▪ 在默认应用方法下有两种可用的dia-PASEF方法
+▪ 注意：有一个“Download Methods”选项，这是一个链接到Bruker网页的选项，您可以从该网页获取最新的采
+集方法和timsControl软件版本
+
+PDF PAGE 8
+布鲁克生命科学质谱 | Innovation with Integrity
+dia-PASEF® 实验操作指南
+数据采集/ timsControl方法*
+▪ 如何设置一个dia-PASEF方法
+1. 将 ScanMode 变更为 dia-PASEF，转到MS/MS 一栏 ，然后单击New Windows
+*源自 timsControl 5.1 的屏幕截图
+
+PDF PAGE 9
+布鲁克生命科学质谱 | Innovation with Integrity
+dia-PASEF® 实验操作指南
+数据采集/ timsControl方法*
+▪ 如何设置一个dia-PASEF方法
+2. 单击 OpenAnalysis加载一针具有代表性的dda-PASEF数据以设置dia窗口
+3. 等待淌度热图呈现
+注意: 当在Window Editor中加载dda-PASEF运行时， timsControl
+中会自动加载相应的方法。这样确保了dia-PASEF方法使用与
+dda-PASEF运行相同的参数
+
+
+PDF PAGE 10
+布鲁克生命科学质谱 | Innovation with Integrity
+dia-PASEF® 实验操作指南
+▪ 如何设置一个dia-PASEF方法
+4. 在上面的面板中，可以选择相关的保
+留时间范围。
+5. 菱形定义了 dia-PASEF窗口覆盖的区
+域，并且可以使用锚点重新排列。
+数据采集/ timsControl方法*
+
+PDF PAGE 11
+布鲁克生命科学质谱 | Innovation with Integrity
+dia-PASEF® 实验操作指南
+数据采集/ timsControl方法*
+▪ 如何设置一个dia-PASEF方法
+6. 单击菱形后可以移动边缘，工具栏显示质量和淌度信息，同时按住“Ctrl键”时，边缘会捕捉到网格/整数。
+7. 定义dia-PASEF窗口设置，然后单击Calculate Windows（见下一页）
+
+PDF PAGE 12
+布鲁克生命科学质谱 | Innovation with Integrity
+dia-PASEF® 实验操作指南
+数据采集/ timsControl方法*
+▪ 如何设置一个dia-PASEF方法
+8. 单击 Applydia-PASEFwindows to 
+method 并保存dia-PASEF方法
+注意：有关更多信息 ，请参阅 timsControl
+用户手册：第“6.7.4 dia-PASEF”章
+
+
+PDF PAGE 13
+布鲁克生命科学质谱 | Innovation with Integrity
+dia-PASEF® 实验操作指南
+数据采集/ timsControl方法*
+▪ 还可以查看“IsolationList“
+
+
+PDF PAGE 14
+布鲁克生命科学质谱 | Innovation with Integrity
+dia-PASEF® 实验操作指南
+▪ 通过“Py_diAID”是生成dia-PASEF方法的另一种选择。
+▪ 该工具分析整个肽库并创建优化的dia-PASEF方法
+https://github.com/MannLabs/pydiaid
+https://www.biorxiv.org/content/10.1101/2024.05.31.494163v1
+数据采集/ timsControl方法*
+
+PDF PAGE 15
+布鲁克生命科学质谱 | Innovation with Integrity
+dia-PASEF® 实验操作指南
+目录
+总览
+数据采集/ timsControl 方法
+数据采集/ 补充信息
+软件解决方案
+附录
+
+PDF PAGE 16
+布鲁克生命科学质谱 | Innovation with Integrity
+数据采集/ 补充信息
+注意:
+▪ PASEF数据用于创建库以处理dia-PASEF数据（Spectronaut中的directDIATM也支持）。
+▪ 如果使用分馏样品创建库，可以获得最佳结果。
+▪ 请确保在生成库和dia-PASEF运行时使用相同的迁移范围和碰撞能量设置，以确保两者之间的正确对齐（最简单的方法是
+在设置dia-PASEF方法时在窗口编辑器中加载相应的PASEF运行）。
+▪ 请确保校准仪器正确（淌度和m/z），因为这将影响最终的结果。
+▪ dia-PASEF方法可能需要根据您的样品类型进行调整，以确保完全覆盖淌度范围。
+dia-PASEF® 实验操作指南
+
+PDF PAGE 17
+布鲁克生命科学质谱 | Innovation with Integrity
+▪ dia-PASEF运行规则
+数据采集/ 补充信息
+dia-PASEF® 实验操作指南
+
+PDF PAGE 18
+布鲁克生命科学质谱 | Innovation with Integrity
+▪ dia-PASEF运行规则
+数据采集/ 补充信息
+dia-PASEF® 实验操作指南
+
+PDF PAGE 19
+布鲁克生命科学质谱 | Innovation with Integrity
+▪ dia-PASEF运行规则
+数据采集/ 补充信息
+dia-PASEF® 实验操作指南
+
+PDF PAGE 20
+布鲁克生命科学质谱 | Innovation with Integrity
+12
+12
+12
+▪ dia-PASEF运行规则
+数据采集/ 补充信息
+dia-PASEF® 实验操作指南
+
+PDF PAGE 21
+布鲁克生命科学质谱 | Innovation with Integrity
+123
+123
+123
+▪ dia-PASEF运行规则
+数据采集/ 补充信息
+dia-PASEF® 实验操作指南
+
+PDF PAGE 22
+布鲁克生命科学质谱 | Innovation with Integrity
+dia-PASEF® 实验操作指南
+目录
+总览
+数据采集/ timsControl 方法
+数据采集/ 补充信息
+软件解决方案
+附录
+
+PDF PAGE 23
+布鲁克生命科学质谱 | Innovation with Integrity
+BrukerProteoScape(BPS)
+▪ 基于GPU驱动的搜索引擎实现实时数据库搜索
+▪ TIMScore
+ -机器学习和CCS用于增强鉴别分析
+▪ 使用ProteoScape上的TIMS DIA-NN简化了dia-PASEF工作流程
+▪ 邮箱地址: support.proteomics-sw@bruker.com
+▪ 更多信息请访问：https://help.proteoscape.io/#/proteoscape
+▪ 无缝分析和可视化蛋白质组学结果，可以使用“软件即服务”Mass Dynamics
+https://massdynamics.com/our-software
+▪ Bruker ProteoScape（TIMS DIA-NN）或DIA-NN处理结果需要上传哪些文件？
+https://help.massdynamics.com/home/what-files-do-i-need-to-upload-for-dia-nn-processed-results
+dia-PASEF® 实验操作指南
+
+PDF PAGE 24
+布鲁克生命科学质谱 | Innovation with Integrity
+Spectronaut
+▪ 用于有针对性地分析各种质谱平台的DIA 测量结果的蛋白质组学软件
+▪ Biognosys的商业软件包
+▪ 自2019年HUPO发布以来支持dia-PASEF的版本为13.7
+▪ 邮箱地址: support@biognosys.com
+▪ 更多信息请访问: https://biognosys.com/software/spectronaut/
+dia-PASEF® 实验操作指南
+
+PDF PAGE 25
+布鲁克生命科学质谱 | Innovation with Integrity
+PEAKS或者 PEAKSonline
+▪ 兼容DDA和DIA的蛋白质组学研究的质谱数据一站式软件平台
+▪ BSI的商业软件包
+▪ 自2019年底以来支持dia-PASEF 
+▪ 邮箱地址: support@bioinfor.com
+▪ 更多信息请访问: http://www.bioinfor.com/peaks-
+studio/ https://www.bioinfor.com/peaks-online/
+https://www.bioinfor.com/video-tutorials/
+dia-PASEF® 实验操作指南
+
+PDF PAGE 26
+布鲁克生命科学质谱 | Innovation with Integrity
+DIA-NN 或 FragPipe
+▪ “DIA-NN - Demichev、Ralser和Lilley实验室开发的用于数据非依赖性采集（DIA）蛋白质组学数据处理的通用软件。
+2018年，DIA-NN在蛋白质组学中开启了新篇章，引入了一系列算法，使用高通量方法实现了可靠、稳健和定量准
+确的大规模实验。
+▪ 来源：https://github.com/vdemichev/DiaNN
+更多阅读: https://www.nature.com/articles/s41592-019-0638-x
+▪ “FragPipe是基于Java图形用户界面（GUI）的一套检索工具，可对基于质谱的蛋白质组学数据进行全面分析 。
+MSFragger提供支持，MSFragger是一个超快速蛋白质组搜索引擎，适用于常规和“开放”（广泛的前体质量范围）
+肽 识 别。 FragPipe包括 Philosopher工 具 包， 用 于 下 游 处 理MSFragger搜 索 结 果（ PeptideProphet、 iProphet、
+ProteinProphet）、FDR过滤、基于标签的定量和多实验摘要报告生成。 Crystal-C和PTM-Shepherd用于帮助解释开放
+搜索结果。 FragPipe二进制文件还包括TMT-Integrator，用于基于TMT/iTRAQ的同位素标记定量，以及具有FDR控制的
+MBR功能的IonQuant，用于无标记定量，用于EasyPQP的谱库构建，以及用于直接分析数据非依赖性采集（DIA）数
+据的MSFragger-DIA和DIA-UmpireSE模块。”
+来源https://fragpipe.nesvilab.org/
+DIA 数据: https://fragpipe.nesvilab.org/docs/tutorial_DIA.html
+dia-PASEF® 实验操作指南
+
+PDF PAGE 27
+布鲁克生命科学质谱 | Innovation with Integrity
+MaxQuant或 Skyline
+▪ “MaxQuant是专为分析大型质谱数据集设计的蛋白质组学软件包。它专门针对高分辨率的质谱数据。支持多种标
+记技术以及无标记定量。MaxQuant可以该网站免费下载。下载包括集成到MaxQuant中的搜索引擎Andromeda，
+以及用于检查原始数据和鉴定以及定量结果的查看器应用程序。对于对MaxQuant输出进行统计分析，我们提供
+Perseus框架。"
+来源：https://coxlabs.github.io/coxdocs/maxquant_instructions.html
+更多信息: https://www.youtube.com/c/MaxQuantChannel
+▪ “Skyline是一个免费的、开源的Windows客户端应用程序，用于构建选定的反应监测（SRM）/多反应监测
+（MRM）、平行反应监测（PRM）、DIA/SWATH和定向DDA定量方法，并分析产生的质谱数据。它的灵活配置
+支持所有分子。它旨在采用尖端技术，为生命科学中的大规模定量质谱研究创建和迭代地完善定向方法。“
+更多信息: Webinar#21: Analysis of diaPASEFData With Skyline
+dia-PASEF® 实验操作指南
+
+PDF PAGE 28
+布鲁克生命科学质谱 | Innovation with Integrity
+dia-PASEF® 实验操作指南
+目录
+总览
+数据采集/ timsControl 方法
+数据采集/ 补充信息
+软件解决方案
+附录
+
+PDF PAGE 29
+布鲁克生命科学质谱 | Innovation with Integrity
+附录
+▪ 如何将来自otofControl的dia-PASEF方法转换为timsControl SW 
+如果您在*.m文件夹中有一个由otofcontrol创建的“diaparameters.txt”，但无法与timsControl一起使用，
+则可以使用DataAnalysis将其转换为timsControl格式：
+1. 打开任意一针数据
+2. 同时单击“Control”，并将DiaParameters.txt文件拖到DataAnalysis中的数据文件中。
+3. 选择ConvertDIAParametersto timsControlFormat...并保存。
+4. 然后可以在timsControl中加载这个新文件
+dia-PASEF® 实验操作指南
+
+PDF PAGE 30

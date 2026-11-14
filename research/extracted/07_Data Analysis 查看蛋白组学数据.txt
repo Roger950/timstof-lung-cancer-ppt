@@ -1,0 +1,124 @@
+===== PDF PAGE 1 =====
+Data Analysis 查看蛋白组学数据
+Mengxuan Li
+
+===== PDF PAGE 2 =====
+© 2023 Bruker © 2023 Bruker | |
+▪ 布鲁克tims仪器采集的数据均以.d文件格式保存，针对原始数据，Data Analysis(数据查看软件)可以查看谱图、
+液相洗脱参数曲线、峰积分
+▪ TIC(Total Ion Chromatogram)：总离子流图。每一时刻所有离子信号的总和，用于观察整个分析过程的全貌，
+比如峰的数量、分离效果等；
+▪ BPC(Base Peak Chromatogram)：基峰离子流图。每一时刻最强离子（基峰）的强度变化，图谱更平滑，适
+合快速浏览样品中主要组分的变化趋势；
+▪ EIC(Extracted Ion Chromatogram)：提取离子流图。从所有数据中提取某一特定 m/z 的离子信号，用于目标
+化合物的定性与定量分析，是靶向分析中最常用的图谱；
+导入原始数据
+Innovation with Integrity 12 November 2026 2
+
+===== PDF PAGE 3 =====
+© 2023 Bruker © 2023 Bruker | |
+打开数据
+Innovation with Integrity 12 November 2026 3
+▪ 点击open之后打开需要查看的数据
+▪ 点击选中一针原始数据（.d文件），右键点击Open in DataAnalysis
+▪ 也可在序列表中右键快捷打开
+▪ 等待DA软件下方滚动条结束，即为数据加载完毕
+
+===== PDF PAGE 4 =====
+© 2023 Bruker © 2023 Bruker | |
+▪ 调出常查看的谱图，如右图显示
+▪ 查看谱图TIC是否正常，柱压是否正常等
+▪ 若图标为灰色无法选中，检查是否未在左侧选中需要查看的数据
+调出谱图
+Innovation with Integrity 12 November 2026 4
+
+===== PDF PAGE 5 =====
+© 2023 Bruker © 2023 Bruker | |
+▪ 可选中对应的谱图，使纵坐标展示位对应的单位
+调整坐标
+Innovation with Integrity 12 November 2026 5
+
+===== PDF PAGE 6 =====
+© 2023 Bruker © 2023 Bruker | |
+▪ 可调整每一针数据为不同颜色，在overlap界面，方便查看对比多针数据，如重复性、柱压等
+多针数据对比
+Innovation with Integrity 12 November 2026 6
+
+===== PDF PAGE 7 =====
+© 2023 Bruker © 2023 Bruker | |
+▪ 选中小箭头图标，点击图中任意位置可查看该位置对应的MS及MSMS图
+查看一级和二级谱图
+Innovation with Integrity 12 November 2026 7
+
+===== PDF PAGE 8 =====
+© 2023 Bruker © 2023 Bruker | |
+▪ 上方栏目中调出heatmap
+▪ 修改坐标轴为m/z-mobility，点击双箭头加载整个保留时间内所有离子分布
+▪ 对于DIA数据，点击红色方框可查看DIA窗口与离子分布是否合适
+查看热图及离子分布
+Innovation with Integrity 12 November 2026 8
+
+===== PDF PAGE 9 =====
+© 2023 Bruker © 2023 Bruker | |
+▪ 右键想要查看的数据，点击属性，可查看当下这一针对应的参数，如 tunnel in是否正常
+查看数据参数
+Innovation with Integrity 12 November 2026 9
+
+===== PDF PAGE 10 =====
+© 2023 Bruker © 2023 Bruker | |
+LIFE SCIENCES MASS SPECTROMETRY
+Innovation with Integrity 12 November 2026 10
+BPC显示RT和m/z
+1.把BPC谱图调出来；
+2.点击Find，选Display，给chromatogram设置参数的时候算法用最新版本；
+3. Display勾选m/z和RT；
+4. 点击 （Chromatogram Compounds ）,软件处理完谱峰上即出现m/z和RT
+
+===== PDF PAGE 11 =====
+© 2023 Bruker © 2023 Bruker | |
+LIFE SCIENCES MASS SPECTROMETRY
+Innovation with Integrity 12 November 2026 11
+BPC提RT和m/z，显示分子量
+1.把BPC谱图调出来；
+2.点击Find，选Display，给chromatogram设置参数
+的时候算法用最新版本；
+3. Display勾选m/z和RT；
+4.点击 （Chromatogram Compounds ）,谱峰上即
+出现m/z和RT；
+5.点击 ，调出下方表格；
+6.鼠标悬停到下方表头，右键点击Layout，把想看的
+内容加进去；
+7. File_Export_Compounds…可导出csv格式自行数据
+处理
+
+===== PDF PAGE 12 =====
+© 2023 Bruker © 2023 Bruker | |
+▪ 谱图可直接ctrl C和ctrl V粘贴出来
+▪ 在多张二级list中只想粘贴出某一张二级谱，
+可先右键copy to compound spectra，得到单
+张显示，再点击compound spectra窗口后ctrl 
+C和ctrl V粘贴出来
+导出谱图
+Innovation with Integrity 12 November 2026 12
+
+===== PDF PAGE 13 =====
+© 2023 Bruker © 2023 Bruker | |
+LIFE SCIENCES MASS SPECTROMETRY
+Innovation with Integrity 12 November 2026 13
+导出谱图
+1.勾选要提取的谱图；
+2.点击Export_Chromatogram；
+3. 选择数据存放路径，保存成csv格式即可
+
+===== PDF PAGE 14 =====
+© 2023 Bruker © 2023 Bruker | |
+导出谱图
+Innovation with Integrity 12 November 2026 14
+▪ 若要导出谱图所有峰的m/z 和intensity 的list，
+先选要操作的谱图，先右键copy to compound 
+spectra，在最左侧找到对应的compound 
+spectra，右键Export Spectrum，选择csv格式，
+即导出所有峰的m/z 和intensity 的list。
+
+===== PDF PAGE 15 =====
+© 2024 Bruker For Research Use Only. Not for use in clinical diagnostic procedures. 11/12/2026 15

@@ -1,0 +1,998 @@
+
+===== PDF PAGE 1 =====
+To add an image 
+to the background, 
+follow these steps: 
+▪ Right click -> 
+Format Background
+▪ Picture or texture fill
+▪ Picture source -> 
+Insert…
+timsTOF 离子淌度质谱仪在4D蛋白组学原理及应用
+马贝贝
+布鲁克生命科学质谱
+Beibei@bruker.com
+
+===== PDF PAGE 2 =====
+||
+This slide is only to 
+be used for imagery.
+To add an image 
+to the background, 
+follow these steps: 
+▪ Right click -> 
+Format Background
+▪ Picture or texture fill
+▪ Picture source -> 
+Insert…
+© 2026 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures.
+Outline
+Example of a footer
+4D-蛋白质组学平台简介
+4D-蛋白质组学原理
+4D-蛋白质组学应用特点
+蛋白组学应用案例
+2
+
+===== PDF PAGE 3 =====
+To add an image 
+to the background, 
+follow these steps: 
+▪ Right click -> 
+Format Background
+▪ Picture or texture fill
+▪ Picture source -> 
+Insert…
+4D-蛋白质组学平台简介
+Back to outline
+Back to outline
+
+===== PDF PAGE 4 =====
+||
+ ||
+To add an image 
+to the background, 
+follow these steps: 
+▪ Right click -> 
+Format Background
+▪ Picture or texture fill
+▪ Picture source -> 
+Insert…
+© 2026 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures. 12 November 2026Innovation with Integrity 4
+LIFE SCIENCES MASS SPECTROMETRY
+布鲁克质谱系列产品概览
+proteoEluteElute Plus
+eXtreme Resolution
+MALDI-TOF MALDI TOF& TOF/TOF
+Routine LC-MS and GC-MS
+Elute UHPLC/ nanoLC
+compact Impact II VIP
+SPR
+timsTOFPro 2
+timsTOF HT
+timsUltra AIP
+timsTOFfleX
+(ESI/APCIand
+MALD/MALDI2/microGRID)
+EVOQ GC-TQ EVOQ DART-TQ+ ecTOF
+smartfleX Microflex LRF rapifleX
+neofleX
+7 T
+12T
+15T
+18T
+timsMRMSscimaX MRMS solariX MRMS
+timsMetabo
+超高分辨 LC-QTOFESI-QTOF timsTOF
+Solutions & Software
+ProteoScapeTM GlycoScapeTM OmniScapeTM
+BPCMetboScape
+TASQ SCiLSTM Lab Polytools
+ Library
+SpectronautTM
+timsOmniΣ
+
+===== PDF PAGE 5 =====
+||
+ ||
+To add an image 
+to the background, 
+follow these steps: 
+▪ Right click -> 
+Format Background
+▪ Picture or texture fill
+▪ Picture source -> 
+Insert…
+© 2026 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures. 12 November 2026Innovation with Integrity 5
+LIFE SCIENCES MASS SPECTROMETRY
+以技术创新推动的4D-多组学平台
+2024
+2017 2019
+ 20212020 2022 2023
+深度蛋白质组学
+单细胞蛋白质组学
+高通量蛋白质组学
+Partnership
+MALDI空间定位组学
+ 深度单细胞
+蛋白质组学 超高灵敏度质谱仪
+2025
+高灵敏度兼顾结
+构深度解析
+定义极致灵敏度
+tims
+Omni
+ Σ
+tims
+Metabo
+多组学核心平台
+
+
+===== PDF PAGE 6 =====
+||
+ ||
+To add an image 
+to the background, 
+follow these steps: 
+▪ Right click -> 
+Format Background
+▪ Picture or texture fill
+▪ Picture source -> 
+Insert…
+© 2026 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures. 12 November 2026Innovation with Integrity 6
+LIFE SCIENCES MASS SPECTROMETRY
+timsOmini Σ 一机多能：助力多组学研究的“六边形”战士
+❖ Omnitrap的多种碎裂模式拓宽了timsOmni Σ的应用范围，支持CID、ECD、EID等多种离子解离及多级MSn
+实验，可以实现完整蛋白深度测序、翻译后修饰精准鉴定及精细化结构解析；
+❖timsOmni Σ具备timsTOF仪器特点，集成Omnitrap以后不影响Bottom up鉴定性能，依旧具有单细胞级别
+灵敏度和高通量的特点；
+timsOmni Σ是一台既能做高灵敏度高深度又能实现精细化结构表征的仪器
+timsUltra AIP Omnitrap
+timsOmni Σ
+2025 ASMS
+ 高深度高灵敏度 多级碎裂多模式碎裂
+
+===== PDF PAGE 7 =====
+||
+ ||
+To add an image 
+to the background, 
+follow these steps: 
+▪ Right click -> 
+Format Background
+▪ Picture or texture fill
+▪ Picture source -> 
+Insert…
+© 2026 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures. 12 November 2026Innovation with Integrity 7
+LIFE SCIENCES MASS SPECTROMETRY
+timsOmniTM Σ 高灵敏度 4D-蛋白组学质谱平台
+AIP优化从碰撞池释放的离子进入正交加速器(OA)区域的传输，可以带
+来超过3倍灵敏度提升，在单细胞蛋白组学(SCP)、免疫肽组学(iPEP)
+以及微量样本等应用中蛋白鉴定可提升超过15%
+PASEF Melodies：全面支持所有PASEF模式，包括在TIMS平台上独有
+的diagonal-PASEF®模式，提供更丰富的分析方案
+高达300HZ的扫描速度
+离子电荷控制（ICC 2.0）技术：允许在样品加载量上更加宽松，提供
+更友好的用户体验，减少因样品量差异带来的操作难度
+可升级性：可从timsTOF SCP、timsTOF Ultra和timsTOF Ultra 2升级至
+timsUltr AIP，为用户提供灵活设备升级路径，适应不断变化科研需求
+Athena Ion Processor
+ 
+   
+    
+    
+    
+    
+    
+ 
+  
+  
+  
+  
+   
+   
+                                        
+                             
+                      
+                                
+Evosep ENO, 200ng HeLa
+碰撞池
+正交加速器（OA）
+Not transmittedNot transmitted
+
+===== PDF PAGE 8 =====
+||
+ ||
+To add an image 
+to the background, 
+follow these steps: 
+▪ Right click -> 
+Format Background
+▪ Picture or texture fill
+▪ Picture source -> 
+Insert…
+© 2026 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures. 12 November 2026Innovation with Integrity 8
+LIFE SCIENCES MASS SPECTROMETRY
+布鲁克4D-蛋白组学完整解决方案
+timsTOF
+
+
+===== PDF PAGE 9 =====
+To add an image 
+to the background, 
+follow these steps: 
+▪ Right click -> 
+Format Background
+▪ Picture or texture fill
+▪ Picture source -> 
+Insert…
+4D-蛋白质组学原理
+Back to outline
+Back to outline
+
+===== PDF PAGE 10 =====
+||
+ ||
+To add an image 
+to the background, 
+follow these steps: 
+▪ Right click -> 
+Format Background
+▪ Picture or texture fill
+▪ Picture source -> 
+Insert…
+© 2026 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures. 12 November 2026Innovation with Integrity 10
+LIFE SCIENCES MASS SPECTROMETRY
+4D-蛋白组学原理
+Retention time
+Intensity
+m/z
+Ion mobility
+1
+2
+3
+4
+Retention time
+Intensity
+Retention time
+Intensity
+4D新技术3D传统技术
+CCS：Collision Cross Section（碰撞截面），化合物的物理常数
+MS + IM = ability to describe complementary information for gas‐phase ions
+
+===== PDF PAGE 11 =====
+||
+ ||
+To add an image 
+to the background, 
+follow these steps: 
+▪ Right click -> 
+Format Background
+▪ Picture or texture fill
+▪ Picture source -> 
+Insert…
+© 2026 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures. 12 November 2026Innovation with Integrity 11
+LIFE SCIENCES MASS SPECTROMETRY
+4D-蛋白组学原理
+I
+m/z
+Struktur von Morin
+（桑色素）Morin, C15H11O7
+[M+H]+ = 303.0499 Da
+1. Chromatographic separation 2. Mass separation
+（ 槲皮素）Quercetin, C15H11O7
+[M+H]+ = 303.0499 Da
+Struktur von Quercetin
+当色谱与质谱都无法有效分离时？
++3 Ion mobility separation
+离子淌度根据分子的空间结构大小 (CCS)进行分离
+I
+retention time
+2
+1
+0.78 0.80 0.82 Mobility, 1/K0 [V·s/cm²]
+0.0
+0.5
+1.0
+1.5
+2.0
+4x10
+Intens.
+QM+TM_imeX_RD3_01_41.d: EIM 303.0499±0.05 +All MS, 5.05-5.25 min, Smoothed (0.00,2,SG)
+Morin
+Quercetin
+2 4 6 Time [min]
+0
+1
+2
+3
+4
+5x10
+Intens.
+QM+TM_imeX_RD3_01_41.d: EIC 303.0499±0.05 +All MS
+LC only:
+121.0289
+1+ 137.0237
+1+
+153.0186
+1+
+165.0186
+1+ 201.05481+
+229.0496
+1+
+257.0443
+1+
+274.0471
+1+
+303.0495
+1+
+QM+TM_imeX_MRM_RD3_01_59.d: +MS2(303.0495), 42.0eV, 5.08-5.27min #1194-1239
+0
+1
+2
+3
+4
+4x10
+Intens.
+120 140 160 180 200 220 240 260 280 300 m/z
+with TIMS:
+121.0289
+137.0238
+1+
+153.0186
+1+
+165.0188
+1+
+187.0394
+205.0499
+1+ 219.0290
+1+
+274.0472
+1+
+285.0397
+1+ 303.0487
+1+
+QM+TM_imeX_MRM_RD3_01_59.d: +All MSn, 5.05-5.20min, 1/K0=0.807-0.812 #1188-1223
+121.0290
+137.0238
+1+
+153.0188
+1+
+165.0186
+1+ 201.0549
+1+
+229.0495
+1+
+257.0444
+1+
+285.0399
+1+
+303.0493
+1+
+QM+TM_imeX_MRM_RD3_01_59.d: +All MSn, 5.05-5.20min, 1/K0=0.818-0.823 #1188-1223
+0
+500
+1000
+1500
+Intens.
+0
+500
+1000
+1500
+120 140 160 180 200 220 240 260 280 300 m/z Morin
+Quercetin
+Mixed MS/MS spectrum
+
+
+===== PDF PAGE 12 =====
+||
+ ||
+To add an image 
+to the background, 
+follow these steps: 
+▪ Right click -> 
+Format Background
+▪ Picture or texture fill
+▪ Picture source -> 
+Insert…
+© 2026 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures. 12 November 2026Innovation with Integrity 12
+LIFE SCIENCES MASS SPECTROMETRY
+timsTOF系列质谱离子传输通路
+▪ TIMS不仅仅只是提供多一维度的分离，双TIMS可以最大限度的利用QTOF仪器的速度优势
+TIMS QuadrupoleFilter Time of FlightMSHPLC
+Mass scan
+110 µs
+9.1 kHz
+Mass Selection
+2.5 – 10 ms
+100 – 350 precursors/s
+Ion Mobility Separation
+20 - 100 ms
+10 - 50 Hz
+Chromatography
+FWHM
+~ 7 s 
+Improved robustness due to 
+orthogonal ESI configuration
+
+
+===== PDF PAGE 13 =====
+||
+ ||
+To add an image 
+to the background, 
+follow these steps: 
+▪ Right click -> 
+Format Background
+▪ Picture or texture fill
+▪ Picture source -> 
+Insert…
+© 2026 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures. 12 November 2026Innovation with Integrity 13
+LIFE SCIENCES MASS SPECTROMETRY
+timsTOF系列质谱离子传输通路
+Ion funnel
+Inlet
+Gated dual 
+TIMS 
+Quadrupole 
+mass filter
+Omnitrap®
+TOF analyzer
+Collision cell 
+with AIP
+❖ timsTOF与Omnitrap的组合
+❖ 全方位MSn eXd和离子富集带来无与伦比的灵敏度
+❖ 捕获eXd技术，优化前体离子利用率，提高碎片离子产率
+❖ 精确控制基于电子的碎裂，实现详细的分子特征分析
+❖ 多种碎裂方式组合，获得最优的离子覆盖率
+❖ 利用TIMS提供精确CCS值，解析构象异构性
+❖ 全面支持所有PASEF®模式进行Bottom-up蛋白质组学和蛋白质
+异质体分析
+▪ timsOmni Σ 在继承timsTOF系列仪器核心淌度优势的基础上提升灵敏度、丰富碎裂模式、拓宽研究领域
+
+===== PDF PAGE 14 =====
+||
+ ||
+To add an image 
+to the background, 
+follow these steps: 
+▪ Right click -> 
+Format Background
+▪ Picture or texture fill
+▪ Picture source -> 
+Insert…
+© 2026 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures. 12 November 2026Innovation with Integrity 14
+LIFE SCIENCES MASS SPECTROMETRY
+timsTOF 4D-蛋白组学两大核心技术
+▪ 捕集离子淌度质谱（TIMS, Trapped Ion Mobility Spectrometry）
+▪ 平行累积连续碎裂（PASEF, Parallel Accumulation-Serial Fragmentation）
+to mass 
+analyzer
+Entrance Funnel Analyzer 2 Exit FunnelCap. Exit
+Deflection Plate
+Gas
+Ions
+from spray 
+chamber
+Gas
+E
+Z
+Accumulate
+100 ms
+Analyzer 1
+Trap Elute
+100 ms
+
+
+===== PDF PAGE 15 =====
+timsTOF 工作原理
+1515
+Accumulation （100 ms）
+accumulation
+(100 ms)
+from
+Source
+
+===== PDF PAGE 16 =====
+timsTOF 工作原理
+1616
+TIMS MS Scan / Elute （100 ms）
+parallel
+accumulation
+TIMS scan
+(100 ms)
+TIMS MS Heat Map
+Accumulate TIMS 1 MS @ 100 ms
+m/z
+1/k0
+[Vs/cm2]
+
+===== PDF PAGE 17 =====
+timsTOF 工作原理
+1717
+PASEF Scan （100 ms）
+parallel
+accumulation PASEF scan isolation     fragmentation
+(~3 ms / precursor)
+12 MS/MS @ 100 ms
+Accumulate TIMS
+PESEF
+1 MS @ 100 ms
+Accumulate
+TIMS MS Heat Map1/k0
+[Vs/cm2] 1/k0[Vs/cm2]
+m/zm/z
+
+===== PDF PAGE 18 =====
+||
+ ||
+To add an image 
+to the background, 
+follow these steps: 
+▪ Right click -> 
+Format Background
+▪ Picture or texture fill
+▪ Picture source -> 
+Insert…
+© 2026 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures. 12 November 2026Innovation with Integrity 18
+LIFE SCIENCES MASS SPECTROMETRY
+timsTOF系列质谱离子传输通路
+~30 MS/MS @ 100 ms
+Accumulate TIMS
+PESEF
+1 MS @ 100 ms
+Accumulate
+Tims + PASEF采集循环
+
+
+===== PDF PAGE 19 =====
+To add an image 
+to the background, 
+follow these steps: 
+▪ Right click -> 
+Format Background
+▪ Picture or texture fill
+▪ Picture source -> 
+Insert…
+4D-蛋白质组学应用特点
+Back to outline
+Back to outline
+
+===== PDF PAGE 20 =====
+||
+ ||© 2024 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures.
+4D-蛋白质组学应用特点 – 时间和空间共聚焦
+12 November 2026 20Innovation with Integrity
+LIFE SCIENCES MASS SPECTROMETRY
+▪ 灵敏度 - 时间和空间聚焦
+▪ 灵敏度 - 单电荷被排除掉，谱图背景更干净
+100 ms (Time)
+intensity+3
++2
++2
+Spacial distribution
+5 ms (Time)
+intensity
+Time & Space Focusing using TIMS
+5 ms (Time)
+intensity
+5 ms (Time)
+intensity
++3 +2 +2
+Analyzer 1 TIMSSeparation
+▪ 灵敏度 - 超快采集速度对低峰度肽段重复扫描
+
+===== PDF PAGE 21 =====
+||
+ ||© 2024 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures.
+4D-蛋白组学应用特点 - 高灵敏度和高扫描速度
+12 November 2026 21Innovation with Integrity
+最新的离子淌度技术 TIMS:
+Trapped Ion Mobility Spectrometry
+PHO
+S P H O P EPTIDEP
+TIMS在时间和空
+间聚焦提高灵敏度
+TIMS1 TIMS2
+1 2> 300 Hz 离子淌度分离
+只需纳克级样本，可实现单细胞蛋白质组学研究3
+可
+靠
+灵
+敏
+度
+速
+度
+LIFE SCIENCES MASS SPECTROMETRY
+
+
+===== PDF PAGE 22 =====
+||
+ ||© 2024 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures.
+4D-蛋白组学应用特点 - 个性化采集方法
+12 November 2026 22Innovation with Integrity
+LIFE SCIENCES MASS SPECTROMETRY
+m/z
+ion mobility 1/K0
+Tryptic
+Immunopeptides (+1)
+Glyco
+Chemical
+background
+ABPP
+Bellotti P., Anal. Chem. 2025
+ABPP
+timShift
+Baerenfaenger M., Anal. Chem. 2024
+Glycopeptides
+glyco-PASEF
+Gomez-Zepeda D., Nat. Comm. 2024
+Immunopeptides
+thunder-PASEF
++1
+> +1
+
+===== PDF PAGE 23 =====
+||
+ ||© 2024 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures.
+4D-蛋白组学应用特点 - 个性化采集方法
+12 November 2026 23Innovation with Integrity
+LIFE SCIENCES MASS SPECTROMETRY
+Target PASEF EXDDDA PASEF CID/EXD Guided PASEF CID/EXD
+富集的糖肽样本（>70%） 未富集的糖肽样本
+靶向特定糖肽
+未富集的糖肽样本
+非靶向特定糖肽
+triggering EXD scans on oxonium signals 
+produced by CID
+ECD*same K0 , different m/z or different K0selected in the next tims scan CID
+EXD
+CID
+CID
+Tims elution voltage
+CID
+EXD #1
+Oxonium ion detected by MS2 CID
+tims ramp
+Oxonium ion detected by MS2 CID
+omission window
+EXD #2
+*same K0 , different m/z or different K0
+selected in the next tims scan
+omission window
+PASEF-eXd：糖基化修饰全新采集模式
+
+
+===== PDF PAGE 24 =====
+||
+ ||© 2024 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures.
+4D-蛋白组学应用特点 - TIMS提供了多一维度的分离信息
+12 November 2026 24Innovation with Integrity
+LIFE SCIENCES MASS SPECTROMETRY
+Measured 1/k0
+Predicted 1/k0 
+distribution
+IMScore: 0.97 IMScore: 0.27
+m/z无法判定谱图时，淌度
+辅助谱图判定，降低多肽
+鉴定的模糊性
+质荷比
+离子淌度
+
+===== PDF PAGE 25 =====
+||
+ ||© 2024 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures. 12 November 2026 25Innovation with Integrity
+LIFE SCIENCES MASS SPECTROMETRY
+软硬件同步创新支撑4D-蛋白质组学研究全流程
+节约珍贵样本
+❑ Pulsar
+❑ ProLuCID
+❑ TIMSrescore
+❑ Novor AI
+❑ Spectronaut
+❑ TIMS DIANN
+❑ Spectronaut
+❑ Myriad-Sage
+➢ BPS 提供完整分析流程，全面支持 timsTOF 蛋白质组学数据在多种采集模式和应用领域的分析。
+❑ 采用弹性可扩展的底层
+架构，为后续流程的新
+增、迭代与升级提供稳
+定支撑
+GPU 支持的海量数据并行计算Run & Done
+
+===== PDF PAGE 26 =====
+||
+ ||© 2024 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures.
+4D-蛋白组学应用特点 - 提升大队列分析的稳定性
+12 November 2026 26Innovation with Integrity
+LIFE SCIENCES MASS SPECTROMETRY
+• Over 1000 Hela injections required 
+only ONE capillary cleaning
+10.950.9
+R squared value
+96 runs  12 h measurement  time
+R=0.97
+Log2 LFQ intensity 1
+Log2 LFQ intensity 96
+1.60E+04
+1.60E+05
+1.60E+06
+1.60E+07
+0 50 100Run number
+HSP90AA1
+HSPA8
+LDHB
+ACLY
+IPO5
+ANXA6
+PAFAH1B2
+High reproducibility
+High stability
+
+===== PDF PAGE 27 =====
+||
+ ||© 2024 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures.
+4D-蛋白组学应用特点 - 提升大队列分析的稳定性
+12 November 2026 27Innovation with Integrity
+LIFE SCIENCES MASS SPECTROMETRY
+Prof. Roman 
+Fischer
+Prof. Markus Ralser
+Dr.Chiara Guerrera
+Dr. Fabian Coscia
+Prof. Hanno Steen
+Samir M. Hanash, 
+M.D., Ph.D. 
+
+
+===== PDF PAGE 28 =====
+To add an image 
+to the background, 
+follow these steps: 
+▪ Right click -> 
+Format Background
+▪ Picture or texture fill
+▪ Picture source -> 
+Insert…
+蛋白组学应用案例
+Back to outline
+Back to outline
+
+===== PDF PAGE 29 =====
+||
+ ||© 2024 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures.
+LIFE SCIENCES MASS SPECTROMETRY
+12 November 2026 29Innovation with Integrity
+21min梯度，单个细胞（ ~10
+μm T细胞）鉴定超过5,000种蛋
+白质，多肽~34,000条
+21min梯度，单个细胞（ ~20 μm
+293细胞）鉴定超过6,000种蛋白质，
+多肽~50,000条
+高深度单细胞蛋白质组学分析
+
+
+===== PDF PAGE 30 =====
+||
+ ||© 2024 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures.
+单细胞蛋白质和代谢物同时分析
+12 November 2026Innovation with Integrity 30
+▪ 仅需改变部分LC和MS的检测条件，单组学和双组学的方法在代谢
+物和蛋白质鉴定数量上都没有显著差异
+▪ 一次性单细胞蛋白质组和代谢组分析（ scPMA）
+▪ scPMA 策 略 应 用 A549 ，
+Hela，HepG2三种细胞, 基
+于蛋白组信息 ，代谢组信
+息和蛋白质 -代谢物双组
+学信息对细胞分型 , 显示
+双组学信息的分类表现出
+更好的结果
+LIFE SCIENCES MASS SPECTROMETRY
+
+
+===== PDF PAGE 31 =====
+||
+ ||© 2024 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures.
+4D-蛋白质组学技术助力ABPP新探针设计
+11/12/2026 31Example of a footer
+超高灵敏度：仅需20 μg 起始蛋白，效果等同传统流程500 μg，灵敏度
+提升25倍
+高通量适配：流程可集成于96孔板中，满足大规模高通量分析需求
+修饰诱导理化性质改变-气相维度精准分离-设置母离子范围选择碎裂
+LIFE SCIENCE MASS SPECTROMETRY
+
+===== PDF PAGE 32 =====
+||
+ ||© 2024 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures.
+4D-蛋白质组学用于修饰组学样本分析
+11/12/2026 32Example of a footer
+LIFE SCIENCE MASS SPECTROMETRY
+▪ NEOsphere基于timsTOF高灵敏度、高通量的特点，开发了全新的流程，泛素化蛋白质组进入“低输入、高深度、真动态”的全新时代。
+▪ 传统方法需2mg蛋白（约数十万细胞），而timsTOF仅需100 μg蛋白，适用于临床活检、小鼠模型等珍贵样本。timsTOF凭借离子淌度
+（TIMS）+PASEF扫描模式，单次检测可精准捕获＞50,000个泛素化位点，实现泛素化蛋白质组的深度覆盖，同时具有很好的定量重现性。
+24-well plate format 
+20 times less protein input than 
+previous state-of-the-art1
+(100 µg vs 2 mg)
+Ubiquitin remnant (KGG) 
+peptide enrichment
+Protein 
+degrader-drug 
+treatment
+DIANN
+Raw data processing 
+& biostatistics
+slice-PASEF2 +35% IDs and 
+better 
+quantification 
+precision
+timsTOF Ultra
+12.2% 11.0% 10.7%
+timsTOF HT
+14.1% 11.7% 11.4%Median CV(%): Median CV(%):
+20x less input for +35% IDs & better quantification
+
+===== PDF PAGE 33 =====
+||
+ ||© 2024 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures.
+4D-蛋白质组学用于修饰组学样本分析
+11/12/2026 33Example of a footer
+LIFE SCIENCE MASS SPECTROMETRY
+键合异构体的N-糖淌度分离
+✓ 系统地优化了碰撞能量 、离子传
+输、PASEF多边形框以及富含乙
+腈的氮气 (DEN)
+✓ 30 分钟的短液相色谱梯度 ，优
+化的糖蛋白组学方法将人血浆样
+品中独特 N-糖肽鉴定的数量从
+标准蛋白质组学条件下的约 100
+个鉴定增加到高达 1500 个。
+
+===== PDF PAGE 34 =====
+||
+ ||© 2024 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures.
+4D-蛋白质组学用于修饰组学样本分析
+11/12/2026 34Example of a footer
+LIFE SCIENCE MASS SPECTROMETRY
+❖ 免疫肽存在多样性高、丰度低和异质性强等
+❖ Thunder-DDA-PASEF 实现35%单电荷免疫肽鉴定提升和
+2.3倍免疫肽覆盖深度
+❖ 300ms ramp time增加分离效率，个性化设计母离子选择
+区域
+❖ 14,313 和 17,806 肽段分别来自于JY和Raji两种细胞系
+
+
+===== PDF PAGE 35 =====
+||
+ ||© 2024 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures.
+4D-蛋白质组学用于空间蛋白质组学样本研究
+11/12/2026 35Example of a footer
+LIFE SCIENCE MASS SPECTROMETRY
+❖ 通过激光显微切割结合Evosep One + timsTOF Ultra，对高级别浆液性卵巢癌
+（HGSOC）进行溯源性研究。通过H&E及p53、Ki67、PAX8等免疫组化标记
+方法定义FFPE样本的病理分区后，以每0.25-0.3nL (50~100个细胞)为一个微
+区域进行切割。
+❖ 共计192个样品中鉴定到 >10,000 种蛋白质，检测范围跨度~5个数量级。
+❖ 仅使用细胞级的 FFPE切割微区域，实现了较高蛋白质组覆盖度，这一结果与
+近需要数百微克至毫克级新鲜冷冻组织的Bulk组学研究水平相当。
+timsTOF Ultra timsTOF Ultra2 timsUltra AIP
+灵敏度不断提升
+肿瘤实质区 肿瘤间质区
+
+
+===== PDF PAGE 36 =====
+||
+ ||© 2024 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures.
+LIFE SCIENCES MASS SPECTROMETRY
+离子淌度应用于不同蛋白质研究方向
+12 November 2026 36Innovation with Integrity
+◼ Anal. Chem. 2021, 93, 29, 10013–10021
+◼ 借助离子淌度解决传统质谱无法区分ADC药物药物抗体比率DAR的构象差异，实现对
+ADCs构象异质性的量化分析，实现完整ADC的DAR与构象分析、亚基解离与测量、一
+级序列碎裂与药物位点确认。
+◼ Nature, volume 579, pages303–308 (2020)
+◼ 翻译后修饰肽段色谱共流出、质量数相同。通过离子淌度实现对神经降压素受体1
+（NTSR1）不同磷酸化位点的准确鉴定，从而在深层次揭示NTSR1与β-arrestin1形
+成的复合物的结构和功能
+◼ Nat Commun 14, 8400 (2023)
+◼ 肌钙蛋白复合物cTn的构象变化与钙离子调控心肌收缩机制相关。离子淌度技术可
+准确测定得到cTn与钙离子结合的构象变化，完善内源性蛋白复合物分析流程。
+◼ J. Am. Chem. Soc. 2021, 143, 31, 12014–12024
+◼ 离子淌度可有效分离SARS-Cov-2刺突蛋白受体不同聚合状态和构象，同时可实现表
+面不同糖型的分离与测定，为O-糖型修饰与蛋白质结构的关联提供定量信息。
+
+===== PDF PAGE 37 =====
+||
+ ||© 2024 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures.
+LIFE SCIENCES MASS SPECTROMETRY
+timsOmni Σ 糖基化全新采集模式
+12 November 2026 37Innovation with Integrity
+b21+
+c21+
+b31+y31+ y82+ y112+
+x51+
+y61+
+z71+ x71+
+y71+
+y81+
+y223+
+Pep4+
+Pep4+
+Pep4+
+x182+
+[M+4H]4+
+c91+
+y111+
+Pep3+ Pep3+
+Pep3+
+c142+b182+
+[M+4H]3+●
+c172+ y141+ c202+c91+b212+ c222+
+Pep2+
+Pep2+
+c9 fragments used for 
+localizing the H2N2 
+position
+c91+
+EXciD
+CID
+b31+
+b41+
+a41+
+y62+ y82+
+y61+
+y71+
+y81+
+y253+
+Pep3+ Pep3+
+Pep3+ b212+
+ y252+
+y222+
+Pep2+
+y252+
+ y252+
+Pep2+
+EXciD #1976
+Precursors m/z: 1029.768 
+Charge: 4+
+RT: 2287-2293 sec 
+1/k0 = 0.91
+Total glycan composition: H3N3
+CID #1973
+Precursors m/z: 1029.7734
+Charge: 4+
+RT: 2290 sec 
+1/k0 = 0.905
+Total glycan composition: H3N3
+EXciD vs CID 分析O-Glycopeptides
+
+
+===== PDF PAGE 38 =====
+||
+ ||© 2024 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures.
+LIFE SCIENCES MASS SPECTROMETRY
+离子淌度应用于不同蛋白质研究方向
+12 November 2026 38Innovation with Integrity
+中国科学院分子植物科学卓越创新中心
+上海美吉生物医药科技有限公司
+北京协和医院
+华南生物医药研究院
+昱言科技（北京）有限公司
+南京农业大学
+浙江大学化学系
+浙江大学杭州国际科创中心
+昌平实验室
+复旦大学生命科学学院
+复旦大学生物医学研究院
+ 香港神经退行性疾病中心
+济南微生态生物医学省实验室
+中国科学院杭州医学研究所
+深圳医学科学院
+南方科技大学
+南京医科大学
+上海梧桐岛生
+命科学研究院
+武汉大学
+
+===== PDF PAGE 39 =====
+© 2026 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures.

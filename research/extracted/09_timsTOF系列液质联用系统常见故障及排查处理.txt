@@ -1,0 +1,874 @@
+PDF PAGE 1
+timsTOF系列液质联用系统常见故障及排查处理
+BDAL Service
+韩金润/Jinrun Han
+2026.11.11
+Work Review
+timsTOF Pro / timsTOF Pro2 / timsTOF HT/ timsTOF fleX / timsTOF fleX MALDI2 / 
+timsTOF SCP / timsTOF ultra / timsTOF ultra2
+
+PDF PAGE 2
+内容概述
+OVERVIEW
+1.nanoElute仪器硬件介绍与使用注意
+2.nanoElute仪器常见故障及排查处理
+3.timsTOF仪器硬件介绍与使用注意
+4.timsTOF仪器常见故障及排查处理
+5.布鲁克质谱售后服务介绍
+
+
+PDF PAGE 3
+内容概述
+OVERVIEW
+1.nanoElute仪器硬件介绍与使用注意
+2.nanoElute仪器常见故障及排查处理
+3.timsTOF仪器硬件介绍与使用注意
+4.timsTOF仪器常见故障及排查处理
+5.布鲁克质谱售后服务介绍
+
+
+PDF PAGE 4
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+1.nanoElute仪器硬件介绍与使用注意
+11 November 2026 4Innovation with Integrity
+【流动相溶剂瓶】
+A相/B相溶剂、在线脱气
+↓ 液路输送
+【二元纳流高压泵】
+纳升梯度，nL级流量控制，压力监测
+↓
+【自动进样器】
+样品盘、进样针、进样环，样品采集
+↓
+【高压切换阀组】
+六通高压阀，捕集-洗脱流路切换
+↓
+【捕集柱Trap Column】
+样品富集、脱盐，保护分析柱
+↓
+【柱温箱（Column Toaster）+分析柱】
+色谱分离，柱温精准控制
+——————————————————————————————
+配套支撑系统（并行供给全部模块）
+├─压力&漏液检测系统：压力传感器、漏液报警探头
+├─温控系统：样品仓制冷模块、柱温箱加热模块
+└─工控&通讯系统：板卡、主控、Compass软件通讯
+nanoElute液相系统
+CaptiveSpray源
+CaptiveSpray2源
+【CaptiveSpray纳喷离子源】
+液相出口，纳喷雾化，对接
+timsTOF质谱
+
+PDF PAGE 5
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+1.nanoElute仪器硬件介绍与使用注意
+11 November 2026 5Innovation with Integrity
+§仪器最佳运行温度：21±3 ℃，波动< 3 ℃/小时；
+§湿度要求：15%-85%，无冷凝@30 ℃，房间建议配置除湿机；
+§配套柱温箱位置不可以有明显的气流流动，比如空调出风口下方，会影响柱温的稳定性；
+§避免将仪器放置于日光强烈的地方，必要时加装遮光帘；
+§液相台需要稳定，以防止进样器运行时带来的晃动；
+§液相供电需要零地电压小于2伏。
+nanoElute液相系统——工作环境要求
+
+PDF PAGE 6
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+1.nanoElute仪器硬件介绍与使用注意
+11 November 2026 6Innovation with Integrity
+qSolvent A：含0.1%甲酸的LCMS级别水溶液；
+qSolvent B：含0.1%甲酸的LCMS级别的乙腈溶液；
+q流动相建议每周更换，已配置超过两个星期的流动相，不可再继续使用;
+q流动相更换时，需要整瓶更换，且不可以在溶剂瓶中反复补充流动相。
+q制备好的样本必须是澄清、通明液体，切不可有悬浮物或沉淀。
+nanoElute液相系统——试剂要求
+
+PDF PAGE 7
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+1.nanoElute仪器硬件介绍与使用注意
+11 November 2026 7Innovation with Integrity
+§Maintenance / Autosampler flush【每次换流动相后，必须做，否则会影响进样精度】
+q执行过程中需要观察注射器内部是否有气泡，如果有气泡，需要重复执行，确保气泡已排出；
+q执行过程中需观察粗溶剂管路内是否有气泡，如果有气泡，需要重复执行，确保气泡已排出；
+§Include solvent replacement【更换流动相后必须做】
+q执行过程中需观察细溶剂管路内是否有气泡，如果有气泡，需要重复执行，确保气泡已排出；
+q执行过程中需观脱气机指示灯闪黄灯，说明脱气机正常工作。
+nanoElute液相系统——启动准备
+
+PDF PAGE 8
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+1.nanoElute仪器硬件介绍与使用注意
+11 November 2026 8Innovation with Integrity
+§位置1 -色谱柱存储溶剂，比如LCMS级别的异丙醇；
+§位置2 -放置校正液，甲酸钠、甲酸乙酸钠、三氟乙酸钠等；
+§位置3 -Pickup辅助进样液体，一般使用流动相A，0.1%甲酸水溶液（每次更换流动相必须更换）。
+nanoelute1 Wash Station nanoelute2 Wash Station
+nanoElute液相系统——Vials准备
+
+PDF PAGE 9
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+1.nanoElute仪器硬件介绍与使用注意
+11 November 2026 9Innovation with Integrity
+§如果该色谱柱需要继续使用；
+q保持流速0.1 ul/min，50% Solvent B 持续冲洗系统；
+§如果该色谱柱不再使用，将A/B流动相更换为70%乙腈/水溶液；
+q冲洗自动进样器：在LC Control中选择Maintenance，Flush the aqueous and organic autosampler tubings 10 
+times；
+q冲洗泵体：在LC Control中选择Preparation，执行Include solvent replacement；
+q冲洗泵管路：在LC Control中选择Preparation，执行Include column preparation；
+q0.3ul/min冲洗色谱柱，至少30分钟以上，再取下色谱柱保存；
+q保持流速0.1 ul/min，50% B持续冲洗系统；
+nanoElute液相系统——待机准备
+
+PDF PAGE 10
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+1.nanoElute仪器硬件介绍与使用注意
+11 November 2026 10Innovation with Integrity
+§nanoElute UHPLC 短时间关机，将A/B流动相更换为70%乙腈/水溶液；
+§冲洗自动进样器：在LC Control中选择Maintenance，Flush the aqueous and organic autosampler 
+tubings 10 times；
+§冲洗泵体：在LC Control中选择Preparation，执行Include solvent replacement；
+§冲洗泵管路：在LC Control中选择Preparation，执行Include column preparation；
+§0.3ul/min冲洗色谱柱，至少30分钟以上，再取下色谱柱保存，关机即可。
+nanoElute液相系统——关机准备
+
+PDF PAGE 11
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+1.nanoElute仪器硬件介绍与使用注意
+11 November 2026 11Innovation with Integrity
+§nanoElute (2) UHPLC 长时间关机或运输保存，将A/B流动相更换为LCMS级别异丙醇；
+§确认色谱柱已使用合适的溶剂冲洗过，取下色谱柱保存；
+§冲洗自动进样器：在LC Control中选择Maintenance，Flush the aqueous and organic autosampler 
+tubings 10 times；
+§冲洗泵体：在LC Control中选择Preparation，执行Include solvent replacement；
+§冲洗泵管路：在LC Control中选择Preparation，执行Include column preparation；
+§完成后，保护好Tra p  阀5号口的连接管路，再关机。
+nanoElute液相系统——长期关机准备
+
+PDF PAGE 12
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+1.nanoElute仪器硬件介绍与使用注意
+11 November 2026 12Innovation with Integrity
+nanoElute液相系统——样品仓使用注意
+§使用氮气或压缩空气，低流速冲样本槽，以保证样本槽内不凝水；
+§建议每月检查气路是否有气体流出。
+
+
+PDF PAGE 13
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+1.nanoElute仪器硬件介绍与使用注意
+11 November 2026 13Innovation with Integrity
+nanoElute液相系统——进样前检查
+1.样品瓶底部是否有悬浮物或沉淀；
+2.Vial 3 补偿溶剂是否充足，进样隔垫是否有污染，如发现异常，及时更换；
+3.色谱柱压力与参考值是否接近；
+4.进样注射器内部是否有气泡；
+5.进样针座表面是否干净，必要时可以取下超声波清洗；
+6.样本槽内部是否有凝水，如果凝水需要检查吹扫气；
+7.柱温箱温度是否正常；
+8.色谱柱接地是否连接；
+9.质谱部分相关状态检查等，比如TIMS IN 数值。
+
+PDF PAGE 14
+内容概述
+OVERVIEW
+1.nanoElute仪器硬件介绍与使用注意
+2.nanoElute仪器常见故障及排查处理
+3.timsTOF仪器硬件介绍与使用注意
+4.timsTOF仪器常见故障及排查处理
+5.布鲁克质谱售后服务介绍
+
+
+PDF PAGE 15
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+2.nanoElute仪器常见故障及排查处理
+11 November 2026 15Innovation with Integrity
+§ 现象：进样后峰形不对，或者不出峰。
+§ 原因和可能性分析：
+1.样本的检查，是否足够体积，是否澄清透明，进样高度…
+2.补偿溶剂的检查，不充足，不干净，
+3.注射器和进样针头的排查，气泡或者漏液，或者堵；
+4.洗针溶液的排查，管路没有气泡，接头有没有漏液；
+5.流动相的排查，是否新鲜，是否放置在正确的位置，Preparation A,B 数值核对；
+6.色谱柱的排查；
+7.液相泵的排查；
+8.进样口，进样阀的检查，必要时做flow restriction test，排除管路堵塞的情况；
+1.进样系统问题
+
+PDF PAGE 16
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+2.nanoElute仪器常见故障及排查处理
+11 November 2026 16Innovation with Integrity
+§现象：出峰延迟。
+§原因和可能性分析：
+1.泵的溶剂是否新鲜制备，管路是否有气泡，是否充分完成溶剂替换，即使查看 Preparation数值；
+2.柱温箱是否正常工作；
+3.泵系统是否漏液，造成没有足够的流速到达色谱柱，可以通过目测观察管路接口处、阀的底部，必要
+时做渗漏诊断测试，对于nanoElute2 可以逐段测试，对于nanoElute，渗漏测试风险较高；
+4.脱气机是否正常工作。
+2.泵传输系统问题
+
+PDF PAGE 17
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+2.nanoElute仪器常见故障及排查处理
+11 November 2026 17Innovation with Integrity
+§现象：漏、堵。
+§原因和可能性分析：
+1.nanoViper管路接头，变形，不洁净，垫片脱落…
+2.变形的色谱柱接口;
+3.损坏的色谱柱入口（自制柱）
+3.管路连接问题
+
+PDF PAGE 18
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+2.nanoElute仪器常见故障及排查处理
+11 November 2026 18Innovation with Integrity
+4.液相测堵操作
+§操作要点：
+1.LC Control里点击Colum按钮，断开色谱柱；
+2.运行Flow Restriction test等待测试结果；
+3.根据测试结果定位堵塞位置，替换相应管路或
+断开后再次测试，确认测试结果。
+
+
+PDF PAGE 19
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+2.nanoElute仪器常见故障及排查处理
+11 November 2026 19Innovation with Integrity
+5.液相测漏操作
+§操作要点：
+1.LC Control里点击Colum按钮，断开色谱柱；
+2.运行Leak test，安装专用死堵，等待测试结果；
+3.根据测试结果定位漏点，替换相应管路或堵死
+后再次测试，确认测试结果。
+
+
+PDF PAGE 20
+内容概述
+OVERVIEW
+1.nanoElute仪器硬件介绍与使用注意
+2.nanoElute仪器常见故障及排查处理
+3.timsTOF仪器硬件介绍与使用注意
+4.timsTOF仪器常见故障及排查处理
+5.布鲁克质谱售后服务介绍
+
+
+PDF PAGE 21
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+3.timsTOF仪器硬件介绍与使用注意
+11 November 2026 21Innovation with Integrity
+【离子源模块】
+ESI纳喷源/ Apollo源（喷针、毛细管、雾化室）
+↓ 离子传输
+【离子光学传输透镜组】
+偏转透镜、离子漏斗、离子聚焦
+↓
+【TIMS捕集离子淌度模块（双TIMS）】
+富集区+ 淌度分离区（timsTOF标志性模块）
+↓
+【四极杆+ 碰撞碎裂池】
+母离子筛选、碰撞碎裂（PASEF模式）
+↓
+【TOF飞行管+ 检测器模块】
+飞行区、反射器、MCP/电子倍增检测器
+——————————————————————————————
+配套支撑系统（并行供给全部腔体）
+├─真空系统：机械泵、分子泵、真空规、真空阀组、多级差分真空
+├─气路系统：高纯氮气、缓冲气、过滤器、调压阀、管路
+├─水冷温控系统：水冷机、管路、温度流量传感器
+└─电气&工控系统：高压电源、射频电源、控制板卡、通讯模块
+timsTOF系列质谱仪
+CaptiveSpray源
+机械泵
+水冷机
+【其他附件】
+
+PDF PAGE 22
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+3.timsTOF仪器硬件介绍与使用注意
+11 November 2026 22Innovation with Integrity
+外部硬件结构
+timsTOF系列质谱仪——硬件结构
+内部硬件结构
+
+PDF PAGE 23
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+3.timsTOF仪器硬件介绍与使用注意
+11 November 2026 23Innovation with Integrity
+•不同的真空区域：机械泵、分子涡轮泵1、分子涡轮泵2
+•3个真空规：TIMS In、TIMS Out、TOF
+timsTOF系列质谱仪——真空系统
+
+PDF PAGE 24
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+3.timsTOF仪器硬件介绍与使用注意
+11 November 2026 24Innovation with Integrity
+§仪器最佳运行温度：21±3 ℃，波动< 3 ℃/小时；
+§湿度要求：15%-85%，无冷凝@30 ℃，质谱房间建议配置除湿机；
+§仪器周围不可以有明显的气流流动，比如空调出风口下方，会影响离子淌度稳定性；
+§质谱仪周围不可以放置震动明显设备；
+§避免将仪器放置于日光强烈的地方，必要时加装遮光帘；
+§仪器不可以放置于海拔>2000米。
+timsTOF系列质谱仪——工作环境要求
+
+PDF PAGE 25
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+3.timsTOF仪器硬件介绍与使用注意
+11 November 2026 25Innovation with Integrity
+§普通氮气（氮气发生器，或者杜瓦罐）
+q纯度99.5 % 以上，压力表出口压力需要设置0.6 Mpa，如果连接UHPLC，压力表需要设定0.8Mpa；
+q用途一：ESI Nebulizer Gas 雾化气；
+q用途二：Dry Gas 反吹干燥气。
+q用途三：系统卸真空时补充进仪器内部
+§Collision Gas (碰撞气) 
+q高纯度氮气（99.999%）；
+q压力建议：进气口最大限压0.6 Mpa，一般设置0.4-0.5 Mpa；
+q用途：冷却离子或为CID碎裂提供气源;
+q注意：每次更换碰撞气钢瓶之后，必须进行检漏测试，确认不漏气后，再进行Flush 管路，至少flush 5分钟。
+§VIPHESI 离子源需要除水、除油的压缩空气
+timsTOF系列质谱仪——气体要求
+
+PDF PAGE 26
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+3.timsTOF仪器硬件介绍与使用注意
+11 November 2026 26Innovation with Integrity
+timsTOF系列质谱仪——开机注意事项
+§开普通氮气减压阀：设定减压阀压力为0.5-0.6 Mpa；
+§开高纯氮气减压阀：设定减压阀压力为0.4-0.5 Mpa；
+§确认UPS 控制器已开启，处于正常的工作模式，隔离变压器的输入、输出电压正常；
+§打开计算机电源开关、冷水机电源、Dry Pump电源、质谱主机电源；
+§确认Compass Server正常工作后，打开otofControl 或timsControl软件，确认仪器是否为Vented 或Vacuum 模式，如
+果是Vented 模式，需要点击Vented，则系统会提示是否开始抽真空，点击Ye s，开始抽真空；
+§如果仪器长时间关机（超过一周），需要等待Shutdown模式TOF Vacuum 数值< 7.0 * e-7mbar后，执行程序升压操作。
+§如果仪器是短时间关机，则等待Shutdown模式TOF Vacuum 数值< 1.5 * e-7 * mbar后，开始正常使用。
+
+PDF PAGE 27
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+3.timsTOF仪器硬件介绍与使用注意
+11 November 2026 27Innovation with Integrity
+timsTOF系列质谱仪——程序升压
+n关机超过一周，建议进行程序升压。
+n待TOF真空度下降至2.0e^-6mbar以下
+1.打开<Atlascontrol>软件，
+2.点击<Connect>按钮连接仪器
+3.点击<Select File>按钮，在弹出的文件窗口
+选择<Service（Z）/Command Files>文件
+夹内，选择<impact_II_startup.txt>文件，
+4.点击<Send>开始程序升压，约12h后完成。
+
+PDF PAGE 28
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+3.timsTOF仪器硬件介绍与使用注意
+11 November 2026 28Innovation with Integrity
+timsTOF系列质谱仪——关机注意事项
+§timsTOF Pro (Pro2) (HT) 非特别原因，不建议关机，否则抽真空会很慢；
+§timsControl 或OtofControl 选择Vent vacuum，软件会自动启动泄真空程序，过程持续15分钟左右；
+§关闭计算机、质谱主机电源、Dry Pump电源，冷水机电源；
+§关闭UPS 控制器，电池电源以及隔离变压器；
+§关闭普通氮气减压阀；
+§关闭高纯氮气减压阀；
+§如果仪器长时间关机（超过一周），抽真空后，需要执行程序升压操作。
+
+PDF PAGE 29
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+3.timsTOF仪器硬件介绍与使用注意
+11 November 2026 29Innovation with Integrity
+timsTOF系列质谱仪——正负离子模式切换注意
+如果您在使用timsTOF Pro (Pro2) (HT) 的过程中，如果需要从正离子方法切换为负离子方法，不建议在
+Operate状态下直接调用负离子方法，或者直接切换极性，正确操作如下：
+q先将质谱状态从Operate 切换到Standby ，再次Standby切换到Shutdown，等待30秒；
+q选择对应的负离子方法文件，待方法正常加载以后，将质谱状态从Shutdown 切换到Standby，等待PC、
+MS变绿后，再从Standby切换到Operate，等待digitizer自检通过。
+q变换方法正、负极性后，至少稳定25分钟以上，才可校正方法或采集信号。
+q如果有负离子方法变换为正离子方法，也需要采取同样的操作步骤。
+
+PDF PAGE 30
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+3.timsTOF仪器硬件介绍与使用注意
+11 November 2026 30Innovation with Integrity
+timsTOF系列质谱仪——ESI离子源的维护
+§ESI 离子源部分的维护
+qPart A：清洗注射器、Peak管路、喷雾针、雾化室腔体；
+qPart B：擦洗或超声波清洗Spray Shield，Capillary Cap;
+qPart C：喷雾针的超声波清洗；
+qPart D：清洗玻璃毛细管（需要泄真空）
+§ESI 离子源信号的确认
+pStartup方法下的强度及分辨率
+
+
+PDF PAGE 31
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+3.timsTOF仪器硬件介绍与使用注意
+11 November 2026 31Innovation with Integrity
+timsTOF系列质谱仪——ESI离子源的维护
+Part A：手动清洗注射器、Peak管路、喷针、雾化室腔体：
+q软件点击Change Source，打开ESI离子源的门，在喷针正下方放一些无尘纸巾或无纺布；
+q推荐试剂Rising Solvent(或LCMS级异丙醇, 或LCMS级乙腈，注意试剂必须使用玻璃瓶或者Eppendorf EP管分装)
+q先将推注射器用溶剂反复冲洗3次以上，确保注射器干净；
+q使用注射器吸取试剂500微升，通过导针口慢慢推注，一起冲洗红色Peak管路和喷针，清洗3次以上；
+q再用注射器推注LCMS级水，同样方式冲洗Peak管路和喷针，清洗3次以上；
+q再用注射器推注100微升左右tuning mix（需要使用2毫升的小玻璃瓶分装）冲洗管路和喷针，以降低溶剂干扰峰；
+q将喷针正下方清理干净，再关上离子源门。
+q再用注射器吸取300-500 微升左右的tuning mix ，并安装与注射泵上，固定好推杆位置备用；
+q软件确认激活ESI Source。
+
+PDF PAGE 32
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+3.timsTOF仪器硬件介绍与使用注意
+11 November 2026 32Innovation with Integrity
+timsTOF系列质谱仪——ESI离子源的维护
+Part B：手动清洗Spray Shield，Capillary Cap：
+q软件点击Change Source，打开ESI离子源的门，
+q常规清洁：可用无纺布或无尘纸浸润LCMS级别异丙醇擦拭Spray Shield（必要时擦洗
+Capillary cap），
+q深度清洁：可以将Spray Shield 和Capillary Cap拆卸后超声波清洗，用干净的玻璃烧杯
+加LCMS级异丙醇超声波清洗15分钟，再超用纯水超声波清洗15分钟，氮气吹干配件
+（注意不要遗失黄金弹簧），如果有肉眼可见的污染无法清除干净，可以使用无尘纸浸
+润溶剂后，蘸氧化铝粉或者4000-8000目的砂纸轻轻打磨，配件打磨后，需要用大量的
+水冲洗金属表面，以避免颗粒状杂质的残留，并再次超声清洗处理后，氮气吹干配件；
+q软件确认激活ESI Source。
+
+
+PDF PAGE 33
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+3.timsTOF仪器硬件介绍与使用注意
+11 November 2026 33Innovation with Integrity
+timsTOF系列质谱仪——ESI离子源的维护
+Part C：超声波清洗喷雾针：
+q如果经常使用ESI 离子源，会有一定的可能性，发生喷雾针的污染或者堵塞，此时需要做超声波清
+洗处理或更换喷雾针。
+q选取洁净的50mL玻璃瓶，用于放置喷雾针；
+q玻璃瓶中倒入LCMS 异丙醇，保证针尖部位在液面之下，但液面不要接触到顶部的密封圈，超声
+波清洗15分钟；
+q玻璃瓶中更换LCMS级别的水，保证针尖部位在液面之下，但液面不要接触到顶部的密封圈，超声
+波清洗15分钟；
+q再使用氮气吹干液体；
+q使用放大镜确认针尖的长度以及形状，确保针头露出长度约0.5mm，才可以安装使用。
+
+
+PDF PAGE 34
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+3.timsTOF仪器硬件介绍与使用注意
+11 November 2026 34Innovation with Integrity
+timsTOF系列质谱仪——离子源的维护
+Part D：手动清洗玻璃毛细管：
+q清洗玻璃毛细管，必须要将仪器泄真空后，才可以取出玻璃毛细管；
+q在timsControl 或OtofControl 选择Vent Instrument，选择
+“Capillary Cleaning”并确认，开始执行泄真空程序，整个过程大约
+持续15分钟左右；
+q按照正常程序拆下对应的离子源；
+q使用To r x6 梅花螺丝刀拆卸Spray Shield固定螺丝，由于温度较高，
+需要做好手部防护后，再取下Spray Shield 和Capillary Cap；
+q水平向外拔出玻璃毛细管；
+q分别使用LCMS级别的异丙醇和水冲洗。
+
+
+PDF PAGE 35
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+3.timsTOF仪器硬件介绍与使用注意
+11 November 2026 35Innovation with Integrity
+timsTOF系列质谱仪——CaptiveSpray的ITI 清洗维护
+§第一步，使用100% 纯甲酸清洗Ion T ransfer Interface （ITI如右图）:
+q将ITI 放在不起毛的无尘布（或无尘纸）上，或者使用50ml Corning 管卡住；
+q用移液枪将100 微升的甲酸滴入ITI 内部小孔，一定不要让溶剂接触到密封圈；
+q当甲酸液体全部流出后，使用无尘布清洁ITI出口的颗粒。
+q如果感觉比较脏，可以再重复以上步骤【清洗干净后，对着小孔看光亮的地方，侧壁明亮，无异样颜色】
+§第二步,使用100% LCMS级异丙醇冲洗Ion T ransfer Interface （ITI）:
+q用移液枪将100 微升异丙醇滴入ITI内部小孔，冲洗小孔，可以多冲洗几次，确保甲酸已经冲洗干净，一定不
+要让溶剂接触到密封圈；
+q使用氮气吹干ITI，注意不要遗失密封圈和黄金弹簧
+q将ITI装回离子源。
+
+PDF PAGE 36
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+3.timsTOF仪器硬件介绍与使用注意
+11 November 2026 36Innovation with Integrity
+timsTOF系列质谱仪——CaptiveSpray的维护
+§P/N:1827074Set, service Screw/O-ring CSI
+§P/N:1823018O-ring Kit for new Captive Spray
+
+
+PDF PAGE 37
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+3.timsTOF仪器硬件介绍与使用注意
+11 November 2026 37Innovation with Integrity
+timsTOF系列质谱仪——离子源的维护
+§ESI 离子源信号的确认
+qtimsTOF_Startup 方法；
+q注射泵推注tuning mix 3ul/min；
+q要求信号稳定，且m/z 622以下的小分子没有明显的污染，此时对应的m/z 1221.990 的强度至少大于1.5 
+e6，分辨率38000以上。
+322.0481
+622.0290
+922.0098
+1221.9906
+1521.9706
+1821.9500
+2121.9286
+2421.9073
+2721.8855
+20230523_ TM.d: +MS, 0.1min, #5-6
+0.0
+0.5
+1.0
+1.5
+6x10
+Intens.
+500 1000 1500 2000 2500 m/z
+
+PDF PAGE 38
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+3.timsTOF仪器硬件介绍与使用注意
+11 November 2026 38Innovation with Integrity
+timsTOF系列质谱仪——冷水机的维护
+§每周检查温度反馈数值是否为25 °C；
+§空气过滤器的检查；
+§循环液的检查和更换。
+搬运手扣
+
+PDF PAGE 39
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+3.timsTOF仪器硬件介绍与使用注意
+11 November 2026 39Innovation with Integrity
+timsTOF系列质谱仪——冷水机滤网检查
+§空气过滤器的检查：
+q空气过滤器位于冷水机的左侧，如果过滤器如若附着了灰尘，请使用
+吸尘器清理或者干燥的布擦净；
+q如需拆卸清洗，可以在质谱不采集数据的情况下，关闭冷水机，使用
+十字螺丝刀旋松螺丝后（如右图），可以打开保护盖，取出空气过滤
+器，可以先清除附着的灰尘后，再用水清洗，然后气体吹干后放回，
+再打开冷水机电源；
+q请勿在拆除过滤器的情况下，长时间运行冷水机。
+
+
+PDF PAGE 40
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+3.timsTOF仪器硬件介绍与使用注意
+11 November 2026 40Innovation with Integrity
+timsTOF系列质谱仪——冷水机循环液的检查与更换
+§循环液的检查和更换。
+q需要每周检查循环液液位、颜色的检查，以及温度反馈数值；
+q循环水管不要有明显的折痕或者重物压，将影响液体循环；
+q循环液建议使用普通饮用水并预混10%的异丙醇，每6个月更换一次，(按照
+原厂说明，不建议使用超纯水)；
+q更换：关闭冷水机电源，旋开“IN”入口的软管，并将管路对准事先预备好的
+废液桶，打开电源后，循环液会从该软管喷出，直到没有液体流出，再将软
+管插回，并关闭电源，再从注水口加入饮用水到最高刻度，再次拔下软管，
+对准废液桶，开启电源，循环液会从该软管喷出，直到没有液体流出，如果
+液体颜色较深，可以重复以上操作，最后将管路连回并锁紧，补充循环液到
+最高刻度线，开启电源后，观察液面，再次补充循环液到最高刻度线下沿。
+
+
+PDF PAGE 41
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+3.timsTOF仪器硬件介绍与使用注意
+11 November 2026 41Innovation with Integrity
+timsTOF系列质谱仪——供电要求和UPS使用注意
+UPS市电逆变工作模式
+§UPS工作模式
+q逆变模式(或正常模式)---通电后，需要手动开启，开
+启后如右侧绿色标线，该模式工作时如果突然断电，
+会自动切换为电池供电，UPS 理论供电时间取决于电
+池组的容量和寿命，请及时按照正常关机流程关闭质
+谱主机；
+q旁路模式---市电供电，一般通电直接为旁路模式；
+q电池模式---电池供电，在设备消耗功率固定的情况
+下，供电持续能力和电池组的多少有关。
+
+PDF PAGE 42
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+BDAL SERVICE
+3.timsTOF仪器硬件介绍与使用注意
+11 November 2026 42Innovation with Integrity
+timsTOF系列质谱仪——供电要求和UPS使用注意
+UPS市旁路工作模式
+ UPS电池工作模式
+
+PDF PAGE 43
+内容概述
+OVERVIEW
+1.nanoElute仪器硬件介绍与使用注意
+2.nanoElute仪器常见故障及排查处理
+3.timsTOF仪器硬件介绍与使用注意
+4.timsTOF仪器常见故障及排查处理
+5.布鲁克质谱售后服务介绍
+
+
+PDF PAGE 44
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+RECENT CASE SHARE
+4. timsTOF仪器常见故障及排查处理
+11 November 2026 44Innovation with Integrity
+§ 现象：蛋白组学鉴定搜库偏差大，或者校正后，跑一两针就偏差较大。
+§ 原因和可能性分析：
+1.m/z 622对应的电压是否正确，按照仪器类型核对
+2.平衡时间：色谱柱安装好以后，是否在direct flow 95%A的流速下，稳定了足够长的时间
+3.Filter 是否有堵塞
+4.ITI 是否有堵塞
+5.离子源附近是否有较大的气流；
+6.冷水机温度是否正确而稳定；
+7.质谱硬件问题
+1.校正问题
+
+PDF PAGE 45
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+RECENT CASE SHARE
+4. timsTOF仪器常见故障及排查处理
+11 November 2026 45Innovation with Integrity
+2.质量数稳定问题
+§现象：蛋白组学鉴定质量数偏差大。
+§原因和可能性分析：
+1.温度影响，比如冷水机温度，空调的风吹；
+2.震动影响，氮气发生器的真空，同房间质谱的共振，外部共振；
+3.质谱硬件问题
+
+PDF PAGE 46
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+RECENT CASE SHARE
+4. timsTOF仪器常见故障及排查处理
+11 November 2026 46Innovation with Integrity
+3.离子传输效率问题
+§现象：鉴定差（由于质谱部分引起的）
+§原因和可能性分析：
+1.CaptiveSpray离子源的问题，可能有ITI的原因，离子源密封的原因；
+2.玻璃毛细管的污染；
+3.碰撞气的原因；
+4.质谱强度和分辨率的下降，一般为污染导致，也运行质谱硬件诊断测试来排查；
+
+PDF PAGE 47
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+RECENT CASE SHARE
+4. timsTOF仪器常见故障及排查处理
+11 November 2026 47Innovation with Integrity
+4.Hardware Diagnostic Procedure——样品制备
+Ø试剂准备：
+1.ESI-L Low Concentration Tuning Mix，【Bruker PN# 8245631】
+2.[Glu1]-Fibrinopeptide B human (GluFib，1570.68), 0.1 mg vial 【Bruker PN# 8254957 】
+Ø相关方法: 
+1.timsTOFpro(2)_startup.mORGG-TOFpro2_startup.mOR(GG-TOF)timsTOFHT_startup.m（用于确认仪器信号）
+2.HardwareDiagnosticsProcedure.m（需要使用上方制备的试剂）
+
+PDF PAGE 48
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+RECENT CASE SHARE
+4. timsTOF仪器常见故障及排查处理
+11 November 2026 48Innovation with Integrity
+4.Hardware Diagnostic Procedure——样品制备
+Ø测试试剂制备方法: 
+1.配置储备液：500 μL Solvent A + 500 μL Solvent B
+2.Prepare 100 pmol/μL GluFib:
+ØGluFib (0.1 mg powder) + 300 μL LCMS grade water + 300 μL LCMS grade Acetonitrile，涡旋混匀；
+3.Prepare 2 pmol/μL GluFib:
+Ø980 μl water/acetonitrile with 0.1% formic acid + 20 μL GluFib of 100 pmol/μL.
+4.HDP混合液：100ul Low Tuning Mix+50ul 2pmol/ul GluFib+ 350 ul 储备液，混匀待用。
+OR100ul Low Tuning Mix+1ul 100 pmol/ul GluFib+ 350 ul 储备液，混匀待用。
+
+PDF PAGE 49
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+RECENT CASE SHARE
+4. timsTOF仪器常见故障及排查处理
+11 November 2026 49Innovation with Integrity
+338.3416
+507.5135
+622.0290
+922.0096
+1221.9905
+1521.9714
+1821.9522 2121.9331
+2421.9138
+2721.8944
+TM_Startup_a5er upgrade_new_cap_clean sprayer.d: +MS, 2.6-5.6min, #146-317
+0.0
+0.5
+1.0
+1.5
+2.0
+6x10
+Intens.
+500 1000 1500 2000 2500 m/z
+stable
+not stable
+1.使用ESI离子源，选择方法“timsTOFpro_Startup.m”，且不要更改任何参数；
+2.提前冲洗洗注射器连同Peak管路、喷针，LCMS级别IPA三遍，LCMS 级别水三
+遍，tuning mix 润洗100-200微升；（必要时，喷针、cap可以超声波清洗）
+3.注射泵直接推注 Tuningmix 180µl/h ；
+4.观察信号稳定，低分子量区域尽量不要有污染，如有较强污染，则需要再次清洗
+注射器、管路、离子源喷针；
+5.信号稳定后，观察1222 强度> 1.5*e6，分辨率38000以上。
+4.Hardware Diagnostic Procedure——测试前信号检查
+
+PDF PAGE 50
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+RECENT CASE SHARE
+4. timsTOF仪器常见故障及排查处理
+11 November 2026 50Innovation with Integrity
+4.Hardware Diagnostic Procedure——数据采集
+1.确认已经检查过质谱信号，符合要求；
+2.选择方法“Hardware_Diagnostics.m ”不要改参数，质谱方法位于D://Methods/Specification文件夹下；
+3.注射泵设置流速180µl/h，开始推注HDP混合液，观察信号m/z 785.84的峰是否稳定，一般需要15分钟以上才能稳定；
+4.在“Sample Info”内选择文件夹，设置样品名称，点击OtofControl 左上角”Start the Acquisition”开始采集数据；
+5.整个测试过程持续12.2分钟左右，一般建议采集2-3组数据。
+
+
+PDF PAGE 51
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+RECENT CASE SHARE
+4. timsTOF仪器常见故障及排查处理
+11 November 2026 51Innovation with Integrity
+4.Hardware Diagnostic Procedure——测试结果
+
+
+PDF PAGE 52
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+RECENT CASE SHARE
+4. timsTOF仪器常见故障及排查处理
+11 November 2026 52Innovation with Integrity
+Server端口被占用
+Server程序开机无法自启
+Compass版本问题
+无线网卡导致Server掉线
+Server偶尔掉线
+Server掉线常见解决办法：
+1.重启电脑
+2.重启Compass Server Moniter软件
+3.在service程序中restart Bruker Compass Server服务进程
+4.Reset仪器
+5.Compass Server selector工具重新选择
+6.重装Compass server程序
+l恢复系统备份镜像
+Server偶尔掉线
+5.timsControl或Hystart软件连不上
+
+PDF PAGE 53
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+RECENT CASE SHARE
+4. timsTOF仪器常见故障及排查处理
+11 November 2026 53Innovation with Integrity
+5.timsControl或Hystart软件连不上
+1.关闭timscontrol软件
+2.用随仪器附赠的小螺丝刀戳仪器前端Reset按钮3-5s后松开
+3.等待约10秒后重新打开timscontrol软件
+
+
+PDF PAGE 54
+内容概述
+OVERVIEW
+1.nanoElute仪器硬件介绍与使用注意
+2.nanoElute仪器常见故障及排查处理
+3.timsTOF仪器硬件介绍与使用注意
+4.timsTOF仪器常见故障及排查处理
+5.布鲁克质谱售后服务介绍
+
+PDF PAGE 55
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+Ø售后服务中心热线：4007772600
+Ø售后服务中心工作时间：法定工作日，上午09:00 -12:00，下午13:00 -18:00
+Ø售后服务中心传真：010-58333030
+Ø售后服务邮箱：Service_BDAL_China@bruker .com
+Ø“布鲁克质谱售后服务”公众号
+ØMBT专属售后服务邮箱：MBTService_BDAL_China@bruker .com
+Ø质谱仪线上报修网址：https://www.bruker .com/en/services/service/mass-spectrometry .html
+布鲁克·道尔顿中国售后服务中心
+布鲁克质谱公众号
+ 布鲁克微生物质谱公众号
+ 布鲁克售后服务满意度调查
+
+PDF PAGE 56
+|© 2022 Bruker |
+-Bruker Confidential-© Bruker ||
+RECENT CASE SHARE
+11 November 2026 56Innovation with Integrity
+“布鲁克质谱售后服务”公众号
+售后服务 技术支持 云学堂
+
+
+PDF PAGE 57
+Thank you!
+韩金润/Jinrun Han
+FSE
+
+PDF PAGE 58

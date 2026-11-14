@@ -1,0 +1,468 @@
+===== PDF PAGE 1 =====
+DIA 定量蛋白质组学
+与 Spectronaut 21
+Shanghai OmicSolution Co., Ltd.
+技术与应用 · 2026.10
+
+===== PDF PAGE 2 =====
+DDA与DIA
+
+===== PDF PAGE 3 =====
+Biognosys 软件现行版本
+Spectronaut 21.2
+2026 年 11月更新
+DIA 搜索与定量
+PTM 位点、标记通道
+并行处理与报表修正
+SpectroMine 6
+2026 年 6 月发布
+DDA 标记与非标记定量
+Kuiper 搜索与 PTM 探查
+免疫肽分析
+SpectroDive 14
+2026 年 9 月发布
+靶向 Panel 与峰识别
+校准曲线与定量范围
+批量靶向蛋白组分析
+来源：Biognosys 官方产品页与 Spectronaut 21 发布说明（核对于 2026-10-27） 08
+
+===== PDF PAGE 4 =====
+Spectronaut 的分析范围与部署
+常规、PTM、标记与多肽组
+directDIA、有库与 hybrid 策略
+按酶切、修饰和样本设计选择设置
+Windows：GUI 或命令行
+Linux：命令行工作流与报表
+任务调度可配合 SPP / OmicsCloud
+03
+04
+受支持的 DIA 方法
+diaPASEF、SWATH、FAIMS-DIA 等
+循环时间需满足色谱峰采样要求
+受支持的质谱平台
+Thermo、Bruker、SCIEX、Waters
+具体机型与输入格式按版本手册确认
+01
+02
+从 DIA 原始数据到鉴定、定量、质控与报告
+DDA / PRM 由配套
+软件承担
+09
+
+===== PDF PAGE 5 =====
+DIA 鉴定证据与错误率控制
+质量与保留时间：检查实测信号与预期位置。
+碎片与共洗脱：比较多个离子的谱图及色谱一致性。
+离子淌度与 PTM：在适用数据中增加匹配和定位证据。
+蛋白推断与错误率：分清前体、肽段、蛋白组及实验范围。
+MS2 XIC
+MS1 XIC
+谱峰提取及打分排序 MS2谱峰碎裂预测及匹配
+离子淌度匹配及打分
+修饰位点匹配及打分
+蛋白组装
+FDR计算 11
+
+===== PDF PAGE 6 =====
+DIA 的色谱定量证据
+检查采样点、峰边界与共洗脱干扰
+色谱示意；定量原理按 Spectronaut 21 说明书核对 16
+
+===== PDF PAGE 7 =====
+directDIA 与预测谱图库
+从 DIA 数据建立搜索空间
+从实验信号提取候选谱图并检索 FASTA。
+在当前项目中形成可用于后续提取的搜索空
+间。
+酶切、修饰和数据库复杂度影响计算与鉴定
+。
+从序列预测肽段属性
+预测碎片谱、保留时间或离子淌度等属性
+。
+再从 DIA 数据中提取并评分候选信号。
+预测、训练与错误率控制依赖具体软件实
+现。
+比较工作流时，同时检查搜索空间、错误率、定量准确性与运行成本。
+谱图库来源不同，并不直接决定某种策略在所有样本中更深或更准。
+12
+
+===== PDF PAGE 8 =====
+多修饰与非特异酶切搜索
+搜索引擎示例
+磷酸化
+单细胞
+盐 二甲基化
+二甲基化
+开放搜索与预设可变修饰搜索的目的不同。扩大搜索空间后，应重新检查错误率与位点证据。
+来源：Spectronaut 21 说明书；多修饰示例 15
+
+===== PDF PAGE 9 =====
+短梯度中的采样与低丰度信号
+300 SPD
+高丰度 低丰度
+高丰度 低丰度
+180 SPD
+100 SPD
+方法比较示例；SPD 为完整进样通量，不能仅由梯度时间推算 18
+
+===== PDF PAGE 10 =====
+PTM 定位证据
+磷酸化、乙酰化、泛素化、乳酸化等修饰
+位点判断需要支持定位的碎片离子。
+DIA 可利用多个采样点中的共洗脱信号辅助匹配。
+定位概率、肽段鉴定与位点汇总需分别检查。
+30
+
+===== PDF PAGE 11 =====
+PTM 谱图与色谱复核
+检查定位离子、峰边界与共洗脱一致性
+PTM 匹配示例；当前定义见 Spectronaut 21 说明书 31
+
+===== PDF PAGE 12 =====
+PTM 位点汇总
+同一位点可由不同肽段和修饰状态支持
+定位、汇总与统计设置
+先明确汇总到位点还是蛋白组，再解释数量和差异结果。
+来源：Spectronaut 21 PTM 说明；汇总示意 32
+
+===== PDF PAGE 13 =====
+按蛋白丰度校正 PTM 信号
+结合总蛋白校正位点信号
+需要与富集数据相匹配的总蛋白测量；校正结果不能直接视为绝对位点占有率。
+来源：Spectronaut 21 PTM 说明；易算 PTM / stoichiometry 教程 33
+
+===== PDF PAGE 14 =====
+PTM stoichiometry 输入与检查
+总蛋白、富集数据与实验分组需对应
+核对样本匹配、标记、位点身份及缺失处理
+来源：Spectronaut 21 PTM 说明；估计结果依赖输入与模型假设 34
+
+===== PDF PAGE 15 =====
+DDA 与 DIA 的适用场景
+DDA
+按规则选择前体，通常获得相对简单的碎片
+谱。
+适合谱图解释、建库以及特定复杂修饰或非
+特异搜索。
+跨样本鉴定一致性还受前体选择与补充匹配
+策略影响。
+DIA
+预设窗口重复采样，可结合多离子共洗脱
+提取定量。
+适合队列与短梯度等需要重复采样的分析
+。
+混合谱图增加了解卷积、干扰控制和评分
+的要求。
+选择依据：样本复杂度、目标分子、通量、采集平台和可验证的分析结果。
+Spectronaut / SpectroMine 现行说明与采集示意 19
+
+===== PDF PAGE 16 =====
+DIA 搜索、定量与报告
+01 鉴定与搜索空间
+按 FASTA、酶切和修饰搜索；选择 directDIA、有库或 hybrid 策略。
+02 信号提取与定量
+在每个 DIA run 中提取候选信号，检查峰边界、干扰和可定量范围。
+03 蛋白与位点汇总
+按明确的肽段、蛋白组和 PTM 规则汇总，不混用不同层级数量。
+04 错误率与报告
+控制假阳性，输出所需结果表格及各项统计图
+25
+
+===== PDF PAGE 17 =====
+大队列数据流与存储
+01
+原始数据
+采集完成与文件稳定
+保留样本身份和原始副本
+02
+分析工作区
+任务、参数、临时文件
+计算资源与步骤状态
+03
+结果与复核
+原生结果、导出表与图谱
+范围、摘要与可用报告
+备份与归档覆盖原始数据、方法和有效结果。分析用临时盘与长期保存空间分别规划。
+SPP 与 OmicsCloud 资料；存储容量和保留周期按项目配置 27
+
+===== PDF PAGE 18 =====
+OmicsCloud
+分析流程 组学分析流程
+OmicsCloud
+搜索与统计流
+程 质谱联动
+QC，存储
+多种组学
+流程联用
+交互结果
+与图形
+序列，注释
+数据库联动
+数据库：准备 FASTA 与注释来源。
+任务：配置 directDIA / hybrid 与实验分
+组。
+质控：查看鉴定、定量分布和样本异常。
+统计：按设计选择差异、富集或其他分析。
+交付：核对报告范围，保存结果与方法。
+样本制备
+自动化工作站
+试剂与耗材
+LC–MS 方法
+29
+
+===== PDF PAGE 19 =====
+LiP-MS：局部构象与蛋白酶敏感性
+在不同条件下进行限制性蛋白酶切。
+后续变性并用胰酶处理，产生完全或半特
+异肽段。
+比较肽段强度与切割位置，观察局部构象
+变化。
+候选结合事件还需结合蛋白总量、重复性
+和正交实验。
+限制性酶切与质谱分析
+对照条件 处理条件
+质谱检测
+第二步酶切：胰酶
+半酶切肽段 完全特异肽段
+第一步酶切：蛋白酶K
+来源：DIA LiP-MS 工作流基准，Analytical Chemistry 2026 35
+
+===== PDF PAGE 20 =====
+蛋白质周转与标记通道
+标记通道区分新生与已有信号。
+核对通道 q-value、分组与时间点。
+Spectronaut 21 / 21.1 标记通道说明； SILAC 示例 36
+
+===== PDF PAGE 21 =====
+DIA 数据的复查价值
+1
+预设窗口的重复采样，提供连续的碎片信号
+2
+联合谱图、色谱与适用的离子淌度信息复核
+3
+保留原始数据与参数，为后续重分析提供依据
+Spectronaut 21 说明书；覆盖范围受采集窗口、灵敏度和分析设置限制 38
+
+===== PDF PAGE 22 =====
+有库分析与 directDIA 流程
+有库分析
+样本制备与 DIA 采集
+准备或导入匹配的谱图库
+提取、评分、定量与结果检查
+directDIA
+样本制备与 DIA 采集
+从数据检索并建立搜索空间
+提取、评分、定量与结果检查
+分级、扩展库和 hybrid 数据按需要加入，不是所有项目的固定步骤。
+总耗时需计入采集、传输、整合、定量、导出及人工复核。
+来源：Spectronaut 21 说明书；SPP 操作手册 40
+
+===== PDF PAGE 23 =====
+队列定量矩阵与缺失值
+按原始结果报告
+111 例血细胞 hybrid-DIA 项目示例
+41
+
+===== PDF PAGE 24 =====
+Spectronaut 操作
+
+===== PDF PAGE 25 =====
+分析策略与参数选择
+directDIA / 有库 确认是否已有匹配谱图库，以及是否使用扩展数据。
+PTM / 标记 设置酶切、修饰、通道和定位，匹配实验设计。
+分步 / noMBR / AGS 使用对应流程手册，核对 Reference、分组和所需中间结果。
+导出与报告 选择所需字段、汇总层级及图谱内容，再确认最终样本范围。
+来源：Spectronaut 21 说明书；SPP directDIA / AGS / noMBR / 分步手册 43
+
+===== PDF PAGE 26 =====
+项目、队列与长期 QC 任务
+按使用场景组织流程
+预搜索稳定文件。
+结束后核对范围，再整合与定量。
+Cohort Real-time Search
+以固定 QC 样品和方法观
+察仪器趋势。
+维护和方法变更需要记录
+。
+Time-Series
+采集完成后配置样本
+、FASTA、分析参数和
+实验分组。
+选择 directDIA、有库
+或 hybrid 策略。
+DirectDIA
+47
+
+===== PDF PAGE 27 =====
+项目 QC 与长期 QC
+EasyDIA 
+QC
+项目 QC
+检查样本鉴定数量、定量分布、缺失模式和重复一致性。
+发现异常后结合原始信号、处理批次与实验设计复核。
+长期 QC
+保持 QC 样品、方法和采集间隔可比。
+观察 RT、峰形、强度与鉴定趋势，记录维护和方法变更。
+EasyDIA / OmicsCloud 平台资料；阈值按方法和实验室基线建立 51
+
+===== PDF PAGE 28 =====
+长期 QC 的任务设置
+固定 QC 样品与采集方法。
+按计划插入 QC 并设置观察时间。
+核对数据来源、监控范围和运行资源。
+方法或维护改变后，记录新的比较基线。
+EasyDIA / OmicsCloud 操作示例；运行范围以部署和任务配置为准 52
+
+===== PDF PAGE 29 =====
+QC 异常复核与报告
+定位异常样本与时间段，结合原始信号、维护记录和处理批次复核。
+EasyDIA 报告示例；图中评分用于辅助查看，不代替实验室判断 53
+
+===== PDF PAGE 30 =====
+DIA 定量蛋白质组学应用
+
+===== PDF PAGE 31 =====
+案例 1：血浆深度分析
+125 例血浆 · 60 min 梯度测试
+EasyPept DeeP / timsTOF Pro2 / directDIA 历史测试；图中 PG 不作为所有项目保证 56
+
+===== PDF PAGE 32 =====
+案例 1：血浆短梯度分析
+70 例血浆 · 12 min 梯度测试
+timsTOF Pro2 / directDIA 历史测试；72 SPD 为方法标注，完整周期需另行核对 57
+
+===== PDF PAGE 33 =====
+案例 2：蛋白与磷酸位点周转
+2025.3
+实验路线
+同位素标记、时间点设计、DIA 定量与周转建模
+pSILAC 标记结合质谱定量，比较小鼠组织与脑区的蛋白及
+磷酸位点周转。
+多时间点的标记比例用于估计周转行为，需结合组织、蛋
+白量及模型解释。
+light
+heavy
+新生蛋
+白
+区分新生比例、蛋白降
+解与周转时间
+Turnover Atlas of Proteome and Phosphoproteome Across Mouse Tissues and Brain Regions，Cell 2025
+Turnover Atlas of Proteome and Phosphoproteome Across Mouse Tissues and Brain Regions，Cell 2025 58
+
+===== PDF PAGE 34 =====
+案例 3：FFPE 与脑区域蛋白图谱
+1个人类大脑
+13个大脑区域
+（5 × 5 × 5 mm）
+3个重复
+48个分级
+＞2000个LC-MS/MS runs
+(组织+QCs)
+FFPE样本
++
+DIA
++
+Spectronaut
+文献研究覆盖 13 个脑区域。
+每组织平均鉴定 9,498 个蛋白，跨区域共 11,325 个。
+保留文献原始样本和分析条件。
+空间样本需核对切割、固定状态与输入量，验证定量范围。
+当前样本处理路线
+微区域 / FFPE 前处理、LC–MS 与适配分析
+2023.11.2
+Tüshaus et al., EMBO J 2023, DOI: 10.15252/embj.2023114665
+Tüshaus et al., EMBO J 2023, DOI: 10.15252/embj.2023114665 59
+
+===== PDF PAGE 35 =====
+案例 4：DIA 发现与 PRM 验证
+项目设计
+按样本与批次安排前处理。
+选择采集、搜索和统计流程。
+筛选候选后进行独立队列或靶向验证。
+工期按数据量、方法与复核范围确认。
+肿瘤组织+DIA+Spectronaut
+191例胰腺癌肿瘤组织+90
+对癌旁组织
+DDA分级：72个合并为36
+个
+质谱DIA上机120min
+Spectronaut软件搜库
+◼ 总鉴定7881个蛋白质
+◼ 平均每样本6075个PGs
+DIA 发现候选
+PRM 按目标与校准策略
+验证
+2024.1.29
+Prospective observational study on biomarkers of response in pancreatic ductal adenocarcinoma ，Nat Med 2024
+Prospective observational study on biomarkers of response in pancreatic ductal adenocarcinoma，Nat Med 2024 60
+
+===== PDF PAGE 36 =====
+案例 5：血浆队列与低丰度富集
+自动化前处理：酶解
+DDA分级建库
+短梯度DIA：21min
+Spectronaut谱图库DIA检
+索
+历史研究：596 例血浆
+与 79 例肝活检
+79例肝组织 596例血浆（患者+对照）
+EVOtip除盐
+前处理
+LC-MS/MS
+70例临床血浆
+当前体液路线
+选择常规或低丰度富集。
+匹配自动化与耗材。
+用 QC 检查重复与批次。
+按目标平衡
+覆盖度与通量
+独立方法示例
+易肽试剂盒
+易肽工作站
+短梯度directDIA
+Spectronaut
+体液方案选择
+2022年
+596例血浆：
+DIA+Spectronaut
+Niu et al., Nat Med 2022, DOI: 10.1038/s41591-022-01850-y 易算现行体液处理资料 ；
+Niu et al., Nat Med 2022, DOI: 10.1038/s41591-022-01850-y；易算现行体液处理资料 61
+
+===== PDF PAGE 37 =====
+案例 6：磷酸化组与动态信号研究
+流程要点
+PTM 富集与匹配的总蛋白输入。
+定位阈值、位点汇总和归一化。
+检查时间响应与重复一致性。
+按需要进行激酶 / 底物或网络分析。
+Akt1 刺激条件组合
+设置对照与生物学重复
+磷酸化肽段富集（试剂盒）
+DIA 采集
+Spectronaut检索
+1μg肽段上机
+蛋白提取、酶解
+共鉴定到37,449个Class-I型磷酸肽，对应于5044个磷酸蛋白，
+其中34,740个可信度高的磷酸化位点。
+生物学重复
+相关性平均
+为R = 
+0.943
+磷酸化组数据的获取与分析
+2023.6.26
+An optogenetic-phosphoproteomic study reveals dynamic Akt1 signaling profiles in endothelial cells，Nat Commun 2023
+An optogenetic-phosphoproteomic study reveals dynamic Akt1 signaling profiles in endothelial cells，Nat Commun 2023 62
+
+===== PDF PAGE 38 =====
+技术资料与联系
+微信公众号
+omicsolution
+官网
+www.omicsolution.com
+产品、方法与检测服务
+技术支持
+gemma.omicsolution.com
+Spectronaut 21 说明书、教程与 SPP 手册
+业务咨询
+sales@omicsolution.com
+易算生物 · 2026.10 67

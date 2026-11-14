@@ -1,0 +1,1 @@
+{"name":"timstof-group-meeting","private":true,"type":"module","scripts":{"dev":"slidev --remote","build":"slidev build --base ./","export:editable":"slidev export --format pptx-editable --with-clicks false"},"devDependencies":{"@slidev/cli":"53.1.0","@slidev/theme-default":"*","playwright-chromium":"*"}}

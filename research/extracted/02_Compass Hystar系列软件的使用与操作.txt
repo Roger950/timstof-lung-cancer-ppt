@@ -1,0 +1,274 @@
+PDF PAGE 1
+Compass Hystar系列软件使用与操作
+Mengxuan Li
+
+PDF PAGE 2
+Configuration Editor 硬件系统配置
+
+PDF PAGE 3
+|© 2023 Bruker |
+-Bruker Confidential-© 2023 Bruker ||
+▪ 通过Configuration Editor配置硬件系统
+▪ 一般已设置好，更换液相时需进行配置
+▪ 如果HyStar正在运行，编辑软件不可编辑，仅为查看模式
+硬件系统配置
+12 November 2026 3Innovation with Integrity
+打开已设置好的配置
+更换配置后
+需激活 系统配置栏
+色谱柱配置栏
+可进行连接检测
+
+PDF PAGE 4
+LC plugin
+
+PDF PAGE 5
+|© 2023 Bruker |
+-Bruker Confidential-© 2023 Bruker ||
+▪ 液相控制插件集成在
+Compass Hystar软件中
+▪ 通过LC Control控制液相的
+溶剂替换、柱平衡、洗针的
+操作
+▪ 液相方法通过序列表中
+Separation Method 列右键
+进行新建或编辑
+液相操作界面
+12 November 2026 5Innovation with Integrity
+控制液相操作
+下拉选择柱子信息
+右键设置柱温
+设置洗脱方法
+
+PDF PAGE 6
+|© 2023 Bruker |
+-Bruker Confidential-© 2023 Bruker ||
+液相操作界面
+12 November 2026 6Innovation with Integrity
+▪ 液相操作界面空白处可右键Preferences设置柱温、idle flow
+
+
+PDF PAGE 7
+|© 2023 Bruker |
+-Bruker Confidential-© 2023 Bruker ||
+▪ LC control界面的打开或关闭不影响操作进行
+液相操作界面
+12 November 2026 7Innovation with Integrity
+运行提示、错误提示
+实时曲线
+曲线设置
+液相工作流可视化界面
+功能菜单栏 系统信息栏
+
+PDF PAGE 8
+|© 2023 Bruker |
+-Bruker Confidential-© 2023 Bruker ||
+设置洗脱方法
+液相方法编辑
+12 November 2026 8Innovation with Integrity
+
+PDF PAGE 9
+|© 2023 Bruker |
+-Bruker Confidential-© 2023 Bruker ||
+液相方法编辑
+12 November 2026 9Innovation with Integrity
+新方法命名
+分离方法详细信息设置
+单柱/双柱模式
+柱子信息
+柱温
+梯度
+▪ 22%B能够洗脱大部分常规肽段
+▪ 22-37% B洗脱部分较长肽段及疏水肽段
+▪ 可根据柱子规格、样本等改变流速（如内径较大可提高流速
+进行高通量快速洗脱、或低上样量样本适当降低流速洗脱、
+根据样本实际出峰保留时间对梯度进行适当调整）
+
+PDF PAGE 10
+|© 2023 Bruker |
+-Bruker Confidential-© 2023 Bruker ||
+参考梯度
+12 November 2026 10Innovation with Integrity
+20min
+
+PDF PAGE 11
+|© 2023 Bruker |
+-Bruker Confidential-© 2023 Bruker ||
+▪ 流动相A：0.1% FA in H2O
+▪ 流动相B：0.1% FA in ACN
+▪ 流动相配制后，超声30min后使用；并将流动相A分别取出两个1ml至进样小瓶中，一个作为Blank放置在进样
+盘中，一个作为pick up进样补偿溶液，放置于进样臂旁的3号位
+液相准备
+12 November 2026 11Innovation with Integrity
+
+PDF PAGE 12
+|© 2023 Bruker |
+-Bruker Confidential-© 2023 Bruker ||
+▪ 检查针座，拧下针座后对光查看孔是否有堵塞
+▪ 如果脏了，可在50%异丙醇-水中超声5min后，氮气吹干，装回位置
+▪ 清洗后需运行extended wash 和autosampler flush organic 10aqueous 10
+▪ 液相在运行时不要拆针座，未安装时也不要点击操作
+液相准备
+12 November 2026 12Innovation with Integrity
+
+
+PDF PAGE 13
+|© 2023 Bruker |
+-Bruker Confidential-© 2023 Bruker ||
+▪ 更换流动相后，进行溶剂替换（include solvent
+    replacement）
+▪ 点击时，点击小齿轮调出窗口后选择要做的
+    项目，不要直接点击三角箭头
+▪ 每次更换流动相时，都需要进行此步
+▪ 不同版本操作界面可能略有区别
+液相操作
+12 November 2026 13Innovation with Integrity
+
+
+PDF PAGE 14
+|© 2023 Bruker |
+-Bruker Confidential-© 2023 Bruker ||
+▪ 溶剂替换后，进行Extended wash
+▪ 每次更换流动相后，都需要进行此步
+▪ 每次洗针座后，都需要进行此步
+▪ 日常跑样前，也可运行此步骤洗进样管路
+液相操作
+12 November 2026 14Innovation with Integrity
+
+
+PDF PAGE 15
+|© 2023 Bruker |
+-Bruker Confidential-© 2023 Bruker ||
+▪ Extended wash后，进行洗针（autosample flush …）
+▪ 有机相和水相各洗10次
+▪ 每次更换流动相后，都需要进行此步
+▪ 每次洗针座后，都需要进行此步
+▪ 日常跑样前，也可运行此步骤洗进样针
+液相操作
+12 November 2026 15Innovation with Integrity
+
+
+PDF PAGE 16
+|© 2023 Bruker |
+-Bruker Confidential-© 2023 Bruker ||
+▪ 连接柱子前，使用direct flow 如0.6ul/min 50%B冲5min，冲出viper管末端中可能存在的气泡
+▪ 确认viper末端没有气泡出现后，停止direct flow，使用无尘纸轻轻擦去液滴，连接柱子
+柱子连接
+12 November 2026 16Innovation with Integrity
+
+
+PDF PAGE 17
+|© 2023 Bruker |
+-Bruker Confidential-布鲁克生命科学质谱 | Innovation with Integrity
+液相连接管-viper
+▪ 请注意:
+• nanoViperTM 连接头是系统用于连接 nanoLC的接口 （手动拧紧接口 ）–
+容易因拧得过紧而破损。
+• viper和peek头的表面状态查看
+▪ 请参见每个外包装上的文件说明：
+ 破损viper示例
+
+
+PDF PAGE 18
+|© 2023 Bruker |
+-Bruker Confidential-© 2023 Bruker ||
+▪ 柱子连接好后，确认液相界面选择的柱子型号与其对应正确
+▪ 新柱子连接后，需进行两次柱平衡（equilibrate separation column）
+▪ 用过的柱子拆下被长时间放置后再次使用前，也可以进行1-2次柱平衡
+▪ 注意柱温是否忘记设置（右键preference可设置）
+柱子连接
+12 November 2026 18Innovation with Integrity
+
+
+PDF PAGE 19
+|© 2023 Bruker |
+-Bruker Confidential-© 2023 Bruker ||
+▪ 若更换柱子，需先将质谱standby，然后卸柱压（detach separation column），待弹出提示可以拆后，再将柱
+子拆下，拧下后，再点击窗口中的确认。
+▪ 柱子从质谱端拆下时，需在质谱standby后，点击换源，弹出窗口显示离子源失活deactivated，此时可拧开离
+子源处的emitter lock小心拆下柱子，更换柱子后装好emitter lock，点击activate source。
+柱子连接
+12 November 2026 19Innovation with Integrity
+
+
+PDF PAGE 20
+|© 2023 Bruker |
+-Bruker Confidential-© 2023 Bruker ||
+▪ 跑样前需要校正
+▪ Direct flow 0.3ul/min 柱压及TIC稳定约20min后（注意柱压是否正常），调用standard标准方法（或其他方法）
+进行校正
+▪ 可将scan mode改为MS，方便查看三标峰
+▪ 先点击闪电符号，调节source gas flow将622对应淌度峰调至标准电压值（如164V±1，timsTOF HT）；再在
+calibration中，m/z下，linear模式中，点击calibrate，删除除622、922、1221外多余的峰，score绿色可以
+accept，可多次点击至score100%；再在mobility下， linear模式中，点击calibrate，删除除622、922、1221
+外多余的峰，score绿色可以accept，可多次点击至score100%
+▪ 离子源打开、filter更换等改变了前端真空的操作后，均需要进行校正
+▪ Source gas flow旋钮顺时针调大，逆时针调小，轻微1°地拧，禁止一下拧太多。
+校正
+12 November 2026 20Innovation with Integrity
+
+PDF PAGE 21
+|© 2023 Bruker |
+-Bruker Confidential-© 2023 Bruker ||
+校正
+12 November 2026 21Innovation with Integrity
+①
+②
+③
+④
+⑤
+
+PDF PAGE 22
+|© 2023 Bruker |
+-Bruker Confidential-© 2023 Bruker ||
+校正
+12 November 2026 22Innovation with Integrity
+⑥
+⑦
+⑧
+⑨ ⑩
+
+PDF PAGE 23
+|© 2023 Bruker |
+-Bruker Confidential-© 2023 Bruker ||
+校正
+12 November 2026 23Innovation with Integrity
+
+PDF PAGE 24
+|© 2023 Bruker |
+-Bruker Confidential-© 2023 Bruker ||
+▪ 三标在方法1/K0范围之外或边界，无法抓取校正？
+▪ 保持1/K0斜率不变，同时上拉或下拉淌度范围，校正后，调回原淌度范围后Accept 
+如何基于使用的质谱方法进行校正
+12 November 2026 24Innovation with Integrity
+
+
+PDF PAGE 25
+|© 2023 Bruker |
+-Bruker Confidential-© 2023 Bruker ||
+▪ 每次跑样前，建议先测试QC，然后再跑个人样本
+▪ 根据列表填写完整，注意样本位置、进样体积、液相方法中柱子信息与当前所选柱子是否一致、BPS Token等
+▪ Save后，在需要跑的行中，右键upload sample condition，upload后状态绿色通过即可start sequence开始序
+列
+样本表编辑
+12 November 2026 25Innovation with Integrity
+
+
+PDF PAGE 26
+|© 2023 Bruker |
+-Bruker Confidential-© 2023 Bruker ||
+▪ QC结果如果异常，先排查问题，确保仪器状态正常再跑样。
+▪ QC正常，先跑一针样本，跑完后Data analysis中调出样本TIC，TICmsms，BPC，检查出峰是否正常，TIC强
+度是否合适，是否需要调整进样量，调出Pressure A B，检查柱压是否正常，可与刚才跑的QC柱压比较，如
+果增高过多，检查样本，不要再继续进样，防止堵柱子。BPS中查看搜库结果是否正常，Mass error的中位值
+在±10ppm内。
+▪ 确认第一针样本正常，再开始跑后面的序列 ，跑的过程中建议6-8针穿插一个QC和Blank
+▪ 跑序列时，在Quick Data Viewer里快速切换查看跑出来的数据峰图是否正常
+▪ 跑序列时，在Data analysis中每隔几针调出该针数据的Pressure A B，检查柱压是否正常，勾选多针overlap显
+示，看是否有渐渐升高的趋势，如果增高过多，检查样本，不要再继续进样，防止堵柱子。同时每隔几针
+Data analysis中右键属性处检查Tunnel in是否明显改变，如果改变过多，检查是否filter堵塞，更换滤头后重新
+矫正。
+跑样注意事项
+12 November 2026 26Innovation with Integrity
+
+PDF PAGE 27

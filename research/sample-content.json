@@ -1,0 +1,652 @@
+[
+  {
+    "elements": [
+      {
+        "type": "text",
+        "text": "TIMS、PASEF 与 TOF 的分工",
+        "x": 64,
+        "y": 48,
+        "w": 1152,
+        "h": 66,
+        "size": 44,
+        "bold": true,
+        "color": "#142C3A"
+      },
+      {
+        "type": "text",
+        "text": "淌度分离、前体选择与质量分析协同完成采集",
+        "x": 64,
+        "y": 120,
+        "w": 1152,
+        "h": 44,
+        "size": 24,
+        "bold": false,
+        "color": "#536571"
+      },
+      {
+        "type": "text",
+        "text": "TIMS",
+        "x": 64,
+        "y": 204,
+        "w": 430,
+        "h": 38,
+        "size": 29,
+        "bold": true,
+        "color": "#006E83"
+      },
+      {
+        "type": "text",
+        "text": "气流与电场共同捕集离子。\n扫描电场后，离子按淌度依次释放。",
+        "x": 64,
+        "y": 252,
+        "w": 470,
+        "h": 84,
+        "size": 25,
+        "bold": false,
+        "color": "#142C3A"
+      },
+      {
+        "type": "text",
+        "text": "PASEF",
+        "x": 64,
+        "y": 362,
+        "w": 430,
+        "h": 38,
+        "size": 29,
+        "bold": true,
+        "color": "#006E83"
+      },
+      {
+        "type": "text",
+        "text": "累积与分离并行。四极杆同步选择，\n在一次 ramp 中连续获取多个 MS/MS。",
+        "x": 64,
+        "y": 410,
+        "w": 490,
+        "h": 84,
+        "size": 25,
+        "bold": false,
+        "color": "#142C3A"
+      },
+      {
+        "type": "text",
+        "text": "TOF",
+        "x": 64,
+        "y": 520,
+        "w": 430,
+        "h": 38,
+        "size": 29,
+        "bold": true,
+        "color": "#006E83"
+      },
+      {
+        "type": "text",
+        "text": "将离子飞行时间转换为 m/z，\n测量前体或碎片离子谱。",
+        "x": 64,
+        "y": 568,
+        "w": 470,
+        "h": 78,
+        "size": 25,
+        "bold": false,
+        "color": "#142C3A"
+      },
+      {
+        "type": "image",
+        "file": "research/figures/tims-crop.png",
+        "x": 560,
+        "y": 222,
+        "w": 656,
+        "h": 300
+      },
+      {
+        "type": "text",
+        "text": "双 TIMS：前段累积，后段分离",
+        "x": 574,
+        "y": 548,
+        "w": 630,
+        "h": 44,
+        "size": 26,
+        "bold": true,
+        "color": "#142C3A"
+      },
+      {
+        "type": "text",
+        "text": "原图中的 100 ms 为示例条件",
+        "x": 574,
+        "y": 600,
+        "w": 630,
+        "h": 34,
+        "size": 21,
+        "bold": false,
+        "color": "#536571"
+      },
+      {
+        "type": "text",
+        "text": "来源：01 p12、14、16–18；03 p2–3、6、10（PDF物理页码）",
+        "x": 64,
+        "y": 670,
+        "w": 1100,
+        "h": 28,
+        "size": 16,
+        "bold": false,
+        "color": "#536571"
+      },
+      {
+        "type": "text",
+        "text": "01",
+        "x": 1170,
+        "y": 670,
+        "w": 50,
+        "h": 28,
+        "size": 17,
+        "bold": false,
+        "color": "#006E83"
+      }
+    ],
+    "notes": "TIMS/PASEF据培训01、03。原图来自01 p14，下方结构与电场图裁切，未改变标注。100 ms不是固定参数。TOF基础补充来源：https://www.ssi.shimadzu.com/service-support/technical-support/analysis-basics/fundamental/mass_analyzers.html 。本页讲解原理，参数需按机型与样本确定。"
+  },
+  {
+    "elements": [
+      {
+        "type": "text",
+        "text": "样本序列的准备与放行",
+        "x": 64,
+        "y": 48,
+        "w": 1152,
+        "h": 66,
+        "size": 44,
+        "bold": true,
+        "color": "#142C3A"
+      },
+      {
+        "type": "text",
+        "text": "先确认系统状态，再由 QC 和首针结果决定是否继续",
+        "x": 64,
+        "y": 120,
+        "w": 1152,
+        "h": 44,
+        "size": 24,
+        "bold": false,
+        "color": "#536571"
+      },
+      {
+        "type": "text",
+        "text": "01",
+        "x": 64,
+        "y": 205,
+        "w": 65,
+        "h": 43,
+        "size": 28,
+        "bold": true,
+        "color": "#006E83"
+      },
+      {
+        "type": "text",
+        "text": "液相准备",
+        "x": 148,
+        "y": 205,
+        "w": 240,
+        "h": 43,
+        "size": 28,
+        "bold": true,
+        "color": "#142C3A"
+      },
+      {
+        "type": "text",
+        "text": "溶剂替换、Extended wash、洗针和柱平衡",
+        "x": 405,
+        "y": 207,
+        "w": 810,
+        "h": 45,
+        "size": 25,
+        "bold": false,
+        "color": "#142C3A"
+      },
+      {
+        "type": "text",
+        "text": "02",
+        "x": 64,
+        "y": 282,
+        "w": 65,
+        "h": 43,
+        "size": 28,
+        "bold": true,
+        "color": "#006E83"
+      },
+      {
+        "type": "text",
+        "text": "质谱校正",
+        "x": 148,
+        "y": 282,
+        "w": 240,
+        "h": 43,
+        "size": 28,
+        "bold": true,
+        "color": "#142C3A"
+      },
+      {
+        "type": "text",
+        "text": "柱压与 TIC 稳定后，校正 m/z 和离子淌度",
+        "x": 405,
+        "y": 284,
+        "w": 810,
+        "h": 45,
+        "size": 25,
+        "bold": false,
+        "color": "#142C3A"
+      },
+      {
+        "type": "text",
+        "text": "03",
+        "x": 64,
+        "y": 359,
+        "w": 65,
+        "h": 43,
+        "size": 28,
+        "bold": true,
+        "color": "#006E83"
+      },
+      {
+        "type": "text",
+        "text": "序列核对",
+        "x": 148,
+        "y": 359,
+        "w": 240,
+        "h": 43,
+        "size": 28,
+        "bold": true,
+        "color": "#142C3A"
+      },
+      {
+        "type": "text",
+        "text": "核对位置、进样量、LC/MS 方法与柱信息",
+        "x": 405,
+        "y": 361,
+        "w": 810,
+        "h": 45,
+        "size": 25,
+        "bold": false,
+        "color": "#142C3A"
+      },
+      {
+        "type": "text",
+        "text": "04",
+        "x": 64,
+        "y": 436,
+        "w": 65,
+        "h": 43,
+        "size": 28,
+        "bold": true,
+        "color": "#006E83"
+      },
+      {
+        "type": "text",
+        "text": "QC 与首针",
+        "x": 148,
+        "y": 436,
+        "w": 240,
+        "h": 43,
+        "size": 28,
+        "bold": true,
+        "color": "#142C3A"
+      },
+      {
+        "type": "text",
+        "text": "先 QC，再跑一针样本，比较峰形、信号和柱压",
+        "x": 405,
+        "y": 438,
+        "w": 810,
+        "h": 45,
+        "size": 25,
+        "bold": false,
+        "color": "#142C3A"
+      },
+      {
+        "type": "text",
+        "text": "05",
+        "x": 64,
+        "y": 513,
+        "w": 65,
+        "h": 43,
+        "size": 28,
+        "bold": true,
+        "color": "#006E83"
+      },
+      {
+        "type": "text",
+        "text": "运行监控",
+        "x": 148,
+        "y": 513,
+        "w": 240,
+        "h": 43,
+        "size": 28,
+        "bold": true,
+        "color": "#142C3A"
+      },
+      {
+        "type": "text",
+        "text": "持续观察压力趋势，按计划穿插 QC 与 Blank",
+        "x": 405,
+        "y": 515,
+        "w": 810,
+        "h": 45,
+        "size": 25,
+        "bold": false,
+        "color": "#142C3A"
+      },
+      {
+        "type": "text",
+        "text": "保存序列后上传样本条件，状态通过再启动；压力异常升高时暂停追加进样。",
+        "x": 64,
+        "y": 610,
+        "w": 1152,
+        "h": 48,
+        "size": 24,
+        "bold": true,
+        "color": "#006E83"
+      },
+      {
+        "type": "text",
+        "text": "来源：02 p11–26；09 p13–19（PDF物理页码）",
+        "x": 64,
+        "y": 670,
+        "w": 1100,
+        "h": 28,
+        "size": 16,
+        "bold": false,
+        "color": "#536571"
+      },
+      {
+        "type": "text",
+        "text": "02",
+        "x": 1170,
+        "y": 670,
+        "w": 50,
+        "h": 28,
+        "size": 17,
+        "bold": false,
+        "color": "#006E83"
+      }
+    ],
+    "notes": "逐步来源：02 p13–18液相准备；p20–24校正；p25序列与QC；p26首针与监控。软件操作：Save → Upload Sample Conditions → 状态通过 → Start Sequence。培训建议每6–8针穿插QC与Blank，实际频率按实验设计。本页保留运行质量检查，不展开数据分析。实际校正电压、流量和接受标准依当前机型与SOP。"
+  },
+  {
+    "elements": [
+      {
+        "type": "text",
+        "text": "蛋白前处理的流程与检查点",
+        "x": 64,
+        "y": 48,
+        "w": 1152,
+        "h": 66,
+        "size": 44,
+        "bold": true,
+        "color": "#142C3A"
+      },
+      {
+        "type": "text",
+        "text": "通用流程明确目的，具体条件由样本与裂解体系决定",
+        "x": 64,
+        "y": 120,
+        "w": 1152,
+        "h": 44,
+        "size": 24,
+        "bold": false,
+        "color": "#536571"
+      },
+      {
+        "type": "text",
+        "text": "01",
+        "x": 64,
+        "y": 205,
+        "w": 150,
+        "h": 40,
+        "size": 27,
+        "bold": true,
+        "color": "#006E83"
+      },
+      {
+        "type": "text",
+        "text": "取样保存",
+        "x": 64,
+        "y": 254,
+        "w": 160,
+        "h": 45,
+        "size": 26,
+        "bold": true,
+        "color": "#142C3A"
+      },
+      {
+        "type": "text",
+        "text": "02",
+        "x": 230,
+        "y": 205,
+        "w": 150,
+        "h": 40,
+        "size": 27,
+        "bold": true,
+        "color": "#006E83"
+      },
+      {
+        "type": "text",
+        "text": "裂解提取",
+        "x": 230,
+        "y": 254,
+        "w": 160,
+        "h": 45,
+        "size": 26,
+        "bold": true,
+        "color": "#142C3A"
+      },
+      {
+        "type": "text",
+        "text": "03",
+        "x": 396,
+        "y": 205,
+        "w": 150,
+        "h": 40,
+        "size": 27,
+        "bold": true,
+        "color": "#006E83"
+      },
+      {
+        "type": "text",
+        "text": "蛋白定量",
+        "x": 396,
+        "y": 254,
+        "w": 160,
+        "h": 45,
+        "size": 26,
+        "bold": true,
+        "color": "#142C3A"
+      },
+      {
+        "type": "text",
+        "text": "04",
+        "x": 562,
+        "y": 205,
+        "w": 150,
+        "h": 40,
+        "size": 27,
+        "bold": true,
+        "color": "#006E83"
+      },
+      {
+        "type": "text",
+        "text": "还原烷基化",
+        "x": 562,
+        "y": 254,
+        "w": 160,
+        "h": 45,
+        "size": 26,
+        "bold": true,
+        "color": "#142C3A"
+      },
+      {
+        "type": "text",
+        "text": "05",
+        "x": 728,
+        "y": 205,
+        "w": 150,
+        "h": 40,
+        "size": 27,
+        "bold": true,
+        "color": "#006E83"
+      },
+      {
+        "type": "text",
+        "text": "蛋白酶解",
+        "x": 728,
+        "y": 254,
+        "w": 160,
+        "h": 45,
+        "size": 26,
+        "bold": true,
+        "color": "#142C3A"
+      },
+      {
+        "type": "text",
+        "text": "06",
+        "x": 894,
+        "y": 205,
+        "w": 150,
+        "h": 40,
+        "size": 27,
+        "bold": true,
+        "color": "#006E83"
+      },
+      {
+        "type": "text",
+        "text": "酸化除盐",
+        "x": 894,
+        "y": 254,
+        "w": 160,
+        "h": 45,
+        "size": 26,
+        "bold": true,
+        "color": "#142C3A"
+      },
+      {
+        "type": "text",
+        "text": "07",
+        "x": 1060,
+        "y": 205,
+        "w": 150,
+        "h": 40,
+        "size": 27,
+        "bold": true,
+        "color": "#006E83"
+      },
+      {
+        "type": "text",
+        "text": "复溶上机",
+        "x": 1060,
+        "y": 254,
+        "w": 160,
+        "h": 45,
+        "size": 26,
+        "bold": true,
+        "color": "#142C3A"
+      },
+      {
+        "type": "text",
+        "text": "路线选择",
+        "x": 64,
+        "y": 360,
+        "w": 250,
+        "h": 42,
+        "size": 29,
+        "bold": true,
+        "color": "#006E83"
+      },
+      {
+        "type": "text",
+        "text": "依据样本屏障、输入量和干扰物选择提取与清理方法。",
+        "x": 340,
+        "y": 362,
+        "w": 876,
+        "h": 44,
+        "size": 26,
+        "bold": false,
+        "color": "#142C3A"
+      },
+      {
+        "type": "text",
+        "text": "酶解兼容",
+        "x": 64,
+        "y": 441,
+        "w": 250,
+        "h": 42,
+        "size": 29,
+        "bold": true,
+        "color": "#006E83"
+      },
+      {
+        "type": "text",
+        "text": "高尿素需稀释或换液；SDS 需匹配专门的清理路线。",
+        "x": 340,
+        "y": 443,
+        "w": 876,
+        "h": 44,
+        "size": 26,
+        "bold": false,
+        "color": "#142C3A"
+      },
+      {
+        "type": "text",
+        "text": "上机检查",
+        "x": 64,
+        "y": 522,
+        "w": 250,
+        "h": 42,
+        "size": 29,
+        "bold": true,
+        "color": "#006E83"
+      },
+      {
+        "type": "text",
+        "text": "核对酸化、除盐、复溶和澄清度，记录浓度与上样量。",
+        "x": 340,
+        "y": 524,
+        "w": 876,
+        "h": 44,
+        "size": 26,
+        "bold": false,
+        "color": "#142C3A"
+      },
+      {
+        "type": "text",
+        "text": "酶能工作，不代表残余试剂适合直接进入 LC–MS。",
+        "x": 64,
+        "y": 606,
+        "w": 1152,
+        "h": 44,
+        "size": 25,
+        "bold": true,
+        "color": "#006E83"
+      },
+      {
+        "type": "text",
+        "text": "来源：10 p9、12–17、28、32（PDF物理页码）",
+        "x": 64,
+        "y": 670,
+        "w": 1100,
+        "h": 28,
+        "size": 16,
+        "bold": false,
+        "color": "#536571"
+      },
+      {
+        "type": "text",
+        "text": "03",
+        "x": 1170,
+        "y": 670,
+        "w": 50,
+        "h": 28,
+        "size": 17,
+        "bold": false,
+        "color": "#006E83"
+      }
+    ],
+    "notes": "流程据10 p9重建为可编辑文本，不依赖整页截图。尿素约1 M等为培训入门范围，不作为本实验既定SOP。SDC酸化去除与SDS清理不同，不能混用。两份前处理PDF为逐字节相同文件。还原/烷基化浓度、酶比和酶解时长未在材料中统一规定，需实验方案确定。"
+  }
+]

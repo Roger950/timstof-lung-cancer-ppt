@@ -1,0 +1,410 @@
+PDF PAGE 1
+To add an image 
+to the background, 
+follow these steps: 
+▪ Right click -> 
+Format Background
+▪ Picture or texture fill
+▪ Picture source -> 
+Insert…
+BPS (ProteoScape & GlycoScape)
+BRUKER PROTEOSCAPE & GLYCOSCAPE
+Beibei Ma
+Application Engineer
+BLCMS
+
+PDF PAGE 2
+|© 2025 Bruker |- confidential -
+© 2025 Bruker ||
+01
+Content
+11/12/2026 2Example of a footer
+BPS 分析平台概览
+02 BPS 分析平台优势
+
+PDF PAGE 3
+|© 2025 Bruker |- confidential -
+© 2025 Bruker ||
+01
+Content
+11/12/2026 3Example of a footer
+BPS 分析平台概览
+02 BPS 分析平台优势
+
+PDF PAGE 4
+|© 2025 Bruker |- confidential -
+ ||© 2025 Bruker
+ 11/12/2026 4
+Bruker 4D-
+ProteomicsTM
+Ecosystem: focus on 
+your research
+Innovation with Integrity
+Bridging from Biosamples to Bioinsights
+Separation and 
+Ionization
+DATA
+ACQUISITION
+DATA ANALYSISSAMPLE
+PREPARATION
+ENRICH-iST
+FFPE tissue 
+workflow
+ENRICHplus for 
+deep plasma
+PepSep columns
+nanoElute 2
+CaptiveSpray 2 &
+CSI Ultra 2
+proteoElute
+300 Hz
+ICC 2.0
+AIP
+
+
+PDF PAGE 5
+|© 2025 Bruker |- confidential -
+© 2025 Bruker ||
+BRUKER PROTEOSCAPE & GLYCOSCAPE
+12 November 2026Innovation with Integrity 5
+LSMS相关软件
+❑ ProLuCID
+❑ TIMSrescore
+❑ Novor
+❑ Spectronaut
+❑ TIMS DIANN
+❑ Spectronaut
+❑ ProLuCID + 
+Myraid
+dda-PASEF dia-PASEF diagonal-PASEF dda-PASEF
+https://www.bruker.com/protected/en/services/software-downloads/mass-spectrometry/software-solutions.html
+完整蛋白
+(OmniScape)
+质谱成像
+(SCiLS Lab)
+生物制药
+(BioPharma Compass)
+代谢 / 脂质组学
+(TASQ & MetaboScape)
+仪器监控
+(TwinScape)
+质谱控制
+(timsControl)
+综合控制
+(CompassHyStar)
+原始数据查看
+(DataAnalysis)
+蛋白质组学 ： BPS平台
+(Bruker ProteoScape Software)
+
+PDF PAGE 6
+|© 2025 Bruker |- confidential -
+© 2025 Bruker ||
+BRUKER PROTEOSCAPE & GLYCOSCAPE
+12 November 2026Innovation with Integrity 6
+BPS平台发展概述
+PEPTIDEK
+SAFASTR
+THISISRTSK
+PEPTIDESR
+……
+Acquisition Ends
+Search Results 
+Completed
+• RT
+• 1/KO
+• Precursor m/z
+• MSMS m/z
+Run 
+Next 
+sample
+Yes
+>4000 CUDA cores
+(Parallel Search Engine in Real-Time)
+ PaSER 1.0 (2021)
+PaSER 2022
+PaSER 2022c
+PaSER 2023
+PaSER 2023b
+BPS 2024
+PaSER 2024b
+BPS 2025b
+BPS 2026
+
+
+PDF PAGE 7
+|© 2025 Bruker |- confidential -
+© 2025 Bruker ||
+BRUKER PROTEOSCAPE & GLYCOSCAPE
+BPS平台与采集系统智能互动
+12 November 2026Innovation with Integrity
+7
+传统数据分析模式
+ BPS 
+平
+台搜库模式
+protein   
+< 5000
+true
+停止序列继续搜库
+false
+搜库结果
+
+
+PDF PAGE 8
+|© 2025 Bruker |- confidential -
+BRUKER PROTEOSCAPE & GLYCOSCAPE
+BPS平台数据分析工作流展示
+12 November 2026 8Innovation with Integrity
+➢ Workflow：选择分析流程
+➢ Parameter：设置搜库参数
+➢ FASTA：上传对应物种的数据库
+
+
+PDF PAGE 9
+|© 2025 Bruker |- confidential -
+© 2025 Bruker ||
+BRUKER PROTEOSCAPE & GLYCOSCAPE
+BPS平台数据分析时间 (以Spectroanut流程为例)
+12 November 2026Innovation with Integrity 9
+加载样品
+质谱采集数据
+解析数据 (定性) 解析数据 (定量)
+加载样品
+质谱采集数据 BPS Spectronaut
+拷贝数据 解析数据 (定性 + 定量)
+传统
+
+
+PDF PAGE 10
+|© 2025 Bruker |- confidential -
+© 2025 Bruker ||
+01
+Content
+11/12/2026 10Example of a footer
+BPS 分析平台概览
+02 BPS 分析平台优势
+
+PDF PAGE 11
+|© 2025 Bruker |- confidential -
+© 2025 Bruker ||
+BRUKER PROTEOSCAPE & GLYCOSCAPE
+一、流程完善 - AI/ML驱动CCS加持的4D蛋白质组学算法流程
+12 November 2026Innovation with Integrity 11
+    
+               
+           
+        
+           
+              
+        
+       
+ASMS
+ASMS
+ASMS
+
+PDF PAGE 12
+|© 2025 Bruker |- confidential -
+© 2025 Bruker ||
+BRUKER PROTEOSCAPE & GLYCOSCAPE
+二、智能采集 - 工作流程自动化
+12 November 2026Innovation with Integrity 12
+MS
+方法
+ LC
+方法
+ ProteoScape
+方法
+ (
+扫描模式、搜库参数、项目名称
+ ...)
+蛋白鉴定数量
+ 肽段鉴定数量
+采集队列
+样品表
+ProteoScape
+实时搜库
+呈现结果
+
+
+PDF PAGE 13
+|© 2025 Bruker |- confidential -
+© 2025 Bruker ||
+https://doi.org/10.5702/massspectrometry.a0093
+BRUKER PROTEOSCAPE & GLYCOSCAPE
+三、深度解析 – TIMSrescore提升鉴定深度 (dda-PASEF)
+12 November 2026 13Innovation with Integrity
+7% 8% 6% 6% 8% 6%
+0
+1000
+2000
+3000
+4000
+C1 C2 C3 T1 T2 T3
+Protein Groups
+10%
+12%
+21% 11% 11% 23%
+0
+5000
+10000
+15000
+20000
+25000
+C1 C2 C3 T1 T2 T3
+Peptides
+BPS 2024 BPS 2025 - TIMSrescore
+磷酸富集样品：蛋白鉴定数增加7%，肽
+段鉴定数增加15%
+8%
+13%
+0
+4000
+8000
+12000
+16000
+20000
+Peptides PSM
+BPS 2024 BPS 2025 - TIMSrescore
+Hela酶解标品：肽段鉴定数增加8%，
+PSM鉴定数增13%
+Yasushi Ishihama
+Kyoto University
+
+PDF PAGE 14
+|© 2025 Bruker |- confidential -
+© 2025 Bruker ||
+BRUKER PROTEOSCAPE & GLYCOSCAPE
+三、深度解析 – BPS Novor 极速精准解析de novo数据 (dda-PASEF)
+12 November 2026Innovation with Integrity 14
+BPS NovorProLuCID Database
+Feola, S. et al. PeptiCHIP: A Microfluidic Platform for Tumor Antigen 
+Landscape Identification. ACS Nano 15, 15992–16010 (2021)
+49.6
+18.0
+39.9
+12.8
+31.9
+7.90.0
+10.0
+20.0
+30.0
+40.0
+50.0
+60.0
+% correct AA % correct peptide
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+0 0.05 0.1 0.15 0.2 0.25 0.3 0.35 0.4 0.45 0.5 0.55
+Precision
+Recall
+BPS Novor Novor (pre-training)
+Novor (public)
+✓ 针对 timsTOF 数据进行了优化，具有
+近 180 万个肽谱匹配 (PSM)。
+✓ 利用超过 15 万个 HLA 肽的 MHC 模型。
+✓ 分析免疫肽组学、宏蛋白组学和毒物
+组学等数据集的速度极快。
+✓ 兼顾处理速度的同时，确保准确性和
+精确度，对处理速度的影响最小。
+
+PDF PAGE 15
+|© 2025 Bruker |- confidential -
+© 2025 Bruker ||
+BRUKER PROTEOSCAPE & GLYCOSCAPE
+三、深度解析 – 基于Myriad算法进行不依赖库的糖肽鉴定 (dda-PAEF)
+12 November 2026Innovation with Integrity 15
+✓ GlycoScape 使用 Myriad 算法进行糖肽鉴定
+✓ 分别试用 ProLuCID（多肽）和 Myriad（聚
+糖）解析谱图。
+✓ Myriad 生成糖组成并对其进行排序，将结果
+合并为糖肽鉴定结果。
+✓ 可以定糖构建模块，识别传统聚糖数据库遗
+漏的新型聚糖分子。
+
+
+PDF PAGE 16
+||
+-Bruker Confidential-
+© 2024 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures.
+BRUKER PROTEOSCAPE & GLYCOSCAPE
+四、 用户友好 – 项目数据可视化功能
+12 November 2026 16Innovation with Integrity
+✓ 项目总览
+常用评估指标可视化
+便捷监控和对比项目数据
+✓ 谱图挖掘
+肽段二级谱图碎片详情
+蛋白覆盖度
+✓ 差异分析
+蛋白表达差异
+目标蛋白上下调
+
+PDF PAGE 17
+||
+-Bruker Confidential-
+© 2024 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures.
+BRUKER PROTEOSCAPE & GLYCOSCAPE
+四、 用户友好 – MOX (Multi-Omics) 多组学数据联合分析平台
+12 November 2026 17Innovation with Integrity
+Proteomics Data Metabolomics\Lipidomics Data
+ProteoScape MetaboScape
+CSV Export
+CSV Mapping file to 
+Proteomics Data
+Visualization
+(Dimension 
+Reduction or 
+Volcano Plots)
+ID + Quant
+
+PDF PAGE 18
+||
+-Bruker Confidential-
+© 2024 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures.
+BRUKER PROTEOSCAPE & GLYCOSCAPE
+四、 用户友好 – 下游数据挖掘平台可拓展
+12 November 2026 18Innovation with Integrity
+✓ 第三方平台合作开发下游数据接口
+结果文件格式匹配 MassDynamics平台，进
+行生信分析
+✓ 结果文件支持支持Spectronaut下游分析
+结果文件中含SNE搜库过程文件
+
+
+PDF PAGE 19
+||
+-Bruker Confidential-
+© 2024 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures. ||© 2024 Bruker     For Research Use Only. Not for use in clinical diagnostic procedures.
+BPS与其他软件对比
+11/12/2026 19
+Application Scan mode BPS Spectronaut Spectromine Fragpipe DIA-NN MQ
+LFQ
+DDA ✓ ✓ ✓(vi MSFragger) ✓
+DIA ✓ ✓ ✓ (via DIA-NN) ✓ ✓
+PTM
+DDA ✓ ✓ ✓ ✓
+DIA ✓ ✓ ✓(via DIA-NN) ✓
+Peptidomics
+DDA ✓ ✓
+DIA ✓ ✓ ✓ ✓
+Glyco DDA ✓ ✓
+SILAC DDA (later) ✓ ✓ ✓
+TMT DDA (later) ✓ ✓ ✓
+- Diagonal ✓ ✓
+
+
+PDF PAGE 20
+Thank you!
+
+
+PDF PAGE 21
