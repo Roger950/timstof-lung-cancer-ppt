@@ -19,9 +19,13 @@
   - `output/timsTOF组会演讲稿-修订版.docx`
   - `output/timsTOF组会演讲稿.docx`
 
-## 本地预览 WebPPT
+## 在线访问（GitHub Pages）與本地预览
 
-在项目根目录运行：
+- **GitHub 仓库**：https://github.com/Roger950/timstof-group-meeting
+- **在线 WebPPT 汇报链接（可直接发给导师查看）**：https://roger950.github.io/timstof-group-meeting/#/1
+- **在线讲者视图（带 28 页逐页演讲稿）**：https://roger950.github.io/timstof-group-meeting/#/presenter/1
+
+在项目根目录运行本地预览：
 
 ```powershell
 node tools/serve-web.mjs
